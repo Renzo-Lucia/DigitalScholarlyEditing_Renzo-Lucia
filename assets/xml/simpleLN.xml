@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Los Novios - Edición digital en XML-TEI</title>
+    </titleStmt>
+    <sourceDesc>
+      <p>Edición basada en la traducción española del siglo XIX de "I Promessi Sposi" de Alessandro Manzoni.</p>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+<text>
+  <body>
+    <head>LOS NOVIOS</head>
+      <p class="subtitle">HISTORIA MILANESA DEL SIGLO XVI</p>
+     
+    <div type="chapter" n="CAPITULO PRIMERO">
+      <p>Aquel ramal del <placeName type="lake" xml:lan="es">lago de Como</placeName> que, torciendo hácia el Sur<lb/>
+          entre dos cordilleras de móntes, forma carios golfos y ense-<lb/>
+          nadas, segun ellos se apartan ó se acercan, toma casi de<lb/>
+          repente curso y figura de rio, estrechándose entre un<lb/> 
+          promontorio al lado derecho y una espaciosa ribera al<lb/></p>
+      
+        <figure xml:id="f1" corresp="#gap1"> 
+            <img src="assets/img/losnoviosimgp1.png" />
+            <figDesc>(F.1)Aquel ramal del lago de Como que, torciendo hácia el Sur.</figDesc>
+        </figure>
+      
+        <p>izqueirdo. El puente, que en este sitio abraza las dos orillas,<lb/>
+          presenta màs patente á la vista semejante transformacion,<lb/>
+          pareciendo que designa el punto en que termina el lago y<lb/>
+          empieza el <placeName type="river" xml:lang="es">Ada</placeName>, rio que vuelve á tomar despues el nombre<lb/>
+          del lago cuando, alejándose de nuevo sus orillas, se espacian<lb/>
+          segunda vez sus aguas, resultando otras ensenadas y otros<lb/></p>
+      </div>
+    <pb n="1"/>
+
+
+    <!-- page 2 -->
+    <div> 
+      <p>golfos. La ribera, obra del tiempo y de tres caudalosos tor- <lb/>
+        rentes, viene declinando desde la falda de dos montañas<lb/>
+        contiguas, llamada la una el <placeName type="mountain"><hi rend="italic">Cerro de San Martin</hi></placeName>, y la otra<lb/>
+        el <placeName type="mountain"><hi rend="italic">Recegon</hi></placeName>, voz lombarda que significa <hi rend="italic">hoz ó sierra</hi>, y nace de<lb/>
+        la semejanza que le dan con estos instumentos lo muchos<lb/>
+        picos en fila que terminan su cumbre; así , el que la vea pos<lb/>
+        su frente como desde <placeName xml:lang="es">las murallas de Milan</placeName> que caen al<lb/>
+        Septentrion, no podrá ménos de destinguirla al instante,<lb/>
+        por las señas indicadas, de los demas móntes de ménos<lb/>
+        nombradía y más comun configuracion que componen<lb/>
+        aquella prolongada cordillera. Desde la orilla del rio va<lb/>
+        subiendo la ribera con suoave y regular declive, que inter-<lb/>
+        rumpen despues algunas colinas y valles de poca extension,<lb/>
+        formando alturas y sinuosidades segun la estructura de los<lb/>
+        móntes y e contínuo lamer de las aguas. Los puntos más<lb/>
+        altos de aquel terreno, socavados por los cauces de los<lb/>
+        torrentes, están por lo comun cubiertos de piedras y cas-<lb/>
+        cajo, pero el resto son campos y viñedos, aldeas y granjas,<lb/>
+        con algunos bosquecillos que suben por la falda de los móntes.<lb/>
+        No léjos del puente y tan cerca del lago, que en las grandes<lb/>
+        avenidas llega á circundarla, está situada <placeName xml:lang="es">Leco</placeName>, la principal<lb/>
+        de aquellas poblaciones, tan aumentada en nuestros dias<lb/>
+        que casi presume de ciudad.<lb/>
+        En el tiempo que sucedieron las cosas que vamos á referir<lb/>
+        no era ciertamente de tanta consideracion, pero ya se repu-<lb/>
+        taba por un pueblo regular, y tenía su castillo, guarnecido<lb/>
+        por un comandante y soldados españoles, que cuidaban de<lb/>
+        inspirar modestia á las muchacas del país, de sacudir el<lb/>
+        polvo de tiempo en tiempo á sus padres y maridos, y de<lb/>
+        esparcirse por las viñas en el otoño para aliviar en parte á<lb/>
+        los aldeanos del trabajo de la vendimia. Todo el terreno,<lb/>
+        desde el lago á los móntes, de un collado á otro, de case-<lb/>
+        ría á casería, estaba y está cruzado de caminos y sendas,<lb/>
+        unas llanas y otras pendientes, quedando algunas tan hondas<lb/>
+        entre los vallados de las heredades, que apénas descubre<lb/>
+        el caminante otra cosa que el pícacho de algun monte ó el<lb/></p> 
+    </div>
+    <pb n="2"/>
+
+
+    <!-- page 3 -->
+    <div>
+      <p>pedazo de cielo que está sobre su cabeza. Á veces permite la<lb/>
+      altura del terreno que la vista descubra perspectivas más ó<lb/>
+      menós extensas. pero siempre variadas y ricas, segun cam-<lb/>
+      pean ó esconden los diferentes puntos y objectos de aque-<lb/>
+      llos amenos contornos  Ya billa y deslumbra por una parte<lb/>
+      la tersa superficie del lago, que oculta despues un grupo de<lb/>
+      árboles ó de casas. Ya vuelve á apaercer más extenso entre<lb/>
+      los móntes que circundan, y se pintan inversamente en sus<lb/>
+      ondas. Á este lado se descubre el rio, más allá el lago, y el<lb/>
+      rio otra vez, que separando y luciendo como plata al pié de<lb/>
+      la cordillera que le acompaña, se pierde por fin y desaparece<lb/>
+      con ella en el horizonte.<lb/>
+      Por uno de los caminos arriba descritos volvia de paseo<lb/>
+      hácia su casa, al caer la tarde del <date when="1628-11-07">7 Noviembre de 1628</date>,<lb/>
+      <persName ref="#donabundo" type="abbr" xml:lang="es">Don Abundo</persName>, cura de una de aquellas aldeas, cuyo nombre<lb/>
+      no se expresa en el manuscrito que nos sirve de guía. Iba<lb/>
+      rezando en su breviario pacíticamente, cerrándolo á veces<lb/>
+      entre salmo y salmo, y cruzando las manos á la espalda con<lb/>
+      un dedo puesto por via de señal entre las hojas. Ya cami-<lb/>
+      naba con los ojos bajos, enchando con el pié haciá las cercas<lb/>
+      los guijarros del camino, ya levantaba la vista fijandola en<lb/>
+      la cima de algun monte, en que los rayos del sol en su ocaso,<lb/>
+      penetrando por las quebradas de otro situado enfrente, for-<lb/>
+      maban largas y brillantes fajas de púrpura.<lb/>
+      Abierto otra vez el breviario, y rezando de nuevo, llegó<lb/>
+      adonde torcia el camino, y en este paraje levantó los ojos<lb/>
+      mirando adelante como solia hacerlo los demas dias. La<lb/>
+      senda despues de torcer seguia derecha como unos sesenta<lb/>
+      pasos, dividiénodse luégo en dos. de las cuales la derecha<lb/>
+      subia hácia la montaña, y era la que conducia á la parro-<lb/>
+      quia, y la izquierda bajaba al valle hasta llegar á un tor-<lb/>
+      rente, siendo por esta parte más baja la pared. Las cercas in-<lb/>
+      teriores de las dos sendas, en vez de formar ángulo al re-<lb/>
+      unirse. remaraban en una pequeña ermita en que estaban<lb/>
+      pintadas várias figuras largas, undosas, y acabadas en<lb/>
+      punta, las cuales, segun la intencion del pintor, y á<lb/></p>
+      <pb n="3"/>
+    </div>
+
+
+<!-- page 4 -->
+ <div> 
+      <p>los ojos de los habitantes, debian significar llamas, alter-<lb/>
+        nando entre ellas ciertos mamarrachos como personas de <lb/></p>
+
+      
+        <figure xml:id="f2"> 
+          <img src="assets/img/losnoviosimgp4.png" id="bigphoto" />
+          <figDesc>(F.2)Es la confluencia se <unclear>hallaban</unclear> dos hombres, uno frente de otro,</figDesc>
+        </figure>
+      
+
+      <p>médio cuerpo arriba, que significaban ánimas del purga-<lb/>
+      torio, y unas otras de color de ladrillo sobro un fande<lb/>
+      blanquisco, con alcunos de mochados de trecho en trecho<lb/></p>
+     <pb n="4"/>
+    </div>
+
+
+<!-- page 5 -->
+    <div>
+      <p>Al volver <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> de la esquina, y dirigiendo la vista<lb/>
+      hácia la ermita, segun tenia de costumbre, vió lo que no<lb/>
+      esperaba ni hubiera querido ver. Casi en la confluencia de<lb/>
+      las dos sendas se hallaban dos hombres, uno en frente de<lb/>
+      otro: el uno de ellos sentado en la pared más baja con una<lb/>
+      pierna colgado por la parte de adentro, y el compañero en<lb/>
+      pié, apoyado en la tapia de enfrente y con los brazos cru-<lb/>
+      zados. Por el traje, el aire, y lo que podia divisarse desde el<lb/>
+      punto a que habia llegado el <persName ref="#donabundo" type="alias" xml:lang="es">cura</persName>, era fácil inferir su condi-<lb/>
+      cion. Los dos llevaban en la cabeza una redencilla verde, que<lb/>
+      con gran boria caia sobre el hombro izquierdo, saliendo de<lb/>
+      ella en la frente un gran mechon de pelo á manera de tufo;<lb/>
+      dos grandes bigotes ensortijados por la punta, y la chaque-<lb/>
+      tilla ajustada al cuerpo, con un cinturon de cuero muy relu-<lb/>
+      ciente, de donde colgaban un par de pistolas. Pendiente del<lb/>
+      cuello, y caido sobre el pecho en forma de dije, traian un<lb/>
+      cuernecito con pòlvora. Á la derecha salia de un bolsillo<lb/>
+      lateral de los anchos calsones el mango de un gran puñal, y<lb/>
+      colgaba á la izquierda una disforme espada con el puño de<lb/>
+      metal muy labrado y terso. Manifestaba semejante atavio que<lb/>
+      aquellos dos hombres eran de los que en aquel tiempo se<lb/>
+      llamaban <persName ref="#bravos" type="full" xml:lang="es">bravos</persName>ó valentones.<lb/>
+      Esta elase de individuos, que en el dia ya no existe, era<lb/>
+      muy antigua entónces muy floreciente en la <placeName>Lombardia</placeName>.<lb/>
+      Para dar un aiuda á  los que no la tengan de su carácter prin-<lb/>
+      cipal, de los esfuerzos que se hicieron para exitnguirla y de s<lb/>
+      larga y tenaz resistencia, presentaremos los trozos autenticos<lb/>
+      sieguientes:<lb/>
+      Desde el <date when="1583-04-08">8 de Abril de 1583</date>, D. Cárlos de Aragon, principe<lb/>
+      de Castelvetrano, duque de Terranova, marqués de Ávila,<lb/>
+      conde de Burgunto, grande almiante y gran condestable de<lb/>
+      Sicilia, gobernador de <placeName>Lombardia</placeName> y capitan general en <placeName>Italia</placeName> por<lb/>
+      S. M. C. &gt;&gt; informado de los trabajos en que vivió y vivia la<lb/>
+      &gt;&gt; <placeName xml:lang="es">ciudad de Milan</placeName> por causa de los <persName ref="#bravos" type="combined" xml:lang="es">bravos ó vagamundos</persName>,<lb/>
+      &gt;&gt; publicó un bando contra ellos, declarando estar compren-<lb/>
+      &gt;&gt; didos en él dichos <persName ref="#bravos" type="combined" xml:lang="es">bravos ó vagamundos</persName>, los cuales siendo<lb/></p>
+      <pb n="5"/>
+    </div>
+
+
+<!-- page 6 -->
+<div> 
+      <p>&gt;&gt; forasteros ó del país no tienen oficio alguno, ó teniéndolo<lb/>
+      &gt;&gt; no lo ejercen, sino sin salario ó con él, se ponen á la<lb/>
+      &gt;&gt; merced de algan caballero ó hidalgo, oficial, ó comerciante,<lb/>
+      &gt;&gt; para guardarle las espaldas, ó más bien, como es de pre-<lb/>
+      &gt;&gt; sumir, para amar asechanzas á otros. &gt;&gt; En el expresado<lb/>
+      bando se mataban&gt;&gt; en el término de seis dias saliesen<lb/>
+      &gt;&gt; del país, bajo la pena de aleras á los que no lo verifi-<lb/>
+      &gt;&gt; casen; &gt; y se concedia á los dependientes de justicia las<lb/>
+      faculdades más ámplias y extraordinarias para la ejecu-<lb/>
+      cion de la órden. El año siguiente, en <date when="04-12-1854">12 de Abril</date>. sabedor<lb/>
+      el mismo capitan general de que la &lt;&lt; ciudad estaba todavia<lb/>
+      &gt;&gt; llena de dichos <persName ref="#bravos" type="full" xml:lang="es">bravos</persName>, los cuales vivian como ántes. sin<lb/>
+      &gt;&gt; haber mudado de conducta, ni haber disminuido su<lb/>
+      &gt;&gt; número. &gt;&gt; publicó otro bando màs energíco y riguroso, en<lb/>
+      el cual, entre otras cosas, mandaba &lt;&lt; quecualquiera indi-<lb/>
+      &gt;&gt; viduo de la ciudad ó forastero à quien se le justificase con<lb/>
+      &gt;&gt; dos testigos ser considerado, ó generalmente reputado, por<lb/>
+      &gt;&gt; bravo ótner este nombre aunque no constase haber co-<lb/>
+      &gt;&gt; medito delito alguno, por la sola opínion de bravo, y sin<lb/>
+      &gt;&gt; màs indicios, pudiese por los jueces y por cualquiera de<lb/>
+      &gt;&gt; ellos ser puesto al castigo de la cuerda y al tormento por<lb/>
+      &gt;&gt; informacion sumaria..... Y aunque no confesase delito<lb/>
+      &gt;&gt; alguno, pudiese, sin embargo, ser condenado à tres años<lb/>
+      &gt;&gt; de galeras por sola opinion y nombre de bravo. &gt;&gt; Y<lb/>
+      cuncluia diciendo: &lt;&lt; Todo esto, y lo demas que se omite.<lb/>
+      &gt;&gt; porque S. E. está resuelto á que todos le obedezcan. &gt;&gt;<lb/>
+      Al oir palabras tan terminantes, y sisposiciones de tanto<lb/>
+      rigor, nadie habrá que no piense que todos los <persName ref="#bravos" type="full" xml:lang="es">bravos</persName> de-<lb/>
+      aparecerian para siempre; pero el testimonio de un personaje<lb/>
+      de no ménos autoridad ni ménos títulos nos obliga á creer lo<lb/>
+      contrario. Este es e Ex mo. Sr. D. Juan Fernández de<lb/>
+      Velasco, condestable de Castilla, mayordomo mayor de<lb/>
+      S. M. C. duque de Feria, conde de Haro, señor de la casa de<lb/>
+      Velasco, y de la de los siete infantes de Lara, gobernador<lb/>
+      de estado de <placeName xml:lang="es">Milan</placeName>, etc. &lt;&lt; En <date when="1593-06-05">5 de junio de 1593</date> tambíen<lb/>
+      &gt;&gt; informado plenamente de los perjuicios y ruinas que cau-<lb/></p>
+      <pb n="6"/>
+    </div>
+
+
+<!-- page 7 -->
+<div>
+      <p>&gt;&gt; saban los <persName ref="#bravos" type="combined" xml:lang="es">bravos y vagamundos</persName>, y de los pésimos efecto-<lb/>
+        &gt;&gt; que por esta clase de gente resultaba al bien público en<lb/>
+        &gt;&gt; menosprecio de la justicia, mandó de nuevo que saliesen<lb/>
+        &gt;&gt; del país en término de seis dias. repitindo las mismas<lb/>
+        &gt;&gt; penas y castigos de su antecesor. Luégo el  <date when="1598-05-23">23 de Mayo de<lb/>
+        &gt;&gt; 1598</date>, informado con no poco sentimiento suyo de que se<lb/>
+        &gt;&gt; aumentaba cada día más en aquella ciudad y estado el<lb/>
+        &gt;&gt; número de <persName ref="#bravos" type="combined" xml:lang="es">bravos y vagamundos</persName>, y que dia y noche sólo<lb/>
+        &gt;&gt; se oian heridas alevosamente dadas, homicidios y robos,<lb/>
+        &gt;&gt; y otros delitos semejantes que cometían con tanta más faci-<lb/>
+        &gt;&gt; lidad cuanto confiaban en el favor de sus principales y fan-<lb/>
+        &gt;&gt; tores, prescribia de nuevo las mismas medidas y remedios, &gt;&gt;<lb/>
+        aumentando la dósis como en las enfermedades rebeldes, y<lb/>
+        concluida el bando en estos términos: &lt;&lt; Cuiden, pues, de no<lb/>
+        &gt;&gt; contravenir de modo alguno al presente bando, pues en<lb/>
+        &gt;&gt; vez de encontrar clemncia en S. E., experimentatáran su<lb/>
+        &gt;&gt; rigor y su cólera, por haber resuelto este sea el aviso<lb/>
+        &gt;&gt; último y perentorio.&gt;&gt;<lb/>
+        Poco ó ningun efecto produjieron semejantes medidas,<lb/>
+        pues vemos renovadas la mísmas disposiciones por el gober-<lb/>
+        nador de <placeName xml:lang="es">Milan</placeName>; conde de Fuéntes en <date when="1600-12-05">5 de Diciembre 1600</date>.<lb/>
+        por el marqués de Hunojosa en <date when="1612-09-22">22 de Septiembre de 1612</date>; por<lb/>
+        el duque e Frias en <date when="1618-12-24">24 de Diciembre de 1618</date>, por D. Gon-<lb/>
+        zalo Fernández de Córdoba en <date when="1627-10-05">5 de Octubre de 1627</date> y otros<lb/>
+        posteriores al tiempo en que lo que vamos refiriendo.<lb/>
+        Que los dos <persName ref="#bravos" type="full" xml:lang="es">bravos</persName> arriba descritos estuviesen alli aguar-<lb/>
+        dando á alguno, era cosa de que no se podia dudar; lo que no<lb/>
+        agradó á D. Abumndo fué el infierir., por ciertos moviminetos<lb/>
+        que él era la persona que esperaban. En efecto, así que le<lb/>
+        vieron se miraron uno á otro, levantando la cabeza con<lb/>
+        ciertoademan como si dijesen <said who="one of the two bravos" toWhom="el otro bravo">: &lt;&lt; allí viene  &gt;&gt;</said> El que estaba<lb/>
+        á horcajadas en la cerca saltó al camino, y separándose de<lb/>
+        la pared el compañero, se dirigieron ambos hácia nuestro<lb/>
+        <persName ref="#donabundo" type="alias" xml:lang="es">cura</persName>, el cual, con el breviario abierto como si leyera, alzaba<lb/>
+        la vista con disimulo por encima del libro para ver que<lb/>
+        bacian. Convencido de que se dirigian á él, le pasaron por la<lb/></p>
+        <pb n="7"/>
+    </div>
+
+
+<!-- page 8 -->
+<div> 
+      <p>cabeza varios pensamientos. El primero de todos fué el de<lb/>
+      discurrir rápidamente si entre él y los <persName ref="#bravos" type="full" xml:lang="es">bravos</persName> habia alguna<lb/>
+      senda á derecha ó á izquierda; pero no la habia. Hizo des-<lb/>
+      pues un rápido exámen para averiguar si habia hecho ofensa<lb/>
+      á algun poderoso vengativo; bien que le tranquilizó en parte<lb/>
+      el testimonio de la conciencia. Acercábanse entre tanto los<lb/>
+      <persName ref="#bravos" type="full" xml:lang="es">bravos</persName> teniendo los ojos fijos en él. Puso entónces los dedos<lb/>
+      indice y medio de la mano izquierda entre el alzacuello como<lb/>
+      para sentarlo bien, y dando vuelta con ellos al rededor del<lb/>
+      cuello, volvia la cara todo lo que podia torciendo al mismo<lb/>
+      tiempo la boca y mirando de reojo hasta donde alcanzaba,<lb/>
+      para ver si parecia gente por aquel contorno; pero no vió á<lb/>
+      nadie. Echó una mirada tambien inútilmente por el lado de<lb/>
+      la cerca á los campos, y otra con màs disimulo delante de si,<lb/>
+      sin ver alma viviente que los dos <persName ref="#bravos" type="full" xml:lang="es">bravos</persName>.<lb/>
+      En semejante apuro no sabia qué hacerse. De volver atras<lb/>
+      ya no era tiempo; echar á correr era lo mismo que decir<lb/>
+      seguidme, ó quizá pero; viendo, pues que no podia evitar el<lb/>
+      peligro, se determinò a arrostrarle, porque aquellos momen-<lb/>
+      tos de incertidumbre eran para él tan penosos, que ya sólo<lb/>
+      pnsaba en abreviarlos; de consiguiente, aceleró el paso, rezó<lb/>
+      un versiculo con voz más alta, compuso el semblante lo mejor<lb/>
+      que pudo, manifestando serenidad y sosiego, se eforzó pur<lb/>
+      preparar una sonrisa, y cuando se halló en frente de los dos<lb/>
+      <unclear>p llane</unclear>, dijo para si: <said who="D.Abundo" toWhom="D. Abundo">ahora es ello.</said> y se quedó parado.<lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- Señor <persName ref="#donabundo" type="alias" xml:lang="es">cura</persName>, -- </said> dijo uno de los <persName ref="#bravos" type="full" xml:lang="es">bravos</persName>, mirándole de hito<lb/>
+      en hito.<lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- ¿ Qué se le ofrece á usted, amigo? -- </said>contestó inmedia-<lb/>
+      tamente <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> levantando los ojos del breviario que<lb/>
+      tenta abierto en las dos manos.<lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- ¿ Está usted en ánimo --</said> prosiguió el otro con tono<lb/>
+      amenazador -- <said who="uno de los bravos" toWhom="D. Abundo">de casar mañana á <persName type="character" xml:lang="es">Lorenzo Tramallino</persName> con<lb/>
+      <persName type="character" xml:lang="es">Lucía Mondella</persName>?</said><lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- Ciertamente, </said> -- respondió con voz trémula <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName><lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- es decir, que como no hay dificuldad ni impedimiento...<lb/>
+      Ustedes son personas que conoscen el mundo, y saben cómo</said><lb/></p>
+      <pb n="8"/>
+    </div>
+
+
+<!-- page 9 -->
+<div>
+      <p>van estas cosas. El pobre <persName ref="#donabundo" type="alias" xml:lang="es">cura</persName> nada tiene que ver en eso:<lb/>
+      hacen entre ellos sus enjuagues, y luégo vienen á nosotros<lb/>
+      como... en fin..<lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- En fin. --</said> interrumpió el bravo con voz moderada, pero<lb/>
+      con el tono de quen manda, <said who="uno de los bravos" toWhom="D. Abundo">-- tened entendido que este ca-<lb/>
+      samiento no se ha de hacer ni mañana, ni nunca.</said><lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- Pero, señores, -- </said>replicó <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> con la voz pacata<lb/>
+      de un hombre que quiere persuadir á un impaciente; <said who="D. Abundo" toWhom="uno de los bravos">-- pero,<lb/>
+      señores, póngase unstedes en mi lugar. Si la cosa estuviese<lb/>
+      en mi mano... Ya ven ustedes que yo no tengo en ello in-<lb/>
+      teres alguno.</said><lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- ¡ Ea! --</said> interrumpió otra vez el bravo: <said who="uno de los bravos" toWhom="D. Abundo">-- si la cosa se<lb/>
+      hubiese de decidir con argumentos, convengo en que no sal-<lb/>
+      dríamos bien librados: pero nosotros no entendemos de ra-<lb/>
+      zones, ni nos gusta malgastar saliva. Ya estáis prevenido... y<lb/>
+      al buen entendedor...</said><lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- Ustedes son demasiado racionales para...</said><lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- Como; quiera que sea -- </said>interrumpió el bravo que hasta en-<lb/>
+      tóncens no habia hablado,<said who="uno de los bravos" toWhom="D. Abundo"> -- el casamiento no ha de hacerse...<lb/>
+      (aquí echó un tremendo voto), y el que hiciere no tendrà<lb/>
+      que arrepentirse, porque le faltarà tiempo, y... (aquí otro<lb/>
+      voto).</said><lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- ¡ Vaya, vaya! -- </said> repuso el primer bravo: <said who="uno de los bravos" toWhom="D. Abundo">-- el señor <persName ref="#donabundo" type="alias" xml:lang="es">cura</persName><lb/>
+      conoce el mundo, y nosotros somos hombres de bien, que<lb/>
+      no querremos hacerle daño siempre que tenga prudencia.</said><lb/>
+      Señor <persName ref="#donabundo" type="alias" xml:lang="es">cura</persName>, reciba usted espresiones de Sr. <persName type="character" xml:lang="es">D. Rodrigo</persName>.<lb/>
+      Este nombre hizo en el ánimo de <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> el mismo<lb/>
+      efecto que en noche de tomrenta un relámpago, que ilumi-<lb/>
+      nando rápida y confusamente los objectos, aumenta el es-<lb/>
+      panto. Bajó como por istinto la cabeza, y dijo:<lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- Si ustedes supiesen indicarme un medio...</said><lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- ¡ Indicar medios á un hombre que sabe latin! --</said> inter-<lb/>
+      rumpió el bravo con una sonrisa entre burlona y feroz. <said who="uno de los bravos" toWhom="D. Abundo">--<lb/>
+      Eso le toca á usted. Sobre todo. chiton; y nadie tenga noticia<lb/>
+      de este aviso que damos por su bien. De lo contrário...<lb/>
+      ¿ Está usted? Hacer semejante casamiento seria lo mismo</said><lb/></p>
+      <pb n="9"/>
+    </div>
+
+
+<!-- page 10 -->
+<div> 
+      <p>que... En fin, ¿ qué quiere usted que digamos el señor<lb/>
+      <persName type="character" xml:lang="es">D. Rodrigo</persName>?<lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- Que soy muy servidor suyo.</said><lb/>
+      <said who="uno de los bravos" toWhom="D. Abundo">-- No basta, señor <persName ref="#donabundo" type="alias" xml:lang="es">cura</persName>. Es preciso que usted se ex-<lb/>
+      plique</said><lb/>
+      <said who="D. Abundo" toWhom="uno de los bravos">-- Siempre, siempre dispuesto á obedecer sus man-<lb/>
+      datos...</said><lb/></p>
+      
+        <figure xml:id="f3"> 
+          <img src="assets/img/losnoviosimgp10.png" />
+          <figDesc>(F.3)Sr. <persName type="character" xml:lang="es">D. Rodrigo</persName>.<lb/></figDesc>
+        </figure>
+
+      <p>Pronunciando <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>; estas palabras, èl mismo no<lb/>
+      sabía si hacía un mero complimiento, ó una promesa. Tomá-<lb/>
+      ronla los <persName ref="#bravos" type="full" xml:lang="es">bravos</persName>, ó aparentaron tomarla. en este último<lb/>
+      sentido y se despidieron, dándole las buenas tardes. <persName ref="#donabundo" type="full" xml:lang="es">Don<lb/>
+      Abundo</persName>, que poco ántes hubiera dado un ojo de la cara por<lb/>
+      no verlos, deseaba ahora prolongar la plática, y así cerrando<lb/>
+      el breviario con ambar anos. empezó diciendo: <said who="D. Abundo" toWhom="uno de los bravos">Se<lb/>
+      ñores...</said> pero los <persName ref="#bravos" type="full" xml:lang="es">bravos</persName> sin darle oídos tomaron el camino<lb/></p>
+      <pb n="10"/>
+    </div>
+
+
+<!-- page 11 -->
+<div>
+    <p>por donde él mismo habia venido, y se ausentaron, cantando<lb/>
+    cierta cancioncilla que no quiero copiar. Quedó el pobre<lb/>
+    <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> un momento con laboca abierta, como quien ve<lb/>
+    visiones; tomó luégo la senda que conducia á su casa,<lb/>
+    echando con trabajo un pié delante del otro, proque los dos<lb/>
+    se le figuraban de plomo, y tan consternado como podrá in-<lb/>
+    ferir más fácilmente el elector, después de que tenadatos más<lb/>
+    puntuales acerca de su carácter, y de la condiciòn de los<lb/>
+    tiempos en que le habia tocado vivir.<lb/>
+    <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> no habia nacido con un corazon de leon (como<lb/>
+    lo habrá advertido ya el lector), y desde sus primeros años <lb/>
+    hubo de convencerse que en tales tiempos no habia condicion<lb/>
+    más miserable que la del animal que, naciendo sin uñas ni<lb/>
+    garras, no siente en sí la menor inclinacion á dejarse devorar<lb/>
+    por otro. Entoncónces la fuerza legal no era bastante á proteger<lb/>
+    al hombre sosegado y pacifico que no tuviera otros medios de<lb/>
+    meter miedo á los demas; no porque faltasen leyes y penas<lb/>
+    contra las violencias privadas; ántes por el contrário, las<lb/>
+    leyes llovian sin consueto; los delitos estaban enumerandos, y<lb/>
+    especificados con fastidiosa prolijidad; las penas, sobre ser<lb/>
+    brutalmente severas, eran agravadas en cada ocurencia por<lb/>
+    el mismo legislador y sus mil ejecutores y la forma de en-<lb/>
+    juiciar propendia á que el juez no encontrase impedimento<lb/>
+    en condenar á su antojo, como lo asteguan los bandos contra<lb/>
+    los <persName ref="#bravos" type="full" xml:lang="es">bravos</persName>, de que acabamos de dar noticia: por la misma<lb/>
+    razon dichos bandos publicados y repetidos de gobierno en<lb/>
+    gobierno, sòlo servian para manifestar con énfasis la impo-<lb/>
+    tencia de sus autores; y si producian algun efecto inmediato,<lb/>
+    era únicamente el de añadir muchas vejaciones á las que los<lb/>
+    hombres débiles y pacificos sufrian de parte del los perturba-<lb/>
+    dores, y de aumentar las violencias y las astucias de estos<lb/>
+    últimos. La impunidad estaba organizada u tenia raíces, á que<lb/>
+    no alcanzaban, ó que no podian arrancar los bandos.<lb/>
+    Tales eran los asilos y privilegios de algunas clases de la<lb/>
+    sociedad, unos reconocidos por la misma fuerza legal, otros<lb/>
+    tolerados con culpable silencio, y otros disputados con vanas<lb/></p>
+    <pb n="11"/>
+  </div>
+
+
+<!-- page 12 -->
+<div>
+  <p>protestas, pero sostenidos de hecho , y conservados por las<lb/>
+  mismas clases y casi por cada individuo, con todo el empeño<lb/>
+  que inspira el interes, ó la vanidad de familia. Esta impuni-<lb/>
+  dad, pues que amenazaban é insultaban los bandos sin des-<lb/>
+  truirla, debia naturalmente, á cada amenaza y á cada insulto,<lb/>
+  emplear nuevos medios y nuevas tramas para sostenerse. En<lb/>
+  efecto así sucedia, pues en cuanto se publicaba un edicto<lb/>
+  contra los opresores, buscaban estos en su fuerza material los<lb/>
+  arbitrios más oportunos para continuar haciendo lo que pro-<lb/>
+  hibian los bandos. Estos, á la verdad, podian molestar y<lb/>
+  oprimir á cada paso al hombre incauto que no fuerza<lb/>
+  propria ni proteccion, porque con el fin de extender sus dispo-<lb/>
+  siciones á todo hombre para precaver ó castigar todo delito,<lb/>
+  sometian cada movimiento de la voluntad privada á la volun-<lb/>
+  tad arbitrária de mil magistrados y ejecutores. Pero el que<lb/>
+  ántes de cometer el delito habia tomado sus medidas para<lb/>
+  acogerse á tiempo á un convento, ó á un palacio en donde<lb/>
+  nunca hubiesen puesto el pié los esbirros; el que sin otra pre-<lb/>
+  caucion llevaba una libera, que empeñase la vanidad ó el in-<lb/>
+  interos de una familia poderosa ó de una corporaciòn á defen-<lb/>
+  derte, podia reirse de toda la bulla de los bandos y de los<lb/>
+  edictos. <unclear>D</unclear> los mismos que estaban encargados de su ejecucion.<lb/>
+  algunos pertencian por su nacimiento á las clases privile-<lb/>
+  giadas, otros dependian de ellas por clientela; unos y otros<lb/>
+  habian abrazado sus máximas por educacion, por interes,<lb/>
+  por habito, ó por imiacion, y se hubieran guardado de faltar<lb/>
+  á ellas en obsequio de un pedazo de papel pegado á una<lb/>
+  esquina.<lb/>
+  Por otra parte, aunque los hombres encargados de su<lb/>
+  inmediata ejecucion hubiesen sido tan resueltos como hé-<lb/>
+  roes, tan obedientes como monjes, y tan resignados como<lb/>
+  mártires, jamas hubieran llegado á conguir el intento,<lb/>
+  tanto por ser inferiores en número á aquellos con quienes<lb/>
+  debido entrar en pugna, cuanto por la frequente probabi-<lb/>
+  lidad de que los abandonasen, y quizá los sacrificasen los<lb/>
+  mismos que en abstracto, ó digámos así, en teoria, les<lb/></p>
+  <pb n="12"/>
+</div>
+
+
+<!-- page 13 -->
+<div>
+  <p>mansaban obrar. Ademas, estos encargados eran, por lo<lb/>
+  regular, hombres malos, canalla sacada de la hez del pue-<lb/>
+  blo; su mismo encargo se tenia por vil, y su nombre como<lb/>
+  una <unclear>ufrenta</unclear>. De aquí es fácil inferir que tales gentes, lejos<lb/>
+  de aventurar su vida en una empresa casi imposible, ven-<lb/>
+  derian su inaccion y áun su connivencia á los poderosos, y se<lb/>
+  limitarian á ejecer sus detestadas facultades y la fuerza<lb/>
+  que tenian en aquellas ocasiones en que no hubiese riezgo en<lb/>
+  oprimir, esto es, en vejar á los habitantes pacificos, é<lb/>
+  indefensos.<lb/>
+  El hombre que trata de hacer daño ó teme que se lo hagan,<lb/>
+  busca naturalmente aliados y compañeros; así es que en<lb/>
+  aquellos tiempos llegaba el exceso la tendencia de los indivi-<lb/>
+  duos á reunirse en la clase, á fromar nuevas corporaciones, y<lb/>
+  á aumentar la fuerza de aquells á que pertencian. El clero<lb/>
+  trabajaba en defender y estender sus immunidades, la<lb/>
+  nobleza sus provilegios, y el militar sus fueros, los comer-<lb/>
+  ciantes y los artesanos se reunían en sociedades en corpora-<lb/>
+  ciones; los letrados formaban liga, y asta los médicos se<lb/>
+  clasificaban en compañías. Cada una de estas pequeñas oli-<lb/>
+  garquias tenia su fuerza propria y particular, y el individuo<lb/>
+  encontraba en cada la ventaja de emplear para el, en pro-<lb/>
+  porcion de su crédito y su habilidad, la fuerza de muchos.<lb/>
+  Los más honorados se valian de esta ventaja para su defensa,<lb/>
+  y los astutos y malvados se aprovechaban de ella para el<lb/>
+  logro de sus siniestras empresas, que no hubieran podido<lb/>
+  llevar á cabo con solo el auxilio de sus medios personales, y<lb/>
+  ménos a segurar su impunidad. Sin embargo, la fuerza de estas<lb/>
+  diversas ligas era muy desigual, sobre todo, fuera de las<lb/>
+  ciudades; el noble rico y perverso, con una cuadrilla de<lb/>
+  <persName ref="#bravos" type="full" xml:lang="es">bravos</persName>, y rodeando de aldeanos aconstumbrados por tradicion<lb/>
+  doméstica é interesados, ó obligados á considerarse como<lb/>
+  súbditos ó soldados de amo, ejercia un poder al cual no era<lb/>
+  fácil que <unclear>pudiese</unclear> contrarestar asociacion alguna.<lb/>
+  Nuestro  <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>, pues, no siendo ni noble, ni rico, ni<lb/>
+  valiente, conoció casi al salir de las mantillas, que se hallaba<lb/></p>
+  <pb n="13"/>
+</div>
+
+
+<!-- page 14 -->
+<div>
+    <p>en aqella sociedad como un vaso de barro precisado á<lb/>
+    caminar en compañia de otros muchos de hierro; de con-<lb/>
+    sieguiente se conformó gustoso con la voluntad de sus pa-<lb/>
+    dres que le destinaron á la iglesia. Á decir la verdad (y sin que<lb/>
+    por eso se desentendiese de las obligaciones y fines sublimès<lb/>
+    del isterio á que se dedicaba), el proporcionarse los medios<lb/>
+    de vivir con alguna comodidad, é introducirse en una clase<lb/>
+    fuerte y respetable, le percieron desde luégo dos razones<lb/>
+    más que suficientes para semejante eleccion. Pero una clas<lb/>
+    qualquiera que fuese, no favorecía ni aseguraba al individuo<lb/>
+    sino hasta cierto punto, y ninguna le dispensaba de formarse<lb/>
+    un sistema particular. Ocupado continuamente <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName><lb/>
+    en mirar por su propria seguridad, no codiciaba aquellas<lb/>
+    ventajas cuyo logro exigia trabajar mucho ó arriesgarse<lb/>
+    algun tanto. Su sistema consistia principalemnte en evitar<lb/>
+    toda contenida, y en ceder en aquellas de que no podia li-<lb/>
+    brarse: neutralidad desarmada en todas las guerras que se<lb/>
+    encendian por aquel contorno de resultas de las competen-<lb/>
+    cias, entónces frecuentísimas, entre el clero y la potestad<lb/>
+    civil, y de los altercados también muy frecuentes entre mili-<lb/>
+    trares y nobles, entre nobles y magistrados, y entre <persName ref="#bravos" type="alias" xml:lang="es">valentones</persName><lb/>
+    y soldados, y hasta en las quimeras entre dos aldeanos, ori-<lb/>
+    ginadas por una palabra y decididas á  palos ó á puñaladas.<lb/>
+    Si á la fuerza se veia precisado á tomar parte entre dos<lb/>
+    contricantes, se declaraba siempre en favor del más fuerte,<lb/>
+    pero sin abandonar la retaguardia, y procurando manifestar<lb/>
+    al contrário que no era su enemigo por su propria voluntad.<lb/>
+    En fin, con mantenerse léjos de los poderosos, con disimular<lb/>
+    sus fechurías lieras, con tolerar las más graves y trascen-<lb/>
+    dentales, y con obligar por medio de saludos y profundas<lb/>
+    reverencias á lo más vanos y desdeñosos á corresponderle<lb/>
+    con una sonrisa cuando le encotraban, llegó el buen hombre<lb/>
+    á vadear los sesenta años de su vida sin grandes borrascas.<lb/>
+    Esto no es decir que no tuviese tambien él  su poquito de<lb/>
+    hiel en el cuerpo; y la necesidad continua de agauntar, el dar<lb/>
+    siempre la razón á los demas, y las muchas pildoras amargas<lb/></p>
+  <pb n="14"/>
+</div>
+
+
+<!-- page 15 -->
+<div>
+    <p>que callando habia que tragar, se le habian acedado<lb/>
+    en términos, que no hubies podido darle de cuando en<lb/>
+    cuando un poco de deahogo, hubiera padecido bastante su<lb/>
+    salud. En efecto, como habia en el mundo y á su lado per-<lb/>
+    sonas que tenía por incapaces de hacerle daño, desahogaba<lb/>
+    con ellas su mal humor por largo tiempo reprimido, y podia<lb/>
+    satisfacer su deseo de ser algun tanto caprichoso y de regañar<lb/>
+    sin razon. Por otra parte, era un censor rigido de los hombres<lb/>
+    que no se conducian como él, con tal que en la censura no<lb/>
+    hubíese el mejor riesgo. El apaleado era para él, cuando<lb/>
+    ménos, un imprudente; el muerto habia sido siempre un hom-<lb/>
+    bre turbulento; al que, por haber sostenido su derecho contra<lb/>
+    un poderoso, salia con las manos en la cabeza, siempre le<lb/>
+    encontraba <persName ref="#donabundo" type="full" xml:lang="es">don Abundo</persName> alguna culpa, cosa bastante fácil, por<lb/>
+    que nunca la razon y la sinrazon tienen tán claros y exactos<lb/>
+    límites que no se hallen de algun modo mezcladas una con<lb/>
+    otra.<lb/>
+    Declamaba sobre todo contra sus compañeros, que de su<lb/>
+    cuents y riesgo toman la defensa de algun débil contra un<lb/>
+    opresor poderosos.Á esto llamaba él comprarse cuidados y<lb/>
+    querer enderezar el mundo ; y regularmente concluia todos<lb/>
+    sus discorsos con esta máxima: que casi nunca le sucede mai<lb/>
+    al que no se mete en camisa de once varas.<lb/>
+    Háganse ahora cargo nuestros lectores de la impresion que<lb/>
+    haria en el ánimo de <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>; el encuentro que hemos re-<lb/>
+    ferido. El susto que le causó el terrible ceño de los valentones,<lb/>
+    el escándalo de aquellos votos, las amenazas de un poderoso<lb/>
+    que nunca amenazaban en balde, su sistema de vida alterado en<lb/>
+    un momento despues de tanto años de estudio para mante-<lb/>
+    nerle, el atolladero sin salida en que se hallaba; todos estos<lb/>
+    pensamientos rodaban tumultuariamente en la cabeza de<lb/>
+    <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>,el cual se decia á sí mismo:<lb/>
+    <said who="D. Abundo" toWhom="D. Abundo">-- ¡Si pudiera enviar á pasear á ese <persName type="character" xml:lang="es">Lorenzo</persName>! ...: Válgame<lb/>
+    Dios! ¿qué pdré yo decirle? Sobre todo... ; él tambien tiene<lb/>
+    una cabecilla! ... muy buena si no le tocan; mas si le contra-<lb/>
+    dicen, á Dios, es una furia, y más ahora que está enamorada</said><lb/></p>
+  <pb n="15"/>
+</div>
+
+
+<!-- page 16 -->
+<div>
+    <p><said who="D. Abundo" toWhom="D. Abundo">perdidos de esa <persName type="character" xml:lang="es">Lucia</persName>! ... Mozalbetes, que no saben qué hacerse,<lb/>
+    se enamoran, y queiren casarse luégo, sin hacerse cargo da<lb/>
+    los conflictos en que ponen á los hombres de bien! ... Yo no<lb/>
+    sé por que aquellos dos bribonazos no irian con su intimacion<lb/>
+    á oltra parte... ! Qué desgracía no haberme ocurrido entónces<lb/>
+    esta especie! pudiera habérsela insinuado...</said><lb/>
+    Pero reflexionando <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> que el arrepentirse de no<lb/>
+    haber aconsejado una maldad era cosa demasiaso inicus<lb/>
+    volvia su cólera contra el que turbaba su sisiego. No conocía á<lb/>
+    <persName type="character" xml:lang="es">D. Rodrigo</persName> sino de vista y de fama, ni hab ia tenido con él<lb/>
+    otras relaciones que la de tocar el pecho con la barba y el suelo<lb/>
+    conel sombrero las pocas veces que le habian encontrado. Ha-<lb/>
+    bíale ocurrido más de una vez defenderle contra los que priva-<lb/>
+    damente reprobaban aluna de sus iniquidades; mil veces había<lb/>
+    dicho que era persona muy respetable; pero ahora le dió en su<lb/>
+    interior todos aquellos titulos que nunca oyó en otras oca-<lb/>
+    siones sin interupirlos con un <said>¡ vamos, vamos, pocas mur-<lb/>
+    muraciones.</said><lb/>
+    Llegado entre el tumulto de semejantes ideas á la puerta de<lb/>
+    su casa, situada en la extremidad de la aldea, metió aprisa el<lb/>
+    picaporte, que ya en la mano, abrió y cerró de<lb/>
+    nuevo con mucho cuidado, y ansiando po hallarse con per-<lb/>
+    sona de su confianza, empezó a gritar: <said who="D. Abundo" toWhom="Perpétua"> ¡<persName type="character" xml:lang="es">Perpétua</persName>! ¡<persName type="character" xml:lang="es">Per-<lb/>
+    pétua</persName></said> dirigiéndose al comedor en que aquella estaba po-<lb/>
+    niendo la mesa para cenar. Era <persName type="character" xml:lang="es">Perpétua</persName>, como ya lo conje-<lb/>
+    turará cualquiera, el ama de <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>, criada afecta y fiel<lb/>
+    que sabía obedecer y mandar á su tiempo, y sufrir con oprtu-<lb/>
+    nidad los regaños y las extravagancias del amo, para hacerle<lb/>
+    luégo sufrir las suyas, que eran de dia en dia más frecuentes<lb/>
+    pues ya habia pasado la edad sinodal de los cuarenta sin ha-<lb/>
+    berse casado, bien fiese por haber desechado, segun ella<lb/>
+    decis, no pocos partidos, bien por no haberse presentado nin-<lb/>
+    guno, segun se decia en el pueblo.<lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Voy, --</said> respondió <persName type="character" xml:lang="es">;Perpétua</persName>, dejando en la mesa la bo-<lb/>
+    tella de vino pedilecto de <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>.<lb/>
+    Y echó á andar pausadamenre; pero aún no habia llegado<lb/></p>
+  <pb n="16"/>
+</div>
+
+
+<!-- page 17 -->
+<div>
+    <p>á la puerta del comedor cuando entró su amo, las mastio, y<lb/>
+    con las facciones tan alteradas, que no se necesitaban los ojos<lb/>
+    expertos de <persName type="character" xml:lang="es">Perpétua</persName>; para conconocer al instante que le habia<lb/>
+    sucedido algun contratiempo.<lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- ¡ Jesus! Señor, ¿qué tiene usted?</said><lb/>
+    <said who="D. Abundo" toWho="Perpétua">-- Nada, nada, --</said> respondió <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>, sentándose con<lb/>
+    agitacion en su silla poltrona.<lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- ¿ Cómo nada? ¡ Á mí melo querrá usted decir! Segun esa<lb/>
+    cara, es imposible, que no le haya á usted sucedido alguna<lb/>
+    cosa.</said><lb/>
+   <said who="D. Abundo" toWhom="Perpétua">-- ¡ Déjame en paz por Dios! Cuando digo no es nada, ó<lb/>
+    es nada, ó es cosa que no puedo decir.</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- ¿ Conque tampoco á mi? ¿Quién cuidará de la salud de<lb/>
+    usted? ¿quien le dará un buen consejo?</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- Vaya, calla, y dáme un poco de vino.</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Y usted querrá darme á entented ue no tiene nada? --</said><lb/>
+    dijo <persName type="character" xml:lang="es">Perpétua</persName> llenando el vaso, que mantenia luégo en la mano,<lb/>
+    como si no quisiese soltarlo sino en pago de que le declarase<lb/>
+    lo que tenia.<lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- Tráelo, tráelo, -- </said> dijo <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName>.<lb/>
+    Y tomamos el vaso con mano no muy firme, se echó el cuerpo<lb/>
+    el vino tan aprisa como si fuera una purga.<lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- ¿Conque tendré yo que ir á preguntar por la <unclear>veciudad</unclear><lb/>
+    qué es lo que le ha sucedido á mi amo? -- </said> dilo <persName type="character" xml:lang="es">Perpétua</persName>; de<lb/>
+    qué delante de él, puesta en jarras y con ojos cayados no<lb/>
+    su rostro.<lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- ¡ Por amor de Dios, no me dastidies! déjale de alhara-<lb/>
+    cas. Se trata... nada ménos que de la vida.</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- ¿ De la vida?</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- Si, de la vida.</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Bien sabe usted que cuando me ha dicho algo en con-<lb/>
+    fianza, jamas...</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">--  Si, como cuando...</said><lb/>
+    Advirtió <persName type="character" xml:lang="es">Perpétua</persName> al momento que habia tocado mala tecla,<lb/>
+    y variando de registro:<lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Señor, --</said> dijo con voz enternecida y para enternecer, <said>--</said><lb/></p>
+  <pb n="17"/>
+</div>
+
+
+<!-- page 18 -->
+<div>
+    <p><said who="Perpétua" toWhom="D. Abundo">yo siempre he querido á usted, y si ahora deseo saber lo que<lb/>
+    le ha sucedido, no más que porque me intereso en aliviar<lb/>
+    á usted, en socorrerle, aconsejarle y consolarle.</said><lb/>
+    Lo cierto es que <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> tenía tanta gana de echar fuera<lb/>
+    su secreto, como <persName type="character" xml:lang="es">Perpétua</persName> de saberlo: po lo que, despues de<lb/>
+    haber repelido cada vez mís débilmente sus várias acome-<lb/>
+    tidas, despues de haberle hecho jurar por más de una vez que<lb/>
+    no resollaria, por fin con muchas interrupciones y muchi-<lb/>
+    simos intercalares le contó el suceso. Cuando pronunció el<lb/>
+    nombre del autor del atentado, no pudo <persName type="character" xml:lang="es">Perpétua</persName> contenerse,<lb/>
+    y echó un voto. Al oirle don Abundo se dejó caer sobre el res-<lb/>
+    paldar del sillon con un gran suspiro. y levantando las ma-<lb/>
+    nos al cielo , exclamó:<lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- ¡Perpétua, por amore de Dios!</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- ¡Jesus mil vecese! --</said> prosiguió el ama; <said who="Perpétua" toWhom="D. Abundo">-- ¡qué picaro!<lb/>
+    ¡qué birbonazo!  ¡Qué hombre tan sin temor de Dios!</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- ¿Quieres callar, ó quieres perderme para siempre?</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Aquí estamos solos; nadie nos oye, ¿Y cómo se com-<lb/>
+    pondrá usted, pobre señor?</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- No está mala la salida, --</said> dijo <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> con enfado. <said who="D. Abundo" toWhom="Perpétua">--
+    ¿ El parecer que me has ofrecido es preguntarme cómo me<lb/>
+    compondré?</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Yo bienle diria mi parecer bueno ó malo; pero...</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- Oigámoslo.</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Mi parecer seria, que como todos dicen que nuestro Ar<lb/>
+    zobispo es un sano, un hombre de sumo respeto que no teme<lb/>
+    á esos birbones, y que se coplace por sostener á un párroco<lb/>
+    en meter en costuro á uno de esos prepotentes, yo le escri-<lb/>
+    biria una cartitia muy bien puesta, informándole de todo, y...</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- Calla, calla, no digas más, ¿ Y es ese el famoso parecer
+    que me das en tan duro conflicto? Cuando me hayan sepul-<lb/>
+    tado en los riñones un par de balas, ¡Jesus! ¿lo remedirá el<lb/>
+    señor Arzobispo?</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Pues qué, las balas se reparten así á dos por tres como<lb/>
+    los conflites? Dijo nos librara si esos perros mordiesen todas<lb/>
+    las veces que ladran! Yo siempre he visto que al que enseña</said><lb/></p>
+  <pb n="18"/>
+</div>
+
+
+<!-- page 19 -->
+<div>
+    <p><said who="Perpétua" toWhom="D. Abundo">los dientes todos le respetan, dice bién el refran, que al que<lb/>
+    se hace de miel las moscas se lo comen. Justamente porque<lb/>
+    usted nunca sostiene su razon, todos vienen á... con perdon<lb/>
+    hablando...</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">- ¿ Qieres callar?</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Ya callo. pero es muy cierto que cuando las entes ven<lb/>
+    que uno siempre y en todos los lances se deja sopapear...</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">--¿ Qieres callar, repito? ¿ Estamos ahora para esas ba-<lb/>
+    dajadas?</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- En fila, basta; consúltelo usted e la noche con la almo-</said><lb/></p>
+   
+      <figure xml:id="f4"> 
+          <img src="assets/img/losnoviosimgp19.png" />
+          <figDesc>(F.4)Legando á la puerta se paró un momento,<lb/></figDesc>
+      </figure>
+  
+    <p><said who="Perpétua" toWhom="D. Abundo">hada; pero tanto no empiece á hacerse daño á sí mismo<lb/>
+    y á arruinarse la salud. Coma usted un bocado.</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- Si, si, yo pensaré en ello --</said> respondió <persName ref="#donabundo" type="abbr" xml:lang="es">D. Abundo</persName> re-<lb/>
+    funfuñando <said who="D. Abundo" toWhom="Perpétua">-- Ya le sé. -- </said> prosiguió levantándose: <said> nada<lb/>
+    quiero tomare, nada. ¡Buena gana tendré yo de comer! Ya<lb/>
+    sé que á mí me toca discurrur lo que se debe hacer.</said><lb/>
+    <said who="Perpétua" toWhom="D. Abundo">-- Vaya otra gotita, --</said> dijo <persName type="character" xml:lang="es">Perpétua</persName>, echando vino en el<lb/>
+    vaso. <said who="Perpétua" toWhom="D. Abundo">-- Ya sabo usted que le conforia el estómago.</said><lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- ¡ Ah! no, <unclear>basta</unclear>; otra cataplasma se necesita, otro con-<lb/>
+    fortante.</said><lb/>
+    Diciendo esto tomó la luz y prosiguió refunfuñando:<lb/></p>
+    <pb n="19"/>
+</div>
+
+
+<!-- page 20 -->
+<div>
+    <p> <said who="D. Abundo" toWhom="Perpétua">-- ¡Ahí es un gran de anis! ¿Que esto me suceda á mí, á<lb/>
+    un hombre como yo?</said><lb/>
+    Con estas y otras lamentaciones se dirigió á su cuarto para<lb/>
+    acostarse. Llegando á la puerta se paró un momento, se<lb/>
+    volvió hácia <persName type="character" xml:lang="es">Perpétua</persName>, y poniendo el dedo indice en los la-<lb/>
+    bios, dijo con tono lento y muy recalcado:<lb/>
+    <said who="D. Abundo" toWhom="Perpétua">-- ¡ <persName type="character" xml:lang="es">Perpétua</persName>, por amore de Dios!</said><lb/>
+    Y se metió adentro.</p>
+    <pb n="20"/>
+</div>
+
+    
+    
+  
+    </body>
+  </text>
+<back>
+  <listPerson>
+    <person xml:id="donabundo" role="character" xml:lang="es">
+      <persName type="full">Don Abundo</persName>
+      <persName type="abbr">D. Abundoo</persName>
+      <persName type="alias">cura</persName>
+    </person>
+    <person xml:id="bravos" role="character" xml:lang="es">
+      <persName type="full">bravos</persName>
+      <persName type="alias">vagamundos</persName>
+      <persName type="combined">bravos e vagamundos</persName>
+    </person>
+  </listPerson>
+</back>
+</TEI>

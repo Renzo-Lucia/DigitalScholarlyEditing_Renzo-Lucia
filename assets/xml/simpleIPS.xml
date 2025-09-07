@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+<?xml-stylesheet type="text/xsl" href="renzolucia.xsl"?>
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>I promessi sposi - digital edition in XML-TEI</title>
+    </titleStmt>
+    <sourceDesc>
+      <p>Risultato delle revisioni iniziate già all’altezza della stesura del primo manoscritto, il Fermo e Lucia.</p>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+<text>
+  <body>
+    <head>I PROMESSI SPOSI</head>
+      <div type="chapter" n="CAPITOLO I.">
+      
+
+<!-- page 1 -->
+    <p>Quel ramo del <placeName type="lake">lago di Como</placeName> che volge a <lb/>
+    mezzogiorno tra due catene non interrotte di <lb/>
+    monti, tutto a seni e a golfi, a seconda del-<lb/>
+    lo sporgere e del rientrare di quelli, viene<lb/>
+    quasi a un tratto a ristringersi e a prender<lb/>
+    corso e figura di fiume, tra un promontorio<lb/>
+    a destra, e un'ampia riviera di rincontro;<lb/>
+    e il ponte, che ivi congiunge le due rive,<lb/>
+    par che renda ancor più sensibile all'occhio <lb/>
+    questa trasformazione, e segni il punto in<lb/>
+    cui il lago cessa, e l'<placeName type="river">Adda</placeName> ricomincia, per<lb/> 
+    ripigliar poi nome di lago dove le rive, al-<lb/>
+    lontanandosi di nuovo, lasciano l'acqua di-<lb/>
+    stendersi e allentarsi in nuovi golfi e in nuo-<lb/>
+    vi seni.La riviera, formata dal deposito di<lb/>
+    tre grossi torrenti, scende appoggiata a due<lb/> 
+    monti contigui, l'uno detto di <placeName type="mountain">san Martino</placeName>,<lb/></p>
+
+    <pb n="1"/>
+</div>
+<!-- page 2 -->
+<div>
+    <p>l'altro, con voce lombarda, il <placeName type="mountain">Resegone</placeName><lb/> 
+    dai molti suoi cocuzzoli in fila, che in vero<lb/> 
+    lo fanno somigliare  una sega: talchè non è<lb/> 
+    chi, al primo vederlo, purchè sia di fronte<lb/>
+    come per esempio dai <placeName>bastioni di Milano</placeName><lb/> 
+    che rispondono verso settentrione, non lo<lb/> 
+    discerna tosto, con quel semplice indizio,<lb/> 
+    in quella lunga e vasta giogaia, dagli altri<lb/> 
+    monti di nome più oscuro e di forma più<lb/> 
+    comune.Per un buon tratto la riviera sale<lb/> 
+    con un pendìo lento e continuo; poi si<lb/> 
+    dirompe in poggi e in valloncelli, in erte<lb/> 
+    e in ispianate, secondo l'ossatura dei due<lb/> 
+    monti  e il lavoro dell'acque. Il lembo estre-<lb/>
+    mo, interciso dalle foci de' torrenti, è presso-<lb/>
+    chè tutto ghiaia e ciottoloni; il resto, campi<lb/>
+    e vigneti, sparsi di terre, di ville, di casali;<lb/> 
+    in qualche parte boschi, che si prolungano<lb/>
+    su per la montagna.<placeName type="city">Lecco</placeName>, la principale<lb/> 
+    di quelle terre, e che dà nome al territorio,<lb/> 
+    giace poco discosto dal ponte, alla riva del<lb/> 
+    lago, anzi viene in parte a trovarsi nel lago<lb/> 
+    stesso, quando egli ingrossa: un gran borgo<lb/> 
+    al giorno d'oggi, e che s'incammina a<lb/> 
+    diventare città. Ai tempi in cui accaddero i<lb/> 
+    fatti che imprendiamo di raccontare, quel<lb/></p>
+    <pb n="2"/>
+</div>
+
+<!-- page 3 -->
+<div>
+    <p>borgo  già considerabile  era anche un castel-<lb/>
+    lo, e aveva perciò l'onore di alloggiare un<lb/> 
+    comandante, e il vantaggio di possedere una<lb/> 
+    stabile guarnigione di soldati spagnuoli,<lb/> 
+    che insegnavano la modestia alle fanciulle e alle<lb/> 
+    donne del paese, accarezzavano di tempo in<lb/> 
+    tempo le spalle a qualche marito, a qualche<lb/> 
+    padre, e  sul finire della state, non manca-<lb/>
+    vano mai di spandersi nelle vigne, per di-<lb/>
+    radare le uve, e alleggerire ai contadini le<lb/> 
+    fatiche della vendemmia.Dall'una all'altra<lb/> 
+    di quelle terre, dalle alture alla riva, da un<lb/> 
+    poggio all'altro, correvano  e corrono tuttavia<lb/>  
+    strade e stradette,  ripide, acclivi, piane,<lb/> 
+    tratto tratto affondate, sepolte fra due muri,<lb/> 
+    donde, levando il guardo, non iscoprite<lb/> 
+    che un pezzo di cielo e qualche vetta di<lb/>
+    monte; tratto tratto elevate su aperti terra-<lb/>
+    pieni; e da quivi la vista spazia per prospetti<lb/> 
+    più o meno estesi, ma ricchi sempre e sem-<lb/>
+    pre qualcosa nuovi, secondo che i diversi<lb/> 
+    punti piglian più o meno della vasta scena<lb/> 
+    circostante, e secondo che questa o quella<lb/> 
+    parte campeggia o si scorcia, spunta o spari-<lb/>
+    sce a vicenda. Dove un tratto, dove un altro,<lb/> 
+    dove una lunga distesa di quel vasto e sva-<lb/></p>
+    <pb n="3"/>
+</div>
+
+<!-- page 4 -->
+<div>
+    <p>riato specchio dell'acqua; di qua lago,<lb/> 
+    chiuso all'estremità o piuttosto smarrito<lb/> 
+    entro un gruppo,  un andirivieni di montagne,<lb/> 
+    e di mano in mano più espanso tra altri<lb/> 
+    monti che si spiegano ad uno ad uno allo<lb/> 
+    sguardo, e che l'acqua riflette capovolti,<lb/> 
+    coi paesetti posti in sulle rive; di là braccio<lb/> 
+    di fiume, poi lago, poi fiume ancora, che<lb/> 
+    va a perdersi in lucido serpeggiamento pur<lb/> 
+    fra i monti, che l'accompagnano, digra-<lb/>
+    dando via via, e perdendosi quasi anch'essi<lb/> 
+    nell'orizzonte. Il luogo stesso da cui con-<lb/>
+    template que' varii spettacoli, vi fa spettacolo<lb/> 
+    da ogni banda: il monte di cui passeggiate<lb/> 
+    le falde, vi svolge, al di sopra, d'intorno,<lb/> 
+    le sue cime e le balze, distinte, rilevate,<lb/> 
+    mutabili  a ogni tratto di mano, aprendosi<lb/> 
+    e contornandosi in gioghi ciò che v'era<lb/> 
+    sembrato prima un sol giogo, e comparendo<lb/> 
+    ùin vetta ciò che poco innanzi vi si rappre-<lb/>
+    sentava in sulla costa: e l'ameno, il dome-<lb/>
+    stico di quelle falde tempera gradevolmente<lb/>
+    il selvaggio, e orna vie più il magnifico<lb/> 
+    dell'altre vedute.<lb/>
+    Per una di queste stradicciuole, tornava<lb/> 
+    bel bello dal passeggio verso casa, in sulla<lb/></p>
+    <pb n="4"/>
+    </div>
+
+<!-- page 5 -->
+<div>
+    <p>sera del <date when="1628-11-07">giorno 7 di novembre dell'anno<lb/> 
+    1628</date>, <persName ref="#donabbondio" type="full">don Abbondio</persName>, <persName ref="#donabbondio" type="alias">curato</persName> d'una delle<lb/> 
+    terre accennate di sopra: il nome di questa,<lb/>
+    nè il casato del personaggio, non si trovano<lb/> 
+    nel manoscritto, nè a questo luogo nè in se-<lb/>
+    guito.Diceva tranquillamente il suo ufizio, e<lb/> 
+    alcuna volta, tra un salmo e l'altro, richiude-<lb/>
+    va il breviario, tenendovi entro, per segno,<lb/> 
+    l'indice della mano destra;e  messa poi questa<lb/> 
+    nell'altra dietro le reni, proseguiva il suo<lb/> 
+    cammino, guardando a terra, e rigettando<lb/> 
+    verso il muro col piede  i ciottoli che face-<lb/>
+    vano inciampo nel sentiero: poi alzava la<lb/> 
+    faccia, e  girati oziosamente gli occhi all'in-<lb/>
+    torno, li fissava alla schiena d'un monte,<lb/> 
+    dove la luce del sole già scomparso, scap-<lb/>
+    pando pei fessi del monte opposto, si di-<lb/>
+    pingeva qua e là sui massi sporgenti, come<lb/>
+    a larghe ed ineguali pezze di porpora. A-<lb/>
+    perto poi di nuovo il breviario, e recitato<lb/> 
+    un altro squarcio, giunse ad una rivolta<lb/> 
+    della stradetta, dove era solito di levar<lb/> 
+    sempre gli occhi dal libro e di' guardarsi<lb/> 
+    dinanzi: e così fece anche quel giorno.<lb/>
+    Dopo la rivolta la strada correva diritta<lb/>  
+    forse una sessantina di passi, e poi si divi-<lb/></p>
+    <pb n="5"/>
+</div>
+
+<!-- page 6 -->
+<div>
+    <p>deva in due viottoli a foggia di un ipsilon:<lb/>  
+    a destra saliva verso il monte, ed era la<lb/> 
+    via che conduceva alla cura: il ramo a si-<lb/>
+    nistra scendeva nella valle fino ad un tor-<lb/>
+    rente; e da questo lato il muro non giun-<lb/>
+    geva che alle anche del passeggiero. I muri<lb/> 
+    interni dei due viottoli, invece di riunirsi<lb/>
+    ad angolo, si terminavano in una cappel-<lb/>
+    letta, sulla quale erano dipinte certe figure<lb/> 
+    lunghe, serpeggianti, terminate in punta,<lb/>
+    che nella intenzione dell'artista  e agli occhi<lb/> 
+    degli abitanti del vicinato volevano dir fiam-<lb/>
+    me; e  alternate colle fiamme certe altre fi-<lb/>
+    gure da non potersi descrivere, che voleva-<lb/>
+    no dire anime del purgatorio: anime e<lb/> 
+    fiamme a color di mattone, sur un fondo<lb/> 
+    grigiastro, con qualche scalcinatura qua e<lb/> 
+    là.Il <persName ref="#donabbondio" type="alias">curato</persName>, voltato il canto,  dirizzando,<lb/> 
+    come era solito, il guardo alla cappelletta,<lb/> 
+    vide una cosa che non si aspettava, e che<lb/> 
+    non avrebbe voluto vedere. Due uomini<lb/> 
+    stavano  l'uno rimpetto all'altro al confluen-<lb/>
+    te, per dir così, dei due viottoli: l'uno di<lb/> 
+    costoro  a cavalcioni sul muricciuolo basso,<lb/> 
+    con una gamba spenzolata al di fuori, e<lb/>
+    l'altro piede posato sul terreno della via;<lb/></p>
+    <pb n="6"/>
+</div>
+
+<!-- page 7 -->
+<div>
+    <p>il compagno  in piedi, appoggiato al muro,<lb/> 
+    colle braccia incrocicchiate sul petto.L'a-<lb/>
+    bito, il portamento, e quello che  dal luogo<lb/> 
+    ov'era giunto il <persName ref="#donabbondio" type="alias">curato</persName>  si poteva discernere<lb/> 
+    dell'aspetto, non lasciavano dubbio intorno<lb/> 
+    alla loro condizione. Avevano entrambi in-<lb/>
+    torno al capo una reticella verde, che ca-<lb/>
+    deva sull'omero sinistro  terminata in un<lb/> 
+    gran fiocco, e dalla quale usciva sulla fron-<lb/>
+    te un'enorme ciuffo: due lunghi mustacchi<lb/> 
+    inanellati alle estremità: il lembo del far-<lb/>
+    setto chiuso in una cintura lucida di cuoio,<lb/> 
+    e a quella appese con uncini due pistole:<lb/>
+    un picciolo corno ripieno di polvere, ca-<lb/>
+    scante sul petto, come un vezzo: alla parte<lb/> 
+    destra delle larghe e gonfie brache, una<lb/> 
+    taschetta donde usciva un manico di coltel-<lb/>
+    laccio :uno spadone pendente dal lato man-<lb/>
+    co, con una grande elsa traforata a lamine<lb/> 
+    d'ottone  congegnate  in cifra, forbite e lu-<lb/>
+    centi: a prima vista si davano a conoscere<lb/> 
+    per individui della specie dei <persName ref="#bravi" type="full">bravi</persName>.<lb/> 
+    Questa specie, ora del tutto perduta, era<lb/> 
+    allora floridissima in <placeName>Lombardia</placeName>, e già molto<lb/> 
+    antica. Chi non ne avesse idea, ecco alcuni<lb/> 
+    squarci autentici, che potranno darne una<lb/></p>
+    <pb n="7"/>
+</div>
+
+<!-- page 8 -->
+<div>
+    <p>bastante dei suoi caratteri principali, degli<lb/>
+    sforzi messi in opera per ispegnerla, e<lb/>
+    della sua dura e rigogliosa vitalità.<lb/>
+    Fino dagli <date when="1583-04-08">otto d'aprile dell'anno 1583</date>,<lb/>
+    l'Illustrissimo ed Eccellentissimo signor Don<lb/> 
+    Carlo d'Aragon, Principe di Castelvetra-<lb/>
+    no, Duca di Terranuova, Marchese d'Avola,<lb/> 
+    Conte di Burgeto, grande Ammiraglio, e<lb/> 
+    gran Contestabile di Sicilia, Governatore<lb/> 
+    di Milano e Capitan Generale di Sua Mae-<lb/>
+    stà Cattolica in <placeName>Italia</placeName>, pienamente infor-<lb/>
+    mato della intollerabile miseria in che<lb/> 
+    è vivuta e vive questa <placeName>Città di Milano</placeName>,<lb/> 
+    per cagione dei <persName ref="#bravi" type="combined">bravi e vagabondi</persName>, pu-<lb/>
+    blica un bando contro di essi.Dichiara e<lb/> 
+    diffinisce tutti coloro essere compresi in<lb/> 
+    questo bando, e doversi ritenere <persName ref="#bravi" type="combined">bravi e<lb/> 
+    vagabondi</persName>... i quali, essendo forestie-<lb/>
+    ri, o del paese, non hanno esercizio al-<lb/>
+    cuno, od avendolo, non lo fanno...  ma <lb/>
+    sema salario, o pur con esso  s'appog-<lb/>
+    giano a qualche cavaliere o gentiluomo,<lb/>
+    officiale, o mercante... per fargli spalle<lb/> 
+    e favore, o veramente, come si può presumere, per<lb/> 
+    tendere insidie ad altri... A<lb/> 
+    tutti costoro ordina che, nel termine di gior-<lb/></p>
+    <pb n="8"/>
+</div>
+
+<!-- page 9 -->
+<div>
+    <p>ni sei, abbiano a sgombrare il paese, inti-<lb/>
+    ma la galea ai renitenti, e concede a tutti gli<lb/> 
+    ufiziali della giustizia le più stranamente<lb/> 
+    ampie , edindefinite facoltà  per l'esecuzio-<lb/>
+    ne dell'ordine.Ma  nell'anno seguente, ai<lb/> 
+    <date when="04-12-1854">12 d'aprile</date>, scorgendo il detto signore,<lb/>
+    che questa Città è tuttavia piena di detti<lb/> 
+    <persName ref="#bravi" type="full">bravi</persName>...  tornati a vivere come prima vi-<lb/>
+    vevano, non punto mutato il costume lo-<lb/>
+    ro, nè scemato il numero, dà fuori un'al-<lb/>
+    tra grida  ancor più vigorosa e notabile, nel-<lb/>
+    la quale fra le altre ordinazioni  prescrive:<lb/>
+    Che qualsivoglia persona, così di que-<lb/>
+    sta Città, come forestiera, che per due te-<lb/>
+    stimonii consterà esser tenuto, e comu-<lb/>
+    nemente riputato per bravo, et aver tal<lb/>
+    nome, ancorchè non si venfichi aver fat-<lb/>
+    to delitto alcuno... per questa sola ripu-<lb/>
+    tazione di bravo, senza altri indizj, pos-<lb/>
+    sa dai detti giudici e da ognuno di loro<lb/>
+    esser posto alla corda et al tormento, per<lb/> 
+    processo informativo...  et ancorchè non<lb/> 
+    confessi delitto alcuno, tuttavia sia man-<lb/>
+    dato alla galea, per detto triennio, per<lb/>
+    la sola opinione e nome di bravo, come<lb/> 
+    di sopra. Tutto ciò, e il di più che si om-<lb/></p>
+    <pb n="9"/>
+</div>
+
+<!-- page 10 -->
+<div>
+    <p>mette, perchè Sua Eccellenza è risoluta di<lb/> 
+    voler essere obbedita da ognuno.<lb/>
+    All'udir parole d'un tanto signore, così<lb/> 
+    gagliarde e sicure, e accompagnate da tali<lb/> 
+    ordini, viene una gran voglia di credere<lb/> 
+    che  al  rimbombo di quelle, tutti i <persName ref="#bravi" type="full">bravi</persName><lb/> 
+    sieno scomparsi per sempre. Ma la testimo-<lb/>
+    nianza di un signore non meno autorevole,<lb/> 
+    nè meno dotato di nomi  ci obbliga a cre-<lb/>
+    dere tutto il contrario.È questi l'Illustris-<lb/>
+    simo ed Eccellentissimo Signor Juan Fer-<lb/>
+    nandez de Velasco, Contestabile di <placeName type="region">Castiglia</placeName>,<lb/> 
+    Cameriero maggiore di Sua Maestà, Duca<lb/> 
+    della <placeName type="city">Città di Frias</placeName>, Conte di Haro e Ca-<lb/>
+    stelnovo, Signore della Casa di Velasco,<lb/> 
+    e di quella delli sette Infanti di Lara, Go-<lb/>
+    vernatore dello Stato di <placeName type="city">Milano</placeName>  etc. Ai <date when="1593-06-05">5 di<lb/> 
+    giugno dell'anno 1593</date>, pienamente informa-<lb/>
+    to anch'egli di quanto danno e rovine sie-<lb/>
+    no...  i <persName tref="#bravi" type="combined">bravi e vagabondi</persName>, e del pessimo<lb/> 
+    effetto che tal sorta di gente fa contra il <lb/>
+    ben pubblico, et in delusione della giu-<lb/>
+    stizia, intima loro di nuovo che  nel termi-<lb/>
+    ne di giorni sei  abbiano a sbrattare il pae-<lb/>
+    se, ripetendo a un dipresso le stesse minac-<lb/>
+    ce e le stesse prescrizioni  del suo predeces-<lb/></p>
+    <pb n="10"/>
+</div>
+
+<!-- page 11 -->
+<div>
+    <p>sore.Ai <date when="1598-05-23">23 poi di maggio  dell'anno 1598</date>,<lb/> 
+    informato con non poco dispiacere del-<lb/>
+    l'animo suo  che... ogni dì più in <placeName type="city">questa<lb/>
+    Città e Stato</placeName> va crescendo il numero di<lb/> 
+    questi tali (<persName ref="#bravi" type="combined">bravi e vagabondi</persName>), nè di lo-<lb/>
+    ro, giorno e notte, altro si sente che fe-<lb/>
+    rite appostatamente date, omicidii, e ru-<lb/>
+    berie et ogni altra qualità di delitti, ai<lb/>
+    quali si rendono più facili, confidati essi <lb/>
+    <persName ref="#bravi" type="full">bravi</persName> d'essere ajutati dai capi e fautori<lb/> 
+    loro;... prescrive di nuovo gli stessi rimedii,<lb/>
+    accrescendo la dose, come si usa nelle malat-<lb/>
+    tie ostinate. Ognuno dunque,  conchiude egli,<lb/>
+    onninamente si guardi di contravvenire in<lb/> 
+    parte alcuna alla grida presente, perchè<lb/>  
+    in luogo di provare la clemenza di Sua<lb/> 
+    Eccellenza, proverà il rigore, e l'ira<lb/> 
+    sua ...  essendo risoluta e determinata che<lb/>
+    questa sia l'ultima e perentoria moni-<lb/>
+    zione.<lb/>
+    Non fu però di questo parere l'Illustris-<lb/>
+    simo ed Eccellentissimo Signore, il Signor<lb/> 
+    Don Pietro Enriquez de Acevedo, Conte di<lb/>
+    Fuentes, Capitano, e Governatore dello<lb/>
+    Stato di <placeName type="city">Milano</placeName>; non fu di questo parere, e<lb/> 
+    per buone ragioni. Pienamente informato<lb/></p>
+    <pb n="11"/>
+</div>
+
+<!-- page 12 -->
+<div>
+    <p>della miseria in che vive questa Città è<lb/> 
+    Stato per cagione del gran numero di<lb/> 
+    <persName ref="#bravi" type="full">bravi</persName> che in esso abbonda...  e risoluto di<lb/> 
+    totalmente estirpare seme tanto pernizioso,<lb/> 
+    dà fuori, ai <date when="1600-12-05">5 di Dicembre 1600</date>, una nuo-<lb/>
+    va monizione piena  di gagliardi provvedi-<lb/>
+    menti, con fermo proponimento che  con<lb/> 
+    ogni rigore  e senza speranza di remissio-<lb/>
+    ne  siano onninamente eseguiti.<lb/>
+    Convien credere però ch'egli non ci si<lb/> 
+    mettesse con tutta quella buona voglia che<lb/> 
+    sapeva impiegare nell'ordir cabale, e nel<lb/> 
+    suscitare nemici al suo gran nemico Enrico<lb/> 
+    IV; giacchè  per questa parte  la storia atte-<lb/>
+    sta, come egli riuscisse ad armare contra<lb/> 
+    quel re il duca di Savoia, a cui fece per-<lb/>
+    dere più d'una città; come riuscisse a far<lb/> 
+    congiurare il duca di Biron, a cui fece per-<lb/>
+    dere la testa; ma, per ciò che riguarda quel<lb/>
+    seme tanto pernizioso dei <persName ref="#bravi" type="full">bravi</persName>, certa co-<lb/>
+    sa è che esso continuava a germogliare ai<lb/>
+    <date when="1612-09-22">22 di settembre dell'anno 1612</date>.In quel<lb/> 
+    giorno l'Illustrissimo ed Eccellentissimo Si-<lb/>
+    gnore, Don Giovanni de Mendozza, Mar-<lb/>
+    chese de la Hynojosa, Gentiluomo etc., Go-<lb/>
+    vernatore etc., pensò seriamente ad estirpar-<lb/></p>
+    <pb n="12"/>
+</div>
+
+<!-- page 13 -->
+<div>
+    <p>lo. A questo effetto spedì a Pandolfo e Mar-<lb/>
+    co Tullio Malatesti  stampatori regii came-<lb/>
+    rali  la solita grida, corretta ed accresciuta,<lb/>
+    perchè la stampassero a sterminio dei bra-<lb/>
+    vi.Ma questi vissero ancora per toccare, ai<lb/> 
+    <date when="1618-12-24">24 di Decembre dell'anno 1618</date>, gli stessi<lb/>
+    e più forti colpi dall'Illustrissimo ed Ec-<lb/>
+    cellentissimo Signore, il Signor Don Go-<lb/>
+    mez Suarez de Figueroa, Duca di Feria , etc.<lb/> 
+    Governatore, etc. Però, non essendo essi<lb/> 
+    morti pure di quelle percosse, l'Illustris-<lb/>
+    simo ed Eccellentissimo Signore, il Signor<lb/> 
+    Gonzalo Fernandez di Cordova, sotto il cui<lb/> 
+    governo accadde il passeggio di don Ab-<lb/>
+    bondio, s'era trovato costretto a ricorreg-<lb/>
+    gere e ripublicare la solita grida contra i<lb/> 
+    <persName ref="#bravi" type="full">bravi</persName>, il giorno <date when="1627-10-05">5 di ottobre del 1627</date> , cioè<lb/> 
+    un anno, un mese e due giorni prima di <lb/>
+    quel memorabile avvenimento.<lb/>
+    Nè questa fu l'ultima publicazione; ma<lb/>
+    noi delle posteriori non crediamo dover far<lb/> 
+    menzione, come di cosa che esce dal perio-<lb/>
+    do della nostra storia. Ne accenneremo sol-<lb/>
+    tanto una dei <date when="1632-02-13">13 di febbraio dell'anno 1632</date>,<lb/> 
+    nella quale l'Illustrissimo ed Eccellentis-<lb/>
+    simo Signore, el Duque de Feria, per la<lb/></p>
+    <pb n="13"/>
+</div>
+
+<!-- page 14 -->
+<div>
+    <p>seconda volta governatore, ci avvisa che<lb/>
+    le maggiori sceleraggini procedono da<lb/> 
+    quelli che chiamano <persName ref="#bravi" type="full">bravi</persName>. Questo basta<lb/> 
+    a farne certi che  nel tempo di cui noi trat-<lb/>
+    tiamo  c'era dei <persName ref="#bravi" type="full">bravi</persName> tuttavia.<lb/>
+    Che i due descritti di sopra stessero ivi<lb/> 
+    in aspetto di qualcheduno, era cosa troppo<lb/> 
+    evidente; ma quello che più spiacque a <persName ref="#donabbondio" type="full">don<lb/>
+    Abbondio</persName>o fu l'esser chiarito per certi atti,<lb/> 
+    che l'aspettato era egli. Poichè, al suo ap-<lb/>
+    parire, coloro s'eran guardati in viso, al-<lb/>
+    zando la testa  con un movimento, dal qua-<lb/>
+    le si scorgeva che tutti e due ad un tratto<lb/>
+    avevan detto<said who="one of the two bravi" toWhom="the other one">: egli è desso</said>; quegli che stava<lb/> 
+    a cavalcioni s'era alzato, tirando la sua gamba<lb/>
+    sulla strada; l'altro s'era staccato dal muro;<lb/> 
+    ed entrambi si avviavano alla volta di lui.Egli, <lb/>
+    tenendo sempre il breviario aperto dinanzi,<lb/> 
+    come se leggesse, spingeva lo sguardo in su,<lb/> 
+    per ispiare le mosse di coloro; e veggendoli<lb/>
+    venire proprio alla sua volta, fu assalito in<lb/>
+    un tratto da mille pensieri. Domandò subito<lb/> 
+    in fretta a sè stesso, se fra i <persName  ref="#bravi" type="full">bravi</persName> e lui vi<lb/>
+    fosse qualche uscita di strada  a dritta o a<lb/> 
+    sinistra; e gli sovvenne tosto di no. Fece<lb/> 
+    un rapido esame per ricercare se avesse<lb/></p>
+    <pb n="14"/>
+</div>
+
+<!-- page 15 -->
+<div>
+    <p>peccato contra qualche potente, contra qual-<lb/>
+    che vendicativo; ma  anche in quel turba-<lb/>
+    mento, il testimonio consolante della co-<lb/>
+    scienza lo rassicurava alquanto: i <persName  ref="#bravi" type="full">bravi</persName> pe-<lb/>
+    rò si avvicinavano, guardandolo fiso.Si pre-<lb/>
+    se l'indice e il medio della sinistra mano<lb/>
+    nel collare  come per rassettarlo, e  girando<lb/> 
+    le due dita intorno al collo, volgeva intan-<lb/>
+    to la faccia all'indietro, torcendo insieme<lb/>
+    la bocca, e guardava colla coda dell'occhio<lb/> 
+    fin dove poteva, se qualcheduno arrivasse;<lb/> 
+    ma non vide nessuno. Lanciò un'occhiata<lb/>  
+    al di sopra del muricciuolo, nei campi:<lb/> 
+    nessuno; un'altra più modesta sulla via che<lb/> 
+    gli era dinanzi; nessuno, fuorchè i <persName  ref="#bravi" type="full">bravi</persName>.<lb/>
+    Che fare? tornare indietro, non era a tem-<lb/>
+    po: darla a gambe, era lo stesso che dire:<lb/> 
+    inseguitemi, o peggio. Non potendo schifa-<lb/>
+    re il pericolo, gli corse incontro, perchè i<lb/> 
+    momenti di quella incertezza erano allora<lb/>
+    così penosi per lui, che non desiderava al-<lb/>
+    tro che di abbreviarli. Affrettò il passo, re-<lb/>
+    citò un versetto a voce più alta, compose<lb/> 
+    la faccia a tutta quella quiete ed ilarità che<lb/>
+    potè, fece ogni sforzo per preparare un<lb/> 
+    sorriso, e quando si trovò a fronte dei due<lb/></p>
+    <pb n="15"/>
+</div>
+
+<!-- page 16 -->
+<div>
+    <p>galantuomini, disse mentalmente: <said who="Don Abbondio" toWhom="Don Abbondio">ci siamo;</said><lb/> 
+    e si fermò sui due piedi. <said who="uno dei bravi" toWhom="Don Abbondio">«Signor <persName ref="#donabbondio" type="alias">curato</persName>!»</said><lb/> 
+    disse uno di quei due, piantandogli gli oc-<lb/>
+    chi in faccia.<lb/>
+    
+    <said who="uno dei bravi" toWhom="Don Abbondio">«Ella ha intenzione»</said>proseguì l'altro<lb/> 
+    col piglio minaccioso ed iracondo di chi<lb/> 
+    coglie un suo inferiore su l'intraprendere<lb/> 
+    una ribalderia <said who="uno dei bravi" toWhom="Don Abbondio">«ella ha intenzione di spo-<lb/>
+    sare domani <persName type="character">Renzo Tramaglino</persName> e <persName type="character">Lucia<lb/> 
+    Mondella»</persName>!</said><lb/>
+
+    
+    <said who="Don Abbondio" toWhom="uno dei bravi">«Cioè... »</said> rispose  con voce tremola<lb/> 
+    <persName  ref="#donabbondio" type="full">don Abbondio</persName>: <said who="Don Abbondio" toWhom="uno dei bravi">«cioè. Loro signori son uo-<lb/>
+    mini di mondo, e sanno benissimo come<lb/>
+    vadano queste faccende. Il povero <persName ref="#donabbondio" type="alias">curato</persName><lb/> 
+    non c'entra: fanno i loro piastricci fra<lb/>
+    loro, e poi...  poi, vengono da noi<lb/>  
+    come s'andrebbe ad un banco a riscuo-<lb/>
+    tere; e noi...  noi siamo i servitori<lb/> 
+    del comune.»</said><lb/>
+    <said who="uno dei bravi" toWhom="Don Abbondio">«Or bene»</said> disse il bravo con voce som-<lb/>
+    messa,  ma in tuono solenne di comando<lb/>  
+    <said who="uno dei bravi" toWhom="Don Abbondio">«questo matrimonio non s'ha da fare, nè<lb/>
+    domani, nè mai.»</said><lb/></p>
+    <pb n="16"/>
+</div>
+
+<!-- page 17 -->
+<div>
+    <p><said who="Don Abbondio" toWhom="i bravi">«Ma, signori miei» </said> replicò don Abbon-<lb/>
+    dio, colla voce mansueta e gentile d'un uo-<lb/>
+    mo che vuol persuadere un impaziente  <said>«ma,<lb/> 
+    signori miei, si degnino di mettersi nei<lb/> 
+    miei panni. Se la cosa dipendesse da<lb/> 
+    me,... vedono bene che a me non<lb/> 
+    importa nulla ...»</said><lb/> 
+    <said who="uno dei bravi" toWhom="Don Abbondio">«Orsù»</said> interruppe il bravo  <said who="uno dei bravi" toWhom="Don Abbondio">«se la cosa<lb/> 
+    avesse a decidersi a ciarle, ella ci mette-<lb/>
+    rebbe in sacco . Noi non ne sappiamo, nè<lb/> 
+    vogliamo saperne di più. Uomo avverti-<lb/>
+    to... ella c'intende.»</said><lb/>
+    <said who="Don Abbondio" toWhom="i bravi">«Ma codesti signori son troppo giusti,<lb/> 
+    troppo ragionevoli... »</said><lb/>
+    <said who="uno dei bravi" toWhom="Don Abbondio">«Ma »</said> interruppe questa volta l'altro<lb/> 
+    compagnone, che non aveva parlato fino<lb/> 
+    allora, <said who="uno dei bravi" toWhom="Don Abbondio">«ma il matrimonio non si farà,<lb/> 
+    o...» </said> e qui una buona bestemmia,<lb/> 
+    <said who="uno dei bravi" toWhom="Don Abbondio">«o chi lo farà non se ne pentirà, perchè <lb/>
+    non ne avrà tempo  e...» </said> un'altra<lb/> 
+    bestemmia.<lb/>
+    <said who="uno dei bravi" toWhom="Don Abbondio">«Zitto, zitto,»</said> ripigliò il primo orato-<lb/>
+    re, <said who="uno dei bravi" toWhom="Don Abbondio">«il signor <persName ref="#donabbondio" type="alias">curato</persName>  sa il vivere del mon-<lb/>
+    do; e noi siamo galantuomini, che non<lb/> 
+    vogliamo fargli del male quando egli<lb/> 
+    abbia giudizio. Signor <persName ref="#donabbondio" type="alias">curato</persName>, l'illustris-</said><lb/></p>
+     <pb n="17"/>
+</div>
+
+<!-- page 18 -->
+<div>
+    <p><said who="uno dei bravi" toWhom="Don Abbondio">«simo signor <persName type="character">don Rodrigo</persName> nostro padrone<lb/> 
+    la riverisce caramente.»</said><lb/>
+    Questo nome fu  nella mente di don Ab-<lb/>
+    bondio  come, nel forte d'un temporale<lb/> 
+    notturno, un lampo che illumina momen-<lb/>
+    taneamente ed in confuso gli oggetti, e cre-<lb/>
+    sce il terrore. Fece egli, come per istinto,<lb/> 
+    un grande inchino, e disse: <said who="Don Abbondio" toWhom="i bravi">«se mi sapes-<lb/>
+    sero suggerire...»</said><lb/>
+    <said who="uno dei bravi" toWhom="Don Abbondio">«Oh! suggerire a lei che sa di latino!»</said><lb/> 
+    interruppe ancora il bravo, con un riso tra<lb/>
+    lo sguaiato e il feroce. <said who="uno dei bravi" toWhom="Don Abbondio">«A lei tocca. E so-<lb/>
+    pra tutto  non si lasci uscir parola su<lb/> 
+    questo avviso che le abbiam dato per suo <lb/>
+    bene; altrimenti...  ehm...  sa-<lb/>
+    rebbe lo stesso che fare quel tal matri-<lb/>
+    momo. Via, che vuol ella che si dica in<lb/> 
+    suo nome all'illustrissimo signor <persName type="character">don<lb/> 
+    Rodrigo</persName>?»</said><lb/>
+    <said who="Don Abbondio" toWhom="i bravi">«Il mio rispetto... »</said><lb/>
+    <said who="uno dei bravi" toWhom="Don Abbondio">«Si spieghi, signor <persName ref="#donabbondio" type="alias">curato</persName>.»</said><lb/>
+    <said who="Don Abbondio" toWhom="i bravi">«...  Disposto...  disposto sempre<lb/> 
+    alla ubbidienza. »</said> E  proferendo queste<lb/> 
+    parole, non sapeva bene egli stesso se dava<lb/> 
+    una promessa, o se gittava un complimento<lb/>
+    comunale. I <persName  ref="#bravi" type="full">bravi</persName> le presero  o mostrarono<lb/> 
+    di prenderle nel significato più serio.<lb/></p>
+    <pb n="18"/>
+</div>
+
+<!-- page 19 -->
+<div>
+    <p><said who="uno dei bravi" toWhom="Don Abbondio">«Benissimo; e buona notte, signor cur-<lb/>
+    ato,»</said> disse l'un d'essi, in atto di par-<lb/>
+    tire col compagno.<persName  ref="#donabbondio" type="full">Don Abbondio</persName>, che  po-<lb/>
+    chi momenti prima  avrebbe dato un occhio<lb/>
+    del corpo per iscansarli, allora avrebbe vo-<lb/>
+    luto prolungare la conversazione e le tratta-<lb/>
+    tive. <said who="Don Abbondio" toWhom="i bravi">«Signori...»</said> cominciò egli,<lb/> 
+    chiudendo il libro ad ambe mani; ma quelli,<lb/> 
+    senza più dargli udienza, presero la strada<lb/> 
+    donde egli era venuto, e si dilungarono,<lb/> 
+    cantando una canzonaccia che non voglio<lb/> 
+    trascrivere.Il povero <persName  ref="#donabbondio" type="full">don Abbondio</persName> rimase<lb/> 
+    un momento colla bocca aperta, come in-<lb/>
+    cantato, poscia pigliò anch'egli quella delle <lb/>
+    due stradette che conduceva a casa sua,<lb/> 
+    mettendo innanzi a stento una gamba dopo<lb/> 
+    l'altra, che gli parevano ingranchite, e in<lb/> 
+    uno stato di mente che il lettore compren-<lb/>
+    derà meglio dopo di avere appreso qualche<lb/>
+    cosa di più, dell'indole di questo perso-<lb/>
+    naggio e della condizione dei tempi in cui<lb/> 
+    gli era toccato di vivere.<lb/>
+    <persName  ref="#donabbondio" type="full">Don Abbondio</persName> (il lettore se ne è già<lb/> 
+    avveduto) non era nato con un cuor di<lb/> 
+    lione. Ma fino dai primi suoi anni, egli<lb/> 
+    aveva dovuto accorgersi che la situazione<lb/></p>
+    <pb n="19"/>
+</div>
+
+<!-- page 20 -->
+<div>
+    <p>la più impacciata a quei tempi era quella<lb/> 
+    d'un animale senza artigli e senza zanne,<lb/> 
+    e che pure non si sentisse inclinazione ad<lb/> 
+    essere divorato. La forza legale non proteg-<lb/>
+    geva in alcun conto l'uomo tranquillo, inof-<lb/>
+    fensivo, e che non avesse altri mezzi da far<lb/> 
+    paura altrui.Non già che mancassero leggi<lb/> 
+    e pene contra le violenze private. Le leggi<lb/>
+    anzi venivano giù a dirotta; i delitti erano<lb/>
+    annoverati, e particolareggiati  con minuta<lb/> 
+    prolissità; le pene  pazzamente esorbitanti ,<lb/> 
+    e se non basta, aumentabili  quasi per ogni<lb/> 
+    caso  ad arbitrio del legislatore stesso e di<lb/> 
+    cento esecutori; le procedure  studiate sol-<lb/>
+    tanto a liberare il giudice da ogni cosa che<lb/> 
+    potesse essergli d'impedimento a proferire<lb/> 
+    una condanna: gli squarci che abbiamo ri-<lb/>
+    portati delle gride contra i <persName  ref="#bravi" type="full">bravi</persName>, ne sono<lb/> 
+    un picciolo, ma fedel saggio.Con tutto ciò,<lb/> 
+    anzi in gran parte per ciò, quelle gride ri-<lb/>
+    publicate e rinforzate di governo in gover-<lb/>
+    no, non servivano ad altro che ad attestare<lb/> 
+    ampollosamente l'impotenza dei loro autori;<lb/>
+    o  se producevano qualche effetto immediato,<lb/> 
+    egli era principalmente di aggiungere molte<lb/> 
+    vessazioni a quelle che i pacifici e i deboli<lb/></p>
+    <pb n="20"/>
+</div>
+
+<!-- page 21 -->
+<div>
+    <p>sofferivano dai perturbatori, e di crescere<lb/> 
+    le violenze e l'astuzia di questi.L'impu-<lb/>
+    nità era organizzata, ed aveva radici che le<lb/> 
+    gride non toccavano, o non potevano smuo-<lb/>
+    vere. Tali erano gli asili, tali i privilegi di<lb/> 
+    alcune classi, in parte riconosciuti dalla<lb/> 
+    forza legale, in parte tollerati con astioso<lb/> 
+    silenzio, o negati con vane proteste, ma<lb/> 
+    sostenuti di fatto e guardati da quelle classi<lb/>
+    e quasi da ogni individuo, con attività d'in-<lb/>
+    teresse, e con gelosia di puntiglio. Ora,<lb/> 
+    questa impunità minacciata ed insultata,<lb/>
+    ma non distrutta dalle gride, doveva natu-<lb/>
+    ralmente ad ogni minaccia, e ad ogni in-<lb/>
+    sulto, adoperar nuovi sforzi e nuovi inge-<lb/>
+    gni per conservarsi.Così accadeva in fatti;<lb/> 
+    e all'apparire delle gride dirette a compri-<lb/>
+    mere i violenti, questi cercavano nella loro<lb/> 
+    forza reale i nuovi mezzi più opportuni  per<lb/>
+    continuare a far ciò che le gride venivano<lb/>
+    a proibire. Potevano ben esse inceppare ad<lb/> 
+    ogni passo  e molestare l'uomo bonario  che<lb/> 
+    fosse senza forza propria e senza protezio-<lb/>
+    ne; perchè col fine d'aver sotto la mano<lb/> 
+    ogni uomo, per prevenire o per punire ogni<lb/> 
+    delitto, assoggettavano ogni mossa del pri-<lb/></p>
+    <pb n="21"/>
+</div>
+
+<!-- page 22 -->
+<div>
+    <p>vato al volere arbitrario di mille magistrati<lb/> 
+    ed esecutori.Ma chi, prima di commettere<lb/> 
+    il delitto, aveva prese le sue misure per<lb/>
+    ripararsi a tempo in un convento, in un pa-<lb/>
+    lazzo  dove i birri non avrebbero mai osato<lb/> 
+    por piede; chi, senz'altre misure, portava<lb/> 
+    una livrea che impegnasse a difenderlo la<lb/> 
+    vanità, e l'interesse d'una famiglia potente,<lb/> 
+    di tutto un ceto; quegli era libero nelle sue<lb/> 
+    operazioni, e poteva ridersi di tutto quel fra-<lb/>
+    casso delle gride.Di quegli stessi che erano<lb/> 
+    deputati a farle eseguire, alcuni appartene-<lb/>
+    vano per nascita alla parte privilegiata, al-<lb/>
+    cuni ne dipendevano per clientela; gli uni e<lb/> 
+    gli altri, per educazione, per interesse, per<lb/> 
+    consuetudine, per imitazione  ne avevano<lb/> 
+    abbracciate le massime, e si sarebbero ben<lb/>
+    guardati dall'offenderle  per l'amore d'un<lb/> 
+    pezzo di carta affisso agli angoli delle vie.<lb/>
+    Gli uomini poi incaricati della esecuzione<lb/> 
+    immediata, quando fossero stati intrapren-<lb/>
+    denti come eroi, ubbidienti come monaci,<lb/> 
+    e devoti come martiri, non avrebbero però<lb/>
+    potuto venirne a capo, inferiori come erano<lb/> 
+    di numero a quelli coi quali si sarebbero<lb/>
+    posti in guerra, e colla probabilità frequen-<lb/></p>
+    <pb n="22"/>
+</div>
+
+<!-- page 23 -->
+<div>
+    <p>te d'essere abbandonati o anche sacrificati<lb/> 
+    da chi  in astratto e, per così dire, in teoria,<lb/> 
+    imponeva loro di operare.Ma oltracciò co-<lb/>
+    storo erano generalmente dei più abietti e<lb/> 
+    ribaldi soggetti del loro tempo; l'incarico<lb/> 
+    loro era tenuto a vile anche da quelli che<lb/> 
+    potevano averne terrore, e il loro titolo un<lb/> 
+    improperio. Era quindi ben naturale che<lb/> 
+    costoro invece di arrischiare,  anzi di gettare<lb/> 
+    la vita in una impresa impossibile, vendes-<lb/>
+    sero la loro inazione, o anche la loro con-<lb/>
+    nivenza ai potenti, e si riserbassero ad<lb/> 
+    esercitare la loro esecrata autorità, e la<lb/> 
+    forza che pure avevano, in quelle occasioni<lb/> 
+    dove non v'era pericolo, nell'opprimere,<lb/> 
+    cioè, e nel vessare gli uomini pacifici e <lb/>
+    senza difesa.<lb/>
+    L'uomo che vuole offendere, o che teme<lb/> 
+    ad ogni istante d'essere offeso, cerca natu-<lb/>
+    ralmente alleati e compagni. Quindi era  in<lb/> 
+    quei tempi  portata al massimo punto la ten-<lb/>
+    denza degli individui a tenersi collegati in<lb/> 
+    classi, a formarne di nuove, e a procurare<lb/> 
+    ognuno la maggior potenza di quella a cui<lb/> 
+    apparteneva. Il clero vegliava a difendere e<lb/> 
+    ad estendere le sue immunità, la nobiltà i<lb/></p>
+    <pb n="23"/>
+</div>
+
+<!-- page 24 -->
+<div>
+    <p>suoi privilegi, il militare le sue esenzioni.<lb/> 
+    I mercanti, gli artigiani erano arrolati in<lb/> 
+    maestranze e in confraternite, i giurisperiti<lb/> 
+    formavano una lega, i medici stessi una<lb/> 
+    corporazione.Ognuna di queste picciole oli-<lb/>
+    garchie aveva una sua forza speciale e pro-<lb/>
+    pria; in ognuna l'individuo trovava il van-<lb/>
+    taggio d'impiegare per sè, a proporzione<lb/> 
+    della sua autorità e della sua destrezza, le<lb/> 
+    forze riunite di molti. I più onesti si vale-<lb/>
+    vano di questo vantaggio alla difesa loro;<lb/> 
+    gli astuti e i facinorosi ne approfittavano<lb/>  
+    per condurre a termine ribalderie, alle<lb/> 
+    quali i loro mezzi personali non sarebbero<lb/> 
+    bastati, e per assicurarsene l'impunità.Le<lb/> 
+    forze però di queste varie leghe erano molto<lb/> 
+    impari; e  nelle campagne principalmente,<lb/> 
+    il nobile dovizioso e violento, con un drap-<lb/>
+    pello di <persName  ref="#bravi" type="full">bravi</persName>, e circondato da contadini<lb/> 
+    avvezzi  per tradizione famigliare, ed inte-<lb/>
+    ressati o forzati a riguardarsi quasi come<lb/> 
+    sudditi e soldati del padrone, esercitava un potere al<lb/>
+    quale difficilmente nessun'altra frazione di<lb/>
+    lega avrebbe ivi potuto resistere.<lb/>
+    Il nostro <persName  ref="#donabbondio" type="name">Abbondio</persName>, non nobile, non ric-<lb/>
+    co, non animoso, s'era dunque , quasi al-<lb/></p>
+    <pb n="24"/>
+</div>
+
+<!-- page 25 -->
+<div>
+    <p>l'uscire dall'infanzia, avveduto d'essere<lb/>
+    in quella società  come un vaso di terra cotta<lb/> 
+    costretto a far cammino in compagnia di<lb/> 
+    molti vasi di ferro. Aveva quindi  assai di<lb/> 
+    buon grado obbedito ai parenti, che lo vol-<lb/>
+    lero prete. Per dire la verità, egli non aveva <lb/>
+    gran fatto pensato agli obblighi e ai nobili<lb/> 
+    fini del ministero al quale si dedicava: as-<lb/>
+    sicurarsi di che vivere con qualche agio, e<lb/> 
+    porsi in una classe riverita e forte, gli era-<lb/>
+    no parute due ragioni più che sufficienti per<lb/> 
+    una tale scelta.Ma una classe qualunque<lb/>
+    non provvede all'individuo, non lo assicu-<lb/>
+    ra, che fino ad un certo segno: nessuna lo<lb/> 
+    dispensa dal farsi un suo sistema particolare.<lb/> 
+    <persName ref="#donabbondio" type="full">Don Abbondio</persName>, assorbito continuamente nei<lb/> 
+    pensieri della propria sicurezza, non si cu-<lb/>
+    rava di quei vantaggi  per ottenere i quali<lb/> 
+    fosse mestieri di adoperarsi molto, o di<lb/> 
+    arrischiarsi un poco.Il suo sistema consi-<lb/>
+    steva principalmente nello scansare tutti i<lb/> 
+    contrasti, e nel cedere  in quelli che non po-<lb/>
+    teva scansare. Neutralità disarmata in tutte<lb/> 
+    le guerre che scoppiavano intorno a lui,<lb/> 
+    dalle contese  allora frequentissime  tra il<lb/>
+    clero e le podestà laiche, dai contrasti pure<lb/></p>
+    <pb n="25"/>
+</div>
+
+<!-- page 26 -->
+<div>
+    <p>frequentissimi di ufiziali e di nobili, di no-<lb/>
+    bili e di magistrati, di <persName ref="#bravi" type="full">bravi</persName> e di soldati,<lb/>
+    fino alle baruffe tra due contadini, nate da<lb/>
+    una parola, e decise colle pugna o coi col-<lb/>
+    telli. S'egli era assolutamente forzato a<lb/>
+    prender parte fra due contendenti, stava<lb/> 
+    col più forte, sempre però alla retroguardia,<lb/> 
+    e procurando di far vedere all'altro che<lb/> 
+    egli non gli era volontariamente nimico:<lb/> 
+    pareva che gli dicesse:<said who="Don Abbondio" toWhom="uno dei contendenti"> ma perchè non avete<lb/> 
+    saputo essere voi il più forte? io mi sarei<lb/> 
+    posto dalla vostra parte.</said>Stando alla larga<lb/>
+    dai prepotenti, dissimulando le loro soper-<lb/>
+    chierie passeggiere e capricciose, corrispon-<lb/>
+    dendo con sommessioni a quelle che venis-<lb/>
+    sero da una intenzione più seria e più me-<lb/>
+    ditata, costringendo, a forza d'inchini e di<lb/>
+    rispetto gioviale, anche i più burberi e sde-<lb/>
+    gnosi  a fargli un sorriso, quando gli incon-<lb/>
+    trava per via, il pover uomo era riuscito a<lb/>
+    varcare i sessant'anni, senza forti burrasche.<lb/>
+    Non è però che non avesse anch'egli il<lb/>
+    suo po' di fiele in corpo; e quel continuo<lb/>
+    esercizio di sofferenza, quel dar così soven-<lb/>
+    te ragione altrui, tanti bocconi amari in-<lb/>
+    ghiottiti in silenzio, glielo avevano esacer-<lb/></p>
+    <pb n="26"/>
+</div>
+
+<!-- page 27 -->
+<div>
+    <p>bato a segno che, se non avesse qualche<lb/> 
+    tratto potuto dargli un po' di sfogo, la sua<lb/> 
+    salute ne avrebbe certamente patito. Ma<lb/> 
+    siccome v'erano poi finalmente al mondo<lb/>  
+    e presso a lui  persone ch'egli conosceva ben<lb/> 
+    bene per incapaci di far male, così egli po-<lb/>
+    teva con quelle sfogare qualche volta il mal<lb/> 
+    umore lungamente concetto, e cavarsi anch'egli la vo-<lb/>
+    glia d'essere un po' fantastico, e di gridare<lb/> 
+    a torto.Era poi un rigido censore degli<lb/> 
+    uomini che non si regolavano come lui,<lb/> 
+    quando però la censura potesse esercitarsi<lb/> 
+    senza alcuno  anche lontano  pericolo. Il bat-<lb/>
+    tuto era almeno almeno un imprudente,<lb/> 
+    l'ammazzato era sempre stato un uomo tor-<lb/>
+    bido. A chi, messosi a sostenere le sue ra-<lb/>
+    gioni contra un potente, rimaneva col capo <lb/>
+    rotto, <persName ref="#donabbondio" type="full">don Abbondio</persName> sapeva trovar sempre<lb/>
+    qualche torto; cosa non difficile, perchè la<lb/> 
+    ragione e il torto non si dividono mai con<lb/> 
+    un taglio così netto  che ogni parte abbia<lb/> 
+    soltanto dell'uno.Sopra tutto poi egli de-<lb/>
+    clamava contra quei suoi confratelli che, a<lb/> 
+    loro rischio, pigliavano le parti d'un debole<lb/> 
+    oppresso contra un soverchiatore potente.<lb/> 
+    Questo chiamava egli un comprarsi le bri-<lb/></p>
+    <pb n="27"/>
+</div>
+
+<!-- page 28 -->
+<div>
+    <p>ghe a contanti, un volere dirizzar le gambe<lb/> 
+    ai cani;diceva anche severamente ch'egli<lb/> 
+    era un mischiarsi nelle cose profane, a<lb/> 
+    danno della dignità del sacro ministero. E<lb/>
+    contra questi sermonava, sempre a quattro<lb/>
+    occhi però , o in un picciolissimo crocchio,<lb/> 
+    con tanto più di veemenza, quanto più essi<lb/>
+    erano conosciuti per alieni dal risentirsi<lb/>  
+    in cosa che li toccasse personalmente.Aveva<lb/> 
+    poi una sua sentenza prediletta, con la qua-<lb/>
+    le sigillava sempre i discorsi su queste ma-<lb/>
+    terie: che ad un galantuomo  il quale badi<lb/> 
+    a sè  e stia ne' suoi panni, non accadono mai <lb/>
+    brutti incontri.<lb/>
+    Pensino ora i miei venticinque lettori<lb/> 
+    che impressione dovesse fare sull'animo<lb/> 
+    del poveretto, l'incontro che si è narrato.<lb/> 
+    Lo spavento di quei visacci e di quelle pa-<lb/>
+    rolacce, la minaccia d'un signore noto per<lb/> 
+    non minacciare invano, un sistema di quieto<lb/> 
+    vivere che era costato tanti anni di studio<lb/> 
+    e di pazienza, sconcertato in un punto, e<lb/> 
+    un passo stretto, scabroso da attraversare,<lb/> 
+    un passo del quale non si vedeva la uscita:<lb/> 
+    tutti questi pensieri ronzavano tumultuaria-<lb/> 
+    mente nel capo basso di <persName ref="#donabbondio" type="full">don Abbondio</persName>.<lb/></p>
+    <pb n="28"/>
+</div>
+
+<!-- page 29 -->
+<div>
+    <p>– Se <persName type="character">Renzo</persName> si potesse mandare in pace con<lb/> 
+    un bel no, via; ma egli vorrà delle ragioni;<lb/>  
+    e che cosa ho io da rispondergli, per amor<lb/> 
+    del cielo? E, e, e, anche costui è una testa:<lb/>  
+    un agnello se nessuno lo tocca, ma se uno<lb/>  
+    vuol contraddirgli...  ih! E poi, e<lb/>
+    poi, perduto dietro a quella <persName type="character">Lucia</persName>, inna-<lb/> 
+    morato come...  Ragazzacci, che  per non<lb/>  
+    saper che fare  s'innamorano, vogliono ma-<lb/> 
+    ritarsi, e non pensano ad altro, non si fanno<lb/>  
+    carico dei travagli in che pongono un pove-<lb/> 
+    ro galantuomo.Oh povero me! vedete se<lb/>  
+    quelle due fìguracce dovevano proprio pian-<lb/> 
+    tarsi sul mio cammino, e pigliarla con me!<lb/>  
+    Che c'entro io? Son io che voglio maritar-<lb/> 
+    mi? Perchè non sono andati piuttosto a par-<lb/> 
+    lare...  Oh vedete un po': gran destino<lb/>   
+    che le cose a proposito mi vengan sempre<lb/>  
+    in mente un momento dopo l'occasione. Se<lb/>  
+    avessi mo pensato di suggerir loro che an-<lb/> 
+    dassero a portare la loro imbasciata...<lb/>  
+    – Ma  a questo punto  s'accorse che il pentirsi<lb/> 
+    di non essere stato consigliere e cooperatore<lb/> 
+    dell'iniquità era cosa troppo iniqua; e ri-<lb/> 
+    volse tutta la stizza dei suoi pensieri contra<lb/>  
+    quell'altro che veniva così a togliergli la<lb/> </p>
+    <pb n="29"/>
+</div>
+
+<!-- page 30 -->
+<div>
+    <p>sua pace. Non conosceva egli <persName type="character">don Rodrigo</persName><lb/>  
+    che di vista e di fama, nè aveva mai avuto<lb/>  
+    che fare con lui  altro che di toccare il petto<lb/>  
+    col mento, e la terra con la punta del suo<lb/>  
+    cappello, quelle poche volte che lo aveva<lb/>  
+    scontrato per via. Gli era occorso di difen-<lb/> 
+    dere  in più d'una occasione la riputazione<lb/>  
+    di quel signore, contra coloro che  a bassa<lb/>  
+    voce, sospirando, e levando gli occhi al<lb/>  
+    cielo, maledicevano qualche sua impresa:<lb/>  
+    aveva detto cento volte ch'egli era un ri-<lb/> 
+    spettabile cavaliere. Ma, in quel momento<lb/>  
+    gli diede in cuor suo tutti quei titoli che<lb/>  
+    non aveva mai udito applicargli da altrui<lb/>  
+    senza interrompere in fretta con un: oibò.<lb/> 
+    Giunto fra il tumulto di questi pensieri  alla<lb/>  
+    porta della sua casa, che era in capo del<lb/>  
+    paesello, pose in fretta nella toppa la chia-<lb/> 
+    ve  che già teneva in mano , aperse, entrò,<lb/>  
+    richiuse diligentemente , ed ansioso di<lb/>  
+    trovarsi in una compagnia fidata, chiamò<lb/>  
+    tosto: <said who="Don Abbondio" toWhom="Perpetua"><persName type="character">«Perpetua»</persName>! <persName type="character">«Perpetua»</persName>!</said>  avviandosi<lb/> 
+    pure verso il salotto  dove ella doveva essere<lb/>  
+    certamente ad apparecchiare la tavola per<lb/>  
+    la cena.Era <persName type="character">Perpetua</persName>, come ognuno se ne<lb/> 
+    avvede, la serva di <persName ref="#donabbondio" type="full">don Abbondio</persName>: serva<lb/></p>
+    <pb n="30"/>
+</div>
+
+<!-- page 31 -->
+<div>
+    <p>affezionata e fedele, che sapeva ubbidire e<lb/> 
+    comandare  secondo l'occasione, tollerare a<lb/>  
+    tempo i brontolamenti e le fantasticaggini<lb/>  
+    del padrone, e fargli a tempo tollerare le<lb/>  
+    sue, che divenivano di giorno in giorno più<lb/>  
+    frequenti, dacchè ella aveva passata l'età<lb/>  
+    sinodale dei quaranta, rimanendo celibe,<lb/>  
+    per aver rifiutati tutti i partiti che le si era-<lb/> 
+    no offerti, com'ella diceva , o per non aver <lb/> 
+    mai trovato un cane che la volesse, come<lb/>  
+    dicevano le sue amiche.<lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Vengo,»</said> rispose <persName type="character">Perpetua</persName>, mettendo<lb/>  
+    sul tavolino  al luogo solito  il picciol fiasco<lb/>  
+    del vino prediletto di <persName ref="#donabbondio" type="full">don Abbondio</persName>, e si<lb/>  
+    mosse lentamente; ma non aveva ancor toc-<lb/> 
+    cata la soglia del salotto, che egli v'entrò<lb/>  
+    con un passo così avviluppato, con uno sguar-<lb/> 
+    do così adombrato, con un viso così stra-<lb/> 
+    volto, che non ci sarebbero nemmeno biso-<lb/> 
+    gnati gli occhi esperti di <persName type="character">Perpetua</persName>  per isco-<lb/> 
+    prire a prima giunta che gli era accaduto<lb/>  
+    qualche cosa di bene straordinario .<lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Misericordia! che ha ella, signor pa-<lb/> 
+    drone?»</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Niente, niente,»</said> rispose don Abbon-<lb/> 
+    dio, lasciandosi cadere tutto ansante sul suo<lb/>  
+    seggiolone.<lb/></p>
+    <pb n="31"/>
+</div>
+
+<!-- page 32 -->
+<div>
+    <p><said who="Perpetua" toWhom="Don Abbondio">«Come, niente? A me la vuoi dare ad<lb/>  
+    intendere ? così brutto, com'è? Qualche <lb/> 
+    gran caso è avvenuto.»</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Oh, per amor del cielo! Quando dico<lb/>  
+    niente, o è niente, o è cosa che non pos-<lb/> 
+    so dire.»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Che non può dire nemmeno a me? Chi<lb/>  
+    si piglierà cura della sua salute? Chi<lb/>  
+    le darà un parere?... »</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Ohimè! tacete, e non apparecchiate al-<lb/> 
+    tro: datemi un bicchiere del mio vino.»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Ed ella mi vorrà sostenere che non ha<lb/> 
+    niente!»</said> disse <persName type="character">Perpetua</persName>, riempiendo il<lb/>  
+    bicchiere, e tenendolo poi in mano, come<lb/>  
+    se non volesse darlo che in premio della con-<lb/> 
+    fidenza che si faceva tanto aspettare.<lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Date qui, date qui»</said> disse don Abbon-<lb/> 
+    dio, prendendole il bicchiere  con la mano<lb/>  
+    non ben ferma, e votandolo poi in fretta<lb/>   
+    come se fosse un'ampolla medicinale.<lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Vuol ella dunque ch'io sia costretta di do-<lb/> 
+    mandare qua e là che cosa sia accaduto<lb/>  
+    al mio padrone?»</said> disse <persName type="character">Perpetua</persName>, ritta<lb/>  
+    dinanzi a lui, con le mani arrovesciate sui<lb/>  
+    fianchi  e le gomita appuntate davanti, guar-<lb/> 
+    dandolo fiso, quasi volesse succhiargli da-<lb/> 
+    gli occhi il segreto.<lb/></p>
+    <pb n="32"/>
+</div>
+
+<!-- page 33 -->
+<div>
+    <p><said who="Don Abbondio" toWhom="Perpetua">«Per amor del cielo! non mi fate pette-<lb/> 
+    golezzi, non mi fate schiamazzi: ne va...<lb/>  
+    ne va la vita!</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«La vita !»</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«La vita.»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Ella sa bene  che ogni volta ch'ella mi<lb/> 
+    ha detto qualche cosa sinceramente  in con-<lb/> 
+    fidenza, io non ho mai... »</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Brava! come quando...» </said><lb/> 
+    <persName type="character">Perpetua</persName> s'avvide d'aver toccato un tasto<lb/>  
+    falso; onde cangiando subitamente il tuono:<lb/>  
+    <said who="Perpetua" toWhom="Don Abbondio">«signor padrone» </said> disse  con voce commos-<lb/> 
+    sa e da commuovere, <said who="Perpetua" toWhom="Don Abbondio">«io le sono sempre sta-<lb/> 
+    ta affezionata; e  se ora voglio sapere, egli<lb/>  
+    è per premura, perchè vorrei poterla soc-<lb/> 
+    correre, darle un buon parere, sollevarle<lb/>  
+    l'animo...» </said><lb/> 
+    Fatto sta che <persName ref="#donabbondio" type="full">don Abbondio</persName> aveva forse<lb/>  
+    tanta voglia di scaricarsi del suo doloroso se-<lb/> 
+    greto, quanta <persName type="character">Perpetua</persName> ne avesse  di cono-<lb/> 
+    scerlo: onde  dopo aver rispinti sempre più<lb/>  
+    debolmente i nuovi e più incalzanti assalti<lb/>  
+    di lei, dopo averle fatto più d'una volta<lb/>  
+    giurare che non fiaterebbe, finalmente, con<lb/> 
+    molte sospensioni, con molti ohimè!, le<lb/>  
+    narrò il miserabile caso. Quando si venne<lb/></p>
+    <pb n="33"/>
+</div>
+
+<!-- page 34 -->
+<div>
+    <p>al nome terribile del mandante, fu d'uo-<lb/> 
+    po che <persName type="character">Perpetua</persName> proferisse un nuovo e più<lb/>  
+    solenne giuramento; e <persName ref="#donabbondio" type="full">don Abbondio</persName>, pro-<lb/> 
+    nunziato quel nome, si rovesciò sulla spallie-<lb/> 
+    ra della seggiola, con un gran sospiro, levando le<lb/>  
+    mani  in atto insieme di comando<lb/>  
+    e di supplica, e dicendo: <said who="Don Abbondio" toWhom="Perpetua">«per amor del<lb/> 
+    cielo!»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Misericordia!»</said> sclamò <persName type="character">Perpetua</persName>. <said who="Perpetua" toWhom="Don Abbondio">«Oh<lb/>  
+    che birbone! oh che soperchiante! oh che<lb/> 
+    uomo senza il timor di Dio!»</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Volete tacere? o volete rovinarmi del<lb/>  
+    tutto?</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Oh! siamo qui soli che nessuno ci sen-<lb/> 
+    te. Ma come farà ella povero signor pa-<lb/> 
+    drone?</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Oh vedete,»</said> disse <persName ref="#donabbondio" type="full">don Abbondio</persName>  con<lb/>  
+    voce stizzosa: <said who="Don Abbondio" toWhom="Perpetua">vedete che bei pareri mi<lb/>  
+    sa dar costei! Viene a domandarmi co-<lb/> 
+    me farò, come farò; quasi fosse ella nel-<lb/> 
+    l'impaccio, e toccasse a me di cavarnela.»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Ma! io l'avrei ben io il mio povero<lb/>  
+    parere da darle; ma poi...» </said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Ma poi, sentiamo.»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Il mio parere sarebbe che, siccome tutti<lb/>  
+    dicono che il nostro arcivescovo è un san-</said><lb/></p>
+    <pb n="34"/>
+</div>
+
+<!-- page 35 -->
+<div>
+    <p><said who="Perpetua" toWhom="Don Abbondio">«o, e un uomo di polso, e che non ha<lb/>  
+    paura di brutti musi, e  quando può fare<lb/> 
+    stare un di questi soperchianti per soste-<lb/> 
+    nere un <persName ref="#donabbondio" type="alias">curato</persName>, ei c'ingrassa; io direi,<lb/>  
+    e dico che ella gli scrivesse una bella<lb/> 
+    lettera, per informarlo come qualmen-<lb/> 
+    te... »</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Volete tacere? volete tacere? Son pare-<lb/> 
+    ri codesti da darsi ad un pover uomo?<lb/>  
+    Quando mi fosse toccata una schioppet-<lb/> 
+    tata nella schiena... Dio liberi!, l'arci-<lb/> 
+    vescovo me la torrebbe egli via?»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Eh! le schioppettate non si danno via co-<lb/> 
+    me confetti: e guai se questi cani doves-<lb/> 
+    sero mordere tutte le volte che abbaiano!<lb/>  
+    E io ho sempre veduto che a chi sa mo-<lb/> 
+    strare i denti, e farsi valere,  si porta<lb/> 
+    rispetto; e  appunto perchè ella non vuol<lb/> 
+    mai dir la sua ragione, siamo ridotti a<lb/>  
+    segno che tutti ci vengono, con licenza, a...»</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Volete tacere?»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Io taccio subito; ma è però certo che<lb/>   
+    quando il mondo s'accorge che uno, sem-<lb/> 
+    pre, in ogni incontro, è pronto a calar<lb/>  
+    le... »</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Volete tacere? È egli tempo da cedeste<lb/>  
+    baggianate?»</said><lb/></p>
+    <pb n="35"/>
+</div>
+
+<!-- page 36 -->
+<div>
+    <p><said who="Perpetua" toWhom="Don Abbondio">«Basta: ella ci penserà questa notte; ma<lb/> 
+    intanto non cominci a farsi male da sè,<lb/>  
+    a rovinarsi la salute; mangi un boccone.»</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Ci penserò io,»</said> rispose  brontolando<lb/>  
+    <persName ref="#donabbondio" type="full">don Abbondio</persName>  <said who="Don Abbondio" toWhom="Perpetua"> sicuro, io ci penserò, io<lb/>  
+    ci ho da pensare.»</said> E si alzò, continuando<lb/>   
+    <said who="Don Abbondio" toWhom="Perpetua">«non voglio prender niente; niente: ho al-<lb/> 
+    tra voglia: lo so anch'io che a me tocca<lb/>   
+    pensarci . Ma! la doveva venire in capo<lb/>  
+    proprio a me!»</said><lb/> 
+    <said who="Perpetua" toWhom="Don Abbondio">«Mandi almen giù quest'altra gocciola,»</said><lb/>  
+    disse <persName type="character">Perpetua</persName>, mescendo. »<said who="Perpetua" toWhom="Don Abbondio">Ella sa che que-<lb/> 
+    sto le racconcia sempre lo stomaco.»</said><lb/> 
+    <said who="Don Abbondio" toWhom="Perpetua">«Eh!  ci vuol altro cerotto, ci vuol altro cer-<lb/> 
+    otto, ci vuol altro cerotto.»</said><lb/> 
+    Così dicendo  prese il lume, e  brontolan-<lb/> 
+    do sempre: <said who="Don Abbondio" toWhom="Perpetua">«una picciola bagattella! ad<lb/>  
+    un galantuomo par mio! e domani come<lb/>  
+    andrà?»</said> ed altre simili lamentazioni, si<lb/>  
+    avviò alla sua camera per coricarsi. Giunto<lb/>  
+    in su la soglia, ristette un momento, si ri-<lb/> 
+    volse indietro verso <persName type="character">Perpetua</persName>, si pose l'in-<lb/> 
+    dice sulle labbra, e disse con tuono lento e<lb/>  
+    solenne  <said who="Don Abbondio" toWhom="Perpetua">«per amor del cielo!</said> e disparve.»<lb/></p>
+    <pb n="36"/>
+</div>
+</body>
+</text>
+<back>
+  <listPerson>
+    <person xml:id="donabbondio" role="character">
+      <persName type="full">Don Abbondio</persName>
+      <persName type="abbr">D. Abbondio</persName>
+      <persName type="alias">curato</persName>
+      <persName type="name">Abbondio</persName>
+    </person>
+    <person xml:id="bravi" role="character">
+      <persName type="full">bravi</persName>
+      <persName type="alias">vagabondi</persName>
+      <persName type="combined">bravi e vagabondi</persName>
+    </person>
+  </listPerson>
+</back>
+</TEI>
