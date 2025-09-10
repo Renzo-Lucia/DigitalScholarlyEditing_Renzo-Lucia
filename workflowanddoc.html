@@ -563,6 +563,144 @@
       </td>
     </tr>
      <tr>
+      <td><pre><code>&lt;back&gt;&lt;/back&gt;</code></pre></td>
+      <td>The XML <strong>&lt;back&gt;</strong> element is placed <strong>inside the &lt;TEI&gt; element and after the &lt;text&gt; element</strong> and is used to mark the final part of a text: everything that comes after the main body.<br/>
+        It contains any annex or appendix that follows the main part of a text.
+        <td>
+        <pre><code>
+          <strong>&lt;back&gt;</strong>
+            &lt;listPerson&gt;
+                &lt;person xml:id="donabbondio" role="character"&gt;
+                    &lt;persName type="full"&gt;Don Abbondio&lt;/persName&gt;
+                    &lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;curato&lt;/persName&gt;
+                    &lt;persName type="name"&gt;Abbondio&lt;/persName&gt;
+                &lt;/person&gt;
+                &lt;person xml:id="bravi" role="character"&gt;
+                    &lt;persName type="full"&gt;bravi&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;vagabondi&lt;/persName&gt;
+                    &lt;persName type="combined"&gt;bravi e vagabondi&lt;/persName&gt;
+                &lt;/person&gt;
+            &lt;/listPerson&gt;
+        <strong>&lt;/back&gt;</strong>
+        </code></pre>
+      </td>
+    </tr>
+    <tr>
+    <td>The XML <strong>&lt;listPerson&gt;&lt;/listPerson&gt;</strong> element is placed <strong>inside the &lt;back&gt; element</strong> and is used as a container element in TEI. It groups together multiple &lt;person&gt; elements into a structured list of people for both the italian and spanish texts. <br>
+      In this case it is used to record all the characters with their possible names and identifiers.
+        <td>
+        <pre><code>
+          &lt;back&gt;
+            <strong></strong>&lt;listPerson&gt;</strong>
+                &lt;person xml:id="donabbondio" role="character"&gt;
+                    &lt;persName type="full"&gt;Don Abbondio&lt;/persName&gt;
+                    &lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;curato&lt;/persName&gt;
+                    &lt;persName type="name"&gt;Abbondio&lt;/persName&gt;
+                &lt;/person&gt;
+                &lt;person xml:id="bravi" role="character"&gt;
+                    &lt;persName type="full"&gt;bravi&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;vagabondi&lt;/persName&gt;
+                    &lt;persName type="combined"&gt;bravi e vagabondi&lt;/persName&gt;
+                &lt;/person&gt;
+            <strong>&lt;/listPerson&gt;</strong>
+        &lt;/back&gt;
+        </code></pre>
+      </td>
+    </tr>
+      <tr>
+    <td>The XML <strong>&lt;person&gt;&lt;/person&gt;</strong> element is placed <strong>inside the &lt;listPerson&gt; element</strong> and is used to encode information about a character mentioned in both the italian and spanish text.<br/>
+        It is enriched by two attributes that come together with it which are @xml:id and @role.
+        @xml:id is a a unique identifier for that person, in this case it focuses two mentioned characters "donabbondio" and "bravi" to identify and mark alternative forms of the name, always connected to the primary original version.
+        @role specifies their role, which in thi case is character for both.
+        The only difference in the spanish codeis the addition to the element of the attribute @xml:lang="es" which specifies that, as well as the text, the names of the characters have been translated too.
+        <td>
+        <pre><code>
+          &lt;back&gt;
+           &lt;listPerson&gt;
+                <strong>&lt;person xml:id="donabbondio" role="character"&gt;</strong>
+                    &lt;persName type="full"&gt;Don Abbondio&lt;/persName&gt;
+                    &lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;curato&lt;/persName&gt;
+                    &lt;persName type="name"&gt;Abbondio&lt;/persName&gt;
+                <strong></strong>&lt;/person&gt;</strong>
+                <strong>&lt;person xml:id="bravi" role="character"&gt;</strong>
+                    &lt;persName type="full"&gt;bravi&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;vagabondi&lt;/persName&gt;
+                    &lt;persName type="combined"&gt;bravi e vagabondi&lt;/persName&gt;
+                <strong>&lt;/person&gt;</strong>
+            &lt;/listPerson&gt;
+
+        &lt;/back&gt;
+         &lt;back&gt;
+                  <strong>&lt;listPerson&gt;</strong>
+                        &lt;person xml:id="donabundo" role="character" xml:lang="es"&gt;
+                            &lt;persName type="full"&gt;Don Abundo&lt;/persName&gt;
+                            &lt;persName type="abbr"&gt;D. Abundo&lt;/persName&gt;
+                            &lt;persName type="alias"&gt;cura&lt;/persName&gt;
+                            
+                        <strong></strong>&lt;/person&gt;</strong>
+                        <strong>&lt;person xml:id="bravi" role="character" xml:lang="es"&gt;</strong>
+                            &lt;persName type="full"&gt;bravos&lt;/persName&gt;
+                            &lt;persName type="alias"&gt;vagamundos&lt;/persName&gt;
+                            &lt;persName type="combined"&gt;bravos e vagamundos&lt;/persName&gt;
+                        &lt;/person&gt;
+                    <strong>&lt;/listPerson&gt;</strong>
+                &lt;/back&gt;
+        </code></pre>
+      </td>
+    </tr>
+ <tr>
+    <td>The XML <strong>&lt;persName&gt;&lt;/persName&gt;</strong> element is placed <strong>inside the &lt;person&gt; element</strong> and is used to mark up a personal name, in particular, to encode different forms of each person’s name in both the italian and spanish texts.<br/>
+      It helps encode the name itself and the type, variations, and structure of that name.
+      It is enriched by attribute that comes together with it which is @type. It specifies what kind of name it is.
+        <ul>
+          <li>type="full" → the full name (Don Abbondio),</li>
+          <li>type="abbr" → an abbreviation (D. Abbondio),</li>
+          <li>type="alias" → an alternative name or title (curato),</li>
+          <li>type="name" → just the simple name,</li>
+          <li>type="combined" → when multiple forms are merged (bravi e vagabondi).</li>
+        </ul>
+        The same goes for the spanish text and its list of instructions to mark alternative forms of the personal names. <br>
+        <td>
+        <pre><code>
+          &lt;back&gt;
+           &lt;listPerson&gt;
+                <strong>&lt;person xml:id="donabbondio" role="character"&gt;</strong>
+                    &lt;persName type="full"&gt;Don Abbondio&lt;/persName&gt;
+                    &lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;curato&lt;/persName&gt;
+                    &lt;persName type="name"&gt;Abbondio&lt;/persName&gt;
+                <strong></strong>&lt;/person&gt;</strong>
+                <strong>&lt;person xml:id="bravi" role="character"&gt;</strong>
+                    &lt;persName type="full"&gt;bravi&lt;/persName&gt;
+                    &lt;persName type="alias"&gt;vagabondi&lt;/persName&gt;
+                    &lt;persName type="combined"&gt;bravi e vagabondi&lt;/persName&gt;
+                <strong>&lt;/person&gt;</strong>
+            &lt;/listPerson&gt;
+        &lt;/back&gt;
+
+        &lt;back&gt;
+                  &lt;listPerson&gt;
+                        <strong>&lt;person xml:id="donabundo" role="character" xml:lang="es"&gt;</strong>
+                            &lt;persName type="full"&gt;Don Abundo&lt;/persName&gt;
+                            &lt;persName type="abbr"&gt;D. Abundo&lt;/persName&gt;
+                            &lt;persName type="alias"&gt;cura&lt;/persName&gt;
+                            
+                        <strong></strong>&lt;/person&gt;</strong>
+                        <strong>&lt;person xml:id="bravi" role="character" xml:lang="es"&gt;</strong>
+                            &lt;persName type="full"&gt;bravos&lt;/persName&gt;
+                            &lt;persName type="alias"&gt;vagamundos&lt;/persName&gt;
+                            &lt;persName type="combined"&gt;bravos e vagamundos&lt;/persName&gt;
+                        <strong>&lt;/person&gt;</strong>
+                    &lt;/listPerson&gt;
+                &lt;/back&gt;
+        </code></pre>
+      </td>
+    </tr>
+    
+     <tr>
       <td><pre><code>&lt;pb n=""/&gt;</code></pre></td>
       <td>XML <strong>pb/</strong> element is located <strong>inside the &lt;div&gt; element</strong>. is located <strong> in corrispondence of the line breaks, so at the end of the page.</strong>. It is important because it monitors page break in thte text. I chose to use it to create a reliable version that gtaphically resembles the source text by maintaing both its page breaks and the original formatting. 
         It comes together with the attribute @n="" that allows to count adn remeber the numenr of the current page.</td>
