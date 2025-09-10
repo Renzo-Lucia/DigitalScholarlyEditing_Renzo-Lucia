@@ -1884,3 +1884,8 @@ img:hover{
   background-color: #a68e7a; /* beige più chiaro */
   color: #2b2622;            /* testo scuro */
 }
+
+.fdimages{
+  width: 600px;
+  height: 300px;
+}
