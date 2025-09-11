@@ -1894,3 +1894,17 @@ img:hover{
   border: 3px solid white;
   border-radius: 10px;
 }
+.fdcombimages{
+  width: 500px;
+  height: 300px;
+  border: 3px solid white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: auto;
+  margin-left: 30px;
+}
+#fd{
+  display: flex; 
+  align-items: center; 
+  gap: 40px;
+}
