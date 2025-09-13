@@ -889,7 +889,7 @@
 
       &lt;xsl:output method="html" indent="yes" encoding="UTF-8"/&gt;
 
-      &lt;!-- Template per la radice TEI --&gt;
+      &lt;!-- TEI Template --&gt;
       &lt;xsl:template match="tei:TEI"&gt;
         &lt;html&gt;
           &lt;head&gt;
@@ -954,7 +954,7 @@
         &lt;/html&gt;
       &lt;/xsl:template&gt;
 
-      &lt;!-- Mantieni tutti gli altri template come prima --&gt;
+      &lt;!-- Keep other templates as the previous version --&gt;
 
       &lt;xsl:template match="tei:body"&gt;
         &lt;xsl:apply-templates/&gt;
@@ -1106,7 +1106,7 @@
 
       &lt;xsl:output method="html" indent="yes" encoding="UTF-8"/&gt;
 
-      &lt;!-- Template per la radice TEI --&gt;
+      &lt;!-- TEI Template --&gt;
       &lt;xsl:template match="tei:TEI"&gt;
         &lt;html&gt;
           &lt;head&gt;
@@ -1210,7 +1210,7 @@
         &lt;/html&gt;
       &lt;/xsl:template&gt;
 
-      &lt;!-- Mantieni tutti gli altri template come prima --&gt;
+      &lt;!-- keep other template as the previous version --&gt;
 
       &lt;xsl:template match="tei:body"&gt;
         &lt;xsl:apply-templates/&gt;
@@ -1693,23 +1693,23 @@ Check out here the XSL file developed to grpahically represent this comparison.<
         <pre><code>
           from lxml import etree
 
-# Carica il file XML TEI (input)
+# Load the TEI XML file (input)
 xml_file = 'assets/xml/ipromessisposi_cap1.xml' 
 
-# Carica il file XSLT (foglio di stile)
+# Load the XSLT file (stylesheet)
 xslt_file = 'assets/xml/visuaips.xsl'  
 
-# Parse i file
+# Parse the files
 xml_doc = etree.parse(xml_file)
 xslt_doc = etree.parse(xslt_file)
 
-# Crea l'oggetto trasformazione
+# Create the transformation object
 transform = etree.XSLT(xslt_doc)
 
-# Applica la trasformazione
+# Apply the transformation
 result = transform(xml_doc)
 
-# Salva il risultato come file HTML
+# Save the result as an HTML file
 with open('visuaipsoutput.html', 'wb') as f:
     f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8'))
 
@@ -1724,21 +1724,21 @@ print("Trasformazione completata, file output.html creato.")
     <pre><code>
       from lxml import etree
 
-# Percorsi ai file
+# File paths
 xml_file = '/Users/alicep/Downloads/DSE -theories, methods and practice/iPortfolio/assets/xml/ipromessisposi_cap1.xml'          # il tuo XML principale
 xsl_file = '/Users/alicep/Downloads/DSE -theories, methods and practice/iPortfolio/assets/xml/renzolucia.xsl' # il foglio XSLT
 
-# Carica i file
+# Load the files
 xml = etree.parse(xml_file)
 xsl = etree.parse(xsl_file)
 
-# Crea la trasformazione XSLT
+# Create the XSLT transformation
 transform = etree.XSLT(xsl)
 
-# Applica la trasformazione
+# Apply the transformation
 result = transform(xml)
 
-# Salva l’output in un file HTML
+# Save the output to an HTML file
 output_file = 'output.html'
 with open(output_file, 'wb') as f:
     f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8'))
@@ -1913,12 +1913,12 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
                                 font-family: sans-serif;
                                 }
 
-                            /* checkbox nascosto */
+                            /* hidden checkbox */
                             .legend-checkbox {
                                 display: none;
                             }
 
-                            /* bottone */
+                            /* button */
                             .legend-toggle {
                                 display: inline-block;
                                 background-color: #635548;
@@ -1929,7 +1929,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
                                 border-radius: 6px;
                             }
 
-                            /* contenuto della legenda */
+                            /* legend content */
                             .legend-content {
                                 max-height: 0;
                                 overflow: hidden;
@@ -1943,7 +1943,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
                                 
                                 }
 
-                            /* quando il checkbox è selezionato, apri la legenda */
+                            /* when checkbox is selected, open the legend*/
                             .legend-checkbox:checked + .legend-toggle + .legend-content {
                                 max-height: 800px; /* abbastanza per contenuto */
                                 padding: 10px;
@@ -1977,7 +1977,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
                 &lt;/html&gt;
             &lt;/xsl:template&gt;
 
-            &lt;!-- Template unico per figure --&gt;
+            &lt;!-- Single template for figure --&gt;
             &lt;xsl:template match="tei:figure"&gt;
                 &lt;figure class="inline-figure"&gt;
                     &lt;xsl:apply-templates select="tei:img"/&gt;
@@ -1987,7 +1987,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
                 &lt;/figure&gt;
             &lt;/xsl:template&gt;
 
-            &lt;!-- Template per img --&gt;
+            &lt;!-- Template for img --&gt;
             &lt;xsl:template match="tei:img"&gt;
                 &lt;img&gt;
                     &lt;xsl:attribute name="src"&gt;
@@ -2000,7 +2000,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
             &lt;/xsl:template&gt;
 
 
-            &lt;!-- Elementi speciali --&gt;
+            &lt;!-- Special elements --&gt;
             &lt;xsl:template match="tei:persName"&gt;
                 &lt;span class="persName"&gt;&lt;xsl:apply-templates/&gt;&lt;/span&gt;
             &lt;/xsl:template&gt;
@@ -2058,7 +2058,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
         &lt;/xsl:template&gt;
 
 
-            &lt;!-- Copia altri elementi --&gt;
+            &lt;!-- other elements --&gt;
             &lt;xsl:template match="*"&gt;
                 &lt;xsl:element name="{local-name()}"&gt;
                     &lt;xsl:apply-templates/&gt;
