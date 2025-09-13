@@ -4,10 +4,38 @@
 <teiHeader>
   <fileDesc>
     <titleStmt>
-      <title>I promessi sposi - digital edition in XML-TEI</title>
+      <title>I Promessi Sposi</title>
+      <author>Alessandro Manzoni</author>
+      <respStmt>
+        <resp>Simple TEI encoding</resp>
+        <name>Alice Piazzi</name>
+      </respStmt>
     </titleStmt>
+
+    <publicationStmt>
+      <date when="2025">2025</date>
+      <availability>
+        <p>TEI edition is available for scholarly purposes only.</p>
+      </availability>
+    </publicationStmt>
+
     <sourceDesc>
-      <p>Risultato delle revisioni iniziate già all’altezza della stesura del primo manoscritto, il Fermo e Lucia.</p>
+      <bibl>
+        <title>I promessi sposi: storia milanese del secolo 17. scoperta e rifatta da Alessandro Manzoni</title>
+        <title type="part">Tomo primo, parte prima; tomo terzo, parte seconda</title>
+        <publisher>Internet Archive</publisher>
+        <pubPlace>Online</pubPlace>
+        <date when="2014-12-06T14:48:33" type="modification" subtype="digital">2014-12-06 14:48:33</date>
+        <idno type="collection">bncfirenze; europeanlibraries</idno>
+        <idno type="topic">bub_upload</idno>
+        <note>Book from the collections of the National Central Library of Florence.</note>
+        <availability>
+          <licence target="https://creativecommons.org/publicdomain/mark/1.0/">
+            Public Domain Mark 1.0
+          </licence>
+        </availability>
+        <language>Italian</language>
+      </bibl>
     </sourceDesc>
   </fileDesc>
 </teiHeader>

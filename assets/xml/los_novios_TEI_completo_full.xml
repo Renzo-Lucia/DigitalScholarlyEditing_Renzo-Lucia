@@ -3,11 +3,32 @@
 <teiHeader>
   <fileDesc>
     <titleStmt>
-      <title>Los Novios - Edición digital en XML-TEI</title>
+      <title>Los novios</title>
+      <author>Juan Nicasio Gallego</author>
+      <respStmt>
+        <resp>Improved TEI encoding</resp>
+        <name>Alice Piazzi</name>
+      </respStmt>
     </titleStmt>
+
+    <publicationStmt>
+      <date when="2025">2025</date>
+      <availability>
+        <p>TEI edition is available for scholarly purposes only.</p>
+      </availability>
+    </publicationStmt>
     <sourceDesc>
-      <p>Edición basada en la traducción española del siglo XIX de "I Promessi Sposi" de Alessandro Manzoni.</p>
-    </sourceDesc>
+  <bibl>
+    <title>Edizione spagnola</title>
+    <title type="sub">Los novios. Historia milanesa del siglo XVI, escrita en italiano por Alejandro Manzoni, traducida por D. J[uan] N[icasio] G[allego]. Barcelona, imprenta de Antonio Bergnes, 1836-37, 4 voll.</title>
+    <publisher>MOVIO - Ministero della Cultura</publisher>
+    <pubPlace>Online</pubPlace>
+    <date when="2017-02-13" type="creation" subtype="digital">13/02/2017</date>
+    <date when="2017-02-13" type="modification" subtype="digital">last modification il 13/02/2017</date>
+    <idno type="url">https://www.movio.beniculturali.it/</idno>
+    <language>Spanish</language>
+  </bibl>
+</sourceDesc>
   </fileDesc>
 </teiHeader>
 <text>
