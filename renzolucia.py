@@ -1,7 +1,7 @@
 from lxml import etree
 
 # Percorsi ai file
-xml_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/simpleIPS.xml'          # il tuo XML principale
+xml_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/ipromessisposi_cap1.xml'          # il tuo XML principale
 xsl_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/renzolucia.xsl'
 
 # Carica i file
@@ -15,7 +15,7 @@ transform = etree.XSLT(xsl)
 result = transform(xml)
 
 # Salva l’output in un file HTML
-output_file = 'output.html'
+output_file = 'improvedoutput.html'
 with open(output_file, 'wb') as f:
     f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8'))
 

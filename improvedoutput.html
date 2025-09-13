@@ -1,6 +1,8 @@
 <html>
 <head>
 <title>2 texts comparison page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <style>
                     body {
                         font-family: Georgia, serif;
@@ -54,98 +56,40 @@
                         font-size: 0.85em;
                         color: #555;
                     }
-                    .image-placeholder {
-                        width: 40%;
-                        height: 200px; 
-                        border: 2px dashed #999;
-                        background-color: #f2f2f2;
-                        color: #777;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        float: left; /* oppure right, come per le figure */
-                        margin: 0 1em 1em 0;
-                        font-style: italic;
-                    }
+                    high-readability {
+                font-family: "Arial", sans-serif; /* oppure OpenDyslexic se disponibile */
+                font-size: 1.2em;
+                line-height: 1.8;
+                }
 
-                    .page {
-                        min-height: 300px; /* oppure un valore adeguato alla tua pagina */
-                        box-sizing: border-box;
-                        margin-bottom: 2em;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                    }
+                #Btnips{
+                color: #f4fafd;
+                background-color: #635548;
+                height: 40px;
+                width: 40px;
+                }
 
-                    .add-image{
-                        width: 350px;        
-                        height: 200px;
-                        border: 2px solid #3399ff;
-                        background-color: #cce6ff; /* azzurro */
-                        margin: 1em 0;
-                    }
-                    .missingfigure{
-                        font-family: Georgia, serif;
-                        line-height: 1.5;
-                        margin-top:40px;
-                        margin-left:10px;
-                        cursor: pointer;
-                    }
-                    .yellowadd{
-                        background-color:hsl(50, 85.50%, 48.60%); 
-                    }
-                    .redgap{
-                        background-color: #c46f71;
-                    }
-                    .unclearword{
-                        color: gray;
-                        font-weight: bold;
-                        text-decoration: underline wavy gray;
-                    }
-                    .corrisplink{
-                        font-weight: bold;
-                        color: black;
-                        text-decoration: none;
-                    }
-                    .abbreviate{
-                        background-color: #5ce1e6; 
-                    }
-                    .mod{
-                        background-color: #cb6ce6; 
-                    }
+                #Btnln{
+                color: #f4fafd;
+                background-color: #635548;
+                height: 40px;
+                width: 40px;
+                }
 
-                    .tooltip {
-                        position: relative;
-                        display: inline; /* resta inline, non sposta il testo */
-                    }
+                #fullscreenBtnips{
+                color: #f4fafd;
+                background-color: #635548;
+                height: 40px;
+                width: 40px;
+                }
 
-                    .tooltip .tooltiptext {
-                        visibility: hidden;
-                        width: 200px;
-                        background-color: #635548;
-                        color: #fff;
-                        text-align: center;
-                        padding: 4px 6px;
-                        border-radius: 6px;
-                        position: absolute;   /* si stacca dal flusso */
-                        z-index: 1;
-                        bottom: 125%;         /* appare sopra */
-                        font-weight: normal;
-                        transform: translateX(-50%);
-                        font-size: 0.8em;
-                        white-space: normal;  /* va a capo se serve */
-                        margin-left: 60px;
-                    }
-
-                    .tooltip:hover .tooltiptext {
-                        visibility: visible;
-                    }
-
-                    .idiom{
-                        background-color: #c1ff72; 
-                    }
-
-                    .legend-container {
+                #fullscreenBtnln{
+                color: #f4fafd;
+                background-color: #635548;
+                height: 40px;
+                width: 40px;
+                }
+                  .legend-container {
                         margin-bottom: 1em;
                         font-family: sans-serif;
                         }
@@ -176,7 +120,7 @@
                         background-color: #ffffff;
                         border-radius: 10px;
                         margin-top: 5px;
-                        width:600px;
+                        width:200px;
                         
                         }
 
@@ -185,27 +129,15 @@
                         max-height: 800px; /* abbastanza per contenuto */
                         padding: 10px;
                     }
-                    #legend-smallbox{
-                        width:300px;
-                        height:20px;
-                    }
-
+                    
                 </style>
 </head>
 <body>
 <div class="legend-container">
-<input type="checkbox" id="legend-toggle" class="legend-checkbox"><label for="legend-toggle" class="legend-toggle">Legenda</label><div class="legend-content">
+<input type="checkbox" id="legend-toggle" class="legend-checkbox"><label for="legend-toggle" class="legend-toggle">Legend</label><div class="legend-content">
 <p class="persName"> Characters</p>
 <p class="placeName"> Places</p>
 <p class="date"> Dates</p>
-<p class="unclearword"> Unclear word</p>
-<p class="legend-color add-image" id="legend-smallbox"> Added image in Manzoni's work</p>
-<p class="legend-color yellowadd"> (a) Spanish Additions</p>
-<p class="legend-color redgap"> (g) Spanish omissions</p>
-<p class="legend-color abbreviate"> (ab) Spanish abbreviated names</p>
-<p class="legend-color mod"> (m) Spanish modifications and different interpretations</p>
-<p class="legend-color mod"> (Mm) Spanish modifications and different interpretations studied by Muñiz Muñiz</p>
-<p class="legend-color idiom"> (Im) Spanish idiomatic expressions studied by Pecchiari</p>
 </div>
 </div>
 <div class="columns">
@@ -214,7 +146,7 @@
 <body>
     <head>I PROMESSI SPOSI</head>
       <div>
-      <p><span class="yellowadd" id="add0-it"><a href="#add0-es" class="corrisplink"><seg>(a0)</seg></a></span></p>
+      <p><add><seg>(a0)</seg></add></p>
 
 
     <p>Quel ramo del <span class="placeName">lago di Como</span> che volge a <br class="lineBreak">
@@ -224,7 +156,7 @@
     quasi a un tratto a ristringersi e a prender<br class="lineBreak">
     corso e figura di fiume, tra un promontorio<br class="lineBreak">
     a destra, e un'ampia riviera di rincontro;<br class="lineBreak">
-    <div class="add-image"><span class="missingfigure">(Added F.1)</span></div>
+    <add>(Added F.1)</add>
     e il ponte, che ivi congiunge le due rive,<br class="lineBreak">
     par che renda ancor più sensibile all'occhio <br class="lineBreak">
     questa trasformazione, e segni il punto in<br class="lineBreak">
@@ -236,7 +168,7 @@
     tre grossi torrenti, scende appoggiata a due<br class="lineBreak"> 
     monti contigui, l'uno detto di <span class="placeName">san Martino</span>,<br class="lineBreak"></p>
 
-    <div class="page"><div class="pageBreak">Page 1</div></div>
+    <div class="pageBreak">Page 1</div>
 </div>
 
 <div>
@@ -258,15 +190,15 @@
     chè tutto ghiaia e ciottoloni; il resto, campi<br class="lineBreak">
     e vigneti, sparsi di terre, di ville, di casali;<br class="lineBreak"> 
     in qualche parte boschi, che si prolungano<br class="lineBreak">
-    su per la montagna <span class="yellowadd" id="add1-it"><a href="#add1-es" class="corrisplink"><seg>(a1)</seg></a></span>.<span class="placeName">Lecco</span>, la principale<br class="lineBreak"> 
-    di quelle terre, <span class="redgap" id="gap1-it"><a href="#gap1-es" class="corrisplink"><seg>(g1)</seg></a> e che dà nome al territorio,<br class="lineBreak"> 
+    su per la montagna <add><seg>(a1)</seg></add>.<span class="placeName">Lecco</span>, la principale<br class="lineBreak"> 
+    di quelle terre, <gap><seg>(g1)</seg> e che dà nome al territorio,<br class="lineBreak"> 
     giace poco discosto dal ponte, alla riva del<br class="lineBreak"> 
     lago, anzi viene in parte a trovarsi nel lago<br class="lineBreak"> 
-    stesso, quando egli ingrossa:</span> un gran borgo<br class="lineBreak"> 
+    stesso, quando egli ingrossa:</gap> un gran borgo<br class="lineBreak"> 
     al giorno d'oggi, e che s'incammina a<br class="lineBreak"> 
     diventare città. Ai tempi in cui accaddero i<br class="lineBreak"> 
     fatti che imprendiamo di raccontare, quel<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 2</div></div>
+    <div class="pageBreak">Page 2</div>
 </div>
 
 
@@ -281,7 +213,7 @@
     padre, e  sul finire della state, non manca-<br class="lineBreak">
     vano mai di spandersi nelle vigne, per di-<br class="lineBreak">
     radare le uve, e alleggerire ai contadini le<br class="lineBreak"> 
-    fatiche della vendemmia.<span class="yellowadd" id="add2-it"><a href="#add2-es" class="corrisplink"><seg>(a2)</seg></a></span>Dall'una all'altra<br class="lineBreak"> 
+    fatiche della vendemmia.<add><seg>(a2)</seg></add>Dall'una all'altra<br class="lineBreak"> 
     di quelle terre, dalle alture alla riva, da un<br class="lineBreak"> 
     poggio all'altro, correvano  e corrono tuttavia<br class="lineBreak">  
     strade e stradette,  ripide, acclivi, piane,<br class="lineBreak"> 
@@ -297,7 +229,7 @@
     parte campeggia o si scorcia, spunta o spari-<br class="lineBreak">
     sce a vicenda. Dove un tratto, dove un altro,<br class="lineBreak"> 
     dove una lunga distesa di quel vasto e sva-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 3</div></div>
+    <div class="pageBreak">Page 3</div>
 </div>
 
 
@@ -313,7 +245,7 @@
     va a perdersi in lucido serpeggiamento pur<br class="lineBreak"> 
     fra i monti, che l'accompagnano, digra-<br class="lineBreak">
     dando via via, e perdendosi quasi anch'essi<br class="lineBreak"> 
-    nell'orizzonte. <span class="redgap" id="gap2-it"><a href="#gap2-es" class="corrisplink"><seg>(g2)</seg></a>Il luogo stesso da cui con-<br class="lineBreak">
+    nell'orizzonte. <gap><seg>(g2)</seg>Il luogo stesso da cui con-<br class="lineBreak">
     template que' varii spettacoli, vi fa spettacolo<br class="lineBreak"> 
     da ogni banda: il monte di cui passeggiate<br class="lineBreak"> 
     le falde, vi svolge, al di sopra, d'intorno,<br class="lineBreak"> 
@@ -325,10 +257,10 @@
     sentava in sulla costa: e l'ameno, il dome-<br class="lineBreak">
     stico di quelle falde tempera gradevolmente<br class="lineBreak">
     il selvaggio, e orna vie più il magnifico<br class="lineBreak"> 
-    dell'altre vedute.</span><br class="lineBreak">
+    dell'altre vedute.</gap><br class="lineBreak">
     Per una di queste stradicciuole, tornava<br class="lineBreak"> 
     bel bello dal passeggio verso casa, in sulla<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 4</div></div>
+    <div class="pageBreak">Page 4</div>
     </div>
 
 
@@ -337,12 +269,12 @@
     1628</span>, <span class="persName">don Abbondio</span>, <span class="persName">curato</span> d'una delle<br class="lineBreak"> 
     terre accennate di sopra: il nome di questa,<br class="lineBreak">
     nè il casato del personaggio, non si trovano<br class="lineBreak"> 
-    nel manoscritto, <span class="redgap" id="gap3-it"><a href="#gap3-es" class="corrisplink"><seg>(g3)</seg></a>nè a questo luogo nè in se-<br class="lineBreak">
-    guito.Diceva tranquillamente il suo ufizio,</span> e<br class="lineBreak"> 
+    nel manoscritto, <gap><seg>(g3)</seg>nè a questo luogo nè in se-<br class="lineBreak">
+    guito.Diceva tranquillamente il suo ufizio,</gap> e<br class="lineBreak"> 
     alcuna volta, tra un salmo e l'altro, richiude-<br class="lineBreak">
     va il breviario, tenendovi entro, per segno,<br class="lineBreak"> 
-    l'indice della mano destra;<span class="redgap" id="gap4-it"><a href="#gap4-es" class="corrisplink"><seg>(g4)</seg></a>e  messa poi questa<br class="lineBreak"> 
-    nell'altra dietro le reni,</span> proseguiva il suo<br class="lineBreak"> 
+    l'indice della mano destra;<gap><seg>(g4)</seg>e  messa poi questa<br class="lineBreak"> 
+    nell'altra dietro le reni,</gap> proseguiva il suo<br class="lineBreak"> 
     cammino, guardando a terra, e rigettando<br class="lineBreak"> 
     verso il muro col piede  i ciottoli che face-<br class="lineBreak">
     vano inciampo nel sentiero: poi alzava la<br class="lineBreak"> 
@@ -359,7 +291,7 @@
     dinanzi: e così fece anche quel giorno.<br class="lineBreak">
     Dopo la rivolta la strada correva diritta<br class="lineBreak">  
     forse una sessantina di passi, e poi si divi-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 5</div></div>
+    <div class="pageBreak">Page 5</div>
 </div>
 
 
@@ -377,7 +309,7 @@
     che nella intenzione dell'artista  e agli occhi<br class="lineBreak"> 
     degli abitanti del vicinato volevano dir fiam-<br class="lineBreak">
     me; e  alternate colle fiamme certe altre fi-<br class="lineBreak">
-    <div class="add-image"><span class="missingfigure">(Added F.2)</span></div>
+    <add>(Added F.2)</add>
     gure da non potersi descrivere, che voleva-<br class="lineBreak">
     no dire anime del purgatorio: anime e<br class="lineBreak"> 
     fiamme a color di mattone, sur un fondo<br class="lineBreak"> 
@@ -391,7 +323,7 @@
     costoro  a cavalcioni sul muricciuolo basso,<br class="lineBreak"> 
     con una gamba spenzolata al di fuori, e<br class="lineBreak">
     l'altro piede posato sul terreno della via;<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 6</div></div>
+    <div class="pageBreak">Page 6</div>
 </div>
 
 
@@ -417,12 +349,12 @@
     co, con una grande elsa traforata a lamine<br class="lineBreak"> 
     d'ottone  congegnate  in cifra, forbite e lu-<br class="lineBreak">
     centi: a prima vista si davano a conoscere<br class="lineBreak"> 
-    per individui della specie dei <span class="persName">bravi<span class="yellowadd" id="add3-it"><a href="#add3-es" class="corrisplink"></a>(a3)</span></span>.<br class="lineBreak"> 
+    per individui della specie dei <span class="persName">bravi<add>(a3)</add></span>.<br class="lineBreak"> 
     Questa specie, ora del tutto perduta, era<br class="lineBreak"> 
     allora floridissima in <span class="placeName">Lombardia</span>, e già molto<br class="lineBreak"> 
     antica. Chi non ne avesse idea, ecco alcuni<br class="lineBreak"> 
     squarci autentici, che potranno darne una<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 7</div></div>
+    <div class="pageBreak">Page 7</div>
 </div>
 
 
@@ -431,13 +363,13 @@
     sforzi messi in opera per ispegnerla, e<br class="lineBreak">
     della sua dura e rigogliosa vitalità.<br class="lineBreak">
     Fino dagli <span class="date">otto d'aprile dell'anno 1583</span>,<br class="lineBreak">
-    <span class="redgap" id="gap5-it"><a href="#gap5-es" class="corrisplink"><seg>(g5)</seg></a>l'Illustrissimo ed Eccellentissimo signor</span> Don<br class="lineBreak"> 
+    <gap><seg>(g5)</seg>l'Illustrissimo ed Eccellentissimo signor</gap> Don<br class="lineBreak"> 
     Carlo d'Aragon, Principe di Castelvetra-<br class="lineBreak">
     no, Duca di Terranuova, Marchese d'Avola,<br class="lineBreak"> 
     Conte di Burgeto, grande Ammiraglio, e<br class="lineBreak"> 
     gran Contestabile di Sicilia, Governatore<br class="lineBreak"> 
-    di Milano e Capitan Generale di <span class="abbreviate" id="abbr1-it"><a href="#abbr1-es" class="corrisplink"><seg>(ab1)</seg></a>Sua Mae-<br class="lineBreak">
-    stà Cattolica</span> in <span class="placeName">Italia</span>, pienamente infor-<br class="lineBreak">
+    di Milano e Capitan Generale di <abbr><seg>(ab1)</seg>Sua Mae-<br class="lineBreak">
+    stà Cattolica</abbr> in <span class="placeName">Italia</span>, pienamente infor-<br class="lineBreak">
     mato della intollerabile miseria in che<br class="lineBreak"> 
     è vivuta e vive questa <span class="placeName">Città di Milano</span>,<br class="lineBreak"> 
     per cagione dei <span class="persName">bravi e vagabondi</span>, pu-<br class="lineBreak">
@@ -453,7 +385,7 @@
     e favore, o veramente, come si può presumere, per<br class="lineBreak"> 
     tendere insidie ad altri... A<br class="lineBreak"> 
     tutti costoro ordina che, nel termine di gior-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 8</div></div>
+    <div class="pageBreak">Page 8</div>
 </div>
 
 
@@ -482,28 +414,28 @@
     processo informativo...  et ancorchè non<br class="lineBreak"> 
     confessi delitto alcuno, tuttavia sia man-<br class="lineBreak">
     dato alla galea, per detto triennio, per<br class="lineBreak">
-    la sola opinione e nome di bravo, <span class="redgap" id="gap6-it"><a href="#gap6-es" class="corrisplink"><seg>(g6)</seg></a>come<br class="lineBreak"> 
-    di sopra</span>. <span class="yellowadd" id="add4-it"><a href="#add4-es" class="corrisplink"></a>(a4)</span>Tutto ciò, e il di più che si om-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 9</div></div>
+    la sola opinione e nome di bravo, <gap><seg>(g6)</seg>come<br class="lineBreak"> 
+    di sopra</gap>. <add>(a4)</add>Tutto ciò, e il di più che si om-<br class="lineBreak"></p>
+    <div class="pageBreak">Page 9</div>
 </div>
 
 
 <div>
-    <p>mette, perchè <span class="abbreviate" id="abbr2-it"><a href="#abbr2-es" class="corrisplink"><seg>(ab2)</seg></a>Sua Eccellenza</span> è risoluta di<br class="lineBreak"> 
+    <p>mette, perchè <abbr><seg>(ab2)</seg>Sua Eccellenza</abbr> è risoluta di<br class="lineBreak"> 
     voler essere obbedita da ognuno.<br class="lineBreak">
     All'udir parole d'un tanto signore, così<br class="lineBreak"> 
     gagliarde e sicure, e accompagnate da tali<br class="lineBreak"> 
-    ordini, <span class="redgap" id="gap7-it"><a href="#gap7-es" class="corrisplink"><seg>(g7)</seg></a>viene una gran voglia di credere<br class="lineBreak"> 
-    che  al  rimbombo di quelle</span>, tutti i <span class="persName">bravi</span><br class="lineBreak"> 
+    ordini, <gap><seg>(g7)</seg>viene una gran voglia di credere<br class="lineBreak"> 
+    che  al  rimbombo di quelle</gap>, tutti i <span class="persName">bravi</span><br class="lineBreak"> 
     sieno scomparsi per sempre. Ma la testimo-<br class="lineBreak">
     nianza di un signore non meno autorevole,<br class="lineBreak"> 
     nè meno dotato di nomi  ci obbliga a cre-<br class="lineBreak">
-    dere tutto il contrario.È questi <span class="abbreviate" id="abbr3-it"><a href="#abbr3-es" class="corrisplink"><seg>(ab3)</seg></a>l'Illustris-<br class="lineBreak">
-    simo ed Eccellentissimo Signor</span> Juan Fer-<br class="lineBreak">
+    dere tutto il contrario.È questi <abbr><seg>(ab3)</seg>l'Illustris-<br class="lineBreak">
+    simo ed Eccellentissimo Signor</abbr> Juan Fer-<br class="lineBreak">
     nandez de Velasco, Contestabile di <span class="placeName">Castiglia</span>,<br class="lineBreak"> 
     Cameriero maggiore di Sua Maestà, Duca<br class="lineBreak"> 
-    della <span class="placeName">Città di Frias</span>, Conte di Haro<span class="redgap" id="gap8-it"><a href="#gap8-es" class="corrisplink"><seg>(g8)</seg></a> e Ca-<br class="lineBreak">
-    stelnovo</span>, Signore della Casa di Velasco,<br class="lineBreak"> 
+    della <span class="placeName">Città di Frias</span>, Conte di Haro<gap><seg>(g8)</seg> e Ca-<br class="lineBreak">
+    stelnovo</gap>, Signore della Casa di Velasco,<br class="lineBreak"> 
     e di quella delli sette Infanti di Lara, Go-<br class="lineBreak">
     vernatore dello Stato di <span class="placeName">Milano</span>  etc. Ai <span class="date">5 di<br class="lineBreak"> 
     giugno dell'anno 1593</span>, pienamente informa-<br class="lineBreak">
@@ -515,7 +447,7 @@
     ne di giorni sei  abbiano a sbrattare il pae-<br class="lineBreak">
     se, ripetendo a un dipresso le stesse minac-<br class="lineBreak">
     ce e le stesse prescrizioni  del suo predeces-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 10</div></div>
+    <div class="pageBreak">Page 10</div>
 </div>
 
 
@@ -524,38 +456,38 @@
     informato con non poco dispiacere del-<br class="lineBreak">
     l'animo suo  che... ogni dì più in <span class="placeName">questa<br class="lineBreak">
     Città e Stato</span> va crescendo il numero di<br class="lineBreak"> 
-    questi tali (<span class="persName">bravi e vagabondi</span>)<span class="redgap" id="gap9-it"><a href="#gap9-es" class="corrisplink"><seg>(g9)</seg></a>, nè di lo-<br class="lineBreak">
-    ro,</span> giorno e notte, altro si sente che fe-<br class="lineBreak">
+    questi tali (<span class="persName">bravi e vagabondi</span>)<gap><seg>(g9)</seg>, nè di lo-<br class="lineBreak">
+    ro,</gap> giorno e notte, altro si sente che fe-<br class="lineBreak">
     rite appostatamente date, omicidii, e ru-<br class="lineBreak">
     berie et ogni altra qualità di delitti, ai<br class="lineBreak">
     quali si rendono più facili, confidati essi <br class="lineBreak">
     <span class="persName">bravi</span> d'essere ajutati dai capi e fautori<br class="lineBreak"> 
-    loro;<span class="redgap" id="gap10-it"><a href="#gap10-es" class="corrisplink"><seg>(g10)</seg></a>...</span> prescrive di nuovo gli stessi rimedii,<br class="lineBreak">
+    loro;<gap><seg>(g10)</seg>...</gap> prescrive di nuovo gli stessi rimedii,<br class="lineBreak">
     accrescendo la dose, come si usa nelle malat-<br class="lineBreak">
-    tie ostinate. <span class="redgap" id="gap11-it"><a href="#gap11-es" class="corrisplink"><seg>(g11)</seg></a>Ognuno dunque,</span>  conchiude egli,<br class="lineBreak">
+    tie ostinate. <gap><seg>(g11)</seg>Ognuno dunque,</gap>  conchiude egli,<br class="lineBreak">
     onninamente si guardi di contravvenire in<br class="lineBreak"> 
     parte alcuna alla grida presente, perchè<br class="lineBreak">  
-    in luogo di provare la clemenza di <span class="abbreviate" id="abbr4-it"><a href="#abbr4-es" class="corrisplink"><seg>(ab4)</seg></a>Sua<br class="lineBreak"> 
-    Eccellenza</span>, proverà il rigore, e l'ira<br class="lineBreak"> 
-    sua <span class="redgap" id="gap12-it"><a href="#gap12-es" class="corrisplink"><seg>(g12)</seg></a>...</span>  essendo risoluta e determinata che<br class="lineBreak">
+    in luogo di provare la clemenza di <abbr><seg>(ab4)</seg>Sua<br class="lineBreak"> 
+    Eccellenza</abbr>, proverà il rigore, e l'ira<br class="lineBreak"> 
+    sua <gap><seg>(g12)</seg>...</gap>  essendo risoluta e determinata che<br class="lineBreak">
     questa sia l'ultima e perentoria moni-<br class="lineBreak">
     zione.<br class="lineBreak">
-    Non fu però di questo parere <span class="redgap" id="gap13-it"><a href="#gap13-es" class="corrisplink"><seg>(g13)</seg></a>l'Illustris-<br class="lineBreak">
+    Non fu però di questo parere <gap><seg>(g13)</seg>l'Illustris-<br class="lineBreak">
     simo ed Eccellentissimo Signore, il Signor<br class="lineBreak"> 
-    Don Pietro Enriquez de Acevedo,</span> Conte di<br class="lineBreak">
+    Don Pietro Enriquez de Acevedo,</gap> Conte di<br class="lineBreak">
     Fuentes, Capitano, e Governatore dello<br class="lineBreak">
     Stato di <span class="placeName">Milano</span>; non fu di questo parere, e<br class="lineBreak"> 
-    per buone ragioni.<span class="redgap" id="gap14-it"><a href="#gap14-es" class="corrisplink"><seg>(g14)</seg></a> Pienamente informato</span><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 11</div></div>
+    per buone ragioni.<gap><seg>(g14)</seg> Pienamente informato</gap><br class="lineBreak"></p>
+    <div class="pageBreak">Page 11</div>
 </div>
 
 
 <div>
-    <p><span class="redgap" id="gap15-it"><a href="#gap15-es" class="corrisplink"><seg>(g15)</seg></a>della miseria in che vive questa Città è<br class="lineBreak"> 
+    <p><gap><seg>(g15)</seg>della miseria in che vive questa Città è<br class="lineBreak"> 
     Stato per cagione del gran numero di<br class="lineBreak"> 
     <span class="persName">bravi</span> che in esso abbonda...  e risoluto di<br class="lineBreak"> 
     totalmente estirpare seme tanto pernizioso,<br class="lineBreak"> 
-    dà fuori,</span> ai <span class="date">5 di Dicembre 1600</span>, <span class="redgap" id="gap16-it"><a href="#gap16-es" class="corrisplink"><seg>(g16)</seg></a>una nuo-<br class="lineBreak">
+    dà fuori,</gap> ai <span class="date">5 di Dicembre 1600</span>, <gap><seg>(g16)</seg>una nuo-<br class="lineBreak">
     va monizione piena  di gagliardi provvedi-<br class="lineBreak">
     menti, con fermo proponimento che  con<br class="lineBreak"> 
     ogni rigore  e senza speranza di remissio-<br class="lineBreak">
@@ -571,51 +503,51 @@
     congiurare il duca di Biron, a cui fece per-<br class="lineBreak">
     dere la testa; ma, per ciò che riguarda quel<br class="lineBreak">
     seme tanto pernizioso dei <span class="persName">bravi</span>, certa co-<br class="lineBreak">
-    sa è che esso continuava a germogliare</span> ai<br class="lineBreak">
+    sa è che esso continuava a germogliare</gap> ai<br class="lineBreak">
     <span class="date">22 di settembre dell'anno 1612</span>.In quel<br class="lineBreak"> 
-    giorno <span class="abbreviate" id="abbr5-it"><a href="#abbr5-es" class="corrisplink"><seg>(ab5)</seg></a>l'Illustrissimo ed Eccellentissimo Si-<br class="lineBreak">
+    giorno <abbr><seg>(ab5)</seg>l'Illustrissimo ed Eccellentissimo Si-<br class="lineBreak">
     gnore, Don Giovanni de Mendozza, Mar-<br class="lineBreak">
-    chese de la Hynojosa</span>,<span class="redgap" id="gap17-it"><a href="#gap17-es" class="corrisplink"><seg>(g17)</seg></a> Gentiluomo etc., Go-<br class="lineBreak">
-    vernatore etc., pensò seriamente ad estirpar-</span><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 12</div></div>
+    chese de la Hynojosa</abbr>,<gap><seg>(g17)</seg> Gentiluomo etc., Go-<br class="lineBreak">
+    vernatore etc., pensò seriamente ad estirpar-</gap><br class="lineBreak"></p>
+    <div class="pageBreak">Page 12</div>
 </div>
 
 
 <div>
-    <p><span class="redgap" id="gap18-it"><a href="#gap18-es" class="corrisplink"><seg>(g18)</seg></a>lo. A questo effetto spedì a Pandolfo e Mar-<br class="lineBreak">
+    <p><gap><seg>(g18)</seg>lo. A questo effetto spedì a Pandolfo e Mar-<br class="lineBreak">
     co Tullio Malatesti  stampatori regii came-<br class="lineBreak">
     rali  la solita grida, corretta ed accresciuta,<br class="lineBreak">
     perchè la stampassero a sterminio dei bra-<br class="lineBreak">
-    vi.Ma questi vissero ancora per toccare,</span> ai<br class="lineBreak"> 
+    vi.Ma questi vissero ancora per toccare,</gap> ai<br class="lineBreak"> 
     <span class="date">24 di Decembre dell'anno 1618</span>, gli stessi<br class="lineBreak">
-    e più forti colpi <span class="abbreviate" id="abbr6-it"><a href="#abbr6-es" class="corrisplink"><seg>(ab6)</seg></a>dall'Illustrissimo ed Ec-<br class="lineBreak">
+    e più forti colpi <abbr><seg>(ab6)</seg>dall'Illustrissimo ed Ec-<br class="lineBreak">
     cellentissimo Signore, il Signor Don Go-<br class="lineBreak">
     mez Suarez de Figueroa, Duca di Feria , etc.<br class="lineBreak"> 
-    Governatore, etc.</span> <span class="redgap" id="gap19-it"><a href="#gap19-es" class="corrisplink"><seg>(g19)</seg></a>Però, non essendo essi<br class="lineBreak"> 
-    morti pure di quelle percosse,</span> <span class="abbreviate" id="abbr7-it"><a href="#abbr7-es" class="corrisplink"><seg>(ab7)</seg></a>l'Illustris-<br class="lineBreak">
+    Governatore, etc.</abbr> <gap><seg>(g19)</seg>Però, non essendo essi<br class="lineBreak"> 
+    morti pure di quelle percosse,</gap> <abbr><seg>(ab7)</seg>l'Illustris-<br class="lineBreak">
     simo ed Eccellentissimo Signore, il Signor<br class="lineBreak"> 
-    Gonzalo Fernandez di Cordova</span>,<span class="redgap" id="gap20-it"><a href="#gap20-es" class="corrisplink"><seg>(g20)</seg></a> sotto il cui<br class="lineBreak"> 
+    Gonzalo Fernandez di Cordova</abbr>,<gap><seg>(g20)</seg> sotto il cui<br class="lineBreak"> 
     governo accadde il passeggio di don Ab-<br class="lineBreak">
     bondio, s'era trovato costretto a ricorreg-<br class="lineBreak">
     gere e ripublicare la solita grida contra i<br class="lineBreak"> 
-    <span class="persName">bravi</span>,</span> il giorno <span class="date">5 di ottobre del 1627</span><span class="redgap" id="gap21-it"><a href="#gap21-es" class="corrisplink"><seg>(g21)</seg></a> , cioè<br class="lineBreak"> 
+    <span class="persName">bravi</span>,</gap> il giorno <span class="date">5 di ottobre del 1627</span><gap><seg>(g21)</seg> , cioè<br class="lineBreak"> 
     un anno, un mese e due giorni prima di <br class="lineBreak">
-    quel memorabile avvenimento.</span><br class="lineBreak">
-    <span class="redgap" id="gap22-it"><a href="#gap22-es" class="corrisplink"><seg>(g22)</seg></a>Nè questa fu l'ultima publicazione; ma<br class="lineBreak">
+    quel memorabile avvenimento.</gap><br class="lineBreak">
+    <gap><seg>(g22)</seg>Nè questa fu l'ultima publicazione; ma<br class="lineBreak">
     noi delle posteriori non crediamo dover far<br class="lineBreak"> 
     menzione, come di cosa che esce dal perio-<br class="lineBreak">
     do della nostra storia. Ne accenneremo sol-<br class="lineBreak">
     tanto una dei <span class="date">13 di febbraio dell'anno 1632</span>,<br class="lineBreak"> 
     nella quale l'Illustrissimo ed Eccellentis-<br class="lineBreak">
-    simo Signore, el Duque de Feria, per la</span><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 13</div></div>
+    simo Signore, el Duque de Feria, per la</gap><br class="lineBreak"></p>
+    <div class="pageBreak">Page 13</div>
 </div>
 
 
 <div>
-    <p><span class="redgap" id="gap23-it"><a href="#gap23-es" class="corrisplink"><seg>(g23)</seg></a>seconda volta governatore, ci avvisa che<br class="lineBreak">
+    <p><gap><seg>(g23)</seg>seconda volta governatore, ci avvisa che<br class="lineBreak">
     le maggiori sceleraggini procedono da<br class="lineBreak"> 
-    quelli che chiamano <span class="persName">bravi</span>.</span> Questo basta<br class="lineBreak"> 
+    quelli che chiamano <span class="persName">bravi</span>.</gap> Questo basta<br class="lineBreak"> 
     a farne certi che  nel tempo di cui noi trat-<br class="lineBreak">
     tiamo  c'era dei <span class="persName">bravi</span> tuttavia.<br class="lineBreak">
     Che i due descritti di sopra stessero ivi<br class="lineBreak"> 
@@ -639,7 +571,7 @@
     fosse qualche uscita di strada  a dritta o a<br class="lineBreak"> 
     sinistra; e gli sovvenne tosto di no. Fece<br class="lineBreak"> 
     un rapido esame per ricercare se avesse<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 14</div></div>
+    <div class="pageBreak">Page 14</div>
 </div>
 
 
@@ -670,7 +602,7 @@
     la faccia a tutta quella quiete ed ilarità che<br class="lineBreak">
     potè, fece ogni sforzo per preparare un<br class="lineBreak"> 
     sorriso, e quando si trovò a fronte dei due<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 15</div></div>
+    <div class="pageBreak">Page 15</div>
 </div>
 
 
@@ -679,29 +611,29 @@
     e si fermò sui due piedi. <said>«Signor <span class="persName">curato</span>!»</said><br class="lineBreak"> 
     disse uno di quei due, piantandogli gli oc-<br class="lineBreak">
     chi in faccia.<br class="lineBreak">
-    <span class="yellowadd" id="add5-it"><a href="#add5-es" class="corrisplink"><seg>(a5)</seg></a></span>
-    <span class="redgap" id="gap24-it"><a href="#gap24-es" class="corrisplink"><seg>(g24)</seg></a><said>«Ella ha intenzione»</said>proseguì l'altro<br class="lineBreak"> 
+    <add><seg>(a5)</seg></add>
+    <gap><seg>(g24)</seg><said>«Ella ha intenzione»</said>proseguì l'altro<br class="lineBreak"> 
     col piglio minaccioso ed iracondo di chi<br class="lineBreak"> 
     coglie un suo inferiore su l'intraprendere<br class="lineBreak"> 
-    una ribalderia </span><said>«ella ha intenzione di spo-<br class="lineBreak">
+    una ribalderia </gap><said>«ella ha intenzione di spo-<br class="lineBreak">
     sare domani <span class="persName">Renzo Tramaglino</span> e <span class="persName">Lucia<br class="lineBreak"> 
     Mondella»</span>!</said><br class="lineBreak">
 
-    <span class="yellowadd" id="add6-it"><a href="#add6-es" class="corrisplink"><seg>(a6)</seg></a></span>
-    <span class="redgap" id="gap25-it"><a href="#gap25-es" class="corrisplink"><seg>(g25)</seg></a><said>«Cioè... »</said></span> rispose  con voce tremola<br class="lineBreak"> 
-    <span class="persName">don Abbondio</span>: <said>«cioè. <span class="yellowadd" id="add7-it"><a href="#add7-es" class="corrisplink"><seg>(a7)</seg></a></span>Loro signori son uo-<br class="lineBreak">
+    <add><seg>(a6)</seg></add>
+    <gap><seg>(g25)</seg><said>«Cioè... »</said></gap> rispose  con voce tremola<br class="lineBreak"> 
+    <span class="persName">don Abbondio</span>: <said>«cioè. <add><seg>(a7)</seg></add>Loro signori son uo-<br class="lineBreak">
     mini di mondo, e sanno benissimo come<br class="lineBreak">
     vadano queste faccende. Il povero <span class="persName">curato</span><br class="lineBreak"> 
     non c'entra: fanno i loro piastricci fra<br class="lineBreak">
     loro, e poi...  poi, vengono da noi<br class="lineBreak">  
-    come <span class="redgap" id="gap26-it"><a href="#gap26-es" class="corrisplink"><seg>(g26)</seg></a>s'andrebbe ad un banco a riscuo-<br class="lineBreak">
-    tere</span>; e noi...  <span class="redgap" id="gap27-it"><a href="#gap27-es" class="corrisplink"><seg>(g27)</seg></a>noi siamo i servitori<br class="lineBreak"> 
-    del comune.»</span></said><br class="lineBreak">
+    come <gap><seg>(g26)</seg>s'andrebbe ad un banco a riscuo-<br class="lineBreak">
+    tere</gap>; e noi...  <gap><seg>(g27)</seg>noi siamo i servitori<br class="lineBreak"> 
+    del comune.»</gap></said><br class="lineBreak">
     <said>«Or bene»</said> disse il bravo con voce som-<br class="lineBreak">
     messa,  ma in tuono solenne di comando<br class="lineBreak">  
     <said>«questo matrimonio non s'ha da fare, nè<br class="lineBreak">
     domani, nè mai.»</said><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 16</div></div>
+    <div class="pageBreak">Page 16</div>
 </div>
 
 
@@ -714,11 +646,11 @@
     me,... vedono bene che a me non<br class="lineBreak"> 
     importa nulla ...»</said><br class="lineBreak"> 
     <said>«Orsù»</said> interruppe il bravo  <said>«se la cosa<br class="lineBreak"> 
-    avesse a decidersi a ciarle, ella <span class="mod" id="mod1-it"><a href="#mod1-es" class="corrisplink"><seg>(m1)</seg></a>ci mette-<br class="lineBreak">
-    rebbe in sacco </span>. Noi non ne sappiamo, nè<br class="lineBreak"> 
-    <span class="mod" id="mod2-it"><a href="#mod2-es" class="corrisplink"><seg>(m2)</seg></a>vogliamo saperne di più</span>. Uomo avverti-<br class="lineBreak">
+    avesse a decidersi a ciarle, ella <mod><seg>(m1)</seg>ci mette-<br class="lineBreak">
+    rebbe in sacco </mod>. Noi non ne sappiamo, nè<br class="lineBreak"> 
+    <mod><seg>(m2)</seg>vogliamo saperne di più</mod>. Uomo avverti-<br class="lineBreak">
     to... ella c'intende.»</said><br class="lineBreak">
-    <said>«Ma codesti signori son <span class="redgap" id="gap28-it"><a href="#gap28-es" class="corrisplink"><seg>(g28)troppo giusti,</seg></a></span><br class="lineBreak"> 
+    <said>«Ma codesti signori son <gap><seg>(g28)troppo giusti,</seg></gap><br class="lineBreak"> 
     troppo ragionevoli... »</said><br class="lineBreak">
     <said>«Ma »</said> interruppe questa volta l'altro<br class="lineBreak"> 
     compagnone, che non aveva parlato fino<br class="lineBreak"> 
@@ -731,13 +663,13 @@
     re, <said>«il signor <span class="persName">curato</span>  sa il vivere del mon-<br class="lineBreak">
     do; e noi siamo galantuomini, che non<br class="lineBreak"> 
     vogliamo fargli del male quando egli<br class="lineBreak"> 
-    abbia giudizio. Signor <span class="persName">curato</span>, <span class="abbreviate" id="abbr8-it"><a href="#abbr8-es" class="corrisplink"><seg>(ab8)</seg></a>l'illustris-</span></said><br class="lineBreak"></p>
-     <div class="page"><div class="pageBreak">Page 17</div></div>
+    abbia giudizio. Signor <span class="persName">curato</span>, <abbr><seg>(ab8)</seg>l'illustris-</abbr></said><br class="lineBreak"></p>
+     <div class="pageBreak">Page 17</div>
 </div>
 
 
 <div>
-    <p><said>«<span class="abbreviate" id="abbr9-it"><a href="#abbr9-es" class="corrisplink"><seg>(ab9)</seg></a>simo signor <span class="persName">don Rodrigo</span></span> nostro padrone<br class="lineBreak"> 
+    <p><said>«<abbr><seg>(ab9)</seg>simo signor <span class="persName">don Rodrigo</span></abbr> nostro padrone<br class="lineBreak"> 
     la riverisce caramente.»</said><br class="lineBreak">
     Questo nome fu  nella mente di don Ab-<br class="lineBreak">
     bondio  come, nel forte d'un temporale<br class="lineBreak"> 
@@ -754,24 +686,24 @@
     bene; altrimenti...  ehm...  sa-<br class="lineBreak">
     rebbe lo stesso che fare quel tal matri-<br class="lineBreak">
     momo. Via, che vuol ella che si dica in<br class="lineBreak"> 
-    suo nome all'<span class="abbreviate" id="abbr10-it"><a href="#abbr10-es" class="corrisplink"><seg>(ab10)</seg></a>illustrissimo signor <span class="persName">don<br class="lineBreak"> 
-    Rodrigo</span></span>?»</said><br class="lineBreak">
+    suo nome all'<abbr><seg>(ab10)</seg>illustrissimo signor <span class="persName">don<br class="lineBreak"> 
+    Rodrigo</span></abbr>?»</said><br class="lineBreak">
     <said>«Il mio rispetto... »</said><br class="lineBreak">
     <said>«Si spieghi, signor <span class="persName">curato</span>.»</said><br class="lineBreak">
     <said>«...  Disposto...  disposto sempre<br class="lineBreak"> 
     alla ubbidienza. »</said> E  proferendo queste<br class="lineBreak"> 
-    <div class="add-image"><span class="missingfigure">(Added F.3)</span></div>
+    <add>(Added F.3)</add>
     parole, non sapeva bene egli stesso se dava<br class="lineBreak"> 
     una promessa, o se gittava un complimento<br class="lineBreak">
     comunale. I <span class="persName">bravi</span> le presero  o mostrarono<br class="lineBreak"> 
     di prenderle nel significato più serio.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 18</div></div>
+    <div class="pageBreak">Page 18</div>
 </div>
 
 
 <div>
-    <p><span class="mod" id="mod3-it"><a href="#mod3-es" class="corrisplink"><seg>(m3)</seg></a><said>«Benissimo; e buona notte, signor cur-<br class="lineBreak">
-    ato,»</said></span> disse l'un d'essi, in atto di par-<br class="lineBreak">
+    <p><mod><seg>(m3)</seg><said>«Benissimo; e buona notte, signor cur-<br class="lineBreak">
+    ato,»</said></mod> disse l'un d'essi, in atto di par-<br class="lineBreak">
     tire col compagno.<span class="persName">Don Abbondio</span>, che  po-<br class="lineBreak">
     chi momenti prima  avrebbe dato un occhio<br class="lineBreak">
     del corpo per iscansarli, allora avrebbe vo-<br class="lineBreak">
@@ -796,7 +728,7 @@
     avveduto) non era nato con un cuor di<br class="lineBreak"> 
     lione. Ma fino dai primi suoi anni, egli<br class="lineBreak"> 
     aveva dovuto accorgersi che la situazione<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 19</div></div>
+    <div class="pageBreak">Page 19</div>
 </div>
 
 
@@ -818,7 +750,7 @@
     tanto a liberare il giudice da ogni cosa che<br class="lineBreak"> 
     potesse essergli d'impedimento a proferire<br class="lineBreak"> 
     una condanna: gli squarci che abbiamo ri-<br class="lineBreak">
-    portati delle gride contra i <span class="persName">bravi</span><span class="yellowadd" id="add8-it"><a href="#add8-es" class="corrisplink"><seg>(a8)</seg></a></span>, ne sono<br class="lineBreak"> 
+    portati delle gride contra i <span class="persName">bravi</span><add><seg>(a8)</seg></add>, ne sono<br class="lineBreak"> 
     un picciolo, ma fedel saggio.Con tutto ciò,<br class="lineBreak"> 
     anzi in gran parte per ciò, quelle gride ri-<br class="lineBreak">
     publicate e rinforzate di governo in gover-<br class="lineBreak">
@@ -827,7 +759,7 @@
     o  se producevano qualche effetto immediato,<br class="lineBreak"> 
     egli era principalmente di aggiungere molte<br class="lineBreak"> 
     vessazioni a quelle che i pacifici e i deboli<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 20</div></div>
+    <div class="pageBreak">Page 20</div>
 </div>
 
 
@@ -858,7 +790,7 @@
     ne; perchè col fine d'aver sotto la mano<br class="lineBreak"> 
     ogni uomo, per prevenire o per punire ogni<br class="lineBreak"> 
     delitto, assoggettavano ogni mossa del pri-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 21</div></div>
+    <div class="pageBreak">Page 21</div>
 </div>
 
 
@@ -889,7 +821,7 @@
     potuto venirne a capo, inferiori come erano<br class="lineBreak"> 
     di numero a quelli coi quali si sarebbero<br class="lineBreak">
     posti in guerra, e colla probabilità frequen-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 22</div></div>
+    <div class="pageBreak">Page 22</div>
 </div>
 
 
@@ -920,7 +852,7 @@
     ognuno la maggior potenza di quella a cui<br class="lineBreak"> 
     apparteneva. Il clero vegliava a difendere e<br class="lineBreak"> 
     ad estendere le sue immunità, la nobiltà i<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 23</div></div>
+    <div class="pageBreak">Page 23</div>
 </div>
 
 
@@ -951,7 +883,7 @@
     lega avrebbe ivi potuto resistere.<br class="lineBreak">
     Il nostro <span class="persName">Abbondio</span>, non nobile, non ric-<br class="lineBreak">
     co, non animoso, s'era dunque , quasi al-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 24</div></div>
+    <div class="pageBreak">Page 24</div>
 </div>
 
 
@@ -961,9 +893,9 @@
     costretto a far cammino in compagnia di<br class="lineBreak"> 
     molti vasi di ferro. Aveva quindi  assai di<br class="lineBreak"> 
     buon grado obbedito ai parenti, che lo vol-<br class="lineBreak">
-    lero prete. Per dire la verità, <span class="mod" id="mod4-it"><a href="#mod4-es" class="corrisplink"><span class="tooltip" id="Mm4-it">(Mm1)<span class="tooltiptext">Manzoni offers critique of both the clergy and the Spanish monarchy</span></span></a>egli non aveva <br class="lineBreak">
+    lero prete. Per dire la verità, <mod><seg>(Mm1)</seg>egli non aveva <br class="lineBreak">
     gran fatto pensato agli obblighi e ai nobili<br class="lineBreak"> 
-    fini del ministero al quale si dedicava:</span> as-<br class="lineBreak">
+    fini del ministero al quale si dedicava:</mod> as-<br class="lineBreak">
     sicurarsi di che vivere con qualche agio, e<br class="lineBreak"> 
     porsi in una classe riverita e forte, gli era-<br class="lineBreak">
     no parute due ragioni più che sufficienti per<br class="lineBreak"> 
@@ -982,7 +914,7 @@
     le guerre che scoppiavano intorno a lui,<br class="lineBreak"> 
     dalle contese  allora frequentissime  tra il<br class="lineBreak">
     clero e le podestà laiche, dai contrasti pure<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 25</div></div>
+    <div class="pageBreak">Page 25</div>
 </div>
 
 
@@ -996,9 +928,9 @@
     col più forte, sempre però alla retroguardia,<br class="lineBreak"> 
     e procurando di far vedere all'altro che<br class="lineBreak"> 
     egli non gli era volontariamente nimico:<br class="lineBreak"> 
-    <span class="redgap" id="gap29-it"><a href="#gap29-es" class="corrisplink"><seg>(g29)</seg></a>pareva che gli dicesse:<said> ma perchè non avete<br class="lineBreak"> 
+    <gap><seg>(g29)</seg>pareva che gli dicesse:<said> ma perchè non avete<br class="lineBreak"> 
     saputo essere voi il più forte? io mi sarei<br class="lineBreak"> 
-    posto dalla vostra parte.</said></span>Stando alla larga<br class="lineBreak">
+    posto dalla vostra parte.</said></gap>Stando alla larga<br class="lineBreak">
     dai prepotenti, dissimulando le loro soper-<br class="lineBreak">
     chierie passeggiere e capricciose, corrispon-<br class="lineBreak">
     dendo con sommessioni a quelle che venis-<br class="lineBreak">
@@ -1013,7 +945,7 @@
     esercizio di sofferenza, quel dar così soven-<br class="lineBreak">
     te ragione altrui, tanti bocconi amari in-<br class="lineBreak">
     ghiottiti in silenzio, glielo avevano esacer-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 26</div></div>
+    <div class="pageBreak">Page 26</div>
 </div>
 
 
@@ -1044,20 +976,20 @@
     loro rischio, pigliavano le parti d'un debole<br class="lineBreak"> 
     oppresso contra un soverchiatore potente.<br class="lineBreak"> 
     Questo chiamava egli un comprarsi le bri-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 27</div></div>
+    <div class="pageBreak">Page 27</div>
 </div>
 
 
 <div>
-    <p>ghe a contanti, <span class="mod" id="mod5-it"><a href="#mod5-es" class="corrisplink"><seg>(m5)</seg></a>un volere dirizzar le gambe<br class="lineBreak"> 
-    ai cani;</span>diceva anche severamente ch'egli<br class="lineBreak"> 
-    <span class="redgap" id="gap30-it"><a href="#gap30-es" class="corrisplink"><seg>(g30)</seg></a>era un mischiarsi nelle cose profane, a<br class="lineBreak"> 
+    <p>ghe a contanti, <mod><seg>(m5)</seg>un volere dirizzar le gambe<br class="lineBreak"> 
+    ai cani;</mod>diceva anche severamente ch'egli<br class="lineBreak"> 
+    <gap><seg>(g30)</seg>era un mischiarsi nelle cose profane, a<br class="lineBreak"> 
     danno della dignità del sacro ministero. E<br class="lineBreak">
     contra questi sermonava, sempre a quattro<br class="lineBreak">
     occhi però , o in un picciolissimo crocchio,<br class="lineBreak"> 
     con tanto più di veemenza, quanto più essi<br class="lineBreak">
     erano conosciuti per alieni dal risentirsi<br class="lineBreak">  
-    in cosa che li toccasse personalmente.</span>Aveva<br class="lineBreak"> 
+    in cosa che li toccasse personalmente.</gap>Aveva<br class="lineBreak"> 
     poi una sua sentenza prediletta, con la qua-<br class="lineBreak">
     le sigillava sempre i discorsi su queste ma-<br class="lineBreak">
     terie: che ad un galantuomo  il quale badi<br class="lineBreak"> 
@@ -1075,19 +1007,19 @@
     un passo del quale non si vedeva la uscita:<br class="lineBreak"> 
     tutti questi pensieri ronzavano tumultuaria-<br class="lineBreak"> 
     mente nel capo basso di <span class="persName">don Abbondio</span>.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 28</div></div>
+    <div class="pageBreak">Page 28</div>
 </div>
 
 
 <div>
-    <p><span class="mod" id="mod6-it"><a href="#mod6-es" class="corrisplink"><seg>(m6)</seg></a>– Se <span class="persName">Renzo</span> si potesse mandare in pace con<br class="lineBreak"> 
+    <p><mod><seg>(m6)</seg>– Se <span class="persName">Renzo</span> si potesse mandare in pace con<br class="lineBreak"> 
     un bel no, via; ma egli vorrà delle ragioni;<br class="lineBreak">  
     e che cosa ho io da rispondergli, per amor<br class="lineBreak"> 
     del cielo? E, e, e, anche costui è una testa:<br class="lineBreak">  
     un agnello se nessuno lo tocca, ma se uno<br class="lineBreak">  
     vuol contraddirgli...  ih! E poi, e<br class="lineBreak">
-    </span>
-    <span class="mod" id="mod7-it"><a href="#mod7-es" class="corrisplink"><seg>(m7)</seg></a>
+    </mod>
+    <mod><seg>(m7)</seg>
     poi, perduto dietro a quella <span class="persName">Lucia</span>, inna-<br class="lineBreak"> 
     morato come...  Ragazzacci, che  per non<br class="lineBreak">  
     saper che fare  s'innamorano, vogliono ma-<br class="lineBreak"> 
@@ -1102,13 +1034,13 @@
     che le cose a proposito mi vengan sempre<br class="lineBreak">  
     in mente un momento dopo l'occasione. Se<br class="lineBreak">  
     avessi mo pensato di suggerir loro che an-<br class="lineBreak"> 
-    dassero a portare la loro imbasciata...</span><br class="lineBreak">  
+    dassero a portare la loro imbasciata...</mod><br class="lineBreak">  
     – Ma  a questo punto  s'accorse che il pentirsi<br class="lineBreak"> 
     di non essere stato consigliere e cooperatore<br class="lineBreak"> 
     dell'iniquità era cosa troppo iniqua; e ri-<br class="lineBreak"> 
     volse tutta la stizza dei suoi pensieri contra<br class="lineBreak">  
     quell'altro che veniva così a togliergli la<br class="lineBreak"> </p>
-    <div class="page"><div class="pageBreak">Page 29</div></div>
+    <div class="pageBreak">Page 29</div>
 </div>
 
 
@@ -1120,9 +1052,9 @@
     cappello, quelle poche volte che lo aveva<br class="lineBreak">  
     scontrato per via. Gli era occorso di difen-<br class="lineBreak"> 
     dere  in più d'una occasione la riputazione<br class="lineBreak">  
-    di quel signore,<span class="redgap" id="gap31-it"><a href="#gap31-es" class="corrisplink"><seg>(g31)</seg></a> contra coloro che  a bassa<br class="lineBreak">  
+    di quel signore,<gap><seg>(g31)</seg> contra coloro che  a bassa<br class="lineBreak">  
     voce, sospirando, e levando gli occhi al<br class="lineBreak">  
-    cielo, maledicevano qualche sua impresa:</span><br class="lineBreak">  
+    cielo, maledicevano qualche sua impresa:</gap><br class="lineBreak">  
     aveva detto cento volte ch'egli era un ri-<br class="lineBreak"> 
     spettabile cavaliere. Ma, in quel momento<br class="lineBreak">  
     gli diede in cuor suo tutti quei titoli che<br class="lineBreak">  
@@ -1139,7 +1071,7 @@
     certamente ad apparecchiare la tavola per<br class="lineBreak">  
     la cena.Era <span class="persName">Perpetua</span>, come ognuno se ne<br class="lineBreak"> 
     avvede, la serva di <span class="persName">don Abbondio</span>: serva<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 30</div></div>
+    <div class="pageBreak">Page 30</div>
 </div>
 
 
@@ -1171,7 +1103,7 @@
     <said>«Niente, niente,»</said> rispose don Abbon-<br class="lineBreak"> 
     dio, lasciandosi cadere tutto ansante sul suo<br class="lineBreak">  
     seggiolone.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 31</div></div>
+    <div class="pageBreak">Page 31</div>
 </div>
 
 
@@ -1203,7 +1135,7 @@
     fianchi  e le gomita appuntate davanti, guar-<br class="lineBreak"> 
     dandolo fiso, quasi volesse succhiargli da-<br class="lineBreak"> 
     gli occhi il segreto.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 32</div></div>
+    <div class="pageBreak">Page 32</div>
 </div>
 
 
@@ -1234,7 +1166,7 @@
     giurare che non fiaterebbe, finalmente, con<br class="lineBreak"> 
     molte sospensioni, con molti ohimè!, le<br class="lineBreak">  
     narrò il miserabile caso. Quando si venne<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 33</div></div>
+    <div class="pageBreak">Page 33</div>
 </div>
 
 
@@ -1243,9 +1175,9 @@
     po che <span class="persName">Perpetua</span> proferisse un nuovo e più<br class="lineBreak">  
     solenne giuramento; e <span class="persName">don Abbondio</span>, pro-<br class="lineBreak"> 
     nunziato quel nome, si rovesciò sulla spallie-<br class="lineBreak"> 
-    ra della seggiola, con un gran sospiro, <span class="redgap" id="gap32-it"><a href="#gap32-es" class="corrisplink"><seg>(g32)</seg></a> levando le<br class="lineBreak">  
+    ra della seggiola, con un gran sospiro, <gap><seg>(g32)</seg> levando le<br class="lineBreak">  
     mani  in atto insieme di comando<br class="lineBreak">  
-    e di supplica</span>, e dicendo: <said>«per amor del<br class="lineBreak"> 
+    e di supplica</gap>, e dicendo: <said>«per amor del<br class="lineBreak"> 
     cielo!»</said><br class="lineBreak"> 
     <said>«Misericordia!»</said> sclamò <span class="persName">Perpetua</span>. <said>«Oh<br class="lineBreak">  
     che birbone! oh che soperchiante! oh che<br class="lineBreak"> 
@@ -1255,17 +1187,17 @@
     <said>«Oh! siamo qui soli che nessuno ci sen-<br class="lineBreak"> 
     te. Ma come farà ella povero signor pa-<br class="lineBreak"> 
     drone?</said><br class="lineBreak"> 
-    <span class="mod" id="mod8-it"><a href="#mod8-es" class="corrisplink"><seg>(m8)</seg></a><said>«Oh vedete,»</said> disse <span class="persName">don Abbondio</span>  con<br class="lineBreak">  
+    <mod><seg>(m8)</seg><said>«Oh vedete,»</said> disse <span class="persName">don Abbondio</span>  con<br class="lineBreak">  
     voce stizzosa: <said>vedete che bei pareri mi<br class="lineBreak">  
     sa dar costei! Viene a domandarmi co-<br class="lineBreak"> 
     me farò, come farò; quasi fosse ella nel-<br class="lineBreak"> 
-    l'impaccio, e toccasse a me di cavarnela.»</said></span><br class="lineBreak"> 
+    l'impaccio, e toccasse a me di cavarnela.»</said></mod><br class="lineBreak"> 
     <said>«Ma! io l'avrei ben io il mio povero<br class="lineBreak">  
     parere da darle; ma poi...» </said><br class="lineBreak"> 
     <said>«Ma poi, sentiamo.»</said><br class="lineBreak"> 
     <said>«Il mio parere sarebbe che, siccome tutti<br class="lineBreak">  
     dicono che il nostro arcivescovo è un san-</said><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 34</div></div>
+    <div class="pageBreak">Page 34</div>
 </div>
 
 
@@ -1282,14 +1214,14 @@
     Quando mi fosse toccata una schioppet-<br class="lineBreak"> 
     tata nella schiena... Dio liberi!, l'arci-<br class="lineBreak"> 
     vescovo me la torrebbe egli via?»</said><br class="lineBreak"> 
-    <span class="mod" id="mod9-it"><a href="#mod9-es" class="corrisplink"><seg>(m9)</seg></a><said>«Eh! le schioppettate non si danno via co-<br class="lineBreak"> 
+    <mod><seg>(m9)</seg><said>«Eh! le schioppettate non si danno via co-<br class="lineBreak"> 
     me confetti: e guai se questi cani doves-<br class="lineBreak"> 
     sero mordere tutte le volte che abbaiano!<br class="lineBreak">  
-    <span class="idiom" id="mod10-it"><a href="#mod10-es" class="corrisplink"><seg>(Im1)</seg></a>E io ho sempre veduto che a chi sa mo-<br class="lineBreak"> 
+    <mod><seg>(Im1)</seg>E io ho sempre veduto che a chi sa mo-<br class="lineBreak"> 
     strare i denti, e farsi valere,  si porta<br class="lineBreak"> 
-    rispetto</span>; e  appunto perchè ella non vuol<br class="lineBreak"> 
+    rispetto</mod>; e  appunto perchè ella non vuol<br class="lineBreak"> 
     mai dir la sua ragione, siamo ridotti a<br class="lineBreak">  
-    segno che tutti ci vengono, con licenza, a...»</said></span><br class="lineBreak"> 
+    segno che tutti ci vengono, con licenza, a...»</said></mod><br class="lineBreak"> 
     <said>«Volete tacere?»</said><br class="lineBreak"> 
     <said>«Io taccio subito; ma è però certo che<br class="lineBreak">   
     quando il mondo s'accorge che uno, sem-<br class="lineBreak"> 
@@ -1297,15 +1229,15 @@
     le... »</said><br class="lineBreak"> 
     <said>«Volete tacere? È egli tempo da cedeste<br class="lineBreak">  
     baggianate?»</said><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 35</div></div>
+    <div class="pageBreak">Page 35</div>
 </div>
 
 
 <div>
-    <p><span class="idiom" id="mod11-it"><a href="#mod11-es" class="corrisplink"><seg>(Im2)</seg></a><said>«Basta: ella ci penserà questa notte; ma<br class="lineBreak"> 
-    <div class="add-image"><span class="missingfigure">(Added F.4)</span></div>
+    <p><mod><seg>(Im2)</seg><said>«Basta: ella ci penserà questa notte; ma<br class="lineBreak"> 
+    <add>(Added F.4)</add>
     intanto non cominci a farsi male da sè,<br class="lineBreak">  
-    a rovinarsi la salute; mangi un boccone.»</said></span><br class="lineBreak"> 
+    a rovinarsi la salute; mangi un boccone.»</said></mod><br class="lineBreak"> 
     <said>«Ci penserò io,»</said> rispose  brontolando<br class="lineBreak">  
     <span class="persName">don Abbondio</span>  <said> sicuro, io ci penserò, io<br class="lineBreak">  
     ci ho da pensare.»</said> E si alzò, continuando<br class="lineBreak">   
@@ -1320,14 +1252,14 @@
     otto, ci vuol altro cerotto.»</said><br class="lineBreak"> 
     Così dicendo  prese il lume, e  brontolan-<br class="lineBreak"> 
     do sempre: <said>«una picciola bagattella! ad<br class="lineBreak">  
-    un galantuomo par mio!<span class="redgap" id="gap33-it"><a href="#gap33-es" class="corrisplink"><seg>(g33)</seg></a>  e domani come<br class="lineBreak">  
-    andrà?»</span></said> ed altre simili lamentazioni, si<br class="lineBreak">  
+    un galantuomo par mio!<gap><seg>(g33)</seg>  e domani come<br class="lineBreak">  
+    andrà?»</gap></said> ed altre simili lamentazioni, si<br class="lineBreak">  
     avviò alla sua camera per coricarsi. Giunto<br class="lineBreak">  
     in su la soglia, ristette un momento, si ri-<br class="lineBreak"> 
     volse indietro verso <span class="persName">Perpetua</span>, si pose l'in-<br class="lineBreak"> 
     dice sulle labbra, e disse con tuono lento e<br class="lineBreak">  
     solenne  <said>«per amor del cielo!</said> e disparve.»<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 36</div></div>
+    <div class="pageBreak">Page 36</div>
 </div>
 </body>
 </div>
@@ -1335,7 +1267,7 @@
 <h2>Los novios by Gallego</h2>
 <body>
     <head>LOS NOVIOS</head>
-      <p><span class="yellowadd" id="add0-es"><a href="#add0-it" class="corrisplink"><seg>(a0)</seg></a>HISTORIA MILANESA DEL SIGLO XVI</span></p>
+      <p>HISTORIA MILANESA DEL SIGLO XVI</p>
      
     <div>
       <p>Aquel ramal del <span class="placeName">lago de Como</span> que, torciendo hácia el Sur<br class="lineBreak">
@@ -1353,7 +1285,7 @@
           del lago cuando, alejándose de nuevo sus orillas, se espacian<br class="lineBreak">
           segunda vez sus aguas, resultando otras ensenadas y otros<br class="lineBreak"></p>
       </div>
-    <div class="page"><div class="pageBreak">Page 1</div></div>
+    <div class="pageBreak">Page 1</div>
 
 
     
@@ -1377,9 +1309,9 @@
         torrentes, están por lo comun cubiertos de piedras y cas-<br class="lineBreak">
         cajo, pero el resto son campos y viñedos, aldeas y granjas,<br class="lineBreak">
         con algunos bosquecillos que suben por la falda de los móntes.<br class="lineBreak">
-        <span class="yellowadd" id="add1-es"><a href="#add1-it" class="corrisplink"><seg>(a1)</seg></a>No léjos del puente y tan cerca del lago, que en las grandes<br class="lineBreak">
-        avenidas llega á circundarla, está situada</span> <span class="placeName">Leco</span>, la principal<br class="lineBreak">
-        de aquellas poblaciones,<span class="redgap" id="gap1-es"><a href="#gap1-it" class="corrisplink"><seg>(g1)</seg></a></span> tan aumentada en nuestros dias<br class="lineBreak">
+        No léjos del puente y tan cerca del lago, que en las grandes<br class="lineBreak">
+        avenidas llega á circundarla, está situada <span class="placeName">Leco</span>, la principal<br class="lineBreak">
+        de aquellas poblaciones, tan aumentada en nuestros dias<br class="lineBreak">
         que casi presume de ciudad.<br class="lineBreak">
         En el tiempo que sucedieron las cosas que vamos á referir<br class="lineBreak">
         no era ciertamente de tanta consideracion, pero ya se repu-<br class="lineBreak">
@@ -1388,14 +1320,14 @@
         inspirar modestia á las muchacas del país, de sacudir el<br class="lineBreak">
         polvo de tiempo en tiempo á sus padres y maridos, y de<br class="lineBreak">
         esparcirse por las viñas en el otoño para aliviar en parte á<br class="lineBreak">
-        los aldeanos del trabajo de la vendimia. <span class="yellowadd" id="add2-es"><a href="#add2-it" class="corrisplink"><seg>(a2)</seg></a>Todo el terreno,<br class="lineBreak">
-        desde el lago á los móntes</span>, de un collado á otro, de case-<br class="lineBreak">
+        los aldeanos del trabajo de la vendimia. Todo el terreno,<br class="lineBreak">
+        desde el lago á los móntes, de un collado á otro, de case-<br class="lineBreak">
         ría á casería, estaba y está cruzado de caminos y sendas,<br class="lineBreak">
         unas llanas y otras pendientes, quedando algunas tan hondas<br class="lineBreak">
         entre los vallados de las heredades, que apénas descubre<br class="lineBreak">
         el caminante otra cosa que el pícacho de algun monte ó el<br class="lineBreak"></p> 
     </div>
-    <div class="page"><div class="pageBreak">Page 2</div></div>
+    <div class="pageBreak">Page 2</div>
 
 
     
@@ -1412,14 +1344,13 @@
       rio otra vez, que separando y luciendo como plata al pié de<br class="lineBreak">
       la cordillera que le acompaña, se pierde por fin y desaparece<br class="lineBreak">
       con ella en el horizonte.<br class="lineBreak">
-      <span class="redgap" id="gap2-es"><a href="#gap2-it" class="corrisplink"><seg>(g2)</seg></a></span>
       Por uno de los caminos arriba descritos volvia de paseo<br class="lineBreak">
       hácia su casa, al caer la tarde del <span class="date">7 Noviembre de 1628</span>,<br class="lineBreak">
       <span class="persName">Don Abundo</span>, cura de una de aquellas aldeas, cuyo nombre<br class="lineBreak">
-      no se expresa en el manuscrito que nos sirve de guía<span class="redgap" id="gap3-es"><a href="#gap3-it" class="corrisplink"><seg>(g3)</seg></a></span>. Iba<br class="lineBreak">
+      no se expresa en el manuscrito que nos sirve de guía. Iba<br class="lineBreak">
       rezando en su breviario pacíticamente, cerrándolo á veces<br class="lineBreak">
       entre salmo y salmo, y cruzando las manos á la espalda con<br class="lineBreak">
-      un dedo puesto por via de señal entre las hojas.<span class="redgap" id="gap4-es"><a href="#gap4-it" class="corrisplink"><seg>(g4)</seg></a></span> Ya cami-<br class="lineBreak">
+      un dedo puesto por via de señal entre las hojas. Ya cami-<br class="lineBreak">
       naba con los ojos bajos, enchando con el pié haciá las cercas<br class="lineBreak">
       los guijarros del camino, ya levantaba la vista fijandola en<br class="lineBreak">
       la cima de algun monte, en que los rayos del sol en su ocaso,<br class="lineBreak">
@@ -1437,7 +1368,7 @@
       unirse. remaraban en una pequeña ermita en que estaban<br class="lineBreak">
       pintadas várias figuras largas, undosas, y acabadas en<br class="lineBreak">
       punta, las cuales, segun la intencion del pintor, y á<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 3</div></div>
+      <div class="pageBreak">Page 3</div>
     </div>
 
 
@@ -1447,13 +1378,13 @@
         nando entre ellas ciertos mamarrachos como personas de <br class="lineBreak"></p>
 
       
-        <figure style="margin: 1em 0; "><img style="max-width: 100%; height: auto;" src="assets/img/losnoviosimgp4.png" alt="(F.2)Es la confluencia se hallaban dos hombres, uno frente de otro,"><figcaption style="font-size: 0.85em; color: #555; margin-top: 0.3em;"><figDesc>(F.2)Es la confluencia se <span class="unclearword">hallaban</span> dos hombres, uno frente de otro,</figDesc></figcaption></figure>
+        <figure style="margin: 1em 0; "><img style="max-width: 100%; height: auto;" src="assets/img/losnoviosimgp4.png" alt="(F.2)Es la confluencia se hallaban dos hombres, uno frente de otro,"><figcaption style="font-size: 0.85em; color: #555; margin-top: 0.3em;"><figDesc>(F.2)Es la confluencia se <unclear>hallaban</unclear> dos hombres, uno frente de otro,</figDesc></figcaption></figure>
       
 
       <p>médio cuerpo arriba, que significaban ánimas del purga-<br class="lineBreak">
       torio, y unas otras de color de ladrillo sobro un fande<br class="lineBreak">
       blanquisco, con alcunos de mochados de trecho en trecho<br class="lineBreak"></p>
-     <div class="page"><div class="pageBreak">Page 4</div></div>
+     <div class="pageBreak">Page 4</div>
     </div>
 
 
@@ -1480,22 +1411,22 @@
       colgaba á la izquierda una disforme espada con el puño de<br class="lineBreak">
       metal muy labrado y terso. Manifestaba semejante atavio que<br class="lineBreak">
       aquellos dos hombres eran de los que en aquel tiempo se<br class="lineBreak">
-      llamaban <span class="persName">bravos</span> <span class="yellowadd" id="add3-es"><a href="#add3-it" class="corrisplink"><seg>(a3)</seg></a>ó valentones</span>.<br class="lineBreak">
+      llamaban <span class="persName">bravos</span>ó valentones.<br class="lineBreak">
       Esta elase de individuos, que en el dia ya no existe, era<br class="lineBreak">
       muy antigua entónces muy floreciente en la <span class="placeName">Lombardia</span>.<br class="lineBreak">
       Para dar un aiuda á  los que no la tengan de su carácter prin-<br class="lineBreak">
       cipal, de los esfuerzos que se hicieron para exitnguirla y de s<br class="lineBreak">
       larga y tenaz resistencia, presentaremos los trozos autenticos<br class="lineBreak">
       sieguientes:<br class="lineBreak">
-      Desde el <span class="date">8 de Abril de 1583</span>, <span class="redgap" id="gap5-es"><a href="#gap5-it" class="corrisplink"><seg>(g5)</seg></a></span>D. Cárlos de Aragon, principe<br class="lineBreak">
+      Desde el <span class="date">8 de Abril de 1583</span>, D. Cárlos de Aragon, principe<br class="lineBreak">
       de Castelvetrano, duque de Terranova, marqués de Ávila,<br class="lineBreak">
       conde de Burgunto, grande almiante y gran condestable de<br class="lineBreak">
       Sicilia, gobernador de <span class="placeName">Lombardia</span> y capitan general en <span class="placeName">Italia</span> por<br class="lineBreak">
-      <span class="abbreviate" id="abbr1-es"><a href="#abbr1-it" class="corrisplink"><seg>(ab1)</seg></a>S. M. C.</span> &gt;&gt; informado de los trabajos en que vivió y vivia la<br class="lineBreak">
+      S. M. C. &gt;&gt; informado de los trabajos en que vivió y vivia la<br class="lineBreak">
       &gt;&gt; <span class="placeName">ciudad de Milan</span> por causa de los <span class="persName">bravos ó vagamundos</span>,<br class="lineBreak">
       &gt;&gt; publicó un bando contra ellos, declarando estar compren-<br class="lineBreak">
       &gt;&gt; didos en él dichos <span class="persName">bravos ó vagamundos</span>, los cuales siendo<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 5</div></div>
+      <div class="pageBreak">Page 5</div>
     </div>
 
 
@@ -1524,20 +1455,20 @@
       &gt;&gt; ellos ser puesto al castigo de la cuerda y al tormento por<br class="lineBreak">
       &gt;&gt; informacion sumaria..... Y aunque no confesase delito<br class="lineBreak">
       &gt;&gt; alguno, pudiese, sin embargo, ser condenado à tres años<br class="lineBreak">
-      &gt;&gt; de galeras por sola opinion y nombre de bravo<span class="redgap" id="gap6-es"><a href="#gap6-it" class="corrisplink"><seg>(g6)</seg></a></span>. &gt;&gt; <span class="yellowadd" id="#add4-es"><a href="##add4-it" class="corrisplink"><seg>(a4)</seg></a>Y<br class="lineBreak">
-      cuncluia diciendo:</span> &lt;&lt; Todo esto, y lo demas que se omite.<br class="lineBreak">
-      &gt;&gt; porque <span class="abbreviate" id="#abbr2-es"><a href="##abbr2-it" class="corrisplink"><seg>(ab2)</seg></a>S. E.</span> está resuelto á que todos le obedezcan. &gt;&gt;<br class="lineBreak">
+      &gt;&gt; de galeras por sola opinion y nombre de bravo. &gt;&gt; Y<br class="lineBreak">
+      cuncluia diciendo: &lt;&lt; Todo esto, y lo demas que se omite.<br class="lineBreak">
+      &gt;&gt; porque S. E. está resuelto á que todos le obedezcan. &gt;&gt;<br class="lineBreak">
       Al oir palabras tan terminantes, y sisposiciones de tanto<br class="lineBreak">
-      rigor, <span class="redgap" id="gap7-es"><a href="#gap7-it" class="corrisplink"><seg>(g7)</seg></a></span>nadie habrá que no piense que todos los <span class="persName">bravos</span> de-<br class="lineBreak">
+      rigor, nadie habrá que no piense que todos los <span class="persName">bravos</span> de-<br class="lineBreak">
       aparecerian para siempre; pero el testimonio de un personaje<br class="lineBreak">
       de no ménos autoridad ni ménos títulos nos obliga á creer lo<br class="lineBreak">
-      contrario. Este es e <span class="abbreviate" id="#abbr3-es"><a href="##abbr3-it" class="corrisplink"><seg>(ab3)</seg></a>Ex mo. Sr. </span>D. Juan Fernández de<br class="lineBreak">
+      contrario. Este es e Ex mo. Sr. D. Juan Fernández de<br class="lineBreak">
       Velasco, condestable de Castilla, mayordomo mayor de<br class="lineBreak">
-      S. M. C. duque de Feria, conde de Haro <span class="redgap" id="gap8-es"><a href="#gap8-it" class="corrisplink"><seg>(g8)</seg></a></span>, señor de la casa de<br class="lineBreak">
+      S. M. C. duque de Feria, conde de Haro, señor de la casa de<br class="lineBreak">
       Velasco, y de la de los siete infantes de Lara, gobernador<br class="lineBreak">
       de estado de <span class="placeName">Milan</span>, etc. &lt;&lt; En <span class="date">5 de junio de 1593</span> tambíen<br class="lineBreak">
       &gt;&gt; informado plenamente de los perjuicios y ruinas que cau-<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 6</div></div>
+      <div class="pageBreak">Page 6</div>
     </div>
 
 
@@ -1550,25 +1481,25 @@
         &gt;&gt; penas y castigos de su antecesor. Luégo el  <span class="date">23 de Mayo de<br class="lineBreak">
         &gt;&gt; 1598</span>, informado con no poco sentimiento suyo de que se<br class="lineBreak">
         &gt;&gt; aumentaba cada día más en aquella ciudad y estado el<br class="lineBreak">
-        &gt;&gt; número de <span class="persName">bravos y vagamundos</span>, <span class="redgap" id="gap9-es"><a href="#gap9-it" class="corrisplink"><seg>(g9)</seg></a></span>y que dia y noche sólo<br class="lineBreak">
+        &gt;&gt; número de <span class="persName">bravos y vagamundos</span>, y que dia y noche sólo<br class="lineBreak">
         &gt;&gt; se oian heridas alevosamente dadas, homicidios y robos,<br class="lineBreak">
         &gt;&gt; y otros delitos semejantes que cometían con tanta más faci-<br class="lineBreak">
         &gt;&gt; lidad cuanto confiaban en el favor de sus principales y fan-<br class="lineBreak">
-        &gt;&gt; tores,<span class="redgap" id="gap10-es"><a href="#gap10-it" class="corrisplink"><seg>(g10)</seg></a></span> prescribia de nuevo las mismas medidas y remedios, &gt;&gt;<br class="lineBreak">
+        &gt;&gt; tores, prescribia de nuevo las mismas medidas y remedios, &gt;&gt;<br class="lineBreak">
         aumentando la dósis como en las enfermedades rebeldes, y<br class="lineBreak">
-        concluida el bando en estos términos: &lt;&lt;<span class="redgap" id="gap11-es"><a href="#gap11-it" class="corrisplink"><seg>(g11)</seg></a></span> Cuiden, pues, de no<br class="lineBreak">
+        concluida el bando en estos términos: &lt;&lt; Cuiden, pues, de no<br class="lineBreak">
         &gt;&gt; contravenir de modo alguno al presente bando, pues en<br class="lineBreak">
-        &gt;&gt; vez de encontrar clemncia en <span class="abbreviate" id="abbr4-es"><a href="#abbr4-it" class="corrisplink"><seg>(ab4)</seg></a>S. E.</span>, experimentatáran su<br class="lineBreak">
-        &gt;&gt; rigor y su cólera<span class="redgap" id="gap12-es"><a href="#gap12-it" class="corrisplink"><seg>(g12)</seg></a></span>, por haber resuelto este sea el aviso<br class="lineBreak">
+        &gt;&gt; vez de encontrar clemncia en S. E., experimentatáran su<br class="lineBreak">
+        &gt;&gt; rigor y su cólera, por haber resuelto este sea el aviso<br class="lineBreak">
         &gt;&gt; último y perentorio.&gt;&gt;<br class="lineBreak">
         Poco ó ningun efecto produjieron semejantes medidas,<br class="lineBreak">
-        pues vemos renovadas la mísmas disposiciones por el <span class="redgap" id="gap13-es"><a href="#gap13-it" class="corrisplink"><seg>(g13)</seg></a></span>gober-<br class="lineBreak">
-        nador de <span class="placeName">Milan</span>; conde de Fuéntes <span class="redgap" id="gap14-es"><a href="#gap14-it" class="corrisplink"><seg>(g14)</seg></a></span><span class="redgap" id="gap15-es"><a href="#gap15-it" class="corrisplink"><seg>(g15)</seg></a></span> en <span class="date">5 de Diciembre 1600</span>.<br class="lineBreak">
-        <span class="redgap" id="gap16-es"><a href="#gap16-it" class="corrisplink"><seg>(g16)</seg></a></span>por el<span class="abbreviate" id="abbr5-es"><a href="#abbr5-it" class="corrisplink"><seg>(ab5)</seg></a>marqués de Hunojosa</span> en <span class="date">22 de Septiembre de 1612</span><span class="redgap" id="gap17-es"><a href="#gap17-it" class="corrisplink"><seg>(g17)</seg></a></span> <span class="redgap" id="gap18-es"><a href="#gap18-it" class="corrisplink"><seg>(g18)</seg></a></span>; por<br class="lineBreak">
-        el <span class="abbreviate" id="abbr6-es"><a href="#abbr6-it" class="corrisplink"><seg>(ab6)</seg></a>duque e Frias</span> en <span class="date">24 de Diciembre de 1618</span>,<span class="redgap" id="gap19-es"><a href="#gap19-it" class="corrisplink"><seg>(g19)</seg></a></span> por <span class="abbreviate" id="abbr7-es"><a href="#abbr7-it" class="corrisplink"><seg>(ab7)</seg></a>D. Gon-<br class="lineBreak">
-        zalo Fernández de Córdoba</span><span class="redgap" id="gap20-es"><a href="#gap20-it" class="corrisplink"><seg>(g20)</seg></a></span> en <span class="date">5 de Octubre de 1627</span><span class="redgap" id="gap21-es"><a href="#gap21-it" class="corrisplink"><seg>(g21)</seg></a></span> y otros<br class="lineBreak">
+        pues vemos renovadas la mísmas disposiciones por el gober-<br class="lineBreak">
+        nador de <span class="placeName">Milan</span>; conde de Fuéntes en <span class="date">5 de Diciembre 1600</span>.<br class="lineBreak">
+        por el marqués de Hunojosa en <span class="date">22 de Septiembre de 1612</span>; por<br class="lineBreak">
+        el duque e Frias en <span class="date">24 de Diciembre de 1618</span>, por D. Gon-<br class="lineBreak">
+        zalo Fernández de Córdoba en <span class="date">5 de Octubre de 1627</span> y otros<br class="lineBreak">
         posteriores al tiempo en que lo que vamos refiriendo.<br class="lineBreak">
-        <span class="redgap" id="gap22-es"><a href="#gap22-it" class="corrisplink"><seg>(g22)</seg></a></span><span class="redgap" id="gap23-es"><a href="#gap23-it" class="corrisplink"><seg>(g23)</seg></a></span>Que los dos <span class="persName">bravos</span> arriba descritos estuviesen alli aguar-<br class="lineBreak">
+        Que los dos <span class="persName">bravos</span> arriba descritos estuviesen alli aguar-<br class="lineBreak">
         dando á alguno, era cosa de que no se podia dudar; lo que no<br class="lineBreak">
         agradó á D. Abumndo fué el infierir., por ciertos moviminetos<br class="lineBreak">
         que él era la persona que esperaban. En efecto, así que le<br class="lineBreak">
@@ -1579,7 +1510,7 @@
         <span class="persName">cura</span>, el cual, con el breviario abierto como si leyera, alzaba<br class="lineBreak">
         la vista con disimulo por encima del libro para ver que<br class="lineBreak">
         bacian. Convencido de que se dirigian á él, le pasaron por la<br class="lineBreak"></p>
-        <div class="page"><div class="pageBreak">Page 7</div></div>
+        <div class="pageBreak">Page 7</div>
     </div>
 
 
@@ -1609,20 +1540,19 @@
       un versiculo con voz más alta, compuso el semblante lo mejor<br class="lineBreak">
       que pudo, manifestando serenidad y sosiego, se eforzó pur<br class="lineBreak">
       preparar una sonrisa, y cuando se halló en frente de los dos<br class="lineBreak">
-      <span class="unclearword">p llane</span>, dijo para si: <said>ahora es ello.</said> y se quedó parado.<br class="lineBreak">
+      <unclear>p llane</unclear>, dijo para si: <said>ahora es ello.</said> y se quedó parado.<br class="lineBreak">
       <said>-- Señor <span class="persName">cura</span>, -- </said> dijo uno de los <span class="persName">bravos</span>, mirándole de hito<br class="lineBreak">
       en hito.<br class="lineBreak">
-      <span class="yellowadd" id="add5?-es"><a href="#add5?-it" class="corrisplink"><seg>(a5?)</seg></a><said>-- ¿ Qué se le ofrece á usted, amigo? -- </said>contestó inmedia-<br class="lineBreak">
+      <said>-- ¿ Qué se le ofrece á usted, amigo? -- </said>contestó inmedia-<br class="lineBreak">
       tamente <span class="persName">D. Abundo</span> levantando los ojos del breviario que<br class="lineBreak">
-      tenta abierto en las dos manos.</span><br class="lineBreak">
-      <span class="redgap" id="gap24-es"><a href="#gap24-it" class="corrisplink"><seg>(g24)</seg></a></span>
+      tenta abierto en las dos manos.<br class="lineBreak">
       <said>-- ¿ Está usted en ánimo --</said> prosiguió el otro con tono<br class="lineBreak">
       amenazador -- <said>de casar mañana á <span class="persName">Lorenzo Tramallino</span> con<br class="lineBreak">
       <span class="persName">Lucía Mondella</span>?</said><br class="lineBreak">
-      <span class="yellowadd" id="add6?-es"><a href="#add6?-it" class="corrisplink"><seg>(a6?)</seg></a><said>-- Ciertamente, </said></span><span class="redgap" id="#gap25-es"><a href="##gap25-it" class="corrisplink"><seg>(g25)</seg></a></span> -- respondió con voz trémula <span class="persName">D. Abundo</span><br class="lineBreak">
-      <said>-- es decir, <span class="yellowadd" id="#add7?-es"><a href="##add7?-it" class="corrisplink"><seg>(a7?)</seg></a>que como no hay dificuldad ni impedimiento...</span><br class="lineBreak">
+      <said>-- Ciertamente, </said> -- respondió con voz trémula <span class="persName">D. Abundo</span><br class="lineBreak">
+      <said>-- es decir, que como no hay dificuldad ni impedimiento...<br class="lineBreak">
       Ustedes son personas que conoscen el mundo, y saben cómo</said><br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 8</div></div>
+      <div class="pageBreak">Page 8</div>
     </div>
 
 
@@ -1630,7 +1560,7 @@
 <div>
       <p>van estas cosas. El pobre <span class="persName">cura</span> nada tiene que ver en eso:<br class="lineBreak">
       hacen entre ellos sus enjuagues, y luégo vienen á nosotros<br class="lineBreak">
-      como...<span class="redgap" id="gap26-es"><a href="#gap26-it" class="corrisplink"><seg>(g26)</seg></a></span> en fin..<span class="redgap" id="gap27-es"><a href="#gap27-it" class="corrisplink"><seg>(g27)</seg></a></span><br class="lineBreak">
+      como... en fin..<br class="lineBreak">
       <said>-- En fin. --</said> interrumpió el bravo con voz moderada, pero<br class="lineBreak">
       con el tono de quen manda, <said>-- tened entendido que este ca-<br class="lineBreak">
       samiento no se ha de hacer ni mañana, ni nunca.</said><br class="lineBreak">
@@ -1640,11 +1570,11 @@
       en mi mano... Ya ven ustedes que yo no tengo en ello in-<br class="lineBreak">
       teres alguno.</said><br class="lineBreak">
       <said>-- ¡ Ea! --</said> interrumpió otra vez el bravo: <said>-- si la cosa se<br class="lineBreak">
-      hubiese de decidir con argumentos, convengo en que <span class="mod" id="mod1-es"><a href="#mod1-it" class="corrisplink"><seg>(m1)</seg></a> no sal-<br class="lineBreak">
-      dríamos bien librados</span>: pero nosotros no entendemos de ra-<br class="lineBreak">
-      zones, ni <span class="mod" id="mod2-es"><a href="#mod2-it" class="corrisplink"><seg>(m2)</seg></a>nos gusta malgastar saliva</span>. Ya estáis prevenido... y<br class="lineBreak">
+      hubiese de decidir con argumentos, convengo en que no sal-<br class="lineBreak">
+      dríamos bien librados: pero nosotros no entendemos de ra-<br class="lineBreak">
+      zones, ni nos gusta malgastar saliva. Ya estáis prevenido... y<br class="lineBreak">
       al buen entendedor...</said><br class="lineBreak">
-      <said>-- Ustedes son <span class="redgap" id="gap28-es"><a href="#gap28-it" class="corrisplink"><seg>(g28)</seg></a></span>demasiado racionales para...</said><br class="lineBreak">
+      <said>-- Ustedes son demasiado racionales para...</said><br class="lineBreak">
       <said>-- Como; quiera que sea -- </said>interrumpió el bravo que hasta en-<br class="lineBreak">
       tóncens no habia hablado,<said> -- el casamiento no ha de hacerse...<br class="lineBreak">
       (aquí echó un tremendo voto), y el que hiciere no tendrà<br class="lineBreak">
@@ -1653,7 +1583,7 @@
       <said>-- ¡ Vaya, vaya! -- </said> repuso el primer bravo: <said>-- el señor <span class="persName">cura</span><br class="lineBreak">
       conoce el mundo, y nosotros somos hombres de bien, que<br class="lineBreak">
       no querremos hacerle daño siempre que tenga prudencia.</said><br class="lineBreak">
-      Señor <span class="persName">cura</span>, reciba usted espresiones de <span class="abbreviate" id="abbr8-es"><a href="#abbr8-it" class="corrisplink"><seg>(ab8)</seg></a>Sr. <span class="persName">D. Rodrigo</span></span><span class="abbreviate" id="abbr9-es"><a href="#abbr9-it" class="corrisplink"><seg>(ab9)</seg></a></span>.<br class="lineBreak">
+      Señor <span class="persName">cura</span>, reciba usted espresiones de Sr. <span class="persName">D. Rodrigo</span>.<br class="lineBreak">
       Este nombre hizo en el ánimo de <span class="persName">D. Abundo</span> el mismo<br class="lineBreak">
       efecto que en noche de tomrenta un relámpago, que ilumi-<br class="lineBreak">
       nando rápida y confusamente los objectos, aumenta el es-<br class="lineBreak">
@@ -1664,14 +1594,14 @@
       Eso le toca á usted. Sobre todo. chiton; y nadie tenga noticia<br class="lineBreak">
       de este aviso que damos por su bien. De lo contrário...<br class="lineBreak">
       ¿ Está usted? Hacer semejante casamiento seria lo mismo</said><br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 9</div></div>
+      <div class="pageBreak">Page 9</div>
     </div>
 
 
 
 <div> 
-      <p>que... En fin, ¿ qué quiere usted que digamos el <span class="abbreviate" id="abbr10-es"><a href="#abbr10-it" class="corrisplink"><seg>(ab10)</seg></a>señor<br class="lineBreak">
-      <span class="persName">D. Rodrigo</span></span>?<br class="lineBreak">
+      <p>que... En fin, ¿ qué quiere usted que digamos el señor<br class="lineBreak">
+      <span class="persName">D. Rodrigo</span>?<br class="lineBreak">
       <said>-- Que soy muy servidor suyo.</said><br class="lineBreak">
       <said>-- No basta, señor <span class="persName">cura</span>. Es preciso que usted se ex-<br class="lineBreak">
       plique</said><br class="lineBreak">
@@ -1683,12 +1613,12 @@
       <p>Pronunciando <span class="persName">D. Abundo</span>; estas palabras, èl mismo no<br class="lineBreak">
       sabía si hacía un mero complimiento, ó una promesa. Tomá-<br class="lineBreak">
       ronla los <span class="persName">bravos</span>, ó aparentaron tomarla. en este último<br class="lineBreak">
-      sentido y se despidieron, <span class="mod" id="mod3-es"><a href="#mod3-it" class="corrisplink"><seg>(m3)</seg></a>dándole las buenas tardes.</span>. <span class="persName">Don<br class="lineBreak">
+      sentido y se despidieron, dándole las buenas tardes. <span class="persName">Don<br class="lineBreak">
       Abundo</span>, que poco ántes hubiera dado un ojo de la cara por<br class="lineBreak">
       no verlos, deseaba ahora prolongar la plática, y así cerrando<br class="lineBreak">
       el breviario con ambar anos. empezó diciendo: <said>Se<br class="lineBreak">
       ñores...</said> pero los <span class="persName">bravos</span> sin darle oídos tomaron el camino<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 10</div></div>
+      <div class="pageBreak">Page 10</div>
     </div>
 
 
@@ -1718,7 +1648,7 @@
     el mismo legislador y sus mil ejecutores y la forma de en-<br class="lineBreak">
     juiciar propendia á que el juez no encontrase impedimento<br class="lineBreak">
     en condenar á su antojo, como lo asteguan los bandos contra<br class="lineBreak">
-    los <span class="persName">bravos</span>, <span class="yellowadd" id="add8-es"><a href="#add8-it" class="corrisplink"><seg>(a8)</seg></a>de que acabamos de dar noticia:</span> por la misma<br class="lineBreak">
+    los <span class="persName">bravos</span>, de que acabamos de dar noticia: por la misma<br class="lineBreak">
     razon dichos bandos publicados y repetidos de gobierno en<br class="lineBreak">
     gobierno, sòlo servian para manifestar con énfasis la impo-<br class="lineBreak">
     tencia de sus autores; y si producian algun efecto inmediato,<br class="lineBreak">
@@ -1730,7 +1660,7 @@
     Tales eran los asilos y privilegios de algunas clases de la<br class="lineBreak">
     sociedad, unos reconocidos por la misma fuerza legal, otros<br class="lineBreak">
     tolerados con culpable silencio, y otros disputados con vanas<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 11</div></div>
+    <div class="pageBreak">Page 11</div>
   </div>
 
 
@@ -1757,7 +1687,7 @@
   caucion llevaba una libera, que empeñase la vanidad ó el in-<br class="lineBreak">
   interos de una familia poderosa ó de una corporaciòn á defen-<br class="lineBreak">
   derte, podia reirse de toda la bulla de los bandos y de los<br class="lineBreak">
-  edictos. <span class="unclearword">D</span> los mismos que estaban encargados de su ejecucion.<br class="lineBreak">
+  edictos. <unclear>D</unclear> los mismos que estaban encargados de su ejecucion.<br class="lineBreak">
   algunos pertencian por su nacimiento á las clases privile-<br class="lineBreak">
   giadas, otros dependian de ellas por clientela; unos y otros<br class="lineBreak">
   habian abrazado sus máximas por educacion, por interes,<br class="lineBreak">
@@ -1772,7 +1702,7 @@
   debido entrar en pugna, cuanto por la frequente probabi-<br class="lineBreak">
   lidad de que los abandonasen, y quizá los sacrificasen los<br class="lineBreak">
   mismos que en abstracto, ó digámos así, en teoria, les<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 12</div></div>
+  <div class="pageBreak">Page 12</div>
 </div>
 
 
@@ -1781,7 +1711,7 @@
   <p>mansaban obrar. Ademas, estos encargados eran, por lo<br class="lineBreak">
   regular, hombres malos, canalla sacada de la hez del pue-<br class="lineBreak">
   blo; su mismo encargo se tenia por vil, y su nombre como<br class="lineBreak">
-  una <span class="unclearword">ufrenta</span>. De aquí es fácil inferir que tales gentes, lejos<br class="lineBreak">
+  una <unclear>ufrenta</unclear>. De aquí es fácil inferir que tales gentes, lejos<br class="lineBreak">
   de aventurar su vida en una empresa casi imposible, ven-<br class="lineBreak">
   derian su inaccion y áun su connivencia á los poderosos, y se<br class="lineBreak">
   limitarian á ejecer sus detestadas facultades y la fuerza<br class="lineBreak">
@@ -1811,10 +1741,10 @@
   <span class="persName">bravos</span>, y rodeando de aldeanos aconstumbrados por tradicion<br class="lineBreak">
   doméstica é interesados, ó obligados á considerarse como<br class="lineBreak">
   súbditos ó soldados de amo, ejercia un poder al cual no era<br class="lineBreak">
-  fácil que <span class="unclearword">pudiese</span> contrarestar asociacion alguna.<br class="lineBreak">
+  fácil que <unclear>pudiese</unclear> contrarestar asociacion alguna.<br class="lineBreak">
   Nuestro  <span class="persName">D. Abundo</span>, pues, no siendo ni noble, ni rico, ni<br class="lineBreak">
   valiente, conoció casi al salir de las mantillas, que se hallaba<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 13</div></div>
+  <div class="pageBreak">Page 13</div>
 </div>
 
 
@@ -1823,9 +1753,9 @@
     <p>en aqella sociedad como un vaso de barro precisado á<br class="lineBreak">
     caminar en compañia de otros muchos de hierro; de con-<br class="lineBreak">
     sieguiente se conformó gustoso con la voluntad de sus pa-<br class="lineBreak">
-    dres que le destinaron á la iglesia. Á decir la verdad <span class="mod" id="mod4-es"><a href="#mod4-it" class="corrisplink"><span class="tooltip" id="Mm1-es">(Mm1)<span class="tooltiptext">Gallego inserts a few subtle twists in the narrative softening the critique of the clergy and the Spanish monarchy. Here he offset Don Abbondio’s moral shortcomings (Muñiz Muñiz, 2012, pp. 93-112.):</span></span></a>(y sin que<br class="lineBreak">
+    dres que le destinaron á la iglesia. Á decir la verdad (y sin que<br class="lineBreak">
     por eso se desentendiese de las obligaciones y fines sublimès<br class="lineBreak">
-    del isterio á que se dedicaba)</span>, el proporcionarse los medios<br class="lineBreak">
+    del isterio á que se dedicaba), el proporcionarse los medios<br class="lineBreak">
     de vivir con alguna comodidad, é introducirse en una clase<br class="lineBreak">
     fuerte y respetable, le percieron desde luégo dos razones<br class="lineBreak">
     más que suficientes para semejante eleccion. Pero una clas<br class="lineBreak">
@@ -1847,7 +1777,7 @@
     contricantes, se declaraba siempre en favor del más fuerte,<br class="lineBreak">
     pero sin abandonar la retaguardia, y procurando manifestar<br class="lineBreak">
     al contrário que no era su enemigo por su propria voluntad.<br class="lineBreak">
-    <span class="redgap" id="gap29-es"><a href="#gap29-it" class="corrisplink"><seg>(g29)</seg></a></span>En fin, con mantenerse léjos de los poderosos, con disimular<br class="lineBreak">
+    En fin, con mantenerse léjos de los poderosos, con disimular<br class="lineBreak">
     sus fechurías lieras, con tolerar las más graves y trascen-<br class="lineBreak">
     dentales, y con obligar por medio de saludos y profundas<br class="lineBreak">
     reverencias á lo más vanos y desdeñosos á corresponderle<br class="lineBreak">
@@ -1856,7 +1786,7 @@
     Esto no es decir que no tuviese tambien él  su poquito de<br class="lineBreak">
     hiel en el cuerpo; y la necesidad continua de agauntar, el dar<br class="lineBreak">
     siempre la razón á los demas, y las muchas pildoras amargas<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 14</div></div>
+  <div class="pageBreak">Page 14</div>
 </div>
 
 
@@ -1882,7 +1812,7 @@
     Declamaba sobre todo contra sus compañeros, que de su<br class="lineBreak">
     cuents y riesgo toman la defensa de algun débil contra un<br class="lineBreak">
     opresor poderosos.Á esto llamaba él comprarse cuidados y<br class="lineBreak">
-    querer <span class="mod" id="mod5-es"><a href="#mod5-it" class="corrisplink"><seg>(m5)</seg></a>enderezar el mundo</span> <span class="redgap" id="gap30-es"><a href="#gap30-it" class="corrisplink"><seg>(g30)</seg></a></span>; y regularmente concluia todos<br class="lineBreak">
+    querer enderezar el mundo ; y regularmente concluia todos<br class="lineBreak">
     sus discorsos con esta máxima: que casi nunca le sucede mai<br class="lineBreak">
     al que no se mete en camisa de once varas.<br class="lineBreak">
     Háganse ahora cargo nuestros lectores de la impresion que<br class="lineBreak">
@@ -1893,23 +1823,23 @@
     un momento despues de tanto años de estudio para mante-<br class="lineBreak">
     nerle, el atolladero sin salida en que se hallaba; todos estos<br class="lineBreak">
     pensamientos rodaban tumultuariamente en la cabeza de<br class="lineBreak">
-    <span class="persName">D. Abundo</span>,<span class="mod" id="mod6-es"><a href="#mod6-it" class="corrisplink"><seg>(m6)</seg></a>el cual se decia á sí mismo:<br class="lineBreak">
+    <span class="persName">D. Abundo</span>,el cual se decia á sí mismo:<br class="lineBreak">
     <said>-- ¡Si pudiera enviar á pasear á ese <span class="persName">Lorenzo</span>! ...: Válgame<br class="lineBreak">
     Dios! ¿qué pdré yo decirle? Sobre todo... ; él tambien tiene<br class="lineBreak">
     una cabecilla! ... muy buena si no le tocan; mas si le contra-<br class="lineBreak">
-    dicen, á Dios, es una furia, y más ahora que está enamorada</said></span><br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 15</div></div>
+    dicen, á Dios, es una furia, y más ahora que está enamorada</said><br class="lineBreak"></p>
+  <div class="pageBreak">Page 15</div>
 </div>
 
 
 
 <div>
-    <p><span class="mod" id="mod7-es"><a href="#mod7-it" class="corrisplink"><seg>(m7)</seg></a><said>perdidos de esa <span class="persName">Lucia</span>! ... Mozalbetes, que no saben qué hacerse,<br class="lineBreak">
+    <p><said>perdidos de esa <span class="persName">Lucia</span>! ... Mozalbetes, que no saben qué hacerse,<br class="lineBreak">
     se enamoran, y queiren casarse luégo, sin hacerse cargo da<br class="lineBreak">
     los conflictos en que ponen á los hombres de bien! ... Yo no<br class="lineBreak">
     sé por que aquellos dos bribonazos no irian con su intimacion<br class="lineBreak">
     á oltra parte... ! Qué desgracía no haberme ocurrido entónces<br class="lineBreak">
-    esta especie! pudiera habérsela insinuado...</said></span><br class="lineBreak">
+    esta especie! pudiera habérsela insinuado...</said><br class="lineBreak">
     Pero reflexionando <span class="persName">D. Abundo</span> que el arrepentirse de no<br class="lineBreak">
     haber aconsejado una maldad era cosa demasiaso inicus<br class="lineBreak">
     volvia su cólera contra el que turbaba su sisiego. No conocía á<br class="lineBreak">
@@ -1917,7 +1847,7 @@
     otras relaciones que la de tocar el pecho con la barba y el suelo<br class="lineBreak">
     conel sombrero las pocas veces que le habian encontrado. Ha-<br class="lineBreak">
     bíale ocurrido más de una vez defenderle contra los que priva-<br class="lineBreak">
-    damente reprobaban aluna de sus iniquidades;<span class="redgap" id="gap31-es"><a href="#gap31-it" class="corrisplink"><seg>(g31)</seg></a></span> mil veces había<br class="lineBreak">
+    damente reprobaban aluna de sus iniquidades; mil veces había<br class="lineBreak">
     dicho que era persona muy respetable; pero ahora le dió en su<br class="lineBreak">
     interior todos aquellos titulos que nunca oyó en otras oca-<br class="lineBreak">
     siones sin interupirlos con un <said>¡ vamos, vamos, pocas mur-<br class="lineBreak">
@@ -1940,7 +1870,7 @@
     <said>-- Voy, --</said> respondió <span class="persName">;Perpétua</span>, dejando en la mesa la bo-<br class="lineBreak">
     tella de vino pedilecto de <span class="persName">D. Abundo</span>.<br class="lineBreak">
     Y echó á andar pausadamenre; pero aún no habia llegado<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 16</div></div>
+  <div class="pageBreak">Page 16</div>
 </div>
 
 
@@ -1968,7 +1898,7 @@
     <said>-- Tráelo, tráelo, -- </said> dijo <span class="persName">D. Abundo</span>.<br class="lineBreak">
     Y tomamos el vaso con mano no muy firme, se echó el cuerpo<br class="lineBreak">
     el vino tan aprisa como si fuera una purga.<br class="lineBreak">
-    <said>-- ¿Conque tendré yo que ir á preguntar por la <span class="unclearword">veciudad</span><br class="lineBreak">
+    <said>-- ¿Conque tendré yo que ir á preguntar por la <unclear>veciudad</unclear><br class="lineBreak">
     qué es lo que le ha sucedido á mi amo? -- </said> dilo <span class="persName">Perpétua</span>; de<br class="lineBreak">
     qué delante de él, puesta en jarras y con ojos cayados no<br class="lineBreak">
     su rostro.<br class="lineBreak">
@@ -1982,7 +1912,7 @@
     Advirtió <span class="persName">Perpétua</span> al momento que habia tocado mala tecla,<br class="lineBreak">
     y variando de registro:<br class="lineBreak">
     <said>-- Señor, --</said> dijo con voz enternecida y para enternecer, <said>--</said><br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 17</div></div>
+  <div class="pageBreak">Page 17</div>
 </div>
 
 
@@ -2000,16 +1930,16 @@
     nombre del autor del atentado, no pudo <span class="persName">Perpétua</span> contenerse,<br class="lineBreak">
     y echó un voto. Al oirle don Abundo se dejó caer sobre el res-<br class="lineBreak">
     paldar del sillon con un gran suspiro. y levantando las ma-<br class="lineBreak">
-    nos al cielo <span class="redgap" id="gap32-es"><a href="#gap32-it" class="corrisplink"><seg>(g32)</seg></a></span>, exclamó:<br class="lineBreak">
+    nos al cielo , exclamó:<br class="lineBreak">
     <said>-- ¡Perpétua, por amore de Dios!</said><br class="lineBreak">
     <said>-- ¡Jesus mil vecese! --</said> prosiguió el ama; <said>-- ¡qué picaro!<br class="lineBreak">
     ¡qué birbonazo!  ¡Qué hombre tan sin temor de Dios!</said><br class="lineBreak">
     <said>-- ¿Quieres callar, ó quieres perderme para siempre?</said><br class="lineBreak">
     <said>-- Aquí estamos solos; nadie nos oye, ¿Y cómo se com-<br class="lineBreak">
     pondrá usted, pobre señor?</said><br class="lineBreak">
-    <span class="mod" id="mod8-es"><a href="#mod8-it" class="corrisplink"><seg>(m8)</seg></a><said>-- No está mala la salida, --</said> dijo <span class="persName">D. Abundo</span> con enfado. <said>--
+    <said>-- No está mala la salida, --</said> dijo <span class="persName">D. Abundo</span> con enfado. <said>--
     ¿ El parecer que me has ofrecido es preguntarme cómo me<br class="lineBreak">
-    compondré?</said></span><br class="lineBreak">
+    compondré?</said><br class="lineBreak">
     <said>-- Yo bienle diria mi parecer bueno ó malo; pero...</said><br class="lineBreak">
     <said>-- Oigámoslo.</said><br class="lineBreak">
     <said>-- Mi parecer seria, que como todos dicen que nuestro Ar<br class="lineBreak">
@@ -2024,26 +1954,26 @@
     <said>-- Pues qué, las balas se reparten así á dos por tres como<br class="lineBreak">
     los conflites? Dijo nos librara si esos perros mordiesen todas<br class="lineBreak">
     las veces que ladran! Yo siempre he visto que al que enseña</said><br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 18</div></div>
+  <div class="pageBreak">Page 18</div>
 </div>
 
 
 
 <div>
-    <p><span class="mod" id="mod9-es"><a href="#mod9-it" class="corrisplink"><seg>(m9)</seg></a><said>los dientes todos le respetan, <span class="idiom" id="mod10-es"><a href="#mod10-it" class="corrisplink"><span class="tooltip" id="#Im1-es">(Im1)<span class="tooltiptext">Here the Perpetua’s folk wisdom finds new life in the Gallego's translation wrapped inside a spanish local saying (Pecchiari, 2014-2015, p. 34.):</span></span></a> dice bién el refran, que al que<br class="lineBreak">
-    se hace de miel las moscas se lo comen</span>. Justamente porque<br class="lineBreak">
+    <p><said>los dientes todos le respetan, dice bién el refran, que al que<br class="lineBreak">
+    se hace de miel las moscas se lo comen. Justamente porque<br class="lineBreak">
     usted nunca sostiene su razon, todos vienen á... con perdon<br class="lineBreak">
-    hablando...</said></span><br class="lineBreak">
+    hablando...</said><br class="lineBreak">
     <said>- ¿ Qieres callar?</said><br class="lineBreak">
     <said>-- Ya callo. pero es muy cierto que cuando las entes ven<br class="lineBreak">
     que uno siempre y en todos los lances se deja sopapear...</said><br class="lineBreak">
     <said>--¿ Qieres callar, repito? ¿ Estamos ahora para esas ba-<br class="lineBreak">
     dajadas?</said><br class="lineBreak">
-    <said>-- En fila, basta;<span class="idiom" id="mod11-es"><a href="#mod11-it" class="corrisplink"><span class="tooltip" id="Im-es">(Im2)<span class="tooltiptext">Here Gallego translates Perpetua’s 'pensare', as she advises the curate, by inserting a spanish local expression indicating the tendency of someone who does not make hasty decisions but reflects before acting. (Pecchiari, 2014-2015, pp. 33-34.):</span></span></a>consúltelo usted e la noche con la almo-</span></said><br class="lineBreak"></p>
+    <said>-- En fila, basta; consúltelo usted e la noche con la almo-</said><br class="lineBreak"></p>
    
-      <figure style="margin: 1em 0; "><img style="max-width: 100%; height: auto;" src="assets/img/losnoviosimgp19.png" alt="Legando á la puerta se paró un momento,"><figcaption style="font-size: 0.85em; color: #555; margin-top: 0.3em;"><figDesc>Legando á la puerta se paró un momento,<br class="lineBreak"></figDesc></figcaption></figure>
+      <figure style="margin: 1em 0; "><img style="max-width: 100%; height: auto;" src="assets/img/losnoviosimgp19.png" alt="(F.4)Legando á la puerta se paró un momento,"><figcaption style="font-size: 0.85em; color: #555; margin-top: 0.3em;"><figDesc>(F.4)Legando á la puerta se paró un momento,<br class="lineBreak"></figDesc></figcaption></figure>
   
-    <p><said><span class="idiom" id="mod11-es"><a href="#mod11-it" class="corrisplink"></a>hada</span>; pero tanto no empiece á hacerse daño á sí mismo<br class="lineBreak">
+    <p><said>hada; pero tanto no empiece á hacerse daño á sí mismo<br class="lineBreak">
     y á arruinarse la salud. Coma usted un bocado.</said><br class="lineBreak">
     <said>-- Si, si, yo pensaré en ello --</said> respondió <span class="persName">D. Abundo</span> re-<br class="lineBreak">
     funfuñando <said>-- Ya le sé. -- </said> prosiguió levantándose: <said> nada<br class="lineBreak">
@@ -2051,24 +1981,24 @@
     sé que á mí me toca discurrur lo que se debe hacer.</said><br class="lineBreak">
     <said>-- Vaya otra gotita, --</said> dijo <span class="persName">Perpétua</span>, echando vino en el<br class="lineBreak">
     vaso. <said>-- Ya sabo usted que le conforia el estómago.</said><br class="lineBreak">
-    <said>-- ¡ Ah! no, <span class="unclearword">basta</span>; otra cataplasma se necesita, otro con-<br class="lineBreak">
+    <said>-- ¡ Ah! no, <unclear>basta</unclear>; otra cataplasma se necesita, otro con-<br class="lineBreak">
     fortante.</said><br class="lineBreak">
     Diciendo esto tomó la luz y prosiguió refunfuñando:<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 19</div></div>
+    <div class="pageBreak">Page 19</div>
 </div>
 
 
 
 <div>
     <p> <said>-- ¡Ahí es un gran de anis! ¿Que esto me suceda á mí, á<br class="lineBreak">
-    un hombre como yo?<span class="redgap" id="gap33-es"><a href="#gap33-it" class="corrisplink"><seg>(g33)</seg></a></span></said><br class="lineBreak">
+    un hombre como yo?</said><br class="lineBreak">
     Con estas y otras lamentaciones se dirigió á su cuarto para<br class="lineBreak">
     acostarse. Llegando á la puerta se paró un momento, se<br class="lineBreak">
     volvió hácia <span class="persName">Perpétua</span>, y poniendo el dedo indice en los la-<br class="lineBreak">
     bios, dijo con tono lento y muy recalcado:<br class="lineBreak">
     <said>-- ¡ <span class="persName">Perpétua</span>, por amore de Dios!</said><br class="lineBreak">
     Y se metió adentro.</p>
-    <div class="page"><div class="pageBreak">Page 20</div></div>
+    <div class="pageBreak">Page 20</div>
 </div>
 
     

@@ -26,9 +26,9 @@
         <publisher>Internet Archive</publisher>
         <pubPlace>Online</pubPlace>
         <date when="2014-12-06T14:48:33" type="modification" subtype="digital">2014-12-06 14:48:33</date>
+        <idno type="url">https://archive.org/</idno>
         <idno type="collection">bncfirenze; europeanlibraries</idno>
         <idno type="topic">bub_upload</idno>
-        <note>Book from the collections of the National Central Library of Florence.</note>
         <availability>
           <licence target="https://creativecommons.org/publicdomain/mark/1.0/">
             Public Domain Mark 1.0

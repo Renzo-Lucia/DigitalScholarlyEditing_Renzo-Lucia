@@ -255,8 +255,24 @@
       <td>
         <pre><code>
           <strong>&lt;sourceDesc&gt; </strong>
-        &lt;p&gt;Risultato delle revisioni iniziate già all’altezza della stesura del primo manoscritto, il Fermo e Lucia.&lt;/p&gt; 
-        <strong>&lt;/sourceDesc&gt;</strong>
+            &lt;bibl&gt;
+              &lt;title&gt;I promessi sposi: storia milanese del secolo 17. scoperta e rifatta da Alessandro Manzoni&lt;/title&gt;
+              &lt;title type="part"&gt;Tomo primo, parte prima; tomo terzo, parte seconda&lt;/title&gt;
+              &lt;publisher&gt;Internet Archive&lt;/publisher&gt;
+              &lt;pubPlace&gt;Online&lt;/pubPlace&gt;
+              &lt;date when="2014-12-06T14:48:33" type="modification" subtype="digital"&gt;2014-12-06 14:48:33&lt;/date&gt;
+              &lt;idno type="url"&gt;https://archive.org/&lt;/idno&gt;
+              &lt;idno type="collection"&gt;bncfirenze; europeanlibraries&lt;/idno&gt;
+              &lt;idno type="topic"&gt;bub_upload&lt;/idno&gt;
+              &lt;availability&gt;
+                &lt;licence target="https://creativecommons.org/publicdomain/mark/1.0/"&gt;
+                  Public Domain Mark 1.0
+                &lt;/licence&gt;
+              &lt;/availability&gt;
+              &lt;language&gt;Italian&lt;/language&gt;
+            &lt;/bibl&gt;
+          <strong>&lt;/sourceDesc&gt; </strong>
+        </code></pre>
       </td>
     </tr>
      <tr>
@@ -309,7 +325,12 @@
       <td>XML <strong>titleStmt</strong> is included inside the &lt;teiHeader&gt; element, <strong> in particular inside the &lt;fileDesc&gt; </strong>. It specifies the version of the standard being used.</td>
       <td><pre><code>
         <strong>&lt;titleStmt&gt;</strong>
-            &lt;title&gt;I promessi sposi - digital edition in XML-TEI&lt;/title&gt;
+            &lt;title&gt;I Promessi Sposi&lt;/title&gt;
+            &lt;author&gt;Alessandro Manzoni&lt;/author&gt;
+          &lt;respStmt&gt;
+            &lt;resp&gt;Improved TEI encoding&lt;/resp&gt;
+            &lt;name&gt;Alice Piazzi&lt;/name&gt;
+          &lt;/respStmt&gt;
         <strong>&lt;/titleStmt&gt;</strong></code></pre></td>
     </tr>
     <tr>
@@ -318,8 +339,75 @@
       <td>
         <pre><code>
         <strong>&lt;title&gt;</strong>
-          I promessi sposi - digital edition in XML-TEI
+          I Promessi Sposi
+      <strong>&lt;/title&gt;</strong>
+    <br>
+    <strong>&lt;title&gt;</strong>
+          Los novios
       <strong>&lt;/title&gt;</strong></code></pre></td>
+    </tr>
+     <tr>
+      <td><pre><code>&lt;author&gt;&lt;/author&gt;</code></pre></td>
+      <td>XML <strong>author</strong> is included inside the &lt;teiHeader&gt; element, <strong> in particular inside the &lt;titleStmt&gt;</strong>. In this case, it specifies the author of the original work.</td>
+      <td>
+        <pre><code>
+        <strong>&lt;author&gt;</strong>
+          Alessandro Manzoni
+      <strong>&lt;/author&gt;</strong>
+      <br>
+    <strong>&lt;author&gt;</strong>
+          Juan Nicasio Gallego
+      <strong>&lt;/author&gt;</strong></code></pre></td>
+    </tr>
+    <tr>
+      <td><pre><code>&lt;respStmt&gt;&lt;/respStmt&gt;</code></pre></td>
+      <td>XML <strong>respStmt</strong> is included inside the &lt;teiHeader&gt; element, <strong> in particular inside the &lt;titleStmt&gt;</strong>. In this case, it indicates responsibility for this TEI version. <br>
+        It specifies the type of responsibility through the element &lt;resp&gt; and the responsible person of this TEI version through &lt;name&gt;.</td>
+      <td>
+        <pre><code>
+        <strong>&lt;respStmt&gt;</strong>
+          &lt;resp&gt;Improved TEI encoding&lt;/resp&gt;
+          &lt;name&gt;Alice Piazzi&lt;/name&gt;
+      <strong>&lt;/respStmt&gt;</strong></code></pre></td>
+    </tr>
+        <tr>
+      <td><pre><code>&lt;publicationStmt&gt;&lt;/publicationStmt&gt;</code></pre></td>
+      <td>XML <strong>publicationStmt</strong> is included inside the &lt;teiHeader&gt; element. In this case, it provides information about the publication of this TEI file. <br>
+        It specifies the date of publication for the TEI edition through the element &lt;date&gt;, better clarified with the @when attribute which gives a machine-readable format of the date.
+        Furthermore, though the element &lt;availability&gt;, it adds information about the availability of the encoded version since it is a scholarly project which can be used under precise restirctions.</td>
+      <td>
+        <pre><code>
+        <strong>&lt;respStmt&gt;</strong>
+          &lt;date when="2025"&gt;2025&lt;/date&gt;
+          &lt;availability&gt;&lt;p&gt;TEI edition is available for scholarly purposes only.&lt;/p&gt;&lt;/availability&gt;
+      <strong>&lt;/respStmt&gt;</strong></code></pre></td>
+    </tr>
+      <tr>
+      <td><pre><code>&lt;bibl&gt;&lt;/bibl&gt;</code></pre></td>
+      <td>XML <strong>bibl</strong> is included inside the &lt;teiHeader&gt; element, <strong> in particular inside the &lt;sourceDesc&gt;</strong>. In this case,  It contains a bibliographic record of the source text that is not strictly structured. <br>
+        It contains various different elements: <br>
+        The elements &lt;title&gt; and &lt;title type="part"&gt; specifie the full title of the source, the element &lt;publisher&gt; specifies the source that published the work, the element &lt;pubPlace&gt; specifies the platform where the work is available, the element &lt;date&gt; clarifies the date associated with the digital source. It is enriched with the attribute @when which specifies the ISO 8601 format date of the digital source , the attribute @type specifies whether the date refers to the creation or the modification date of the digital source and the attribute @subtype indicates that this creation or modification date is related to the digital version and not the original one.
+        There are other elements included in the element &lt;bibl&gt;: the element &lt;idno&gt; is a collection identifier that comes with the attribute @type which links the TEI record to the digital source on the web, another element &lt;idno&gt; with the attribute @type which identifies the collections that the source belongs to and another element &lt;idno&gt; with attribute @type indicates the specific topic of the colllection in which the work is preserved. 
+        There is the element &lt;availability&gt; contains access information for the source, in particular, it contains the element &lt;licence&gt; with the attribute @target that indicates the license under which the source is available. Finally it states that the work is in the public domain according to Creative Commons.
+        The element &lt;language&gt; specifies the language of the source.<td>
+        <pre><code>
+        <strong>&lt;bibl&gt;</strong>
+          &lt;title&gt;I promessi sposi: storia milanese del secolo 17. scoperta e rifatta da Alessandro Manzoni&lt;/title&gt;
+          &lt;title type="part"&gt;Tomo primo, parte prima; tomo terzo, parte seconda&lt;/title&gt;
+          &lt;publisher&gt;Internet Archive&lt;/publisher&gt;
+          &lt;pubPlace&gt;Online&lt;/pubPlace&gt;
+          &lt;date when="2014-12-06T14:48:33" type="modification" subtype="digital"&gt;2014-12-06 14:48:33&lt;/date&gt;
+          &lt;idno type="url"&gt;https://archive.org/&lt;/idno&gt;
+          &lt;idno type="collection"&gt;bncfirenze; europeanlibraries&lt;/idno&gt;
+          &lt;idno type="topic"&gt;bub_upload&lt;/idno&gt;
+          &lt;availability&gt;
+            &lt;licence target="https://creativecommons.org/publicdomain/mark/1.0/"&gt;
+              Public Domain Mark 1.0
+            &lt;/licence&gt;
+          &lt;/availability&gt;
+          &lt;language&gt;Italian&lt;/language&gt;
+        <strong>&lt;/bibl&gt;</strong>
+        </code></pre></td>
     </tr>
     
     <tr>
