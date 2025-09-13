@@ -2,7 +2,7 @@ from lxml import etree
 
 # Percorsi ai file
 xml_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/ipromessisposi_cap1.xml'          # il tuo XML principale
-xsl_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/renzolucia.xsl'
+xsl_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/renzoluciaimproved.xsl'
 
 # Carica i file
 xml = etree.parse(xml_file)
