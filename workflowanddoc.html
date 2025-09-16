@@ -100,20 +100,21 @@
       </span>
 
       <h5 class="fw-bold">Transcription and Exportation</h5>
-      <p class="text-muted">Every project begins with a spark: in my case, the selection of texts that would become the foundation and reference samples for my project.</p> <br>
+      <p class="text-muted">Every project begins with a spark: in this case, the starting point is the <strong>selection of texts</strong> that would become the foundation and reference samples for my project.</p> <br>
       <div>
-        <p>The focus was placed on two key texts: the original <i>I promessi sposi</i> written by Alessando Manzoni in italian and published in 1827 and one of its very first valid and reliable early Spanish translation. <br>
+        <p>The focus was placed on two key texts: <br>
+          the original <i>I promessi sposi</i> written by Alessando Manzoni and one of its very first valid and reliable early Spanish translations written by Juan Nicasio Galleo. <br>
        After some exploration, two main sources were selected: <br>
            <ul>
                 <li><strong>Digitised edition of the original <i>I promessi sposi</i> written by Alessandro Manzoni and published in 1827 (Ventisettana)</strong>, available on <a href="https://archive.org/details/bub_gb_u_HqQfXtei0C/page/n21/mode/2up">Internet Archive</a><br>
-                <li><strong>Digitised edition of the spanish translation of the Ventisettana entitled <i>Los novios</i> written by Juan Nicasio Gallego and published in 1836-7</strong>, accessible on <a href="https://www.movio.beniculturali.it/dsglism/IpromessisposiinEuropaenelmondo/it/12/la-27ana-in-eu-e-usa">I Promessi Sposi in Europa e nel mondo</a></li><br>
+                <li><strong>Digitised edition of the Spanish translation of the Ventisettana entitled <i>Los novios</i> written by Juan Nicasio Gallego and published in 1836-7</strong>, accessible on <a href="https://www.movio.beniculturali.it/dsglism/IpromessisposiinEuropaenelmondo/it/12/la-27ana-in-eu-e-usa">I Promessi Sposi in Europa e nel mondo</a></li><br>
                 </ul>
         </p>
         <br>
         <p>From this point, the workflow split into <strong>two distinct tracks</strong>, based on the characteristics of the chosen sources and platforms.</p>
         <br>
         <div>
-        <p>Work began with the <strong style="color: var(--accent-color);">edition of <i>I promessi sposi</i></strong>,  hosted on <a href="https://projects.dharc.unibo.it/philoeditor/#">Philoeditor</a>. <br>
+        <p>The work began with the <strong style="color: var(--accent-color);">edition of <i>I promessi sposi</i></strong>,  hosted on <a href="https://projects.dharc.unibo.it/philoeditor/#">Philoeditor</a>. <br>
         In particular, the “clean” version of the text, excluding optional variants, was selected and then exported in TEI format.
         <br>
         <br>
@@ -130,11 +131,11 @@
             First chapter of the digitised edition of <em>I promessi sposi </em> coming from Internet Archive</p>
         <br>
         <br>
-        <p>Work continued with <strong style="color: var(--accent-color);"><i>Los novios</i></strong>, hosted on <a href="https://www.movio.beniculturali.it/dsglism/IpromessisposiinEuropaenelmondo/it/67/edizione-spagnola">Il Tesoro di I promessi sposi in Europa e nel mondo</a>, specifically on the section <i>Sfoglia le edizioni</i>. <br>
-        This section provided numerous translations of the original Ventisettana, including English, American English, German, French, and, notably, the Spanish edition published between 1836 and 1837 by Gallego written By Gallego.
-        Gallego’s translation was available as page images and was processed using the Transkribus platform, a tool designed to transcribe both printed and handwritten texts with precision. 
+        <p>The work continued with <strong style="color: var(--accent-color);"><i>Los novios</i></strong> hosted on <a href="https://www.movio.beniculturali.it/dsglism/IpromessisposiinEuropaenelmondo/it/67/edizione-spagnola">Il Tesoro di I promessi sposi in Europa e nel mondo</a>, specifically on the section <i>Sfoglia le edizioni</i>. <br>
+        This section provides numerous translations of the original Ventisettana, including English, American English, German, French, and, notably, the Spanish edition published between 1836 and 1837 written By Gallego. <br>
+        Gallego’s translation was available as page images and was processed using the Transkribus platform, a tool designed to transcribe both printed (as in this case) and handwritten texts with precision. <br>
         Automatic transcription was not fully relied upon due to traces of age, damage, minor imperfections, and faded letters. 
-        So, all pages were manually reviewed and transcribed line by line to ensure accurate handling of omissions and gaps.</p>
+        So, all pages were manually transcribed line by line to ensure accurate handling of omissions and gaps.</p>
         <br>
         <img style="width: 500px; height: 400px; border: 1px solid #ccc; border-radius: 5px" src="assets/img/transkribusstart.png" alt="Transkribus Los novios 1 chapter transcription">
         <p class="text-muted">First chapter of the digitised edition of <em>Los novios</em> by Il Tesoro di I promessi sposi in Europa e nel mondo manually transcribed using Transkribus platform</p>
@@ -151,14 +152,15 @@
 
       <h5 class="fw-bold">Standard XML/TEI Creation</h5>
       <p class="text-muted">
-        This project is designed to offer the user something beyond a simple, passive comparison of two digitized texts. Instead, it encourages the reader to engage with both texts side by side, experiencing them simultaneously rather than one after the other.
+        This project is designed to offer the user something beyond a simple, passive comparison of two digitized texts. <br>
+        Instead, it encourages the reader to <strong>engage with both texts side by side, experiencing them simultaneously</strong> rather than one after the other.
         This is the reason why two XML files, one for each reference text, were created. <br></p>
         <br>
-        <p>XML (eXtensible Markup Language) is a general-purpose markup language for structuring data. It allows to create custom tags to organize information in a readable way both for humans and computers. It describes  the abstract structure of a document, highlighting the logical part of the text, as in a standard grammar, but not the meaning of the content.</p> 
+        <p>XML (eXtensible Markup Language) is a general-purpose markup language for structuring data. It makes it possible to use already valid tags and to create custom tags to organize information in a readable way both for humans and computers. It describes the abstract structure of a document, highlighting the logical part of the text, as in a standard grammar, but not the meaning of the content.</p> 
         <br>
         <p>TEI (Text Encoding Initiative) is a specialized standard built on XML. It provides a set of predefined tags and rules to represent, exchange, and preserve data, giving consistent meaning to the text. It aims to achieve two key goals: developing an encoding model for representing texts in a digital environment, and making the text machine-readable and searchable.</p>
         <br>
-        Throughout the project, the Italian text remained my guiding primary reference model, the original source against which everything else was measured. <br>
+        Throughout the project, the Italian text remained my guiding primary reference model, the original source against which everything else was measured and compared. <br>
         With it as anchor, the Spanish translation was closely examined, considering every subtle difference in structure and meaning. <br>
         The creation of these files was based on a basic XML TEI standard structure, outlined as follows:</p>
 <br>
@@ -195,8 +197,8 @@
         </div>
         <br>
 
-        <p>Here you can take a look at the xml files created for the 2 texts:
-          As you can notice, there are four available buttons becuase I preferred to create two XML versions for each text: a the simple version which is plain and ordinary and the improved version which is more engaing and interactive version: 
+        <p>Take a look at the xml files created for the 2 texts:
+          As you can notice, there are four available buttons which have been thought to create two XML versions for each text: a the <strong>simple version which is plain and ordinary</strong> and the <strong>improved version which is more engaging and interactive </strong>: 
           <br>
           <button class="btn-base btn-animato" id="buttonone"><a href="assets/xml/simpleIPS.xml" target="_blank">First chapter of I Promessi Sposi in XML - Simple Version</a></button><br> 
           <button class="btn-base btn-animato" id="buttonone"><a href="assets/xml/simpleLN.xml" target="_blank">First chapter of Los novios in XML - Simple Version</a></button><br> 
@@ -227,17 +229,17 @@
   <tbody>
     <tr>
       <td><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></pre></td>
-      <td class="desc">XML <strong>declaration</strong>specifies the version of the standard being used.</td>
+      <td class="desc">XML <strong>declaration</strong> specifies the version of the standard being used.</td>
       <td><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></pre></td>
     </tr>
     <tr>
       <td><pre><code>&lt;TEI xmlns=”http://www.tei- c.org/ns/1.0”&gt;</code></pre></td>
-      <td class="desc">XML <strong>root</strong> carries a namespace declaration: it specifies that all elements inside <TEI> belong to a specific namespace, that in this case is TEI (Text Encoding Initiative) standard, version 1.0.</td>
+      <td class="desc">XML <strong>root</strong> carries a namespace declaration. It specifies that all elements inside <TEI> belong to a specific namespace, that in this case is TEI (Text Encoding Initiative) standard, version 1.0.</td>
         <td><pre><code>&lt;TEI xmlns=”http://www.tei- c.org/ns/1.0”&gt;</code></pre></td>
       </tr>
     <tr>
       <td><pre><code>&lt;teiHeader&gt;&lt;/teiHeader&gt;</code></pre></td>
-      <td class="desc">XML <strong>teiHeader</strong> element provides information that identifies the XML document itself, the file and all the sources (such as metadata)</td>
+      <td class="desc">XML <strong>teiHeader</strong> element provides information that identifies the XML document itself, the file and all the sources (such as metadata).</td>
       <td><pre><code><strong>&lt;teiHeader&gt;&lt;/teiHeader&gt;</strong></code></pre></td>
     </tr>
      <tr>
@@ -287,7 +289,7 @@
     </tr>
      <tr>
       <td><pre><code>&lt;body&gt;&lt;/body&gt;</code></pre></td>
-      <td class="desc">XML <strong>body&lt;/strong> element is located &lt;strong>inside the &lt;text&gt; element</strong>. It contains the text itself</td>
+      <td class="desc">XML <strong>body</strong> element is located <strong>inside the &lt;text&gt; element</strong>. It contains the text itself.</td>
       <td>
         <pre><code>
           <strong>&lt;body&gt;</strong>
@@ -318,7 +320,7 @@
   <tbody>
     <tr>
       <td><pre><code>&lt;titleStmt&gt;&lt;/titleStmt&gt;</code></pre></td>
-      <td>XML <strong>titleStmt</strong> is included inside the &lt;teiHeader&gt; element, <strong> in particular inside the &lt;fileDesc&gt; </strong>. It specifies the version of the standard being used.</td>
+      <td>XML <strong>titleStmt</strong> is included inside the &lt;teiHeader&gt; element,<strong> in particular inside the &lt;fileDesc&gt;</strong>. It specifies the version of the standard being used.</td>
       <td><pre><code>
         <strong>&lt;titleStmt&gt;</strong>
             &lt;title&gt;I Promessi Sposi&lt;/title&gt;
@@ -370,7 +372,7 @@
       <td><pre><code>&lt;publicationStmt&gt;&lt;/publicationStmt&gt;</code></pre></td>
       <td>XML <strong>publicationStmt</strong> is included inside the &lt;teiHeader&gt; element. In this case, it provides information about the publication of this TEI file. <br>
         It specifies the date of publication for the TEI edition through the element &lt;date&gt;, better clarified with the @when attribute which gives a machine-readable format of the date.
-        Furthermore, though the element &lt;availability&gt;, it adds information about the availability of the encoded version since it is a scholarly project which can be used under precise restirctions.</td>
+        Furthermore, through the element &lt;availability&gt;, it adds information about the availability of the encoded version since it is a scholarly project which can be used under precise restrictions.</td>
       <td>
         <pre><code>
         <strong>&lt;respStmt&gt;</strong>
@@ -382,9 +384,15 @@
       <td><pre><code>&lt;bibl&gt;&lt;/bibl&gt;</code></pre></td>
       <td>XML <strong>bibl</strong> is included inside the &lt;teiHeader&gt; element, <strong> in particular inside the &lt;sourceDesc&gt;</strong>. In this case,  It contains a bibliographic record of the source text that is not strictly structured. <br>
         It contains various different elements: <br>
-        The elements &lt;title&gt; and &lt;title type="part"&gt; specifie the full title of the source, the element &lt;publisher&gt; specifies the source that published the work, the element &lt;pubPlace&gt; specifies the platform where the work is available, the element &lt;date&gt; clarifies the date associated with the digital source. It is enriched with the attribute @when which specifies the ISO 8601 format date of the digital source , the attribute @type specifies whether the date refers to the creation or the modification date of the digital source and the attribute @subtype indicates that this creation or modification date is related to the digital version and not the original one.
-        There are other elements included in the element &lt;bibl&gt;: the element &lt;idno&gt; is a collection identifier that comes with the attribute @type which links the TEI record to the digital source on the web, another element &lt;idno&gt; with the attribute @type which identifies the collections that the source belongs to and another element &lt;idno&gt; with attribute @type indicates the specific topic of the colllection in which the work is preserved. 
-        There is the element &lt;availability&gt; contains access information for the source, in particular, it contains the element &lt;licence&gt; with the attribute @target that indicates the license under which the source is available. Finally it states that the work is in the public domain according to Creative Commons.
+        The elements &lt;title&gt; and &lt;title type="part"&gt; specifies the full title of the source, <br>
+        the element &lt;publisher&gt; specifies the source that published the work, <br>
+        the element &lt;pubPlace&gt; specifies the platform where the work is available, <br> 
+        the element &lt;date&gt; clarifies the date associated with the digital source. It is enriched with the attribute @when which specifies the ISO 8601 format date of the digital source, the attribute @type specifies whether the date refers to the creation or the modification date of the digital source and the attribute @subtype indicates that this creation or modification date is related to the digital version and not the original one. <br>
+        There are other elements included in the element &lt;bibl&gt;: <br>
+        the element &lt;idno&gt; is a collection identifier that comes with the attribute @type which links the TEI record to the digital source on the web, <br>
+        another element &lt;idno&gt; with the attribute @type which identifies the collections that the source belongs to and <br>
+        another element &lt;idno&gt; with attribute @type indicates the specific topic of the collection in which the work is preserved.  <br>
+        The element &lt;availability&gt; contains access information for the source, in particular, it contains the element &lt;licence&gt; with the attribute @target that indicates the license under which the source is available. Finally it states that the work is in the public domain according to Creative Commons.
         The element &lt;language&gt; specifies the language of the source.<td>
         <pre><code>
         <strong>&lt;bibl&gt;</strong>
@@ -408,22 +416,20 @@
     
     <tr>
       <td><pre><code>&lt;head&gt;&lt;/head&gt;</code></pre></td>
-      <td>XML <strong>head</strong> element can be found only in the xml file of I promessi sposi and it is included inside the &lt;body&gt; element. It is used to mark the title of the work. <br>.
-      On</td>
+      <td>XML <strong>head</strong> element can be found only in the xml file of <em>I promessi sposi</em> and it is included <strong>inside the &lt;body&gt; element</strong>. It is used to mark the title of the work. <br>.
+      </td>
       <td>
         <pre><code>
-          &lt;body&gt;
     <strong>&lt;head&gt;</strong>I PROMESSI SPOSI<strong>&lt;/head&gt;</strong>
     <strong>&lt;head&gt;</strong>LOS NOVIOS<strong>&lt;/head&gt;</strong>
-      &lt;div type="chapter" n="CAPITOLO I."&gt;
     </td>
       </pre></code>
     </tr>
 
     <tr>
       <td><pre><code>&lt;fw&gt;&lt;/fw&gt;</code></pre></td>
-      <td>XML <strong>fw</strong> element <fw> should be located inside the &lt;body&gt; element. It is a useful element to mark the running titles that appear at the beginning of each page. In this case, I wanted to use it to mark the running titles "LOS NOVIOS" and "CAPITULO I" showed in the spanish text, <i>Los novios</i>, but I chose not to include it in order to maintain consistency and parity with the italian text, in which such running titles are absent. Their inclusion would have introduced alignment issues during the parallel comparison of the two texts.
-        In this case, the attributes @type and @place refer to the top centered position in which all the running tiutles are placed.
+      <td>XML <strong>fw</strong> element <fw> should be located <strong>inside the &lt;body&gt; element</strong>. It is a useful element to mark the running titles that appear at the beginning of each page. In this case, I wanted to use it to mark the running titles "LOS NOVIOS" and "CAPITULO I" showed in the Spanish text, <i>Los novios</i>, but I chose not to include it in order to maintain consistency and parity with the Italian text, in which such running titles are absent. Their inclusion would have introduced alignment issues during the parallel comparison of the two texts.
+        In this case, the attributes @type and @place refer to the top centered position in which all the running titles are placed.
       </td>
       <td><pre></code>
       <strong>&lt;fw type="header" place="top"&gt;&lt;</strong>CAPITULO <strong>&lt;/fw&gt;</strong>
@@ -438,7 +444,6 @@
         @n refers to the numeration of the chapter it creates.</td>
       <td>
          <pre><code>
-          &lt;body&gt;
             &lt;head&gt;</strong>I PROMESSI SPOSI&lt;/head&gt;
       <strong>&lt;div type="chapter" n="CAPITOLO I."&gt;</strong>
     </td>
@@ -470,7 +475,7 @@
     </tr>
     <tr>
       <td><pre><code>&lt;lb/&gt;</code></pre></td>
-      <td>XML <strong>lb/</strong> element is located <strong> in corrispondence of the line breaks</strong>. It is a milestone element because it monitors line breaks in the text. I chose to use it to create a reliable version that gtaphically resembles the source text by maintaing both its line breaks and the original formatting.</td>
+      <td>XML <strong>lb/</strong> element is located <strong> in correspondence of the line breaks</strong>. It is a milestone element because it monitors line breaks in the text. It is used to create a reliable version that graphically resembles the source text by maintaining both its line breaks and the original formatting.</td>
       <td>
         <pre><code>
         &lt;p&gt;
@@ -489,9 +494,9 @@
     </tr>
      <tr>
       <td><pre><code>&lt;persName&gt;&lt;/persName&gt;</code></pre></td>
-      <td>XML <strong>persName</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It allows me to mark and higlhight the the name of the characters mentioned in the texts.
-      Furthermore, I decided to use it enriched by the attirute @type to better specify the type that it refer to the characters. of character I am marking: 
-        The attribute @type comes with character value</td>
+      <td>XML <strong>persName</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It marks and highlights the name of the characters mentioned in the texts.
+      Furthermore, it is enriched by the attirute @type to better specify the marked type of name. 
+      The attribute @type comes with character value</td>
       <td>
         <pre><code>
         &lt;p&gt;... e l'<strong>&lt;persName type="character"&gt;</strong>don Abbondio<strong>&lt;/persName&gt;</strong>...&lt;p&gt;
@@ -500,9 +505,9 @@
     </tr>
      <tr>
       <td><pre><code>&lt;placeName&gt;&lt;/placeName&gt;</code></pre></td>
-      <td>XML <strong>placeName</strong> element <strong>follows the &lt;p&gt; element</strong>. It allows me to mark and higlhight the the name of the places mentioned in the texts. 
-        Furthermore, I decided to use it enriched by the attirute @type to better specify the type of place I am marking: 
-        The attribute @type comes with river, lake, muntain and city values</td>
+      <td>XML <strong>placeName</strong> element <strong>follows the &lt;p&gt; element</strong>. It marks and highlights the name of the places mentioned in the texts. 
+        Furthermore, it is enriched by the attirute @type to better specify the marked type of place. 
+        The attribute @type comes with river, lake, mountain and city values</td>
        <td>
         <pre><code>
         &lt;p&gt;...e l'<strong>&lt;placeName type="river"&gt;</strong>Adda<strong>&lt;/placeName&gt;</strong>...&lt;p&gt;
@@ -512,8 +517,8 @@
     </tr>
      <tr>
       <td><pre><code>&lt;date&gt;&lt;/date&gt;</code></pre></td>
-      <td>XML <strong>date</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It allows me to mark and higlhight the the dates annotated in the texts. 
-        Furthermore, I decided to use it enriched by the attirute @when, when possible, to better describe the precise and complete date made of year, month and day.</td>
+      <td>XML <strong>date</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It marks and highlights the dates annotated in the texts. 
+        Furthermore, it is enriched by the attirute @when, when possible, to better describe the precise and complete date made of year, month and day.</td>
       <td>
          <pre><code>
         &lt;p&gt;...Fino dagli <strong>&lt;date when="1583-04-08"&gt;</strong>otto d'aprile dell'anno 1583<strong>&lt;/date&gt;</strong> &lt;lb/&gt;...&lt;p&gt;
@@ -522,7 +527,7 @@
     </tr>
      <tr>
       <td><pre><code>&lt;said who="" toWhom=""&gt;&lt;/said&gt;</code></pre></td>
-      <td>XML <strong>said</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It is used to mark direct speech in a structured way, it’s especially useful in narratives with multiple characters because it allows to keep track of dialogue participants. It comes with the attributes @whom="" and @toWhom="", the first specifies who is speaking, while the second one who is the listener.</td>
+      <td>XML <strong>said</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It is used to mark direct speech in a structured way, it’s especially useful in narratives with multiple characters because it enables one to keep track of dialogue participants. It comes with the attributes @whom="" and @toWhom="", the first specifies who is speaking, while the second one specifies who is the listener.</td>
       <td>
          <pre><code>
           <strong>&lt;said who="one of the two bravi" toWhom="the other one"&gt;</strong>: egli è desso<strong>&lt;/said&gt;</strong>
@@ -531,8 +536,8 @@
     </tr>
      <tr>
       <td><pre><code>&lt;gap&gt;&lt;/gap&gt;</code></pre></td>
-      <td>XML <strong>gap</strong> element is located <strong>inside the &lt;p&gt; element</strong>. I used it to mark part of the text, indicated wiht the sigla (g1) acting as a reference label, that the spanish translator omitted with respect to the original italian work of Manzoni. It comes with the attributes @corresp="", @xml:id="" and @reason="". 
-        The first one points to another &lt;gap&gt; element which has attribute @xml:id="" withe the same "gap1" value, this is the target of the reference which contains the actual omitted text in the Spanish version.  .
+      <td>XML <strong>gap</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It marks part of the text, indicated with the sigla (g1) acting as a reference label, that the Spanish translator omitted with respect to the original Italian work of Manzoni. It comes with the attributes @corresp="", @xml:id="" and @reason="". 
+        The first one points to another &lt;gap&gt; element which has attribute @xml:id="" with the same "gap1" value, this is the target of the reference which contains the actual omitted text in the Spanish version.
         This allows to create a two-way link between the texts, in which the complete inline marker points to the omission and viceversa.
         The last one allows to filter by different kinds of gaps according to the attribute which specifiesthe type of omission, in this case a simple "omission".
      <td>
@@ -548,10 +553,10 @@
     </tr>
     <tr>
       <td><pre><code>&lt;add&gt;&lt;/add&gt;</code></pre></td>
-      <td>XML <strong>add</strong> element is located <strong>inside the &lt;p&gt; element</strong>. I used it to mark part of the text, indicated wiht the sigla (a1) acting as a reference label, that the spanish translator added with respect to the original italian work of Manzoni. It comes with the attributes @corresp="", @xml:id="" and @reason="". 
-        The first one points to another &lt;add&gt; element which has attribute @xml:id="" withe the same "add1" value, this is the target of the reference which contains the actual addition text in the Spanish version. 
+      <td>XML <strong>add</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It marks part of the text, indicated with the sigla (a1) acting as a reference label, that the Spanish translator added with respect to the original Italian work of Manzoni. It comes with the attributes @corresp="", @xml:id="" and @reason="". 
+        The first one points to another &lt;add&gt; element which has attribute @xml:id="" with the same "add1" value, this is the target of the reference which contains the actual addition text in the Spanish version. 
         This allows to create a two-way link in which the short inline marker points to the longer explanatory addition and viceversa.
-        The last one allows to filter by different kinds of additions according to the attribute which specifiesthe type of addition, in this case a simple "addition".
+        The last one allows one to filter by different kinds of additions according to the attribute which specifiesthe type of addition, in this case a simple "addition".
      <td>
          <pre><code>
           <strong>&lt;add corresp="#add1" reason="addition"&gt;</strong>&lt;seg&gt;(a1)&lt;/seg&gt;<strong>&lt;/add&gt;</strong>
@@ -564,9 +569,9 @@
     </tr>
      <tr>
       <td><pre><code>&lt;mod&gt;&lt;/mod&gt;</code></pre></td>
-      <td>XML <strong>mod</strong> element is located <strong>inside the &lt;p&gt; element</strong>. I used it to mark part of the italian text which is rendered in a modified way in the spanish one, since the spanish translator gave it a different interpretation. It comes with the attributes @corresp="", @xml:id="", @type="" and @reason="". <br>
-        The first one points to another &lt;gap&gt; element which has attribute @xml:id="" withe the same "mod1" value, this is the target of the reference which contains the actual modified text in the Spanish version. 
-        This allows to create a bi-directional link in which the short inline marker points to the modified version and viceversa.
+      <td>XML <strong>mod</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It marks part of the Italian text which is rendered in a modified way in the Spanish one, since the Spanish translator gave it a different interpretation. It comes with the attributes @corresp="", @xml:id="", @type="" and @reason="". <br>
+        The first one points to another &lt;gap&gt; element which has attribute @xml:id="" with the same "mod1" value, this is the target of the reference which contains the actual modified text in the Spanish version. 
+        This allows the user to create a bi-directional link in which the short inline marker points to the modified version and viceversa.
         The attribute type="" comes with value "translation" and clarifies the nature of the relationship, while the last attribute @reason="" comes with value "interpretation" and specifies that it involves interpretative choices.
      <td>
          <pre><code>
@@ -581,9 +586,9 @@
     </tr>
      <tr>
       <td><pre><code>&lt;mod&gt;&lt;/mod&gt;</code></pre></td>
-      <td>Two different variants of the element mod can be dentified by checking the values of the attributes @corresp="",xml:id="" and @reason="". <br>
-        <strong>&lt;mod corresp="#mod4" type="translation" reason="interpretation"&gt;&lt;seg corresp="#Mm4" reason="Minterpretation"&gt;(Mm4)&lt;/seg&gt;&lt;/mod&gt;</strong> marks a light and subtle modification. It represents one of the observations pronounced by María de las Nieves Muñiz Muñiz by marking it with the reference label "Mm". Knows as a very famous Spanish philologist, translator and Italianist, who studied the texts of Manzoni and Gallego (Muñiz Muñiz, Nuovi quaderni del CRIER, 2012, ). <br>
-        <strong>&lt;mod corresp="#mod10" type="translation" reason="idiomatic"&gt;&lt;seg corresp="#Im1" reason="TPidiomatic"&gt;(Im1)&lt;/seg&gt;&lt;/mod&gt;</strong> marks a semantic modification. It represents a spanish modifications which inserts a spanish local idiomatic expression discovered and studied by Beatrice Pecchiari in mester's thesis Los Novios. La ricezione dei Promessi sposi nella Spagna dell’Ottocento, by marking it with the reference label "Im" .
+      <td>Two different variants of the element mod can be identified by checking the values of the attributes @corresp="",xml:id="" and @reason="". <br>
+        <strong>&lt;mod corresp="#mod4" type="translation" reason="interpretation"&gt;&lt;seg corresp="#Mm4" reason="Minterpretation"&gt;(Mm4)&lt;/seg&gt;&lt;/mod&gt;</strong> marks a light and subtle modification. It represents one of the observations pronounced by María de las Nieves Muñiz Muñiz by marking it with the reference label "Mm". Known as a very famous Spanish philologist, translator and Italianist, who studied the texts of Manzoni and Gallego (Muñiz Muñiz, Nuovi quaderni del CRIER, 2012, ). <br>
+        <strong>&lt;mod corresp="#mod10" type="translation" reason="idiomatic"&gt;&lt;seg corresp="#Im1" reason="TPidiomatic"&gt;(Im1)&lt;/seg&gt;&lt;/mod&gt;</strong> marks a semantic modification. It represents a Spanish modification which inserts a Spanish local idiomatic expression discovered and studied by Beatrice Pecchiari in mester's thesis Los Novios. La ricezione dei Promessi sposi nella Spagna dell’Ottocento, by marking it with the reference label "Im" .
       <td>
          <pre><code>
           <strong>&lt;mod corresp="#mod1" type="translation" reason="interpretation"&gt;</strong>
@@ -606,8 +611,8 @@
      <tr>
       <td><pre><code>&lt;seg&gt;&lt;/seg&gt;</code></pre></td>
       <td>XML <strong>seg</strong> element is located <strong>inside the &lt;add&gt;, &lt;gap&gt;, &lt;abbr&gt; or the &lt;mod&gt; element</strong>. It is used to mark a portion of text for reference. 
-        (m1) acts like a label and allows to connect italian and spanish pieces of texts easily.
-        In particular, in the cases of the interpretation version studied by Muñiz Muñiz and idiomatic version studied by Pecchiari, a specific meaning is added through attributes @corresp="", xml:id="" and reason="". <br>
+        (m1) acts like a label and allows to connect Italian and Spanish pieces of texts easily.
+        In particular, in the cases of the interpretation version studied by Muñiz Muñiz and the idiomatic version studied by Pecchiari, a specific meaning is added through attributes @corresp="", xml:id="" and reason="". <br>
         These attributes allowed me to introduce a popup that appears whenever the user hovers over the text. The popup serves as a small guide, clarifying why those passages were marked and how they differ from the surrounding text.
       <td>
          <pre><code>
@@ -620,7 +625,7 @@
     </tr>
       <tr>
       <td><pre><code>&lt;abbr&gt;&lt;/abbr&gt;</code></pre></td>
-      <td>XML <strong>abbr</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It is used to mark abbreviated names to make the user understand that, even if they are not written in the same way, the refer to the same thing/person. In particular it focuses on names which are written in abbreviated forms, such es "S. M. C."", in spanish text and in cmplete long form, such as "Sua Maestà Cattolica", in italian text. 
+      <td>XML <strong>abbr</strong> element is located <strong>inside the &lt;p&gt; element</strong>. It is used to mark abbreviated names to make the user understand that, even if they are not written in the same way, they refer to the same thing/person. In particular it focuses on names which are written in abbreviated forms, such es "S. M. C."", in Spanish text and in complete long form, such as "Sua Maestà Cattolica", in Italian text. 
       <td>
          <pre><code>
           <strong>&lt;abbr corresp="#abbr1" reason="abbre"&gt;</strong>&lt;seg&gt;(ab1)&lt;/seg&gt;Sua Mae-&lt;lb/&gt;
@@ -648,7 +653,7 @@
     </tr>
      <tr>
       <td><pre><code>&lt;back&gt;&lt;/back&gt;</code></pre></td>
-      <td>The XML <strong>&lt;back&gt;</strong> element is placed <strong>inside the &lt;TEI&gt; element and after the &lt;text&gt; element</strong> and is used to mark the final part of a text: everything that comes after the main body.<br/>
+      <td>The XML <strong>&lt;back&gt;</strong> element is placed <strong>inside the &lt;TEI&gt; element and after the &lt;text&gt; element</strong> and it is used to mark the final part of a text: everything that comes after the main body.<br/>
         It contains any annex or appendix that follows the main part of a text.
         <td>
         <pre><code>
@@ -672,12 +677,12 @@
     </tr>
     <tr>
       <td><pre><code>&lt;listPerson&gt;&lt;/listPerson&gt;</code></pre></td>
-      <td>The XML <strong>&lt;listPerson&gt;&lt;/listPerson&gt;</strong> element is placed <strong>inside the &lt;back&gt; element</strong> and is used as a container element in TEI. It groups together multiple &lt;person&gt; elements into a structured list of people for both the italian and spanish texts. <br>
+      <td>The XML <strong>&lt;listPerson&gt;&lt;/listPerson&gt;</strong> element is placed <strong>inside the &lt;back&gt; element</strong> and it is used as a container element in TEI. It groups together multiple &lt;person&gt; elements into a structured list of people for both the Italian and Spanish texts. <br>
       In this case it is used to record all the characters with their possible names and identifiers.
         <td>
         <pre><code>
           &lt;back&gt;
-            <strong></strong>&lt;listPerson&gt;</strong>
+            <strong>&lt;listPerson&gt;</strong>
                 &lt;person xml:id="donabbondio" role="character"&gt;
                     &lt;persName type="full"&gt;Don Abbondio&lt;/persName&gt;
                     &lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;
@@ -696,11 +701,11 @@
     </tr>
       <tr>
         <td><pre><code>&lt;person&gt;&lt;/person&gt;</code></pre></td>
-    <td>The XML <strong>&lt;person&gt;&lt;/person&gt;</strong> element is placed <strong>inside the &lt;listPerson&gt; element</strong> and is used to encode information about a character mentioned in both the italian and spanish text.<br/>
+    <td>The XML <strong>&lt;person&gt;&lt;/person&gt;</strong> element is placed <strong>inside the &lt;listPerson&gt; element</strong> and it is used to encode information about a character mentioned in both the Italian and Spanish text.<br/>
         It is enriched by two attributes that come together with it which are @xml:id and @role.
-        @xml:id is a a unique identifier for that person, in this case it focuses two mentioned characters "donabbondio" and "bravi" to identify and mark alternative forms of the name, always connected to the primary original version.
-        @role specifies their role, which in thi case is character for both.
-        The only difference in the spanish codeis the addition to the element of the attribute @xml:lang="es" which specifies that, as well as the text, the names of the characters have been translated too.
+        @xml:id is a unique identifier for that person, in this case it focuses two mentioned characters "donabbondio" and "bravi" to identify and mark alternative forms of the name, always connected to the primary original version.
+        @role specifies their role, which in this case is character for both.
+        The only difference in the Spanish code is the addition to the element of the attribute @xml:lang="es" which specifies that, as well as the text, the names of the characters have been translated too.
         <td>
         <pre><code>
           &lt;back&gt;
@@ -740,7 +745,7 @@
     </tr>
  <tr>
   <td><pre><code>&lt;persName&gt;&lt;/persName&gt;</code></pre></td>
-    <td>The XML <strong>&lt;persName&gt;&lt;/persName&gt;</strong> element is placed <strong>inside the &lt;person&gt; element</strong> and is used to mark up a personal name, in particular, to encode different forms of each person’s name in both the italian and spanish texts.<br/>
+    <td>The XML <strong>&lt;persName&gt;&lt;/persName&gt;</strong> element is placed <strong>inside the &lt;person&gt; element</strong> and it is used to mark up a personal name, in particular, to encode different forms of each person’s name in both the Italian and Spanish texts.<br/>
       It helps encode the name itself and the type, variations, and structure of that name.
       It is enriched by attribute that comes together with it which is @type. It specifies what kind of name it is.
         <ul>
@@ -750,7 +755,7 @@
           <li>type="name" → just the simple name,</li>
           <li>type="combined" → when multiple forms are merged (bravi e vagabondi).</li>
         </ul>
-        The same goes for the spanish text and its list of instructions to mark alternative forms of the personal names. <br>
+        The same goes for the Spanish text and its list of instructions to mark alternative forms of the personal names. <br>
         <td>
         <pre><code>
           &lt;back&gt;
@@ -760,7 +765,7 @@
                     &lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;
                     &lt;persName type="alias"&gt;curato&lt;/persName&gt;
                     &lt;persName type="name"&gt;Abbondio&lt;/persName&gt;
-                <strong></strong>&lt;/person&gt;</strong>
+                <strong>&lt;/person&gt;</strong>
                 <strong>&lt;person xml:id="bravi" role="character"&gt;</strong>
                     &lt;persName type="full"&gt;bravi&lt;/persName&gt;
                     &lt;persName type="alias"&gt;vagabondi&lt;/persName&gt;
@@ -776,7 +781,7 @@
                             &lt;persName type="abbr"&gt;D. Abundo&lt;/persName&gt;
                             &lt;persName type="alias"&gt;cura&lt;/persName&gt;
                             
-                        <strong></strong>&lt;/person&gt;</strong>
+                        <strong>&lt;/person&gt;</strong>
                         <strong>&lt;person xml:id="bravi" role="character" xml:lang="es"&gt;</strong>
                             &lt;persName type="full"&gt;bravos&lt;/persName&gt;
                             &lt;persName type="alias"&gt;vagamundos&lt;/persName&gt;
@@ -790,8 +795,8 @@
     
      <tr>
       <td><pre><code>&lt;pb n=""/&gt;</code></pre></td>
-      <td>XML <strong>pb/</strong> element is located <strong>inside the &lt;div&gt; element</strong>. is located <strong> in corrispondence of the line breaks, so at the end of the page.</strong>. It is important because it monitors page break in thte text. I chose to use it to create a reliable version that gtaphically resembles the source text by maintaing both its page breaks and the original formatting. 
-        It comes together with the attribute @n="" that allows to count adn remeber the numenr of the current page.</td>
+      <td>XML <strong>pb/</strong> element is located <strong>inside the &lt;div&gt; element</strong>. is located <strong> in correspondence of the line breaks, so at the end of the page.</strong>. It is important because it monitors page break in the text. It creates a reliable version that graphically resembles the source text by maintaining both its page breaks and the original formatting. 
+        It comes together with the attribute @n="" that allows users to count and remember the number of the current page.</td>
       <td>
         <pre><code>
         &lt;/p&gt;
@@ -812,13 +817,13 @@
 
       <h5 class="fw-bold">From XML to HTML through XSLT</h5>
       <p class="text-muted">
-        Once we had our XML files ready, the next challenge was to bring them to life on the web. <br>
+        Once XML files were ready, the next challenge was to bring them to life on the web. <br>
         That’s where XSLT came in. </p><br>
-      <p>XSLT stands for Extensible Stylesheet Language Transformations and it is an XML-based language used to transform XML documents into other formats, whether plain text, different XML structures, or, in our case, HTML. <br>
-      The mission was simple, yet crucial: turn the structured XML into clean, readable HTML. Think of XSLT as a translator that understands the language of XML and knows exactly how to present it in a new form—reorganizing the content and bringing it to life on the web. It allows to define exactly how each piece of data should be organized, styled, and displayed."
+      <p>XSLT stands for Extensible Stylesheet Language Transformations and it is an XML-based language used to transform XML documents into other formats, whether plain text, different XML structures, or, in this case, HTML. <br>
+      The mission was simple, yet crucial: turn the structured XML into clean, readable HTML. XSLT can be seen as a translator that understands the language of XML and knows exactly how to present it in a new form—reorganizing the content and bringing it to life on the web. It makes it possible to define exactly how each piece of data should be organized, styled, and displayed.
     </p>
     <br>
-    <p>Here you can have look at the two separated XSLT stylesheets I used to transform the initial TEI XML documents into styled and readable HTML pages.
+    <p>Have a look at the two separated XSLT stylesheets used to transform the initial TEI XML documents into styled and readable HTML pages.
     </p>
     <br>
 <style>
@@ -1332,14 +1337,14 @@
   1. Taking a TEI-XML file, <br>
   2. Transforming it into HTML that can be displayed in a web browser. <br>
   3. Applying CSS styles to improve readability, such as fonts, colors, spacing, highlighting of names, places, dates, <br>
-  4. Including a small JavaScript script that adds a button to toggle a “better readability mode” button which can be exploited by the user to read the text in easier way. <br>
+  4. Including a small JavaScript script that adds a button to toggle a “better readability mode” button which can be exploited by the user to read the text in an easier way. <br>
 </p>
 <br>
 
 <strong><p>Main Template - &lt;xsl:template match="tei:TEI"&gt;</strong></p>
 The main template is the set of instructions that XSLT applies when it finds the root element &lt;TEI&gt; of the TEI-XML document. <br>
 The &lt;TEI&gt; is the container of the entire TEI file that means that this template is basically the entry point of the whole transformation into HTML. <br>
-The transformation begins by creating an &lt;html&gt; element which conists in the the root of the output HTML page. Inside it, it starts building:
+The transformation begins by creating an &lt;html&gt; element which consists in the root of the output HTML page. Inside it, it starts building:
 <ul>
   <li>&lt;head&gt; section → XSLT creates the HTML <head>.<br></li>
 
@@ -1371,7 +1376,7 @@ The transformation begins by creating an &lt;html&gt; element which conists in t
   <li><u>Plain Text</u> <br>
     &lt;xsl:template match="text()"&gt;&lt;/xsl:template&gt; → Any text not covered by other rules is copied as it is.
   </li>
-  <li><u>Figures & Images (existing only in the spanish work)</u><br>
+  <li><u>Figures & Images (existing only in the Spanish work)</u><br>
     Support for figures and images is added by converting &lt;tei:figure&gt; into &lt;figure&gt;, &lt;tei:img&gt; into &lt;img&gt;, and &lt;tei:figDesc&gt; into &lt;figcaption&gt;. 
     <br>
     &lt;xsl:template match="tei:figure"&gt; &lt;/xsl:template&gt; → A TEI &lt;figure&gt; becomes an HTML  &lt;figure&gt;. <br>
@@ -1383,8 +1388,8 @@ The transformation begins by creating an &lt;html&gt; element which conists in t
 <br>
 <br>
 <p>To truly and fully grasp the differences between the two texts, the user should be able to see them displayed side by side, visually unfolding their contrasts at a glance. <br>
-As a matter of fact, unlike the single XSL files designed to handle one text at a time, these texts can be read simultaneously, as they are displayed in two columns: I Promessi Sposi in Italian on the right, and Los Novios in Spanish on the left. <br>
-Check out here the XSL file developed to grpahically represent this comparison.</p>
+As a matter of fact, unlike the single XSL files designed to handle one text at a time, these texts can be read simultaneously, as they are displayed in two columns: <em>I Promessi Sposi</em> in Italian on the right, and <em>Los Novios</em> in Spanish on the left. <br>
+Check out here the XSL file developed to graphically represent this comparison.</p>
 <br>
 <div style="flex:1; display:flex; flex-direction:column;">
     <button class="toggle-btn" onclick="toggleColonna('colonna4')">Simple Texts Comparison XSL<i class="bi bi-chevron-down"></i></button>
@@ -1645,8 +1650,8 @@ Check out here the XSL file developed to grpahically represent this comparison.<
     &lt;title&gt; → sets the page title. <br>
     &lt;link&gt; → loads Bootstrap CSS and Bootstrap icons. <br>
     &lt;style&gt; → customs CSS for fonts, layout, colors, tooltip, legend, etc. <br>
-    A useful <strong>legend block</strong> appears at the top-left corner of the page and allows the user to understand what the colorsused in the texts refers to. <br>
-    Two-column layout enables the the user to see the two columns displayed side by side. <br>
+    A useful <strong>legend block</strong> appears at the top-left corner of the page and allows the user to understand what the colors used in the texts refers to. <br>
+    Two-column layout enables the user to see the two columns displayed side by side. <br>
   </li>
   <li><u>TEI element templates</u> <br>
      &lt;xsl:template match="tei:figure" &gt; <br>
@@ -1679,7 +1684,7 @@ Check out here the XSL file developed to grpahically represent this comparison.<
 
 <br>
 <br>
-<p>Thereafter, I created a Python script which uses the lxml library to load a TEI XML file previously created, to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted and ready to be opened in a web browser HTML file</p>
+<p>Thereafter, a Python script, which uses the lxml library to load a TEI XML file previously realised, was created to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted HTML file ready to be opened in a web browser. </p>
 <br>
 <div class="xsltcode_transfocontainer">
   <!-- Colonna 1 -->
@@ -1751,13 +1756,13 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
   <li><u>Import the library and its module</u> <br>
     from lxml import etree → etree is the module imported from lxml library that handles XML and XSLT processing.</li>
   <li><u>Define file paths</u> <br>
-    xml_file = 'assets/xml/ipromessisposi_cap1.xml' → xml_file is the path to the input XML file, here a chapter from I Promessi Sposi encoded in TEI (the same goes for the XML of Los novios) <br>
+    xml_file = 'assets/xml/ipromessisposi_cap1.xml' → xml_file is the path to the input XML file, here a chapter from <em>I Promessi Sposi</em> encoded in TEI (the same goes for the XML of <em>Los novios</em>) <br>
     xslt_file = 'assets/xml/visuaips.xsl' → xslt_file is the path to the XSLT stylesheet that defines rules to follow in order to transform TEI into HTML <br>
   </li>
   <li><u>Parse the files</u> <br>
     etree.parse(...) → loads and parses the XML and XSLT files. <br>
     xml_doc = etree.parse(xml_file) → refers to the TEI document<br>
-    xslt_doc = etree.parse(xslt_file) → refers to the the transformation rules<br>
+    xslt_doc = etree.parse(xslt_file) → refers to the transformation rules<br>
   </li>
   <li><u>Create the transformation object</u> <br>
     transform = etree.XSLT(xslt_doc) → compiles the XSLT stylesheet. It creates a transform object that can be applied to any XML document. <br>
@@ -1796,8 +1801,8 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
       The accompanying XSL file was designed to display the texts, visually highlight their differences, and create a more engaging comparison for the reader.
 </p>
     <p>
-      To craft this more interactive and comprehensive comparison, I began with the improved XML files I had already enriched with detailed markup. From there, I turned to the improved comparison itself, retracing the same steps I had taken for the simple version, but this time expanding and refining them. <br>
-      Chek the XSL file designed to display the texts and to visually highlight their differences and make the comparison a more engaging experience for the reader.
+      To craft this more interactive and comprehensive comparison, the improved XML files, already enriched with detailed markup., were the starting point. From there, The improved comparison was then undertaken, following the same steps as in the simple version, but this time expanding and refining them. <br>      
+      Check the XSL file designed to display the texts and to visually highlight their differences and which make the comparison a more engaging experience for the reader.
     </p>
     <br>
     <div style="flex:1; display:flex; flex-direction:column;">
@@ -2072,7 +2077,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
 </div>
 </div>
 <h5 class="fw-bold">Brief explanation</h5>
-<p>Only of the parts included in the improved comparison stylesheet that are not present in the simple one are here briefly explained. </p>
+<p>The parts included in the improved comparison stylesheet, that are not present in the simple comparison, are here briefly explained. </p>
 <ul>
   <li><u>Keys for page content</u> <br>
       &lt;xsl:key name="page-content-it" match="tei:pb" use="@n"/&gt;
@@ -2092,21 +2097,21 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
     <strong>Omissions</strong> <br>
     &lt;xsl:template match="tei:gap[@xml:id and @reason='omission']"&gt; &lt;/xsl:template&gt;
     &lt;xsl:template match="tei:gap[@corresp and @reason='omission']"&gt; &lt;/xsl:template&lt;
-    → Spanish omissions are marked with the label (g"n") and higlighted in red, while the Italian text shows the corresponding text, missing in the spanish version, highlighted with the same (a"n") label and yellow highlight, connected via hyperlink (href). <br>
+    → Spanish omissions are marked with the label (g"n") and highlighted in red, while the Italian text shows the corresponding text, missing in the Spanish version, highlighted with the same (a"n") label and yellow highlight, connected via hyperlink (href). <br>
 <strong>Abbreviations</strong> <br>
     &lt;xsl:template match="tei:abbr[@xml:id and @reason='abbre']"&gt; &lt;/xsl:template&gt;
     &lt;xsl:template match="tei:abbr[@corresp and @reason='abbre']"&gt; &lt;/xsl:template&lt;
-    → in the italian text, names or ephitets of the characters are marked with the label (ab"n") and higlighted in cyan, while the spanish text shows the corresponding abbreviated characters' names highlighted with the same (ab"n") label and cyan highlight, connected via hyperlink (href). <br>
+    → in the italian text, names or epithets of the characters are marked with the label (ab"n") and highlighted in cyan, while the Spanish text shows the corresponding abbreviated characters' names highlighted with the same (ab"n") label and cyan highlight, connected via hyperlink (href). <br>
 <strong>Modifications</strong> <br>
     &lt;xsl:template match="tei:mod[@xml:id and @reason='interpretation']"&gt; &lt;/xsl:template&gt;
     &lt;xsl:template match="tei:mod[@corresp and @reason='interpretation']"&gt; &lt;/xsl:template&lt;
     → Differences in interpretation and translation choices are marked in purple and connected via hyperlink (href).<br>
     &lt;xsl:template match="tei:seg[@xml:id and @reason='Minterpretation']"&gt; &lt;/xsl:template&gt;
     &lt;xsl:template match="tei:seg[@corresp and @reason='Minterpretation']"&gt; &lt;/xsl:template&lt;
-    → The modifications discovered and studied by Muñiz Muñiz are marked with a label (Mm"n"), highlighted in purple and they come with an explanatory popup that appears when the user hovers the lable with the cursor.<br>
+    → The modifications discovered and studied by Muñiz Muñiz are marked with a label (Mm"n"), highlighted in purple and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
     &lt;xsl:template match="tei:mod[@xml:id and @reason='idiomatic']"&gt; &lt;/xsl:template&gt;
     &lt;xsl:template match="tei:mod[@corresp and @reason='idiomatic']"&gt; &lt;/xsl:template&lt;
-    → The modifications deeply studied by Beatrice Pecchiari for her thesis are marked with a label (Im"n"), highlighted in cucumber milk and they come with an explanatory popup that appears when the user hovers the lable with the cursor.<br>
+    → The modifications deeply studied by Beatrice Pecchiari for her thesis are marked with a label (Im"n"), highlighted in cucumber milk and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
   </li>
   <li><u>Unclear words</u> <br>
     &lt;xsl:template match="tei:unclear"&gt; &lt;/xsl:template&gt;
@@ -2114,7 +2119,7 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
   </li>
 </ul>
 <br>
-<p>Then, I used the same Python script I created for the simple comparison, which uses the lxml library to load a TEI XML file previously created, to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted and ready to be opened in a web browser HTML file</p>
+<p>Then, the same Python script created for the simple comparison was used. It uses the lxml library to load a TEI XML file previously created to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted and ready to be opened in a web browser HTML file</p>
     </li>
 
      <li id="WC" class="timeline-item mb-5">
@@ -2125,10 +2130,10 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
 
       <h5 class="fw-bold">Website creation</h5>
       <p class="text-muted">
-        Finally i realized an engaging, creative and interesting website entitled Renzo & Lucia to introduce, explain and represent this work that i did.
-        I costumized an already made Bootstap template coming designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>.</p>
-        When designing the website, I wanted it to immediately evoke the atmosphere of an old elegant book. This is the reason why I chose a warm palette of browns, burgundy, beige, and white colors, that recall aged paper. <br>
-        To reinforce this effect, I placed the navigation menu on the left side of the screen, so that it resembles a bookmark resting on the page the reader is currently exploring.
+        Finally an engaging, creative and interesting website entitled Renzo & Lucia was built to introduce, explain and represent this work.
+        An already made Bootstrap template designed by <a href="https://bootstrapmade.com/">BootstrapMade was costumised</a>.</p>
+        When designing the website, the aim was to immediately evoke the atmosphere of an old elegant book. This is the reason why a warm palette of browns, burgundy, beige, and white colors that recall aged paper was chosen. <br>
+        To reinforce this effect, the navigation menu was placed on the left side of the screen, so that it resembles a bookmark resting on the page the reader is currently exploring.
         The website is structured into several sections:
         <ul>
         <li><strong>Home</strong> welcomes readers and corresponds to the main landing page,</li>
