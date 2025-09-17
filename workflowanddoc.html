@@ -869,7 +869,7 @@ function toggleTable(id) {
       The mission was simple, yet crucial: turn the structured XML into clean, readable HTML. XSLT can be seen as a translator that understands the language of XML and knows exactly how to present it in a new form, reorganizing the content and bringing it to life on the web. It makes it possible to define exactly how each piece of data should be organized, styled, and displayed.
     </p>
     <br>
-    <p>Have a look at the <strong>two separated XSLT stylesheets</strong> used to transform the initial TEI XML documents into styled and readable HTML pages.
+    <p>Have a look at the <strong>two separated XSLT stylesheets</strong> used to transform the initial TEI/XML documents into styled and readable HTML pages.
     </p>
     <br>
 <style>
@@ -1672,21 +1672,11 @@ Check out here <strong>the XSL file developed to graphically represent this comp
 <h5 class="fw-bold">Brief explanation</h5>
 <p>The transformation of the TEI/XML document into a readable HTML page, with two side-by-side columns comparing two texts, is made of the following steps:</p>
 <ul>
-  <li><u>Declaration and namespaces</u> <br>
-  tei: namespace → it is useful to recognize TEI elements <br>
-  exclude-result-prefixes → it ensures the tei prefix does not appear in the final output.
-  </li>
-  <li><u>HTML output</u> <br>
-    &lt;xsl:output method="html" encoding="UTF-8" indent="yes"/&gt; → transformation produces formatted HTML in UTF-8.
-  </li>
   <li><u>Main template</u> <br>
     &lt;xsl:template match="/"&gt; → it builds the entire HTML page, which includes &lt;head&gt; and &lt;body&gt;. <br>
     The &lt;body&gt;is made up of two columns, which are populated with: <br>
     &lt;xsl:apply-templates select="/tei:TEI/tei:text/tei:body"/&gt; → it extracts text from the main TEI file<br>
     &lt;xsl:apply-templates select="document('los_novios_TEI_completo_full.xml')/tei:TEI/tei:text/tei:body"/&gt; → it imports and displays text from an external document<br>
-  </li>
-  <li><u>Declaration and namespaces</u> <br>
-    It uses the TEI namespace to recognize TEI elements <br>
   </li>
   <li><u>HTML and HEAD sections</u> <br>
     Metadata and CSS instructions are inserted inside &lt;html&gt;&lt;head&gt;: <br>
@@ -1712,15 +1702,11 @@ Check out here <strong>the XSL file developed to graphically represent this comp
     &lt;span class="utterance"&gt; → it wraps the actual spoken text, it adds typographic quotation marks around the speech.</span>
     The final part checks if the attribute @toWhom exists.
   </li> 
-  <li><u>Catch-All Rules</u> <br>
-    &lt;xsl:template match="*"&gt; → it refers to the default rule for elements not covered. <br>
-    &lt;xsl:template match="text()"&gt;→ it refers to the default handling for plain text, which consists in just copying it into output. <br>
-  </li>
 </ul>
 
 <br>
 <br>
-<p>Thereafter, a Python script, which uses the lxml library to load a TEI XML file previously realised, was created to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted HTML file ready to be opened in a web browser. </p>
+<p>Thereafter, a Python script, which uses the lxml library to load a TEI/XML file previously realised, was created to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted HTML file ready to be opened in a web browser. </p>
 <br>
 <div class="xsltcode_transfocontainer">
   <!-- Colonna 1 -->
@@ -1730,58 +1716,60 @@ Check out here <strong>the XSL file developed to graphically represent this comp
         <pre><code>
           from lxml import etree
 
-# Load the TEI XML file (input)
-xml_file = 'assets/xml/ipromessisposi_cap1.xml' 
+          # Carica il file XML TEI (input)
+          xml_file = 'assets/xml/simpleIPS.xml'  # XML file path
 
-# Load the XSLT file (stylesheet)
-xslt_file = 'assets/xml/visuaips.xsl'  
+          # Carica il file XSLT (foglio di stile)
+          xslt_file = 'assets/xml/visuaips.xsl'  # XSLT file path
 
-# Parse the files
-xml_doc = etree.parse(xml_file)
-xslt_doc = etree.parse(xslt_file)
+          # Parsea i file
+          xml_doc = etree.parse(xml_file)
+          xslt_doc = etree.parse(xslt_file)
 
-# Create the transformation object
-transform = etree.XSLT(xslt_doc)
+          # Crea l'oggetto trasformazione
+          transform = etree.XSLT(xslt_doc)
 
-# Apply the transformation
-result = transform(xml_doc)
+          # Applica la trasformazione
+          result = transform(xml_doc)
 
-# Save the result as an HTML file
-with open('visuaipsoutput.html', 'wb') as f:
-    f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8'))
+          # Salva il risultato come file HTML
+          with open('visuaipsoutput.html', 'wb') as f:
+              f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8'))
 
-print("Trasformazione completata, file output.html creato.")
-        </code></pre>
+          print("Trasformazione completata, file output.html creato.")
+          </code></pre>
+
       
     </div>
   </div>
    <div style="flex:1; display:flex; flex-direction:column;">
         <button class="toggle-btn" onclick="toggleColonna('colonna6')">Comparison Python script<i class="bi bi-chevron-down"></i></button>
         <div class="xsltcode_transfocol collapsible closed" id="colonna6">
-    <pre><code>
-      from lxml import etree
+          <pre><code>
+          from lxml import etree
 
-# File paths
-xml_file = '/Users/alicep/Downloads/DSE -theories, methods and practice/iPortfolio/assets/xml/ipromessisposi_cap1.xml'          # il tuo XML principale
-xsl_file = '/Users/alicep/Downloads/DSE -theories, methods and practice/iPortfolio/assets/xml/renzolucia.xsl' # il foglio XSLT
+          # Percorsi ai file
+          xml_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/simpleips.xml'          # simple XML 
+          xsl_file = '/Users/alicep/Documents/GitHub/DigitalScholarlyEditing_Renzo-Lucia/assets/xml/renzoluciaimproved.xsl'
 
-# Load the files
-xml = etree.parse(xml_file)
-xsl = etree.parse(xsl_file)
+          # Carica i file
+          xml = etree.parse(xml_file)
+          xsl = etree.parse(xsl_file)
 
-# Create the XSLT transformation
-transform = etree.XSLT(xsl)
+          # Crea la trasformazione XSLT
+          transform = etree.XSLT(xsl)
 
-# Apply the transformation
-result = transform(xml)
+          # Applica la trasformazione
+          result = transform(xml)
 
-# Save the output to an HTML file
-output_file = 'output.html'
-with open(output_file, 'wb') as f:
-    f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8'))
+          # Salva l’output in un file HTML
+          output_file = 'improvedoutput.html'
+          with open(output_file, 'wb') as f:
+              f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8'))
 
-print(f"File salvato come {output_file}. Aprilo con un browser per vedere il risultato.")
-    </code></pre>
+          print(f"File salvato come {output_file}. Aprilo con un browser per vedere il risultato.")
+          </code></pre>
+
      </div>
   </div>
 </div>
@@ -1792,24 +1780,23 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
   <li><u>Import the library and its module</u> <br>
     from lxml import etree → etree is the module imported from lxml library that handles XML and XSLT processing.</li>
   <li><u>Define file paths</u> <br>
-    xml_file = 'assets/xml/ipromessisposi_cap1.xml' → xml_file is the path to the input XML file, here a chapter from <em>I Promessi Sposi</em> encoded in TEI (the same goes for the XML of <em>Los novios</em>) <br>
-    xslt_file = 'assets/xml/visuaips.xsl' → xslt_file is the path to the XSLT stylesheet that defines rules to follow in order to transform TEI into HTML <br>
+    xml_file = 'assets/xml/simpleips.xml' → xml_file is the path to the input XML file, here the simple version of the first chapter of <em>I Promessi Sposi</em> encoded in TEI. <br>
+    xslt_file = 'assets/xml/visuaips.xsl' → xslt_file is the path to the XSLT stylesheet that defines rules to follow in order to transform TEI into HTML, it provides the visualization of one texts at a time (here it represents the Italian text but the same goes for the Spanish one). <br>
+    xslt_file = 'assets/xml/.xslrenzoluciaimproved.xsl' → xslt_file has the same function of the preVious one but it provides the visualization of the comparison of the texts, represented in two different columns.<br>
   </li>
   <li><u>Parse the files</u> <br>
-    etree.parse(...) → loads and parses the XML and XSLT files. <br>
-    xml_doc = etree.parse(xml_file) → refers to the TEI document<br>
-    xslt_doc = etree.parse(xslt_file) → refers to the transformation rules<br>
+    etree.parse(...) → it loads and parses the XML and XSLT files. <br>
+    xml_doc = etree.parse(xml_file) → it refers to the TEI document<br>
+    xslt_doc = etree.parse(xslt_file) → it refers to the transformation rules<br>
   </li>
-  <li><u>Create the transformation object</u> <br>
-    transform = etree.XSLT(xslt_doc) → compiles the XSLT stylesheet. It creates a transform object that can be applied to any XML document. <br>
-  </li>
-  <li><u>Apply the transformation</u> <br>
-    result = transform(xml_doc) → applies the transformation (transform) to the XML document (xml_doc). The result now contains the final HTML transformed document. <br>
+  <li><u>Create the transformation object and apply the transformation</u> <br>
+    transform = etree.XSLT(xslt_doc) → it creates a transform object that can be applied to any XML document. <br>
+    result = transform(xml_doc) → it applies the transformation to the XML document. The result contains the final HTML transformed document. <br>
   </li>
   <li><u>Save the result as HTML</u> <br>
     with open('visuaipsoutput.html', 'wb') as f: <br>
     f.write(etree.tostring(result, pretty_print=True, method='html', encoding='UTF-8')) <br>
-    → opens the file in binary write mode and writes the transformation result into it, formatted as pretty-printed HTML, encoded in UTF-8. <br>
+    → it opens the file in binary write mode and writes the transformation result into it, formatted as pretty-printed HTML, encoded in UTF-8. <br>
   </li>
 </ul>
 
@@ -1822,8 +1809,10 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
 
       <h5 class="fw-bold">Simultaneous visualization of the differences </h5>
       <p class="text-muted">
-      After a basic side-by-side comparison of the two texts was completed, the aim shifted toward creating an edition that went beyond a static comparison. The goal was to develop a more interactive and engaging edition that allows readers to explore not only the texts themselves but also the relationships between them.<br>
-      Manzoni’s Italian version was used as the reference point, and TEI markup was applied to highlight the ways in which the Spanish translation differs:
+      After the basic side-by-side comparison of the two texts was completed, the aim shifted toward creating an edition that went beyond a static comparison.</p>
+      <br>
+      <p>The goal was to develop a more interactive and engaging edition that allows readers to explore not only the texts themselves but also the relationships between them.<br>
+      Manzoni’s Italian version was used as the reference point, and TEI markup was applied to highlight the ways in which the Spanish translation differs:</p>
       <ul>
         <li>the passages added in the Spanish text,</li>
         <li>the images that appear only in the Spanish edition,</li>
@@ -1832,14 +1821,11 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
         <li>the modifications analyzed and interpreted by Muñiz Muñiz,</li>
         <li>the idiomatic variations studied by Pecchiari.</li>
       </ul>
-      Once these features were marked, the TEI XML was transformed into HTML via XSLT, as in the simple comparison, but with the goal of providing a richer and more dynamic reading experience. <br>
+      <br>
+      Once these features were marked, the TEI/XML was transformed into HTML via XSLT, as in the simple comparison, but with the goal of providing a richer and more dynamic reading experience. <br>
       The more interactive and comprehensive comparison was built starting from the improved XML files, enriched with detailed markup. The steps taken for the simple comparison were then retraced, expanded, and refined. <br>
-      The accompanying XSL file was designed to display the texts, visually highlight their differences, and create a more engaging comparison for the reader.
-</p>
-    <p>
-      To craft this more interactive and comprehensive comparison, the improved XML files, already enriched with detailed markup., were the starting point. From there, The improved comparison was then undertaken, following the same steps as in the simple version, but this time expanding and refining them. <br>      
-      Check the XSL file designed to display the texts and to visually highlight their differences and which make the comparison a more engaging experience for the reader.
-    </p>
+      The accompanying XSL file was designed to display the texts, visually highlight their differences, and create a more engaging comparison for the reader.</p>
+      <p>Check here the improved XSL file.</p>
     <br>
     <div style="flex:1; display:flex; flex-direction:column;">
         <button class="toggle-btn" onclick="toggleColonna('colonna7')">Improved Comparison Python script<i class="bi bi-chevron-down"></i></button>
@@ -2115,48 +2101,40 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
 <h5 class="fw-bold">Brief explanation</h5>
 <p>The parts included in the improved comparison stylesheet, that are not present in the simple comparison, are here briefly explained. </p>
 <ul>
-  <li><u>Keys for page content</u> <br>
-      &lt;xsl:key name="page-content-it" match="tei:pb" use="@n"/&gt;
-      → this is the XSLT key to quickly access page breaks (pb) by their number (@n). It allows efficient navigation.
-</li>
-  <li><u>Recovering content until next page break</u> <br>
-     &lt;xsl:template match="tei:pb"&gt; 
-    → this controls how to display pages. For each &gt;pb&lt; (page break), it gathers all following elements up to the next <pb> ensuring each page is displayed with the correct content before moving to the next one.
-</li>
   <li><u>Added images (add rend="nofigure")</u> <br>
-   &lt;xsl:template match="tei:add[@rend='nofigure']"&gt;&lt;/xsl:template&gt;→ this is a special handling for images that are mentioned but don’t exist in the original source. They are displayed inside a light blue box.
+   &lt;xsl:template match="tei:add[@rend='nofigure']"&gt;&lt;/xsl:template&gt;→ this is a special handling for images that are mentioned but don’t exist in the original source. They are displayed inside a light blue boxes.
      </li>
   <li><u>Highlighting and interactive comparison</u> <br>
     <strong>Additions </strong><br>
-    &lt;xsl:template match="tei:add[@xml:id and @reason='addition']"&gt;&lt;/xsl:template&gt; &lt;xsl:template match="tei:add[@corresp and @reason='addition']"&gt;&lt;/xsl:template&gt;
+    &lt;xsl:template match="tei:add[@xml:id and @reason='addition']"&gt; <br>
+    &lt;/xsl:template&gt; &lt;xsl:template match="tei:add[@corresp and @reason='addition']"&gt;&lt;/xsl:template&gt;
     → Spanish additions are marked with the label (a"n") and highlighted in yellow, while the Italian text shows the corresponding point with the same (a"n") label and yellow highlight, connected via hyperlink (href). <br>
     <strong>Omissions</strong> <br>
-    &lt;xsl:template match="tei:gap[@xml:id and @reason='omission']"&gt; &lt;/xsl:template&gt;
+    &lt;xsl:template match="tei:gap[@xml:id and @reason='omission']"&gt; &lt;/xsl:template&gt;<br>
     &lt;xsl:template match="tei:gap[@corresp and @reason='omission']"&gt; &lt;/xsl:template&lt;
     → Spanish omissions are marked with the label (g"n") and highlighted in red, while the Italian text shows the corresponding text, missing in the Spanish version, highlighted with the same (a"n") label and yellow highlight, connected via hyperlink (href). <br>
 <strong>Abbreviations</strong> <br>
-    &lt;xsl:template match="tei:abbr[@xml:id and @reason='abbre']"&gt; &lt;/xsl:template&gt;
+    &lt;xsl:template match="tei:abbr[@xml:id and @reason='abbre']"&gt; &lt;/xsl:template&gt;<br>
     &lt;xsl:template match="tei:abbr[@corresp and @reason='abbre']"&gt; &lt;/xsl:template&lt;
     → in the italian text, names or epithets of the characters are marked with the label (ab"n") and highlighted in cyan, while the Spanish text shows the corresponding abbreviated characters' names highlighted with the same (ab"n") label and cyan highlight, connected via hyperlink (href). <br>
 <strong>Modifications</strong> <br>
-    &lt;xsl:template match="tei:mod[@xml:id and @reason='interpretation']"&gt; &lt;/xsl:template&gt;
+    &lt;xsl:template match="tei:mod[@xml:id and @reason='interpretation']"&gt; &lt;/xsl:template&gt;<br>
     &lt;xsl:template match="tei:mod[@corresp and @reason='interpretation']"&gt; &lt;/xsl:template&lt;
-    → Differences in interpretation and translation choices are marked in purple and connected via hyperlink (href).<br>
-    &lt;xsl:template match="tei:seg[@xml:id and @reason='Minterpretation']"&gt; &lt;/xsl:template&gt;
+    → differences in interpretation and translation choices are marked in purple and connected via hyperlink (href).<br>
+    &lt;xsl:template match="tei:seg[@xml:id and @reason='Minterpretation']"&gt; &lt;/xsl:template&gt;<br>
     &lt;xsl:template match="tei:seg[@corresp and @reason='Minterpretation']"&gt; &lt;/xsl:template&lt;
-    → The modifications discovered and studied by Muñiz Muñiz are marked with a label (Mm"n"), highlighted in purple and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
-    &lt;xsl:template match="tei:mod[@xml:id and @reason='idiomatic']"&gt; &lt;/xsl:template&gt;
+    → the modifications discovered and studied by Muñiz Muñiz are marked with a label (Mm"n"), highlighted in purple and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
+    &lt;xsl:template match="tei:mod[@xml:id and @reason='idiomatic']"&gt; &lt;/xsl:template&gt;<br>
     &lt;xsl:template match="tei:mod[@corresp and @reason='idiomatic']"&gt; &lt;/xsl:template&lt;
-    → The modifications deeply studied by Beatrice Pecchiari for her thesis are marked with a label (Im"n"), highlighted in cucumber milk and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
+    → the modifications deeply studied by Beatrice Pecchiari for her thesis are marked with a label (Im"n"), highlighted in cucumber milk and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
   </li>
   <li><u>Unclear words</u> <br>
     &lt;xsl:template match="tei:unclear"&gt; &lt;/xsl:template&gt;
-    → Words marked as unclear are displayed in gray, bold, and underlined with a wavy line, visually signaling textual uncertainty.
+    → words marked as unclear are displayed in gray, bold, and underlined with a wavy line, visually signaling textual uncertainty.
   </li>
 </ul>
 <br>
-<p>Then, the same Python script created for the simple comparison was used. It uses the lxml library to load a TEI XML file previously created to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted and ready to be opened in a web browser HTML file</p>
-    </li>
+ </li>
 
      <li id="WC" class="timeline-item mb-5">
       <span class="timeline-icon">
@@ -2168,15 +2146,17 @@ print(f"File salvato come {output_file}. Aprilo con un browser per vedere il ris
       <p class="text-muted">
         Finally an engaging, creative and interesting website entitled Renzo & Lucia was built to introduce, explain and represent this work.
         An already made Bootstrap template designed by <a href="https://bootstrapmade.com/">BootstrapMade was costumised</a>.</p>
+        <br>
         When designing the website, the aim was to immediately evoke the atmosphere of an old elegant book. This is the reason why a warm palette of browns, burgundy, beige, and white colors that recall aged paper was chosen. <br>
         To reinforce this effect, the navigation menu was placed on the left side of the screen, so that it resembles a bookmark resting on the page the reader is currently exploring.
         The website is structured into several sections:
         <ul>
         <li><strong>Home</strong> welcomes readers and corresponds to the main landing page,</li>
         <li><strong>About the Project</strong> introduces the aims and scope of my work.</li>
-        <li><strong>Texts</strong> focuses on explaining the two texts being compared, adding contextual information and a summary of Manzoni’s work, considered as the original starting point for analyzing the similarities and differences introduced in Gallego’s Spanish translation, published about ten years later.</li> 
+        <li><strong>How It Works</strong> acts as a guide to the entire website, offering a brief overview of what the user can find in each section. Two short explanatory videos provide help the user navigates the site more easily and saving time. </li>
+        <li><strong>Texts</strong> focuses on explaining the two texts compared, adding contextual information and a summary of Manzoni’s work, considered as the original starting point for analyzing the similarities and differences introduced in Gallego’s Spanish translation, published about ten years later.</li> 
         <li><strong>Workflow and Documentation</strong> acts almost like a detailed guide which explains the process, together with the XML, HTML, XSL codes, that led to the development of the entire project.</li> 
-        <li><strong>Texts Comparison</strong> forms the heart of the website. Here, users can engage with two different kinds of comparison: a straightforward and linear one, and a richer, more interactive version that invites exploration.</li>
+        <li><strong>Texts Comparison</strong> forms the heart of the website. Here, users can engage with two different kinds of comparison: a straightforward and linear one, and a richer and more interactive version that invites exploration.</li>
         <li><strong>Writers</strong> introduces the authors themselves, offering biographical insights that place the works in their cultural and historical contexts.</li>
        <li><strong>References</strong> finally gathers the sources: primary and secondary bibliographies, along with the digital tools that made the project possible. </li>
         </ul>
