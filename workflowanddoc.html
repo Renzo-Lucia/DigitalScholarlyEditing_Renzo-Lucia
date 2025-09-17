@@ -405,10 +405,14 @@ function toggleTable(id) {
               Furthermore, through the element &lt;availability&gt;, it adds information about the availability of the encoded version since it is a scholarly project which can be used under precise restrictions.</td>
             <td>
               <pre><code>
-              <strong>&lt;respStmt&gt;</strong>
-                &lt;date when="2025"&gt;2025&lt;/date&gt;
-                &lt;availability&gt;&lt;p&gt;TEI edition is available for scholarly purposes only.&lt;/p&gt;&lt;/availability&gt;
-            <strong>&lt;/respStmt&gt;</strong></code></pre></td>
+                <strong>&lt;publicationStmt&gt;</strong>
+                  &lt;date when="2025"&gt;2025&lt;/date&gt;
+                  &lt;availability&gt;
+                    &lt;p&gt;TEI edition is available for scholarly purposes only.&lt;/p&gt;
+                  &lt;/availability&gt;
+                <strong>&lt;/publicationStmt&gt;</strong>
+                </code></pre>
+                </td>
           </tr>
             <tr>
             <td><pre><code>&lt;bibl&gt;&lt;/bibl&gt;</code></pre></td>
@@ -788,33 +792,33 @@ function toggleTable(id) {
               <pre><code>
                 &lt;back&gt;
                 &lt;listPerson&gt;
-                      <strong>&lt;person xml:id="donabbondio" role="character"&gt;</strong>
-                          &lt;persName type="full"&gt;Don Abbondio&lt;/persName&gt;
-                          &lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;
-                          &lt;persName type="alias"&gt;curato&lt;/persName&gt;
-                          &lt;persName type="name"&gt;Abbondio&lt;/persName&gt;
-                      <strong>&lt;/person&gt;</strong>
-                      <strong>&lt;person xml:id="bravi" role="character"&gt;</strong>
-                          &lt;persName type="full"&gt;bravi&lt;/persName&gt;
-                          &lt;persName type="alias"&gt;vagabondi&lt;/persName&gt;
-                          &lt;persName type="combined"&gt;bravi e vagabondi&lt;/persName&gt;
-                      <strong>&lt;/person&gt;</strong>
+                      &lt;person xml:id="donabbondio" role="character"&gt;
+                          <strong>&lt;persName type="full"&gt;Don Abbondio&lt;/persName&gt;</strong>
+                          <strong>&lt;persName type="abbr"&gt;D. Abbondio&lt;/persName&gt;</strong>
+                         <strong> &lt;persName type="alias"&gt;curato&lt;/persName&gt;</strong>
+                         <strong> &lt;persName type="name"&gt;Abbondio&lt;/persName&gt;</strong>
+                      &lt;/person&gt;
+                      &lt;person xml:id="bravi" role="character"&gt;
+                         <strong>&lt;persName type="full"&gt;bravi&lt;/persName&gt;</strong>
+                          <strong>&lt;persName type="alias"&gt;vagabondi&lt;/persName&gt;</strong>
+                          <strong>&lt;persName type="combined"&gt;bravi e vagabondi&lt;/persName&gt;</strong>
+                      &lt;/person&gt;
                   &lt;/listPerson&gt;
               &lt;/back&gt;
 
               &lt;back&gt;
                         &lt;listPerson&gt;
-                              <strong>&lt;person xml:id="donabundo" role="character" xml:lang="es"&gt;</strong>
-                                  &lt;persName type="full"&gt;Don Abundo&lt;/persName&gt;
-                                  &lt;persName type="abbr"&gt;D. Abundo&lt;/persName&gt;
-                                  &lt;persName type="alias"&gt;cura&lt;/persName&gt;
+                              &lt;person xml:id="donabundo" role="character" xml:lang="es"&gt;
+                                  </strong>&lt;persName type="full"&gt;Don Abundo&lt;/persName&gt;</strong>
+                                  </strong>&lt;persName type="abbr"&gt;D. Abundo&lt;/persName&gt;</strong>
+                                  </strong>&lt;persName type="alias"&gt;cura&lt;/persName&gt;</strong>
                                   
-                              <strong>&lt;/person&gt;</strong>
-                              <strong>&lt;person xml:id="bravi" role="character" xml:lang="es"&gt;</strong>
-                                  &lt;persName type="full"&gt;bravos&lt;/persName&gt;
-                                  &lt;persName type="alias"&gt;vagamundos&lt;/persName&gt;
-                                  &lt;persName type="combined"&gt;bravos e vagamundos&lt;/persName&gt;
-                              <strong>&lt;/person&gt;</strong>
+                              &lt;/person&gt;
+                              &lt;person xml:id="bravi" role="character" xml:lang="es"&gt;
+                                  <strong>&lt;persName type="full"&gt;bravos&lt;/persName&gt;</strong>
+                                  <strong>&lt;persName type="alias"&gt;vagamundos&lt;/persName&gt;</strong>
+                                  <strong>&lt;persName type="combined"&gt;bravos e vagamundos&lt;/persName&gt;</strong>
+                              &lt;/person&gt;
                           &lt;/listPerson&gt;
                       &lt;/back&gt;
               </code></pre>
@@ -1401,8 +1405,7 @@ function toggleTable(id) {
 <br>
 
 <strong><p>Main Template - &lt;xsl:template match="tei:TEI"&gt;</strong></p>
-The main template is the set of instructions that XSLT applies when it finds the root element &lt;TEI&gt; of the TEI/XML document. <br>
-The &lt;TEI&gt; is the container of the entire TEI file that means that this template is basically the entry point of the whole transformation into HTML. <br>
+The main template is the set of instructions that XSLT applies when it finds the root element &lt;TEI&gt; of the TEI/XML document. It is the entry point of the whole transformation into HTML.<br>
 The transformation begins by creating an &lt;html&gt; element which consists in the root of the output HTML page. Inside it, it starts building:
 <ul>
 
@@ -1437,16 +1440,16 @@ The transformation begins by creating an &lt;html&gt; element which consists in 
   <li><u>Figures & Images (existing only in the Spanish work)</u><br>
     Support for figures and images is added by converting &lt;tei:figure&gt; into &lt;figure&gt;, &lt;tei:img&gt; into &lt;img&gt;, and &lt;tei:figDesc&gt; into &lt;figcaption&gt;. 
     <br>
-    &lt;xsl:template match="tei:figure"&gt; &lt;/xsl:template&gt; → the TEI element &lt;figure&gt; becomes an HTML  &lt;figure&gt;. <br>
-    &lt;xsl:apply-templates select="tei:img"/&gt; → the TEI element &lt;tei:img&gt; is processed and inserted as &lt;img&gt; <br>
+    &lt;xsl:template match="tei:figure"&gt;&lt;/xsl:template&gt; → the TEI element &lt;figure&gt; becomes an HTML  &lt;figure&gt;. <br>
+    &lt;xsl:apply-templates select="tei:img"/&gt;&lt;/xsl:template&gt; → the TEI element &lt;tei:img&gt; is processed and inserted as &lt;img&gt; <br>
     This &lt;img&gt; creates an HTML &lt;img&gt; tag that sets the src attribute from the TEI image’s @src and that sets the alt attribute (alternative text) using the figure description (figDesc). <br>
-    &lt;xsl:apply-templates select="tei:figDesc"/&gt; → the TEI element &lt;tei:figDesc&gt;, that refers to the description of the figure, becomes a &lt;figcaption&gt; which is the caption under the image.
+    &lt;xsl:apply-templates select="tei:figDesc"/&gt;&lt;/xsl:template&gt; → the TEI element &lt;tei:figDesc&gt;, that refers to the description of the figure, becomes a &lt;figcaption&gt; which is the caption under the image.
   </li>
   </ul>
 <br>
 <br>
 <p>To truly and fully grasp the differences between the two texts, the user should be able to see them <strong>displayed side by side</strong>, visually unfolding their contrasts at a glance. <br>
-As a matter of fact, unlike the single XSL files designed to handle one text at a time, these texts can be read simultaneously, as they are displayed in two columns: <em>I Promessi Sposi</em> in Italian on the right, and <em>Los Novios</em> in Spanish on the left. <br>
+As a matter of fact, unlike the single <strong>XSL files</strong> designed to handle one text at a time, these texts can be read simultaneously, as they are displayed in two columns: <em>I Promessi Sposi</em> in Italian on the right, and <em>Los Novios</em> in Spanish on the left. <br>
 Check out here <strong>the XSL file developed to graphically represent this comparison</strong>.</p>
 <br>
 <div style="flex:1; display:flex; flex-direction:column;">
@@ -1676,7 +1679,7 @@ Check out here <strong>the XSL file developed to graphically represent this comp
     &lt;xsl:template match="/"&gt; → it builds the entire HTML page, which includes &lt;head&gt; and &lt;body&gt;. <br>
     The &lt;body&gt;is made up of two columns, which are populated with: <br>
     &lt;xsl:apply-templates select="/tei:TEI/tei:text/tei:body"/&gt; → it extracts text from the main TEI file<br>
-    &lt;xsl:apply-templates select="document('los_novios_TEI_completo_full.xml')/tei:TEI/tei:text/tei:body"/&gt; → it imports and displays text from an external document<br>
+    &lt;xsl:apply-templates select="document('simpleLN.xml')/tei:TEI/tei:text/tei:body"/&gt; → it imports and displays text from an external document<br>
   </li>
   <li><u>HTML and HEAD sections</u> <br>
     Metadata and CSS instructions are inserted inside &lt;html&gt;&lt;head&gt;: <br>
@@ -1706,7 +1709,7 @@ Check out here <strong>the XSL file developed to graphically represent this comp
 
 <br>
 <br>
-<p>Thereafter, a Python script, which uses the lxml library to load a TEI/XML file previously realised, was created to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted HTML file ready to be opened in a web browser. </p>
+<p>Thereafter, <strong>a Python script</strong>, which uses the lxml library to load a TEI/XML file previously realised, was created to apply an XSLT stylesheet containing the transformation rules from TEI to HTML and to produce a nicely formatted HTML file ready to be opened in a web browser. </p>
 <br>
 <div class="xsltcode_transfocontainer">
   <!-- Colonna 1 -->
@@ -1823,9 +1826,9 @@ Check out here <strong>the XSL file developed to graphically represent this comp
       </ul>
       <br>
       Once these features were marked, the TEI/XML was transformed into HTML via XSLT, as in the simple comparison, but with the goal of providing a richer and more dynamic reading experience. <br>
-      The more interactive and comprehensive comparison was built starting from the improved XML files, enriched with detailed markup. The steps taken for the simple comparison were then retraced, expanded, and refined. <br>
+      The <strong>more interactive and comprehensive comparison</strong> was built starting from the improved XML files, enriched with detailed markup. The steps taken for the simple comparison were then retraced, expanded, and refined. <br>
       The accompanying XSL file was designed to display the texts, visually highlight their differences, and create a more engaging comparison for the reader.</p>
-      <p>Check here the improved XSL file.</p>
+      <p>Check here the improved <strong>XSL file</strong>.</p>
     <br>
     <div style="flex:1; display:flex; flex-direction:column;">
         <button class="toggle-btn" onclick="toggleColonna('colonna7')">Improved Comparison Python script<i class="bi bi-chevron-down"></i></button>
@@ -2111,21 +2114,21 @@ Check out here <strong>the XSL file developed to graphically represent this comp
     → Spanish additions are marked with the label (a"n") and highlighted in yellow, while the Italian text shows the corresponding point with the same (a"n") label and yellow highlight, connected via hyperlink (href). <br>
     <strong>Omissions</strong> <br>
     &lt;xsl:template match="tei:gap[@xml:id and @reason='omission']"&gt; &lt;/xsl:template&gt;<br>
-    &lt;xsl:template match="tei:gap[@corresp and @reason='omission']"&gt; &lt;/xsl:template&lt;
+    &lt;xsl:template match="tei:gap[@corresp and @reason='omission']"&gt; &lt;/xsl:template&gt;
     → Spanish omissions are marked with the label (g"n") and highlighted in red, while the Italian text shows the corresponding text, missing in the Spanish version, highlighted with the same (a"n") label and yellow highlight, connected via hyperlink (href). <br>
 <strong>Abbreviations</strong> <br>
-    &lt;xsl:template match="tei:abbr[@xml:id and @reason='abbre']"&gt; &lt;/xsl:template&gt;<br>
-    &lt;xsl:template match="tei:abbr[@corresp and @reason='abbre']"&gt; &lt;/xsl:template&lt;
+    &lt;xsl:template match="tei:abbr[@xml:id and @reason='abbre']"&gt; &lt;/xsl:template&g;<br>
+    &lt;xsl:template match="tei:abbr[@corresp and @reason='abbre']"&gt; &lt;/xsl:template&gt;
     → in the italian text, names or epithets of the characters are marked with the label (ab"n") and highlighted in cyan, while the Spanish text shows the corresponding abbreviated characters' names highlighted with the same (ab"n") label and cyan highlight, connected via hyperlink (href). <br>
 <strong>Modifications</strong> <br>
     &lt;xsl:template match="tei:mod[@xml:id and @reason='interpretation']"&gt; &lt;/xsl:template&gt;<br>
-    &lt;xsl:template match="tei:mod[@corresp and @reason='interpretation']"&gt; &lt;/xsl:template&lt;
+    &lt;xsl:template match="tei:mod[@corresp and @reason='interpretation']"&gt; &lt;/xsl:template&gt;
     → differences in interpretation and translation choices are marked in purple and connected via hyperlink (href).<br>
     &lt;xsl:template match="tei:seg[@xml:id and @reason='Minterpretation']"&gt; &lt;/xsl:template&gt;<br>
-    &lt;xsl:template match="tei:seg[@corresp and @reason='Minterpretation']"&gt; &lt;/xsl:template&lt;
+    &lt;xsl:template match="tei:seg[@corresp and @reason='Minterpretation']"&gt; &lt;/xsl:template&gt;
     → the modifications discovered and studied by Muñiz Muñiz are marked with a label (Mm"n"), highlighted in purple and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
     &lt;xsl:template match="tei:mod[@xml:id and @reason='idiomatic']"&gt; &lt;/xsl:template&gt;<br>
-    &lt;xsl:template match="tei:mod[@corresp and @reason='idiomatic']"&gt; &lt;/xsl:template&lt;
+    &lt;xsl:template match="tei:mod[@corresp and @reason='idiomatic']"&gt; &lt;/xsl:template&gt;
     → the modifications deeply studied by Beatrice Pecchiari for her thesis are marked with a label (Im"n"), highlighted in cucumber milk and they come with an explanatory popup that appears when the user hovers the label with the cursor.<br>
   </li>
   <li><u>Unclear words</u> <br>
@@ -2151,14 +2154,14 @@ Check out here <strong>the XSL file developed to graphically represent this comp
         To reinforce this effect, the navigation menu was placed on the left side of the screen, so that it resembles a bookmark resting on the page the reader is currently exploring.
         The website is structured into several sections:
         <ul>
-        <li><strong>Home</strong> welcomes readers and corresponds to the main landing page,</li>
-        <li><strong>About the Project</strong> introduces the aims and scope of my work.</li>
-        <li><strong>How It Works</strong> acts as a guide to the entire website, offering a brief overview of what the user can find in each section. Two short explanatory videos provide help the user navigates the site more easily and saving time. </li>
-        <li><strong>Texts</strong> focuses on explaining the two texts compared, adding contextual information and a summary of Manzoni’s work, considered as the original starting point for analyzing the similarities and differences introduced in Gallego’s Spanish translation, published about ten years later.</li> 
-        <li><strong>Workflow and Documentation</strong> acts almost like a detailed guide which explains the process, together with the XML, HTML, XSL codes, that led to the development of the entire project.</li> 
-        <li><strong>Texts Comparison</strong> forms the heart of the website. Here, users can engage with two different kinds of comparison: a straightforward and linear one, and a richer and more interactive version that invites exploration.</li>
-        <li><strong>Writers</strong> introduces the authors themselves, offering biographical insights that place the works in their cultural and historical contexts.</li>
-       <li><strong>References</strong> finally gathers the sources: primary and secondary bibliographies, along with the digital tools that made the project possible. </li>
+        <li><strong>Home section</strong> welcomes readers and corresponds to the main landing page,</li>
+        <li><strong>About the Project section</strong> introduces the aims and scope of my work.</li>
+        <li><strong>How It Works section</strong> acts as a guide to the entire website, offering a brief overview of what the user can find in each section. Two short explanatory videos provide help the user navigates the site more easily and saving time. </li>
+        <li><strong>Texts and Contexts section</strong> focuses on explaining the two texts compared, adding contextual information and a summary of Manzoni’s work, considered as the original starting point for analyzing the similarities and differences introduced in Gallego’s Spanish translation, published about ten years later.</li> 
+        <li><strong>Workflow and Documentation section</strong> acts almost like a detailed guide which explains the process, together with the XML, HTML, XSL codes, that led to the development of the entire project.</li> 
+        <li><strong>Texts Comparison section</strong> forms the heart of the website. Here, users can engage with two different kinds of comparison: a straightforward and linear one, and a richer and more interactive version that invites exploration.</li>
+        <li><strong>Writers section</strong> introduces the authors themselves, offering biographical insights that place the works in their cultural and historical contexts.</li>
+       <li><strong>References section</strong> finally gathers the sources: primary and secondary bibliographies, along with the digital tools that made the project possible. </li>
         </ul>
       </li>
 
