@@ -27,6 +27,11 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -415,7 +420,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
+        <div class="swiper init-swiper" id="carosello-personaggi">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -441,18 +446,19 @@
               }
             }
           </script>
+  
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-slide-id="lucia-mondella" >
               <div class="testimonial-item">
-                <p>A shy, devout, and gentle young woman, betrothed to Renzo. She is a victim of power and injustice but shows great moral strength. After being kidnapped and then freed, she vows to remain chaste to save herself, but thanks to Father Cristoforo and Cardinal Borromeo, she is able to marry Renzo in the end.</p>
+                <p class="caption">A shy, devout, and gentle young woman, betrothed to Renzo. She is a victim of power and injustice but shows great moral strength. After being kidnapped and then freed, she vows to remain chaste to save herself, but thanks to Father Cristoforo and Cardinal Borromeo, she is able to marry Renzo in the end.</p>
                 <img src="assets/img/lucia.jpg" class="testimonial-img" alt="">
-                <h3>Lucia Mondella</h3>
+                <h3 class="caption">Lucia Mondella</h3>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
+            <div class="swiper-slide" data-slide-id="renzo-tramaglino">
+              <div class="testimonial-item" >
                 <p>
                   A humble silk weaver — honest, impulsive, and determined. He is Lucia’s betrothed. After their wedding is obstructed, he faces many hardships, including being accused of sedition in Milan and fleeing to Bergamo. Throughout the novel, he matures into a more thoughtful and self-aware man.</p>
                 <img src="assets/img/renzo.jpg" class="testimonial-img" alt="">
@@ -460,7 +466,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-slide-id="don-abbondio">
               <div class="testimonial-item">
                 <p>The village priest who refuses to marry Renzo and Lucia out of fear of Don Rodrigo’s threats. He symbolizes cowardice and submission to power. He constantly tries to avoid conflict and protect himself.</p>
                 <img src="assets/img/donabbondio.png" class="testimonial-img" alt="">
@@ -468,7 +474,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-slide-id="don-rodrigo">
               <div class="testimonial-item">
                 <p>An arrogant and abusive nobleman who becomes infatuated with Lucia and wants to prevent her marriage. He abuses his power and orders her abduction. He eventually dies alone and abandoned, stricken by the plague.</p>
                 <img src="assets/img/don rodrigo.jpg" class="testimonial-img" alt="">
@@ -476,7 +482,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-slide-id="gertrude">
               <div class="testimonial-item">
                 <p>A noblewoman forced into monastic life against her will. She reluctantly assists in Lucia’s kidnapping and later lives in guilt. She is a tragic character and symbolizes the social and familial constraints placed on women.</p>
                 <img src="assets/img/gertrude.jpg" class="testimonial-img" alt="">
@@ -484,7 +490,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-slide-id="agnese">
               <div class="testimonial-item">
                 <p>Lucia’s mother — practical, caring, and protective. She helps the young couple and accompanies them during part of their escape. She is rooted in tradition but shows great initiative.</p>
                 <img src="assets/img/agnese.jpg" class="testimonial-img" alt="">
@@ -492,7 +498,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-slide-id="father-cristoforo">
               <div class="testimonial-item">
                 <p>A Capuchin friar and former violent man turned spiritual guide. He supports Renzo and Lucia, defends the weak, and opposes Don Rodrigo. He embodies Christian justice and redemption.</p>
                 <img src="assets/img/fracristoforo.png" class="testimonial-img" alt="">
@@ -501,7 +507,7 @@
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item" data-slide-id="the-unnamed">
                 <p>A feared and powerful nobleman, known only by his title. Initially an ally of Don Rodrigo, he kidnaps Lucia but is deeply shaken by her faith and innocence. After a life-altering encounter with Cardinal Federico Borromeo, he repents and undergoes a dramatic spiritual conversion. He becomes a symbol of hope, showing that even the most lost soul can choose redemption.</p>
                 <img src="assets/img/innominato.jpg" class="testimonial-img" alt="">
                 <h3>The Unnamed</h3>
@@ -509,7 +515,7 @@
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item" data-slide-id="perpetua">
                 <p>Don Abbondio’s housekeeper — nosy, talkative, and often meddling, yet loyal and affectionate toward her master. She represents popular wisdom and frequently exposes the priest’s contradictions and cowardice. Her down-to-earth nature provides a contrast to the fears and evasiveness of Don Abbondio.</p>
                 <img src="assets/img/perpetua.jpg" class="testimonial-img" alt="">
                 <h3>Perpetua</h3>
@@ -522,17 +528,70 @@
         </div>
 
       </div>
-
+      </div>
     </section><!-- /Characters Section -->
+ 
+ <script>
+  
+// inizializzazione Swiper
 
+
+window.addEventListener("load", () => {
+  const carosello = document.getElementById("characters");
+  if (carosello) carosello.scrollIntoView({ behavior: "smooth" });
+
+  // Leggi il personaggio da evidenziare direttamente da query string (es: ?slide=lucia-mondella)
+  const urlParams = new URLSearchParams(window.location.search);
+  const slideId = urlParams.get("slide"); // esempio: "lucia-mondella"
+  if (!slideId) return;
+
+  // Trova lo slide con data-slide-id corrispondente
+  const targetSlide = document.querySelector(`.init-swiper .swiper-slide[data-slide-id="${slideId}"]`);
+  if (!targetSlide) return;
+
+  // Trova tutti gli slide
+  const slides = Array.from(document.querySelectorAll(".init-swiper .swiper-slide"));
+
+  // Mostra lo slide corretto
+  const index = slides.indexOf(targetSlide);
+  swiper.slideTo(index, 0); // 0 = immediato
+
+  // Rimuove eventuali evidenziazioni precedenti
+  slides.forEach(slide => slide.classList.remove("highlight"));
+  slides.forEach(slide => {
+    const captions = slide.querySelectorAll(".caption");
+    captions.forEach(c => c.classList.remove("highlight"));
+  });
+
+  // Aggiunge evidenziazione allo slide e a tutti i suoi caption
+  setTimeout(() => {
+    targetSlide.classList.add("highlight");
+    const captions = targetSlide.querySelectorAll(".caption");
+    captions.forEach(c => c.classList.add("highlight"));
+
+    // Rimuove evidenziazione dopo 2 secondi
+    setTimeout(() => {
+      targetSlide.classList.remove("highlight");
+      captions.forEach(c => c.classList.remove("highlight"));
+    }, 2000);
+  }, 50);
+});
+
+
+  </script>
     <!-- Map Section -->
 
+
+
+
+
+<!--
     <section id="map" class="contact section">
-      <!-- Section Title -->
+
       <div class="container section-title" data-aos="fade-up">
         <h2>Map of the mentioned places</h2>
         <p></p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -547,7 +606,7 @@
                   <h3>Purple placeholder</h3>
                   <p>All the purple placeholders refer to the places that are mentioned in both the first chapters of the texts of <em>I promessi sposi</em> and<em>Los novios</em>.</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-geo-alt flex-shrink-0" id="yp"></i>
@@ -555,18 +614,18 @@
                   <h3>Yellow placeholder</h3>
                   <p>All the purple placeholders refer to the most famous places mentioned in both the texts of <em>I promessi sposi</em> and <em>Los novios</em> but not in the first chapters.</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
                </div>
           </div>
 
           <div class="col-lg-7">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1nXm3DPp6t7OSIYaPBjJ6KkEbhRaoroY&ehbc=2E312F" width="640" height="480"></iframe>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 
       </div>
-
+-->
     </section><!-- /Map Section -->
 
   </main>
@@ -608,7 +667,9 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="assets/js/main.js"></script>
+  
 
 </body>
 

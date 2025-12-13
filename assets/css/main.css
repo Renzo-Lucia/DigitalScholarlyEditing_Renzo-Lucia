@@ -1911,3 +1911,21 @@ img:hover{
 .preview-link{
   color: #635548;
 }
+
+
+
+
+
+
+
+
+.swiper-slide.highlight {
+  border: 3px solid yellow;
+  box-shadow: 0 0 15px yellow;
+  transition: all 0.3s ease;
+}
+
+.swiper-slide .caption.highlight {
+  background-color: yellow;
+  transition: background-color 0.3s ease;
+}

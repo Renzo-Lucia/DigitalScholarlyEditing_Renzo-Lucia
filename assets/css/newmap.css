@@ -1,0 +1,437 @@
+#map {
+  height: 500px !important;
+  width: 100% !important;
+  max-width: 500px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #635548; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+  background-color: #635548;
+}
+
+section {
+  overflow: visible !important;
+  padding-top: 0px;
+  justify-items: center;
+}
+
+
+#page-wrapper {
+  overflow: visible !important;
+}
+
+/* Per forzare Leaflet a calcolare bene le dimensioni */
+.leaflet-container {
+  min-height: 500px;
+}
+
+/* --- Desktop: sopra 1170px --- */
+@media only screen and (min-width: 1170px) {
+   #map {
+  height: 500px !important;
+  max-width: 500px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #635548; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+}
+}
+
+/* --- Tablet: 769px - 1169px --- */
+@media only screen and (max-width: 1169px) and (min-width: 769px) {
+   #map {
+  height: 500px !important;
+  max-width: 500px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #4b695d; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+}
+}
+
+/* --- Mobile: 0 - 768px --- */
+@media only screen and (max-width: 768px) and (min-width: 549px){
+   #map {
+  height: 450px !important;
+  width: 500px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #635548; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+}
+}
+
+/* --- Mobile: 0 - 550px --- */
+@media only screen and (max-width: 550px) and(min-width: 536px) {
+    #map {
+  height: 300px !important;
+  width: 400px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #635548; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+}
+}
+
+/* --- Mobile: 0 - 536px --- */
+@media only screen and (max-width: 536px) {
+  #map {
+  height: 200px !important;
+  width: 350px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #635548; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+}
+}
+
+/* --- Mobile: 0 - 5360px --- */
+@media only screen and (max-width: 536px) and (max-width: 360px){
+   #map {
+  height: 200px !important;
+  width: 250px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #635548; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+}
+}
+
+/* --- Mobile: 0 - 380px --- */
+@media only screen and (max-width: 344px){
+    #map {
+  height: 150px !important;
+  width: 200px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #635548; /* bordo grigio scuro di 3px */
+  border-radius: 10px;    /* angoli arrotondati opzionale */
+  justify-content: center;
+}
+}
+
+
+#map-legend{
+  height: auto !important;
+}
+.mapul{
+  width: auto !important;
+  height: auto;
+  margin: 20px;
+}
+  .select-row {
+    flex-direction: column;      /* da riga → colonna */
+    gap: 15px;                    /* spazio verticale */
+    align-items: center;
+    margin-top: 100px;         /* li centra */
+  }
+
+  .select-row select {
+    width: 80% !important;        /* diventano più larghi e leggibili */
+    max-width: 300px;  
+  } 
+
+/* --- Mobile: icona sopra al testo nella legenda --- */
+@media only screen and (max-width: 600px) {
+#map-legend {
+  height: auto !important;
+}
+  #map-legend li {
+      flex-direction: column;        /* dalla riga alla colonna */
+      align-items: center;           /* centro orizzontale */
+      text-align: center;            /* testo centrato */
+      margin-left: 0;                /* rimuove indentazione */
+  }
+
+  .legend-icon {
+      margin: 0 auto;                /* centra l’icona */
+      margin-bottom: 8px;            /* spazio icona-testo */
+  }
+
+  .desc {
+      margin: 0 10px;                /* riduce margini laterali */
+      font-size: 0.9rem;             /* testo più compatto */
+  }
+  .cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: fit-content;
+}
+.cd-map{
+    position: relative;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    z-index: 9999; /* più alto della timeline */
+    min-height: fit-content;
+}
+.mapul{
+  height: auto !important;
+}
+
+.select-row{
+  margin-top: 100px !important;
+}
+}
+
+/* --- Mobile: legenda lunga, niente scroll, select sotto --- */
+@media only screen and (max-width: 700px) {
+
+  #map-legend {
+      position: relative;          /* non assoluta */
+      height: auto !important;     /* elimina height fisse */
+      max-height: none !important; 
+      overflow: visible !important;
+      margin-bottom: 20px;         /* spazio prima dei select */
+  }
+
+  #map-legend ul {
+      height: auto !important;     /* anche qui rimozione altezza */
+  }
+
+  .select-row {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      margin-top: 0;               /* non serve più il margine alto */
+  }
+
+  .select-row select {
+      width: 100% !important;
+      max-width: 100px;
+  }
+}
+
+
+
+
+
+.select-row {
+    display: flex;
+    gap: 10px;  /* spazio tra i due select */
+    justify-content: center;
+}
+
+.select-row select {
+    width: 200px; /* opzionale */
+}
+.form-select{
+  padding-left: 10px;
+}
+
+:root {
+  --color:#4b695d ;
+  --timing: .3s;
+}
+
+.dropdown-el {
+  margin-left: 80px;
+  margin-top: 20vh;
+  min-width: 12em;
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  min-height: 2em;
+  max-height: 2em;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  color: #444;
+
+  /* STESSA GRAFICA DELLA TENDINA */
+  border: .06em solid var(--color);
+  border-radius: .25em;
+  background: #fff;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
+
+  transition: var(--timing) all ease-in-out;
+}
+
+/* -------------------------
+   NASCONDE TUTTI I LABEL
+-------------------------- */
+.dropdown-el input + label {
+  display: none;
+}
+
+/* -------------------------
+   MOSTRA SOLO QUELLO CHECKED
+-------------------------- */
+.dropdown-el input:checked + label {
+  display: block;
+  border-top: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-left: 1em;
+  height: 2em;
+  line-height: 2em;
+  background-color: #759a8b;
+  color: #fff;
+}
+
+/* -------------------------
+   FRECCIA
+-------------------------- */
+.dropdown-el::after {
+  content: "";
+  position: absolute;
+  right: 0.8em;
+  top: 0.9em;
+  border: .3em solid var(--color);
+  border-color: var(--color) transparent transparent transparent;
+  transition: .4s all ease-in-out;
+}
+
+/* -------------------------
+   STATO APERTO
+-------------------------- */
+.dropdown-el.expanded {
+  max-height: 15em;
+  overflow: visible;
+}
+
+.dropdown-el.expanded input + label {
+  display: block;
+  position: relative;
+  border-top: .06em solid #d9d9d9;
+  padding-left: 10px;
+}
+
+.dropdown-el.expanded input:checked + label {
+  position: relative;
+  color: var(--color);
+  background-color: #d9d9d9;
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.dropdown-el.expanded label:hover {
+  color: var(--color);
+  background-color: #d9d9d9;
+}
+
+.dropdown-el.expanded::after {
+  transform: rotate(-180deg);
+  top: .55em;
+  color: #fff;
+}
+
+/* -------------------------
+   NASCONDO RADIO
+-------------------------- */
+.dropdown-el input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  opacity: 0.01;
+}
+
+.filtermarkers{
+  text-align: left;
+}
+
+/* -------------------------
+   LEGENDA
+-------------------------- */
+
+#cd-map {
+    position: relative;
+    padding: 2px 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    z-index: 9999; /* più alto della timeline */
+}
+
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.cd-container::after {
+  /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+}
+.map-legend {
+    position: absolute;   /* fissa la box in un punto della pagina */
+    top: 20px;            /* distanza dal top */
+    left: 20px;           /* distanza dal lato sinistro */
+    background-color: rgba(255, 255, 255, 0.95); /* leggermente trasparente */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+}
+
+/* Nasconde la legenda inizialmente */
+.hidden {
+    display: none;
+}
+
+/* Lista icone */
+#map-legend{
+  height: 800px;
+}
+#map-legend ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    margin: 20px !important;
+}
+
+#map-legend li {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-left:30px ;
+}
+
+.legend-icon {
+    display: inline-block;
+     width: 50px;
+    height: 70px;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.desc{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#bookmarkicon{
+  height: 50px;
+}
+#placeholdericon{
+  height: 70px !important;
+}
+.maplegend{
+  height: fit-content;
+}
