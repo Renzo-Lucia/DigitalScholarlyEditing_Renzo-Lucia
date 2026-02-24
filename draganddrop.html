@@ -32,7 +32,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/trueorfalse.css" rel="stylesheet">
+  <link href="assets/css/draganddrop.css" rel="stylesheet">
+ 
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -64,21 +65,21 @@
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">True or False</h1>
+      <h1 class="sitename">Drag & Drop</h1>
     </a>
 <br>
 <br>
 
     <nav id="navmenu" class="navmenu">
-       <ul>
+      <ul>
         <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="Texts.html"><i class="bi bi-journals navicon"></i> <span>Texts and Contexts</span></a>
         <li><a href="txtinitialcomparison.html"><i class="bi bi-search-heart navicon"></i>Texts comparison</a></li>
         <li><a href="writers.html"><i class="bi bi-pencil navicon"></i> <span>Writers</span></a>
          <li class="dropdown"><a href="exercises.html"><i class="bi bi-toggles navicon"></i> <span>Exercises</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">True or False?</a></li>
-            <li><a href="draganddrop.html">Drag and Drop</a></li>
+            <li><a href="trueorfalse.html">True or False?</a></li>
+            <li><a href="#">Drag and Drop</a></li>
           </ul>
         </li>
       </ul>
@@ -94,8 +95,8 @@
       <img src="assets/img/manoscritti.jpg" alt="manoscritti" class="tstart-bg" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>True or False?</h2>
-        <p><span class="typed" data-typed-items="Read the questions and answer true or false"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2>Drag & Drop</h2>
+        <p><span class="typed" data-typed-items="Match the different characteristics to the correct work."></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -103,34 +104,114 @@
     <!-- Writers Section -->
     <section>
 
-  
-        
-      
+        <h1>Drag & Drop</h1>
+        <p><strong>Challenge yourself!</strong> Match the different characteristics to the correct work by choosing between <i>I Promessi Sposi</i> by Alessandro Manzoni and <i>Los Novios</i> by Gallego.</p>
+    <br>
+        <div id="linked-list" class="linked-list">
 
-<header>
-    <p>Read the questions carefully and answer the true/false quiz.</p>
-<h1> Quiz Game </h1>
+	<ul class="list left">
+		<li>
+			<label for="item-1" class="item-option-label">
+				<input type="checkbox" id="item-1" class="cb" value="1"> Written by Alessandro Manzoni as an original Italian novel.
+			</label>
+		</li>
+		<li>
+			<label for="item-2">
+				<input type="checkbox" id="item-2" class="cb" value="2"> Spanish version published in 1836.
+			</label>
+		</li>
+		<li>
+			<label for="item-3">
+				<input type="checkbox" id="item-3" class="cb" value="3"> Clear and direct narrative style influenced by spoken Tuscan Italian.
+			</label>
+		</li>
+		<li>
+			<label for="item-4">
+				<input type="checkbox" id="item-4" class="cb" value="4"> Elevated and rhetorical narrative style with a classical Spanish tone.
+			</label>
+		</li>
+        <li>
+			<label for="item-5">
+				<input type="checkbox" id="item-5" class="cb" value="5"> Ironical and subtle tone, often humorous and self-aware.
+			</label>
+		</li>
+        <li>
+			<label for="item-6">
+				<input type="checkbox" id="item-6" class="cb" value="6"> Solemn and moralistic tone.
+			</label>
+		</li>
+        <li>
+			<label for="item-7">
+				<input type="checkbox" id="item-7" class="cb" value="7"> Religious themes balanced with realism and irony.
+			</label>
+		</li>
+        <li>
+			<label for="item-8">
+				<input type="checkbox" id="item-8" class="cb" value="8"> Religious content is reinforced and more didactic.
+			</label>
+		</li>
+        <li>
+			<label for="item-9">
+				<input type="checkbox" id="item-9" class="cb" value="9"> Language combines popular speech with elegant literary forms.
+			</label>
+		</li>
+        <li>
+			<label for="item-10">
+				<input type="checkbox" id="item-10" class="cb" value="10"> Uses a high and traditional literary register.
+			</label>
+		</li>
+        <li>
+			<label for="item-11">
+				<input type="checkbox" id="item-11" class="cb" value="11"> Irony and satire play an important role in narration.
+			</label>
+		</li>
+        <li>
+			<label for="item-12">
+				<input type="checkbox" id="item-12" class="cb" value="12"> Irony and satire are softened or omitted.
+			</label>
+		</li>
+        <li>
+			<label for="item-13">
+				<input type="checkbox" id="item-13" class="cb" value="13"> Strongly rooted in the Italian cultural and historical context.
+			</label>
+		</li>
+        <li>
+			<label for="item-14">
+				<input type="checkbox" id="item-14" class="cb" value="14"> The author’s voice is clearly recognizable throughout the novel.
+			</label>
+		</li>
+        <li>
+			<label for="item-15">
+				<input type="checkbox" id="item-15" class="cb" value="15"> The translator’s voice and ideology influence the text.
+			</label>
+		</li>
+	</ul>
 
-<button onclick="catAndQuest()" id="start"> START </button>
-</header>
+	<ul class="list right" style="margin-top: 700px;">
+		<li>
+			<label for="radio-1">
+				<input type="radio" id="radio-1" name="visit" class="rb" value="1"> <i>I promessi sposi</i> by Alessandro Manzoni
+			</label>
+		</li>
+		<li>
+			<label for="radio-2">
+				<input type="radio" id="radio-2" name="visit" class="rb" value="2"> <i>Los novios</i> by Juan Nicasio Gallego
+			</label>
+		</li>
+		
+	</ul>
 
-
-<div class="container">
-<div id="questions">
-	<div id="count"></div>
-	<div id="category"></span> </div>
-	<div id="quest"> </div>
-	<button onclick="answer(true)" style="display:none;" id="answerT" style="padding: 20px;"> TRUE</button>
-	<button onclick="answer(false)" style="display:none;" id="answerF" style="padding: 20px;"> FALSE</button>
-  <div id="points"></div>
+	<!-- SVG overlay for curves -->
+	<svg id="links"></svg>
 </div>
-<div id="winner" style="display:none;">YOU WIN! <br>Congrats, excellent work!</div>
-<div id="looser" style="display:none;">What a pity, there are no more questions.<br> You lose!</div>
-<button onclick="restart()" style="display:none;" id="reset"> PLAY AGAIN? </button>
-</div>
-</div>
 
+<button id="checkAnswers" class="btn btn-primary mt-4">
+  Check answers
+</button>
 
+<button id="tryAgain" class="btn btn-warning mt-4" style="display:none;">
+  Try Again
+</button>
 
     </section>
   </main>
@@ -174,7 +255,8 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="resources/js/main.js"></script>
-  <script src="assets/js/trueorfalse.js"></script>
+  <script src="assets/js/draganddrop.js"></script>
+
 
 </body>
 

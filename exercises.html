@@ -4,14 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Writers</title>
+  <title>Renzo & Lucia</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-  <!-- Content Type Meta tag -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-<!--Responsive Viewport Meta tag-->
-     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <!-- Favicons -->
   <link href="assets/img/losnoviosfavicon.png" rel="icon">
@@ -28,11 +23,9 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/trueorfalse.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -41,15 +34,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
-
-<!-- FONT -->
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
-
-<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
-
 </head>
 
 <body class="index-page">
@@ -58,26 +42,27 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/qm.png" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">True or False</h1>
+      <h1 class="sitename">Exercises</h1>
     </a>
-<br>
-<br>
+    <br>
+    <br>
+
 
     <nav id="navmenu" class="navmenu">
-       <ul>
+      <ul>
         <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="Texts.html"><i class="bi bi-journals navicon"></i> <span>Texts and Contexts</span></a>
         <li><a href="txtinitialcomparison.html"><i class="bi bi-search-heart navicon"></i>Texts comparison</a></li>
         <li><a href="writers.html"><i class="bi bi-pencil navicon"></i> <span>Writers</span></a>
-         <li class="dropdown"><a href="exercises.html"><i class="bi bi-toggles navicon"></i> <span>Exercises</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+         <li class="dropdown"><a href="#"><i class="bi bi-toggles navicon"></i> <span>Exercises</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">True or False?</a></li>
+            <li><a href="trueorfalse.html">True or False?</a></li>
             <li><a href="draganddrop.html">Drag and Drop</a></li>
           </ul>
         </li>
@@ -89,58 +74,52 @@
   <main class="main">
 
     <!-- Hero Section -->
-   <section id="tstart" class="tstart section dark-background" class="manoscritti">
+  <section id="tstart" class="tstart section dark-background" class="manoscritti">
 
       <img src="assets/img/manoscritti.jpg" alt="manoscritti" class="tstart-bg" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>True or False?</h2>
-        <p><span class="typed" data-typed-items="Read the questions and answer true or false"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2>Exercises</h2>
+        <p><span class="typed" data-typed-items="Now it’s your turn! Test your learning with some simple exercises"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
 
-    <!-- Writers Section -->
-    <section>
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-  
-        
-      
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Some simple exercises</h2>
+        <div class="content">
+            <br>
+          <p>If you haven’t done so yet, carefully read the <strong>theoretical content</strong> provided here on the <strong>Renzo&Lucia </strong>site and enrich your experience by exploring the <a href="txtinitialcomparison.html">Text Comparison section</a> to see in a more practical way the <strong>similarities and differences</strong> between the two works: the original in Italian and its Spanish translation. <br>
+          Time to test yourself! How much can you recall from what you’ve learned?</p>
+          <br>
+          <br>
+            <p>Click here to start the <button class="btn-base btn-animato" id="buttonone"><a href="trueorfalse.html">True or False quiz</a></button></p>
 
-<header>
-    <p>Read the questions carefully and answer the true/false quiz.</p>
-<h1> Quiz Game </h1>
+            <p>Click here to start the <button class="btn-base btn-animato" id="buttonone"><a href="draganddrop.html">Drag & Drop exercise</a></p></button><br> 
 
-<button onclick="catAndQuest()" id="start"> START </button>
-</header>
-
-
-<div class="container">
-<div id="questions">
-	<div id="count"></div>
-	<div id="category"></span> </div>
-	<div id="quest"> </div>
-	<button onclick="answer(true)" style="display:none;" id="answerT" style="padding: 20px;"> TRUE</button>
-	<button onclick="answer(false)" style="display:none;" id="answerF" style="padding: 20px;"> FALSE</button>
-  <div id="points"></div>
-</div>
-<div id="winner" style="display:none;">YOU WIN! <br>Congrats, excellent work!</div>
-<div id="looser" style="display:none;">What a pity, there are no more questions.<br> You lose!</div>
-<button onclick="restart()" style="display:none;" id="reset"> PLAY AGAIN? </button>
-</div>
-</div>
+            
+            
 
 
+        </div>
+       
+        </div>
+      </div><!-- End Section Title -->
+</section>
 
-    </section>
+
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
 
-   <div class="footercontainer">
+    <div class="footercontainer">
       <div class="copyright text-center ">
         <p><i>Renzo & Lucia</i> is the final project developed for the "Digital scholarly editing: theory, methods and practice" course (a.a. 2024/2025) within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna.</p> <br>
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Renzo & Lucia</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span><strong class="px-1 sitename">Renzo & Lucia</strong><span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -173,8 +152,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="resources/js/main.js"></script>
-  <script src="assets/js/trueorfalse.js"></script>
 
 </body>
 
