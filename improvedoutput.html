@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>2 texts comparison page</title>
+<title>Confronto avanzato tra i testi</title>
 <style>
                     body {
                         font-family: Georgia, serif;
@@ -68,7 +68,7 @@
                         font-style: italic;
                     }
 
-                    .page {
+                    .Pagina {
                         min-height: 300px; /* oppure un valore adeguato alla tua pagina */
                         box-sizing: border-box;
                         margin-bottom: 2em;
@@ -208,24 +208,246 @@
                         text-decoration: underline; /* opzionale */
                         color: #DC19A3; /* o altro colore */
                     }
+                </style>
+                <style>
+                    /* popup google translate*/
 
+
+/* Sfondo popup */
+.navpopup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	max-width: auto;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 20000 !important; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto; /* scroll verticale se il contenuto è alto */
+    padding: 10px; /* spazio su mobile */
+}
+
+/* Contenitore popup */
+.navpopup-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    box-sizing: border-box; /* include padding nella larghezza */
+    position: relative;
+    text-align: center !important;
+    color: #1a1a1a;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-wrap: break-word; /* le parole lunghe vanno a capo */
+	text-wrap: wrap;
+    z-index: 20001 !important;
+}
+
+/* Paragrafo responsive */
+.navpopup-content p {
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+    width: 100%;              /* prende tutta la larghezza del contenitore */
+    max-width: 100%;          /* non esce mai dai bordi */
+    box-sizing: border-box;   /* include padding e bordi */
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    hyphens: auto;            /* divide parole lunghe se necessario */
+}
+
+
+/* Pulsante chiudi */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mostra popup */
+.navpopup.show {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s;
+}
+
+/* Animazione di apertura */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive per schermi piccoli */
+@media (max-width: 480px) {
+	.navpopup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	max-width: auto;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999 !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto; /* scroll verticale se il contenuto è alto */
+    padding: 10px; /* spazio su mobile */
+} 
+
+/* Contenitore popup */
+.navpopup-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    box-sizing: border-box; /* include padding nella larghezza */
+    position: relative;
+    text-align: center !important;
+    color: #1a1a1a;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-wrap: break-word; /* le parole lunghe vanno a capo */
+	text-wrap: wrap;
+}
+
+/* Paragrafo responsive */
+.navpopup-content p {
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+    width: 100%;              /* prende tutta la larghezza del contenitore */
+    max-width: 100%;          /* non esce mai dai bordi */
+    box-sizing: border-box;   /* include padding e bordi */
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    hyphens: auto;            /* divide parole lunghe se necessario */
+}
+
+
+/* Pulsante chiudi */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mostra popup */
+.navpopup.show {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s;
+}
+
+/* Animazione di apertura */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+}
+
+/* Default: link nascosto, icona visibile */
+.mobile-only {
+    display: none !important;
+}
+
+.desktop-only {
+    display: inline-block !important;
+}
+
+
+/* Solo quando lo schermo è piccolo (mobile / navbar tendina) */
+@media (max-width: 768px) {
+    .mobile-only {
+        display: inline-block !important;
+        cursor: pointer;
+        color: #000;
+        text-decoration: none;
+    }
+    .desktop-only {
+        display: none;
+    }
+}
+
+
+#google_translate_element_mobile {
+    margin-top: 10px;
+    padding: 5px 0;
+	z-index: 9999px !important;
+}
+
+
+/* Mostra popup al hover */
+.lang-btn:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+.languagepicker {
+    padding: 10px;
+    position: fixed;
+    right: 13px;
+    top: 10px;
+    z-index: 10;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+	background-color: #731702;
+	border-radius: 50%;
+}
+.languagepicker:hover {
+	color: var(--contrast-color);
+  background-color: color-mix(in srgb, #731702 90%, white 15%);
+	border-radius: 50%;
+}
                 </style>
 
 </head>
 <body>
+       <div id="languagepicker" class="languagepicker">
+        <img id="popupIcon" src="assets/img/grigiopastello-removebg-preview.png" alt="world" height="25px" style="cursor:pointer;">
+      </div>
+
+					<!-- Popup -->
+					<div id="navpopup" class="navpopup">
+						<div class="navpopup-content">
+							<span id="closenavPopup" class="close">&times;</span>
+							<p>
+								<strong>Scegli la lingua</strong><br>
+								Questo sito web è disponibile in molte lingue oltre all’italiano.
+								Scegli qui la lingua che preferisci utilizzare per navigare i contenuti
+								e svolgere gli esercizi nel modo più comodo e semplice per te.
+							</p>
+							<div id="google_translate_element"></div>
+						</div>
+					</div>		
+
+				</div>
+
 <div class="legend-container">
 <input type="checkbox" id="legend-toggle" class="legend-checkbox"><label for="legend-toggle" class="legend-toggle">Legenda</label><div class="legend-content">
-<p class="persName"> Characters</p>
-<p class="placeName"> Places</p>
-<p class="date"> Dates</p>
-<p class="unclearword"> Unclear word</p>
-<p class="legend-color add-image" id="legend-smallbox"> Added image in Manzoni's work</p>
-<p class="legend-color yellowadd"> (a) Spanish Additions</p>
-<p class="legend-color redgap"> (g) Spanish omissions</p>
-<p class="legend-color abbreviate"> (ab) Spanish abbreviated names</p>
-<p class="legend-color mod"> (m) Spanish modifications and different interpretations</p>
-<p class="legend-color mod"> (Mm) Spanish modifications and different interpretations studied by Muñiz Muñiz</p>
-<p class="legend-color idiom"> (Im) Spanish idiomatic expressions studied by Pecchiari</p>
+<p class="persName"> Personaggi</p>
+<p class="placeName"> Luoghi</p>
+<p class="date"> Date</p>
+<p class="unclearword"> Parole poco chiare</p>
+<p class="legend-color add-image" id="legend-smallbox"> Immagini aggiunte all'opera di Manzoni</p>
+<p class="legend-color yellowadd"> (a) Aggiunte spagnole</p>
+<p class="legend-color redgap"> (g) Omissioni spagnoli</p>
+<p class="legend-color abbreviate"> (ab) Nomi abbreviati in spagnolo</p>
+<p class="legend-color mod"> (m) Modifiche spagnole e interpretazioni diverse</p>
+<p class="legend-color mod"> (Mm) Modifiche spagnole e interpretazioni diverse studiate da Muñiz Muñiz</p>
+<p class="legend-color idiom"> (Im) Espressioni idiomatiche spagnole studiate da Pecchiari</p>
 </div>
 <br>
 
@@ -236,7 +458,7 @@
   <div style="flex:1;">
     <button id="toggleITA"
       style="background-color:#635548; color:white; padding:5px; border-radius:5px; margin-bottom: 20px;">
-      Dates from the original text
+      Date dal testo originale
     </button>
 
     <div id="listITA" style="display:none; margin-top:10px;">
@@ -259,20 +481,20 @@
   <div style="flex:1;">
     <button id="toggleESP"
       style="background-color:#635548; color:white; padding:5px; border-radius:5px; margin-bottom: 20px;">
-      Dates from the Spanish text
+      Date dal testo spagnolo
     </button>
 
     <div id="listESP" style="display:none; margin-top:10px; text-decoration: none;">
       <ul>
-        <li><a href="#data-esp-01">7 Noviembre 1628</a></li>
-        <li><a href="#data-esp-02">8 Abril 1583</a></li>
-        <li><a href="#data-esp-03">12 Abril</a></li>
-        <li><a href="#data-esp-04">5 junio 1593</a></li>
-        <li><a href="#data-esp-05">23 Mayo 1598</a></li>
-        <li><a href="#data-esp-06">5 Diciembre 1600</a></li>
-        <li><a href="#data-esp-07">22 Septiembre 1612</a></li>
-        <li><a href="#data-esp-08">24 Diciembre 1618</a></li>
-        <li><a href="#data-esp-09">5 Octubre 1627</a></li>
+        <li><a href="#data-esp-01">7 novembre 1628</a></li>
+        <li><a href="#data-esp-02">8 aprile 1583</a></li>
+        <li><a href="#data-esp-03">12 aprile</a></li>
+        <li><a href="#data-esp-04">5 giugno 1593</a></li>
+        <li><a href="#data-esp-05">23 maggio 1598</a></li>
+        <li><a href="#data-esp-06">5 dicembre 1600</a></li>
+        <li><a href="#data-esp-07">22 settembre 1612</a></li>
+        <li><a href="#data-esp-08">24 dicembre 1618</a></li>
+        <li><a href="#data-esp-09">5 ottobre 1627</a></li>
       </ul>
     </div>
   </div>
@@ -282,9 +504,9 @@
 
 <div class="columns">
 <div class="column">
-<h2>I promessi sposi by Manzoni</h2>
-<body>
-    <head>I PROMESSI SPOSI</head>
+<h2>I promessi sposi di Manzoni</h2>
+
+    <h3>I PROMESSI SPOSI</h3>
       <div>
       <p><span class="yellowadd" id="add0-it"><a href="#add0-es" class="corrisplink"><seg>(a0)</seg></a></span></p>
 
@@ -296,7 +518,7 @@
     quasi a un tratto a ristringersi e a prender<br class="lineBreak">
     corso e figura di fiume, tra un promontorio<br class="lineBreak">
     a destra, e un'ampia riviera di rincontro;<br class="lineBreak">
-    <div class="add-image"><span class="missingfigure">(Added F.1)</span></div>
+    <div class="add-image"><span class="missingfigure">(Aggiunta F.1)</span></div>
     e il ponte, che ivi congiunge le due rive,<br class="lineBreak">
     par che renda ancor più sensibile all'occhio <br class="lineBreak">
     questa trasformazione, e segni il punto in<br class="lineBreak">
@@ -308,7 +530,7 @@
     tre grossi torrenti, scende appoggiata a due<br class="lineBreak"> 
     monti contigui, l'uno detto di <span class="placeName">san Martino</span>,<br class="lineBreak"></p>
 
-    <div class="page"><div class="pageBreak">Page 1</div></div>
+    <div class="page"><div class="pageBreak">Pagina 1</div></div>
 </div>
 
 <div>
@@ -338,7 +560,7 @@
     al giorno d'oggi, e che s'incammina a<br class="lineBreak"> 
     diventare città. Ai tempi in cui accaddero i<br class="lineBreak"> 
     fatti che imprendiamo di raccontare, quel<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 2</div></div>
+    <div class="page"><div class="pageBreak">Pagina 2</div></div>
 </div>
 
 
@@ -369,7 +591,7 @@
     parte campeggia o si scorcia, spunta o spari-<br class="lineBreak">
     sce a vicenda. Dove un tratto, dove un altro,<br class="lineBreak"> 
     dove una lunga distesa di quel vasto e sva-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 3</div></div>
+    <div class="page"><div class="pageBreak">Pagina 3</div></div>
 </div>
 
 
@@ -400,7 +622,7 @@
     dell'altre vedute.</span><br class="lineBreak">
     Per una di queste stradicciuole, tornava<br class="lineBreak"> 
     bel bello dal passeggio verso casa, in sulla<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 4</div></div>
+    <div class="page"><div class="pageBreak">Pagina 4</div></div>
     </div>
 
 
@@ -431,7 +653,7 @@
     dinanzi: e così fece anche quel giorno.<br class="lineBreak">
     Dopo la rivolta la strada correva diritta<br class="lineBreak">  
     forse una sessantina di passi, e poi si divi-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 5</div></div>
+    <div class="page"><div class="pageBreak">Pagina 5</div></div>
 </div>
 
 
@@ -449,7 +671,7 @@
     che nella intenzione dell'artista  e agli occhi<br class="lineBreak"> 
     degli abitanti del vicinato volevano dir fiam-<br class="lineBreak">
     me; e  alternate colle fiamme certe altre fi-<br class="lineBreak">
-    <div class="add-image"><span class="missingfigure">(Added F.2)</span></div>
+    <div class="add-image"><span class="missingfigure">(Aggiunta F.2)</span></div>
     gure da non potersi descrivere, che voleva-<br class="lineBreak">
     no dire anime del purgatorio: anime e<br class="lineBreak"> 
     fiamme a color di mattone, sur un fondo<br class="lineBreak"> 
@@ -463,7 +685,7 @@
     costoro  a cavalcioni sul muricciuolo basso,<br class="lineBreak"> 
     con una gamba spenzolata al di fuori, e<br class="lineBreak">
     l'altro piede posato sul terreno della via;<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 6</div></div>
+    <div class="page"><div class="pageBreak">Pagina 6</div></div>
 </div>
 
 
@@ -494,7 +716,7 @@
     allora floridissima in <span class="placeName">Lombardia</span>, e già molto<br class="lineBreak"> 
     antica. Chi non ne avesse idea, ecco alcuni<br class="lineBreak"> 
     squarci autentici, che potranno darne una<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 7</div></div>
+    <div class="page"><div class="pageBreak">Pagina 7</div></div>
 </div>
 
 
@@ -525,7 +747,7 @@
     e favore, o veramente, come si può presumere, per<br class="lineBreak"> 
     tendere insidie ad altri... A<br class="lineBreak"> 
     tutti costoro ordina che, nel termine di gior-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 8</div></div>
+    <div class="page"><div class="pageBreak">Pagina 8</div></div>
 </div>
 
 
@@ -556,7 +778,7 @@
     dato alla galea, per detto triennio, per<br class="lineBreak">
     la sola opinione e nome di bravo, <span class="redgap" id="gap6-it"><a href="#gap6-es" class="corrisplink"><seg>(g6)</seg></a>come<br class="lineBreak"> 
     di sopra</span>. <span class="yellowadd" id="add4-it"><a href="#add4-es" class="corrisplink"></a>(a4)</span>Tutto ciò, e il di più che si om-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 9</div></div>
+    <div class="page"><div class="pageBreak">Pagina 9</div></div>
 </div>
 
 
@@ -587,7 +809,7 @@
     ne di giorni sei  abbiano a sbrattare il pae-<br class="lineBreak">
     se, ripetendo a un dipresso le stesse minac-<br class="lineBreak">
     ce e le stesse prescrizioni  del suo predeces-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 10</div></div>
+    <div class="page"><div class="pageBreak">Pagina 10</div></div>
 </div>
 
 
@@ -618,7 +840,7 @@
     Fuentes, Capitano, e Governatore dello<br class="lineBreak">
     Stato di <span class="placeName">Milano</span>; non fu di questo parere, e<br class="lineBreak"> 
     per buone ragioni.<span class="redgap" id="gap14-it"><a href="#gap14-es" class="corrisplink"><seg>(g14)</seg></a> Pienamente informato</span><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 11</div></div>
+    <div class="page"><div class="pageBreak">Pagina 11</div></div>
 </div>
 
 
@@ -649,7 +871,7 @@
     gnore, Don Giovanni de Mendozza, Mar-<br class="lineBreak">
     chese de la Hynojosa</span>,<span class="redgap" id="gap17-it"><a href="#gap17-es" class="corrisplink"><seg>(g17)</seg></a> Gentiluomo etc., Go-<br class="lineBreak">
     vernatore etc., pensò seriamente ad estirpar-</span><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 12</div></div>
+    <div class="page"><div class="pageBreak">Pagina 12</div></div>
 </div>
 
 
@@ -680,7 +902,7 @@
     tanto una dei <span class="date" id="data-ita-10">13 di febbraio dell'anno 1632</span>,<br class="lineBreak"> 
     nella quale l'Illustrissimo ed Eccellentis-<br class="lineBreak">
     simo Signore, el Duque de Feria, per la</span><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 13</div></div>
+    <div class="page"><div class="pageBreak">Pagina 13</div></div>
 </div>
 
 
@@ -711,7 +933,7 @@
     fosse qualche uscita di strada  a dritta o a<br class="lineBreak"> 
     sinistra; e gli sovvenne tosto di no. Fece<br class="lineBreak"> 
     un rapido esame per ricercare se avesse<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 14</div></div>
+    <div class="page"><div class="pageBreak">Pagina 14</div></div>
 </div>
 
 
@@ -742,7 +964,7 @@
     la faccia a tutta quella quiete ed ilarità che<br class="lineBreak">
     potè, fece ogni sforzo per preparare un<br class="lineBreak"> 
     sorriso, e quando si trovò a fronte dei due<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 15</div></div>
+    <div class="page"><div class="pageBreak">Pagina 15</div></div>
 </div>
 
 
@@ -773,7 +995,7 @@
     messa,  ma in tuono solenne di comando<br class="lineBreak">  
     <said>«questo matrimonio non s'ha da fare, nè<br class="lineBreak">
     domani, nè mai.»</said><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 16</div></div>
+    <div class="page"><div class="pageBreak">Pagina 16</div></div>
 </div>
 
 
@@ -804,7 +1026,7 @@
     do; e noi siamo galantuomini, che non<br class="lineBreak"> 
     vogliamo fargli del male quando egli<br class="lineBreak"> 
     abbia giudizio. Signor <span class="persName"><a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">curato</a></span>, <span class="abbreviate" id="abbr8-it"><a href="#abbr8-es" class="corrisplink"><seg>(ab8)</seg></a>l'illustris-</span></said><br class="lineBreak"></p>
-     <div class="page"><div class="pageBreak">Page 17</div></div>
+     <div class="page"><div class="pageBreak">Pagina 17</div></div>
 </div>
 
 
@@ -832,12 +1054,12 @@
     <said>«Si spieghi, signor <span class="persName"><a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">curato</a></span>.»</said><br class="lineBreak">
     <said>«...  Disposto...  disposto sempre<br class="lineBreak"> 
     alla ubbidienza. »</said> E  proferendo queste<br class="lineBreak"> 
-    <div class="add-image"><span class="missingfigure">(Added F.3)</span></div>
+    <div class="add-image"><span class="missingfigure">(Aggiunta F.3)</span></div>
     parole, non sapeva bene egli stesso se dava<br class="lineBreak"> 
     una promessa, o se gittava un complimento<br class="lineBreak">
     comunale. I <span class="persName"><a href="/Texts.html#characters" data-slide-id="bravi" class="person-link" style="color: darkblue;">bravi</a></span> le presero  o mostrarono<br class="lineBreak"> 
     di prenderle nel significato più serio.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 18</div></div>
+    <div class="page"><div class="pageBreak">Pagina 18</div></div>
 </div>
 
 
@@ -868,7 +1090,7 @@
     avveduto) non era nato con un cuor di<br class="lineBreak"> 
     lione. Ma fino dai primi suoi anni, egli<br class="lineBreak"> 
     aveva dovuto accorgersi che la situazione<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 19</div></div>
+    <div class="page"><div class="pageBreak">Pagina 19</div></div>
 </div>
 
 
@@ -899,7 +1121,7 @@
     o  se producevano qualche effetto immediato,<br class="lineBreak"> 
     egli era principalmente di aggiungere molte<br class="lineBreak"> 
     vessazioni a quelle che i pacifici e i deboli<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 20</div></div>
+    <div class="page"><div class="pageBreak">Pagina 20</div></div>
 </div>
 
 
@@ -930,7 +1152,7 @@
     ne; perchè col fine d'aver sotto la mano<br class="lineBreak"> 
     ogni uomo, per prevenire o per punire ogni<br class="lineBreak"> 
     delitto, assoggettavano ogni mossa del pri-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 21</div></div>
+    <div class="page"><div class="pageBreak">Pagina 21</div></div>
 </div>
 
 
@@ -961,7 +1183,7 @@
     potuto venirne a capo, inferiori come erano<br class="lineBreak"> 
     di numero a quelli coi quali si sarebbero<br class="lineBreak">
     posti in guerra, e colla probabilità frequen-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 22</div></div>
+    <div class="page"><div class="pageBreak">Pagina 22</div></div>
 </div>
 
 
@@ -992,7 +1214,7 @@
     ognuno la maggior potenza di quella a cui<br class="lineBreak"> 
     apparteneva. Il clero vegliava a difendere e<br class="lineBreak"> 
     ad estendere le sue immunità, la nobiltà i<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 23</div></div>
+    <div class="page"><div class="pageBreak">Pagina 23</div></div>
 </div>
 
 
@@ -1023,7 +1245,7 @@
     lega avrebbe ivi potuto resistere.<br class="lineBreak">
     Il nostro <span class="persName"><a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">Abbondio</a></span>, non nobile, non ric-<br class="lineBreak">
     co, non animoso, s'era dunque , quasi al-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 24</div></div>
+    <div class="page"><div class="pageBreak">Pagina 24</div></div>
 </div>
 
 
@@ -1054,7 +1276,7 @@
     le guerre che scoppiavano intorno a lui,<br class="lineBreak"> 
     dalle contese  allora frequentissime  tra il<br class="lineBreak">
     clero e le podestà laiche, dai contrasti pure<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 25</div></div>
+    <div class="page"><div class="pageBreak">Pagina 25</div></div>
 </div>
 
 
@@ -1085,7 +1307,7 @@
     esercizio di sofferenza, quel dar così soven-<br class="lineBreak">
     te ragione altrui, tanti bocconi amari in-<br class="lineBreak">
     ghiottiti in silenzio, glielo avevano esacer-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 26</div></div>
+    <div class="page"><div class="pageBreak">Pagina 26</div></div>
 </div>
 
 
@@ -1116,7 +1338,7 @@
     loro rischio, pigliavano le parti d'un debole<br class="lineBreak"> 
     oppresso contra un soverchiatore potente.<br class="lineBreak"> 
     Questo chiamava egli un comprarsi le bri-<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 27</div></div>
+    <div class="page"><div class="pageBreak">Pagina 27</div></div>
 </div>
 
 
@@ -1147,7 +1369,7 @@
     un passo del quale non si vedeva la uscita:<br class="lineBreak"> 
     tutti questi pensieri ronzavano tumultuaria-<br class="lineBreak"> 
     mente nel capo basso di <span class="persName"><a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">don Abbondio</a></span>.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 28</div></div>
+    <div class="page"><div class="pageBreak">Pagina 28</div></div>
 </div>
 
 
@@ -1180,7 +1402,7 @@
     dell'iniquità era cosa troppo iniqua; e ri-<br class="lineBreak"> 
     volse tutta la stizza dei suoi pensieri contra<br class="lineBreak">  
     quell'altro che veniva così a togliergli la<br class="lineBreak"> </p>
-    <div class="page"><div class="pageBreak">Page 29</div></div>
+    <div class="page"><div class="pageBreak">Pagina 29</div></div>
 </div>
 
 
@@ -1211,7 +1433,7 @@
     certamente ad apparecchiare la tavola per<br class="lineBreak">  
     la cena.Era <span class="persName"> <a href="/Texts.html#characters" data-slide-id="perpetua" class="person-link" style="color: darkblue;">Perpetua</a></span>, come ognuno se ne<br class="lineBreak"> 
     avvede, la serva di <span class="persName"> <a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">don Abbondio</a></span>: serva<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 30</div></div>
+    <div class="page"><div class="pageBreak">Pagina 30</div></div>
 </div>
 
 
@@ -1243,7 +1465,7 @@
     <said>«Niente, niente,»</said> rispose don Abbon-<br class="lineBreak"> 
     dio, lasciandosi cadere tutto ansante sul suo<br class="lineBreak">  
     seggiolone.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 31</div></div>
+    <div class="page"><div class="pageBreak">Pagina 31</div></div>
 </div>
 
 
@@ -1275,7 +1497,7 @@
     fianchi  e le gomita appuntate davanti, guar-<br class="lineBreak"> 
     dandolo fiso, quasi volesse succhiargli da-<br class="lineBreak"> 
     gli occhi il segreto.<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 32</div></div>
+    <div class="page"><div class="pageBreak">Pagina 32</div></div>
 </div>
 
 
@@ -1306,7 +1528,7 @@
     giurare che non fiaterebbe, finalmente, con<br class="lineBreak"> 
     molte sospensioni, con molti ohimè!, le<br class="lineBreak">  
     narrò il miserabile caso. Quando si venne<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 33</div></div>
+    <div class="page"><div class="pageBreak">Pagina 33</div></div>
 </div>
 
 
@@ -1337,7 +1559,7 @@
     <said>«Ma poi, sentiamo.»</said><br class="lineBreak"> 
     <said>«Il mio parere sarebbe che, siccome tutti<br class="lineBreak">  
     dicono che il nostro arcivescovo è un san-</said><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 34</div></div>
+    <div class="page"><div class="pageBreak">Pagina 34</div></div>
 </div>
 
 
@@ -1369,13 +1591,13 @@
     le... »</said><br class="lineBreak"> 
     <said>«Volete tacere? È egli tempo da cedeste<br class="lineBreak">  
     baggianate?»</said><br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 35</div></div>
+    <div class="page"><div class="pageBreak">Pagina 35</div></div>
 </div>
 
 
 <div>
     <p><span class="idiom" id="mod11-it"><a href="#mod11-es" class="corrisplink"><seg>(Im2)</seg></a><said>«Basta: ella ci penserà questa notte; ma<br class="lineBreak"> 
-    <div class="add-image"><span class="missingfigure">(Added F.4)</span></div>
+    <div class="add-image"><span class="missingfigure">(Aggiunta F.4)</span></div>
     intanto non cominci a farsi male da sè,<br class="lineBreak">  
     a rovinarsi la salute; mangi un boccone.»</said></span><br class="lineBreak"> 
     <said>«Ci penserò io,»</said> rispose  brontolando<br class="lineBreak">  
@@ -1399,7 +1621,7 @@
     volse indietro verso <span class="persName"><a href="/Texts.html#characters" data-slide-id="perpetua" class="person-link" style="color: darkblue;">Perpetua</a></span>, si pose l'in-<br class="lineBreak"> 
     dice sulle labbra, e disse con tuono lento e<br class="lineBreak">  
     solenne  <said>«per amor del cielo!</said> e disparve.»<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 36</div></div>
+    <div class="page"><div class="pageBreak">Pagina 36</div></div>
 </div>
 
 
@@ -1412,12 +1634,11 @@
 <script type="module" src="assets/js/map.js"></script>
 <script type="module" src="assets/js/pin.js"></script>
 
-</body>
+
 </div>
 <div class="column">
-<h2>Los novios by Gallego</h2>
-<body>
-    <head>LOS NOVIOS</head>
+<h2>Los novios di Gallego</h2>
+    <h3>LOS NOVIOS</h3>
       <p><span class="yellowadd" id="add0-es"><a href="#add0-it" class="corrisplink"><seg>(a0)</seg></a>HISTORIA MILANESA DEL SIGLO XVI</span></p>
      
     <div>
@@ -1436,7 +1657,7 @@
           del lago cuando, alejándose de nuevo sus orillas, se espacian<br class="lineBreak">
           segunda vez sus aguas, resultando otras ensenadas y otros<br class="lineBreak"></p>
       </div>
-    <div class="page"><div class="pageBreak">Page 1</div></div>
+    <div class="page"><div class="pageBreak">Pagina 1</div></div>
 
 
     
@@ -1478,7 +1699,7 @@
         entre los vallados de las heredades, que apénas descubre<br class="lineBreak">
         el caminante otra cosa que el pícacho de algun monte ó el<br class="lineBreak"></p> 
     </div>
-    <div class="page"><div class="pageBreak">Page 2</div></div>
+    <div class="page"><div class="pageBreak">Pagina 2</div></div>
 
 
     
@@ -1520,7 +1741,7 @@
       unirse. remaraban en una pequeña ermita en que estaban<br class="lineBreak">
       pintadas várias figuras largas, undosas, y acabadas en<br class="lineBreak">
       punta, las cuales, segun la intencion del pintor, y á<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 3</div></div>
+      <div class="page"><div class="pageBreak">Pagina 3</div></div>
     </div>
 
 
@@ -1536,7 +1757,7 @@
       <p>médio cuerpo arriba, que significaban ánimas del purga-<br class="lineBreak">
       torio, y unas otras de color de ladrillo sobro un fande<br class="lineBreak">
       blanquisco, con alcunos de mochados de trecho en trecho<br class="lineBreak"></p>
-     <div class="page"><div class="pageBreak">Page 4</div></div>
+     <div class="page"><div class="pageBreak">Pagina 4</div></div>
     </div>
 
 
@@ -1578,7 +1799,7 @@
       &gt;&gt; <span class="placeName">ciudad de Milan</span> por causa de los <span class="persName"><a href="/Texts.html#characters" data-slide-id="bravi" class="person-link" style="color: darkblue;">bravos ó vagamundos</a></span>,<br class="lineBreak">
       &gt;&gt; publicó un bando contra ellos, declarando estar compren-<br class="lineBreak">
       &gt;&gt; didos en él dichos <span class="persName"><a href="/Texts.html#characters" data-slide-id="bravi" class="person-link" style="color: darkblue;">bravos ó vagamundos</a></span>, los cuales siendo<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 5</div></div>
+      <div class="page"><div class="pageBreak">Pagina 5</div></div>
     </div>
 
 
@@ -1620,7 +1841,7 @@
       Velasco, y de la de los siete infantes de Lara, gobernador<br class="lineBreak">
       de estado de <span class="placeName">Milan</span>, etc. &lt;&lt; En <span class="date" id="data-esp-04">5 de junio de 1593</span> tambíen<br class="lineBreak">
       &gt;&gt; informado plenamente de los perjuicios y ruinas que cau-<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 6</div></div>
+      <div class="page"><div class="pageBreak">Pagina 6</div></div>
     </div>
 
 
@@ -1662,7 +1883,7 @@
         <span class="persName"><a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">cura</a></span>, el cual, con el breviario abierto como si leyera, alzaba<br class="lineBreak">
         la vista con disimulo por encima del libro para ver que<br class="lineBreak">
         bacian. Convencido de que se dirigian á él, le pasaron por la<br class="lineBreak"></p>
-        <div class="page"><div class="pageBreak">Page 7</div></div>
+        <div class="page"><div class="pageBreak">Pagina 7</div></div>
     </div>
 
 
@@ -1705,7 +1926,7 @@
       <span class="yellowadd" id="add6?-es"><a href="#add6?-it" class="corrisplink"><seg>(a6?)</seg></a><said>-- Ciertamente, </said></span><span class="redgap" id="#gap25-es"><a href="##gap25-it" class="corrisplink"><seg>(g25)</seg></a></span> -- respondió con voz trémula <span class="persName"><a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">D. Abundo</a></span><br class="lineBreak">
       <said>-- es decir, <span class="yellowadd" id="#add7?-es"><a href="##add7?-it" class="corrisplink"><seg>(a7?)</seg></a>que como no hay dificuldad ni impedimiento...</span><br class="lineBreak">
       Ustedes son personas que conoscen el mundo, y saben cómo</said><br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 8</div></div>
+      <div class="page"><div class="pageBreak">Pagina 8</div></div>
     </div>
 
 
@@ -1747,7 +1968,7 @@
       Eso le toca á usted. Sobre todo. chiton; y nadie tenga noticia<br class="lineBreak">
       de este aviso que damos por su bien. De lo contrário...<br class="lineBreak">
       ¿ Está usted? Hacer semejante casamiento seria lo mismo</said><br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 9</div></div>
+      <div class="page"><div class="pageBreak">Pagina 9</div></div>
     </div>
 
 
@@ -1771,7 +1992,7 @@
       no verlos, deseaba ahora prolongar la plática, y así cerrando<br class="lineBreak">
       el breviario con ambar anos. empezó diciendo: <said>Se<br class="lineBreak">
       ñores...</said> pero los <span class="persName"><a href="/Texts.html#characters" data-slide-id="bravi" class="person-link" style="color: darkblue;">bravos</a></span> sin darle oídos tomaron el camino<br class="lineBreak"></p>
-      <div class="page"><div class="pageBreak">Page 10</div></div>
+      <div class="page"><div class="pageBreak">Pagina 10</div></div>
     </div>
 
 
@@ -1813,7 +2034,7 @@
     Tales eran los asilos y privilegios de algunas clases de la<br class="lineBreak">
     sociedad, unos reconocidos por la misma fuerza legal, otros<br class="lineBreak">
     tolerados con culpable silencio, y otros disputados con vanas<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 11</div></div>
+    <div class="page"><div class="pageBreak">Pagina 11</div></div>
   </div>
 
 
@@ -1855,7 +2076,7 @@
   debido entrar en pugna, cuanto por la frequente probabi-<br class="lineBreak">
   lidad de que los abandonasen, y quizá los sacrificasen los<br class="lineBreak">
   mismos que en abstracto, ó digámos así, en teoria, les<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 12</div></div>
+  <div class="page"><div class="pageBreak">Pagina 12</div></div>
 </div>
 
 
@@ -1897,7 +2118,7 @@
   fácil que <span class="unclearword">pudiese</span> contrarestar asociacion alguna.<br class="lineBreak">
   Nuestro  <span class="persName"><a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">D. Abundo</a></span>, pues, no siendo ni noble, ni rico, ni<br class="lineBreak">
   valiente, conoció casi al salir de las mantillas, que se hallaba<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 13</div></div>
+  <div class="page"><div class="pageBreak">Pagina 13</div></div>
 </div>
 
 
@@ -1939,7 +2160,7 @@
     Esto no es decir que no tuviese tambien él  su poquito de<br class="lineBreak">
     hiel en el cuerpo; y la necesidad continua de agauntar, el dar<br class="lineBreak">
     siempre la razón á los demas, y las muchas pildoras amargas<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 14</div></div>
+  <div class="page"><div class="pageBreak">Pagina 14</div></div>
 </div>
 
 
@@ -1981,7 +2202,7 @@
     Dios! ¿qué pdré yo decirle? Sobre todo... ; él tambien tiene<br class="lineBreak">
     una cabecilla! ... muy buena si no le tocan; mas si le contra-<br class="lineBreak">
     dicen, á Dios, es una furia, y más ahora que está enamorada</said></span><br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 15</div></div>
+  <div class="page"><div class="pageBreak">Pagina 15</div></div>
 </div>
 
 
@@ -2023,7 +2244,7 @@
     <said>-- Voy, --</said> respondió <span class="persName"><a href="/Texts.html#characters" data-slide-id="perpetua" class="person-link" style="color: darkblue;">;Perpétua</a></span>, dejando en la mesa la bo-<br class="lineBreak">
     tella de vino pedilecto de <span class="persName"> <a href="/Texts.html#characters" data-slide-id="don-abbondio" class="person-link" style="color: darkblue;">D. Abundo</a></span>.<br class="lineBreak">
     Y echó á andar pausadamenre; pero aún no habia llegado<br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 16</div></div>
+  <div class="page"><div class="pageBreak">Pagina 16</div></div>
 </div>
 
 
@@ -2065,7 +2286,7 @@
     Advirtió <span class="persName"><a href="/Texts.html#characters" data-slide-id="perpetua" class="person-link" style="color: darkblue;">Perpétua</a></span> al momento que habia tocado mala tecla,<br class="lineBreak">
     y variando de registro:<br class="lineBreak">
     <said>-- Señor, --</said> dijo con voz enternecida y para enternecer, <said>--</said><br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 17</div></div>
+  <div class="page"><div class="pageBreak">Pagina 17</div></div>
 </div>
 
 
@@ -2107,13 +2328,13 @@
     <said>-- Pues qué, las balas se reparten así á dos por tres como<br class="lineBreak">
     los conflites? Dijo nos librara si esos perros mordiesen todas<br class="lineBreak">
     las veces que ladran! Yo siempre he visto que al que enseña</said><br class="lineBreak"></p>
-  <div class="page"><div class="pageBreak">Page 18</div></div>
+  <div class="page"><div class="pageBreak">Pagina 18</div></div>
 </div>
 
 
 
 <div>
-    <p><span class="mod" id="mod9-es"><a href="#mod9-it" class="corrisplink"><seg>(m9)</seg></a><said>los dientes todos le respetan, <span class="idiom" id="mod10-es"><a href="#mod10-it" class="corrisplink"><span class="tooltip" id="#Im1-es">(Im1)<span class="tooltiptext">Here the Perpetua’s folk wisdom finds new life in the Gallego's translation wrapped inside a spanish local saying (Pecchiari, 2014-2015, p. 34.):</span></span></a> dice bién el refran, que al que<br class="lineBreak">
+    <p><span class="mod" id="mod9-es"><a href="#mod9-it" class="corrisplink"><seg>(m9)</seg></a><said>los dientes todos le respetan, <span class="idiom" id="mod10-es"><a href="#mod10-it" class="corrisplink"><span class="tooltip" id="#Im1-es">(Im1)<span class="tooltiptext">Qui la saggezza popolare di Perpetua trova nuova vita nella traduzione di Gallego, racchiusa in un detto popolare spagnolo (Pecchiari, 2014-2015, p. 34).:</span></span></a> dice bién el refran, que al que<br class="lineBreak">
     se hace de miel las moscas se lo comen</span>. Justamente porque<br class="lineBreak">
     usted nunca sostiene su razon, todos vienen á... con perdon<br class="lineBreak">
     hablando...</said></span><br class="lineBreak">
@@ -2122,7 +2343,7 @@
     que uno siempre y en todos los lances se deja sopapear...</said><br class="lineBreak">
     <said>--¿ Qieres callar, repito? ¿ Estamos ahora para esas ba-<br class="lineBreak">
     dajadas?</said><br class="lineBreak">
-    <said>-- En fila, basta;<span class="idiom" id="mod11-es"><a href="#mod11-it" class="corrisplink"><span class="tooltip" id="Im-es">(Im2)<span class="tooltiptext">Here Gallego translates Perpetua’s 'pensare', as she advises the curate, by inserting a spanish local expression indicating the tendency of someone who does not make hasty decisions but reflects before acting. (Pecchiari, 2014-2015, pp. 33-34.):</span></span></a>consúltelo usted e la noche con la almo-</span></said><br class="lineBreak"></p>
+    <said>-- En fila, basta;<span class="idiom" id="mod11-es"><a href="#mod11-it" class="corrisplink"><span class="tooltip" id="Im-es">(Im2)<span class="tooltiptext">Qui Gallego traduce il “pensare” di Perpetua, mentre consiglia il curato, inserendo un’espressione popolare spagnola che indica la tendenza di una persona a non prendere decisioni affrettate, ma a riflettere prima di agire (Pecchiari, 2014-2015, pp. 33-34).</span></span></a>consúltelo usted e la noche con la almo-</span></said><br class="lineBreak"></p>
    
       <figure style="margin: 1em 0; "><img style="max-width: 100%; height: auto;" src="assets/img/losnoviosimgp19.png" alt="Legando á la puerta se paró un momento,"><figcaption style="font-size: 0.85em; color: #555; margin-top: 0.3em;"><figDesc>Legando á la puerta se paró un momento,<br class="lineBreak"></figDesc></figcaption></figure>
   
@@ -2137,7 +2358,7 @@
     <said>-- ¡ Ah! no, <span class="unclearword">basta</span>; otra cataplasma se necesita, otro con-<br class="lineBreak">
     fortante.</said><br class="lineBreak">
     Diciendo esto tomó la luz y prosiguió refunfuñando:<br class="lineBreak"></p>
-    <div class="page"><div class="pageBreak">Page 19</div></div>
+    <div class="page"><div class="pageBreak">Pagina 19</div></div>
 </div>
 
 
@@ -2151,7 +2372,7 @@
     bios, dijo con tono lento y muy recalcado:<br class="lineBreak">
     <said>-- ¡ <span class="persName"><a href="/Texts.html#characters" data-slide-id="perpetua" class="person-link" style="color: darkblue;">Perpétua</a></span>, por amore de Dios!</said><br class="lineBreak">
     Y se metió adentro.</p>
-    <div class="page"><div class="pageBreak">Page 20</div></div>
+    <div class="page"><div class="pageBreak">Pagina 20</div></div>
 </div>
 
 
@@ -2166,8 +2387,47 @@ document.getElementById("toggleESP").addEventListener("click", () => {
   box.style.display = box.style.display === "none" ? "block" : "none";
 });
   </script>
-    </body>
+ 
 </div>
 </div>
 </body>
 </html>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'it', // lingua originale
+    includedLanguages: 'en,fr,es,de,zh-CN,ja,ru,pt,ar', // lingue disponibili, con l'inglese per prima
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script>
+
+
+document.getElementById("languagepicker").addEventListener("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById("navpopup").classList.add("show");
+});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("navpopup");
+  const closeBtn = document.getElementById("closenavPopup");
+
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("show");
+  });
+
+  // opzionale: chiudere cliccando fuori dal popup
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.remove("show");
+    }
+  });
+});
+</script>
+

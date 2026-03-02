@@ -5,15 +5,16 @@
 
   .linked-list {
     --dot-size: 8px;
-    --dot-color: #731702;
-    --join-line-color: #731702;
+    --dot-color: dodgerblue;
+    --join-line-color: dodgerblue;
     
     position: relative;
-    display: grid;
+    display: flex;
     align-items: start; 
-    grid-template-columns: 1fr .15fr 1fr;
-    grid-template-areas: 'items links options';
+    
+
     width: min(100%, 800px);
+    gap: 60px; /* spazio tra colonne */
 
     &:first-child{
       grid-area: items;  
@@ -23,16 +24,33 @@
     }
   }
   
+
+
+#links {
+  position: absolute;
+  inset: 0;              /* 🔥 sostituisce top/left/width/height */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  outline: 2px solid red;
+}
+
+
     .list {
       margin: 0;
       padding: 0;
       list-style: none;
       display: grid;
       gap: .5rem;
+      position: relative;
+      z-index: 2 !important;
+      
       & > li{
         position: relative;
+        z-index: 50 !important;
         border: 1px solid var(--clr-lines);
-        display: flex;
+        
         align-items: center;  
         & > label{
           flex: 1;
@@ -64,18 +82,22 @@
       }
     }
  
+.linked-list svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
   
-  [id="links"] {
-    grid-area: links;
-    height: 100%;
-    pointer-events: none;
-  }
-  
-  path {
-    stroke: var(--join-line-color);
-    stroke-width: 1;
-    fill: none;
-  }
+  .linked-list svg path {
+  stroke-width: 2;
+  fill: none;
+}
+.linked-list svg circle {
+  fill: #000 !important;
+}
 
 
 }
@@ -91,7 +113,7 @@
 		--bg-dark: rgb(16, 24, 40);
 		--bg-light: rgb(248, 244, 238);
 		--txt-light: rgb(10, 10, 10);
-		--txt-dark: rgb(245, 245, 245);;
+		--txt-dark: rgb(245, 245, 245);
 		--line-light: rgba(0 0 0 / .25);
 		--line-dark: rgba(255 255 255 / .25);
     
@@ -100,26 +122,7 @@
     --clr-lines: light-dark(var(--line-light), var(--line-dark));
 	}
  
-	body {
-		background-color: var(--clr-bg);
-		color: var(--clr-txt);
-		min-height: 100svh;
-		margin: 0;
-		padding: 2rem;
-		font-size: 1rem;
-		line-height: 1.5;
-    display: grid;
-    place-content: center;
-    gap: 2rem;
-		& > * {
-			/*outline: 1px dashed red;*/
-		}
-	}
-	h1 {
-		margin: 0;
-		font-size: 1.2rem;
-	}
-
+	
 	.msg-supports {
 		font-size: 0.8rem;
 		/*
@@ -136,36 +139,63 @@
 	}
 }
 
-
-li.correct {
-  background-color: #d4edda;
-  border-left: 6px solid #28a745;
+/* PROMESSI - azzurro */
+.list.right input[type="radio"][value="promessi"] {
+  accent-color: #3498db !important;
 }
 
-li.wrong {
-  background-color: #f8d7da;
-  border-left: 6px solid #dc3545;
+/* NOVIOS - rosso */
+.list.right input[type="radio"][value="novios"] {
+  accent-color: #e74c3c !important;
 }
 
-.list.left li ,
-.list.right li {
-  border-radius: 30px;       /* arrotonda tutti i label */
-  padding: 0.75rem 1rem;     /* leggermente più spazio interno */
-  display: block;
-  border: 3px solid var(--clr-lines);
+/* Nascondiamo il radio originale */
+input[type="radio"].rb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
-.list.left li > label {
-  display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  box-sizing: border-box;
-
+/* pallino interno */
+input[type="radio"].rb::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease;
 }
-.list.right li > label {
-  display: block;
-  padding: 0.5rem 1rem;
-  box-sizing: border-box;
+
+/* quando selezionato */
+input[type="radio"].rb:checked::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
+/* 🔵 PROMESSI */
+input[type="radio"].rb[value="promessi"] {
+  border-color: #3498db;
+}
 
+input[type="radio"].rb[value="promessi"]:checked::before {
+  background-color: #3498db;
+}
+
+/* 🔴 NOVIOS */
+input[type="radio"].rb[value="novios"] {
+  border-color: #c0392b;
+}
+
+input[type="radio"].rb[value="novios"]:checked::before {
+  background-color: #c0392b;
+}

@@ -275,5 +275,3 @@ document.getElementById("fullscreenBtnln").addEventListener("click", function ()
 
 //text comparison section
 
-
-

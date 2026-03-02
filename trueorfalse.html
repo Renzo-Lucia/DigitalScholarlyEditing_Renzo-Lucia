@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Writers</title>
+  <title>Renzo & Lucia -  Vero o Falso?</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Content Type Meta tag -->
@@ -48,7 +48,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
 
 <!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	
 
 </head>
 
@@ -58,30 +58,27 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/trueorfalse.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Vero o falso</h1>
+      <h1 class="sitename">Vero o Falso?</h1>
     </a>
 <br>
 <br>
 
     <nav id="navmenu" class="navmenu">
-       <ul>
+      <ul>
         <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="Texts.html"><i class="bi bi-journals navicon"></i> <span>Testi e contesti</span></a>
+        <li><a href="howitworks.html"><i class="bi bi-patch-question navicon"></i>Come funziona</a></li>
+        <li><a href="Texts.html"><i class="bi bi-journals navicon"></i> <span>Testi e contesti</span></a></li>
         <li><a href="txtinitialcomparison.html"><i class="bi bi-search-heart navicon"></i>Confronto tra i testi</a></li>
-        <li><a href="writers.html"><i class="bi bi-pencil navicon"></i> <span>Autori</span></a>
-         <li class="dropdown"><a href="exercises.html"><i class="bi bi-toggles navicon"></i> <span>Esercizi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Vero o falso?</a></li>
-            <li><a href="draganddrop.html">Drag and Drop</a></li>
-          </ul>
-        </li>
-      </ul>
+        <li><a href="writers.html"><i class="bi bi-pencil navicon"></i> <span>Autori</span></i></a></li>
+        <li><a href="exercises.html" class="active"><i class="bi bi-toggles navicon"></i> <span>Esercizi</span></a></li>
+        
+        <li><a href="references.html"><i class="bi bi-link navicon"></i> <span>Documentazione</span></a><li></li>
     </nav>
 
   </header>
@@ -94,25 +91,40 @@
       <img src="assets/img/manoscritti.jpg" alt="manoscritti" class="tstart-bg" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>True or False?</h2>
+        <h2>Vero o falso?</h2>
         <p><span class="typed" data-typed-items="Leggi le domande e rispondi vero o falso"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
 
-    <!-- Writers Section -->
-    <section>
+    <section class="quizpres">
+        <div id="languagepicker" class="languagepicker">
+        <img id="popupIcon" src="assets/img/grigiopastello-removebg-preview.png" alt="world" height="25px" style="cursor:pointer;">
+      </div>
 
-  
-        
-      
+					<!-- Popup -->
+					<div id="navpopup" class="navpopup">
+						<div class="navpopup-content">
+							<span id="closenavPopup" class="close">&times;</span>
+							<p>
+								<strong>Scegli la lingua</strong><br>
+								Questo sito web è disponibile in molte lingue oltre all’italiano.
+								Scegli qui la lingua che preferisci utilizzare per navigare i contenuti
+								e svolgere gli esercizi nel modo più comodo e semplice per te.
+							</p>
+							<div id="google_translate_element"></div>
+						</div>
+					</div>		
 
-<header>
-    <p>Read the questions carefully and answer the true/false quiz.</p>
-<h1> Quiz Game </h1>
+				</div>
 
-<button onclick="catAndQuest()" id="start"> START </button>
-</header>
+        <h2>Quiz</h2>
+         <p >Leggi attentamente le domande e rispondi al quiz Vero o Falso. <br>
+            Ricorda, vinci solamente se rispondi correttamente alla metà delle domande. Buona fortuna!!</p>
+        <button onclick="catAndQuest()" id="start">INIZIA</button>
+    </section>
+   
+
 
 
 <div class="container">
@@ -120,13 +132,18 @@
 	<div id="count"></div>
 	<div id="category"></span> </div>
 	<div id="quest"> </div>
-	<button onclick="answer(true)" style="display:none;" id="answerT" style="padding: 20px;"> TRUE</button>
-	<button onclick="answer(false)" style="display:none;" id="answerF" style="padding: 20px;"> FALSE</button>
+	<button onclick="answer(true)" style="display:none;" id="answerT" style="padding: 20px;"> VERO</button>
+	<button onclick="answer(false)" style="display:none;" id="answerF" style="padding: 20px;"> FALSO</button>
   <div id="points"></div>
 </div>
-<div id="winner" style="display:none;">YOU WIN! <br>Congrats, excellent work!</div>
-<div id="looser" style="display:none;">What a pity, there are no more questions.<br> You lose!</div>
-<button onclick="restart()" style="display:none;" id="reset"> PLAY AGAIN? </button>
+<div id="winner" style="display:none;">
+    HAI VINTO! <br>Complimenti, ottimo lavoro!
+  </div>
+
+  <div id="looser" style="display:none;">
+    Peccato, non ci sono più domande.<br> Hai perso!
+  </div>
+<button onclick="restart()" style="display:none;" id="reset"> VUOI GIOCARE ANCORA? </button>
 </div>
 </div>
 
@@ -135,23 +152,34 @@
     </section>
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+   <footer id="footer" class="footer position-relative light-background">
+  <div class="footercontainer container d-flex flex-wrap justify-content-between py-4">
+    
+    <!-- Colonna sinistra -->
+    <div class="footer-left col-12 col-lg-3">
+      <p><i>Renzo & Lucia</i> è un progetto con finalità didattica realizzato per il liceo linguistico N. Copernico di Bologna, con l’obiettivo di esplorare <strong><i>I promessi sposi</i></strong> di Manzoni e la sua traduzione spagnola <strong><i>Los Novios</i></strong>.</p>
+      <p>Creato da <strong>Alice Piazzi</strong> per uso didattico e studio in classe.</p>
+    </div>
 
-   <div class="footercontainer">
-      <div class="copyright text-center ">
-        <p><i>Renzo & Lucia</i> is the final project developed for the "Digital scholarly editing: theory, methods and practice" course (a.a. 2024/2025) within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna.</p> <br>
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Renzo & Lucia</strong> <span>All Rights Reserved</span></p>
-      </div>
+    <!-- Colonna destra -->
+    <div class="footer-right col-12 col-lg-9">
+      <p><i class="fa-brands fa-github fa-beat-fade"></i> Esplora il <a href="https://github.com/manzoni-storytelling/Manzoni_Storytelling" target="_blank">repository del progetto</a> per approfondire. Dai un’occhiata al <a href="https://github.com/alicepiazzi" target="_blank">mio profilo GitHub</a> per scoprire altri progetti che ho realizzato.</p>
+      <p><i class="fa-solid fa-envelope fa-shake"></i> Vuoi far parte di qualcosa di entusiasmante e aiutare a far crescere questo progetto? Mandami una e-mail qui: <a href="mailto:alicep2401@gmail.com">alicep2401@gmail.com</a></p>
+      <p><i class="fa-brands fa-linkedin fa-bounce"></i> Contattami su <a href="https://www.linkedin.com/in/alice-piazzi-4a6687259/" target="_blank">LinkedIn</a>!</p>
+      <p><i class="fa-brands fa-instagram fa-bounce"></i> Dai un’occhiata al <a href="https://www.instagram.com/alice.piazzii/">mio Instagram</a> per conoscermi meglio!</p>
+      <p><i class="fa-solid fa-graduation-cap fa-shake"></i> Scopri tutto ciò che <a href="https://www.unibo.it/it">Alma Mater Studiorum – Università di Bologna</a> ha da offrire. Attualmente sto frequentando il secondo anno del <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Corso di Laurea Magistrale in Digital Humanities e Conoscenza Digitale</a>.</p>
+    </div>
+
+    <!-- Copyright e credits sotto -->
+    <div class="w-100 mt-3 credits" style="justify-content:center;">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Renzo & Lucia</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
-  </footer>
+  </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -173,9 +201,47 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="resources/js/main.js"></script>
   <script src="assets/js/trueorfalse.js"></script>
 
 </body>
 
 </html>
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'it', // lingua originale
+    includedLanguages: 'en,fr,es,de,zh-CN,ja,ru,pt,ar', // lingue disponibili, con l'inglese per prima
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script>
+
+
+document.getElementById("languagepicker").addEventListener("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById("navpopup").classList.add("show");
+});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("navpopup");
+  const closeBtn = document.getElementById("closenavPopup");
+
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("show");
+  });
+
+  // opzionale: chiudere cliccando fuori dal popup
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.remove("show");
+    }
+  });
+});
+</script>

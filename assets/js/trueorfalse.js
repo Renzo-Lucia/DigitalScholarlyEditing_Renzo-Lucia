@@ -1,64 +1,61 @@
 
-var currentCategory= ['General','History', 'Spanish_reception', 'El_Europeo', 'Spanish_translations','Los_novios', 'Differences','writers'];
+var currentCategory= ['Generale','Storia', 'Ricezione_spagnola', 'El_Europeo', 'Traduzioni_spagnole','Los_novios', 'Differenze','Autori'];
 var Questions= [
-	// store answer with questions for easier retrieval
-	{ category: 'General', question : 'I promessi sposi is a historical novel written by Alessandro Manzoni.', answer: true },
-	{ category: 'General', question: 'The novel is set in the Duchy of Milan during Spanish rule in the 17th century.', answer: true },
-	{ category: 'General', question: 'Renzo and Lucia are able to get married immediately without any obstacles.', answer: false },
-	{ category: 'General', question: 'The plague of 1630 is a central element of the novel and is described in a realistic and dramatic way.', answer: true },
-	{ category: 'General', question: 'Don Abbondio represents a model of courage and strong moral integrity.', answer: false },
-	{ category: 'General', question: 'Manzoni explores themes such as the injustice of legal systems and the illusory nature of political power.', answer: true },
-	
-    { category: 'History', question: 'I promessi sposi was first published in a single definitive edition in 1827.', answer: false },
-    { category: 'History', question: 'The final version of the novel was published between 1840 and 1842.', answer: true },
-    { category: 'History', question: 'From its first publication, the novel enjoyed wide international circulation.', answer: true },
-    { category: 'History', question: 'The earliest foreign editions were always faithful to Manzoni’s original text.', answer: false },
-    { category: 'History', question: 'Manzoni suffered from pirated editions and unreliable translations.', answer: true },
+	// salva le domande con le risposte per un recupero più facile
+{ category: 'Generale', question : '<em>I promessi sposi</em> è un romanzo storico scritto da Alessandro Manzoni.', answer: true },
+{ category: 'Generale', question: 'Il romanzo è ambientato nel Ducato di Milano sotto il dominio spagnolo nel XVII secolo.', answer: true },
+{ category: 'Generale', question: 'Renzo e Lucia riescono a sposarsi subito senza alcun ostacolo.', answer: false },
+{ category: 'Generale', question: 'La peste del 1630 è un elemento centrale del romanzo e viene descritta in modo realistico e drammatico.', answer: true },
+{ category: 'Generale', question: 'Don Abbondio rappresenta un modello di coraggio e integrità morale.', answer: false },
+{ category: 'Generale', question: 'Manzoni esplora temi come l’ingiustizia dei sistemi legali e l’illusorietà del potere politico.', answer: true },
 
-	{category: 'Spanish_reception', question: 'Catalonia provided a culturally receptive environment for I promessi sposi.', answer: true }, 
-    {category: 'Spanish_reception', question: 'Bonaventura Carles Aribau played an important role in the Spanish reception of Manzoni’s novel.', answer: true }, 
-    {category: 'Spanish_reception', question: 'Aribau read I promessi sposi only after the first Castilian translation was published.', answer: false }, 
-    {category: 'Spanish_reception', question: 'Oda a la patria by Aribau contains explicit echoes of Manzoni’s “Addio, monti”.', answer: true }, 
-    {category: 'Spanish_reception', question: 'Italian political exiles contributed to the spread of Romantic ideas in Catalonia.', answer: true }, 
-    {category: 'Spanish_reception', question: 'The journal El Europeo played only a marginal role in Catalan Romanticism.', answer: false }, 
+{ category: 'Storia', question: '<em>I promessi sposi</em> fu pubblicato per la prima volta in un’edizione definitiva unica nel 1827.', answer: false },
+{ category: 'Storia', question: 'La versione finale del romanzo fu pubblicata tra il 1840 e il 1842.', answer: true },
+{ category: 'Storia', question: 'Fin dalla prima pubblicazione, il romanzo ebbe ampia circolazione internazionale.', answer: true },
+{ category: 'Storia', question: 'Le prime edizioni straniere furono sempre fedeli al testo originale di Manzoni.', answer: false },
+{ category: 'Storia', question: 'Manzoni dovette affrontare edizioni pirata e traduzioni poco affidabili.', answer: true },
 
-	{category: 'El_Europeo', question: 'El Europeo was published between 1823 and 1824.', answer: true }, 
-    {category: 'El_Europeo', question: 'Luigi Monteggia wrote the article Romanticismo for El Europeo.', answer: true }, 
-    {category: 'El_Europeo', question: 'In Romanticismo, Manzoni is presented alongside figures such as Byron and Schlegel.', answer: true }, 
-    {category: 'El_Europeo', question: 'Il Conte di Carmagnola is mentioned as an example of modern Romantic drama.', answer: true }, 
-    {category: 'El_Europeo', question: 'Monteggia’s aim was to isolate Manzoni from the broader European literary context.', answer: false }, 
+{ category: 'Ricezione_spagnola', question: 'La Catalogna offriva un contesto culturalmente ricettivo per <em>I promessi sposi</em>.', answer: true }, 
+{ category: 'Ricezione_spagnola', question: 'Bonaventura Carles Aribau svolse un ruolo importante nella ricezione spagnola del romanzo di Manzoni.', answer: true }, 
+{ category: 'Ricezione_spagnola', question: 'Aribau lesse <em>I promessi sposi</em> solo dopo la pubblicazione della prima traduzione in castigliano.', answer: false }, 
+{ category: 'Ricezione_spagnola', question: '<em>Oda la Pàtria</em> di Aribau contiene echi espliciti del <em>“Addio, monti”</em> di Manzoni.', answer: true }, 
+{ category: 'Ricezione_spagnola', question: 'Gli esuli politici italiani contribuirono alla diffusione delle idee romantiche in Catalogna.', answer: true }, 
+{ category: 'Ricezione_spagnola', question: 'Il giornale <em>El Europeo</em> ebbe solo un ruolo marginale nel Romanticismo catalano.', answer: false }, 
 
+{ category: 'El_Europeo', question: '<em>El Europeo</em> fu pubblicato tra il 1823 e il 1824.', answer: true }, 
+{ category: 'El_Europeo', question: 'Luigi Monteggia scrisse l’articolo per <em>El Europeo</em>.', answer: true }, 
+{ category: 'El_Europeo', question: 'Durante il Romanticismo, Manzoni viene presentato insieme a figure come Byron e Schlegel.', answer: true }, 
+{ category: 'El_Europeo', question: '<em>Il Conte di Carmagnola</em> è citato come esempio di dramma romantico moderno.', answer: true }, 
+{ category: 'El_Europeo', question: 'L’obiettivo di Monteggia era isolare Manzoni dal contesto letterario europeo più ampio.', answer: false }, 
 
-	{category: 'spanish_translations', question: 'The first Castilian translation of the novel was Los novios by Juan Nicasio Gallego.', answer: false },
-    {category: 'spanish_translations', question: 'Lorenzo o Los prometidos esposos by Félix Enciso Castrillón was published in 1833.', answer: true },
-    {category: 'spanish_translations', question: 'Castrillón admitted to removing passages critical of Spain because of censorship.', answer: true },
-    {category: 'spanish_translations', question: 'Spanish translations were influenced by ideological and religious concerns.', answer: true },
-    {category: 'spanish_translations', question: 'Censorship mainly targeted positive representations of the clergy.', answer: false },
+{ category: 'Traduzioni_spagnole', question: 'La prima traduzione castigliana del romanzo fu <em>Los novios</em> di Juan Nicasio Gallego.', answer: false },
+{ category: 'Traduzioni_spagnole', question: '<em>Lorenzo</em> o <em>Los prometidos</em> esposos di Félix Enciso Castrillón fu pubblicato nel 1833.', answer: true },
+{ category: 'Traduzioni_spagnole', question: 'Castrillón ammise di aver rimosso passaggi critici verso la Spagna per motivi di censura.', answer: true },
+{ category: 'Traduzioni_spagnole', question: 'Le traduzioni spagnole furono influenzate da motivi ideologici e religiosi.', answer: true },
+{ category: 'Traduzioni_spagnole', question: 'La censura mirava soprattutto alle rappresentazioni positive del clero.', answer: false },
 
-    { category: 'Los_novios', question : 'Los novios was published in 1836.', answer: true },
-    { category: 'Los_novios', question : 'Juan Nicasio Gallego was a liberal priest and canon of Seville.', answer: true },
-    { category: 'Los_novios', question : 'Los novios had little editorial success in Spain.', answer: false },
-    { category: 'Los_novios', question : 'Gallego added proverbs and idiomatic expressions to adapt the text to Spanish readers.', answer: true },
-    { category: 'Los_novios', question : 'Gallego fully preserved Manzoni’s authorial notes and metafictional passages.', answer: false },
-    { category: 'Los_novios', question : 'Some translation choices significantly altered the meaning of key passages.', answer: true },
+{ category: 'Los_novios', question : '<em>Los novios</em> fu pubblicato nel 1836.', answer: true },
+{ category: 'Los_novios', question : 'Juan Nicasio Gallego era un sacerdote liberale e canonico di Siviglia.', answer: true },
+{ category: 'Los_novios', question : '<em>Los novios</em> ebbe poco successo editoriale in Spagna.', answer: false },
+{ category: 'Los_novios', question : 'Gallego aggiunse proverbi ed espressioni idiomatiche per adattare il testo ai lettori spagnoli.', answer: true },
+{ category: 'Los_novios', question : 'Gallego preservò integralmente le note dell’autore e i passaggi metanarrativi di Manzoni.', answer: false },
+{ category: 'Los_novios', question : 'Alcune scelte di traduzione modificarono in modo significativo il significato di passaggi chiave.', answer: true },
         
-    { category: 'Differences', question: 'Manzoni aimed to combine literary language with spoken Italian.', answer: true },
-    { category: 'Differences', question: 'Gallego used a more elevated and solemn style.', answer: true },
-    { category: 'Differences', question: 'Irony is more prominent in Los novios than in I promessi sposi.', answer: false },
-    { category: 'Differences', question: 'Gallego’s translation can be considered a form of cultural adaptation.', answer: true },
-    { category: 'Differences', question: 'The differences between the two texts show that translation is a neutral and purely linguistic act.', answer: false },
+{ category: 'Differenze', question: 'Manzoni mirava a combinare il linguaggio letterario con l’italiano parlato.', answer: true },
+{ category: 'Differenze', question: 'Gallego utilizzò uno stile più elevato e solenne.', answer: true },
+{ category: 'Differenze', question: 'L’ironia è più evidente in <em>Los novios</em> che in <em>I promessi sposi</em>.', answer: false },
+{ category: 'Differenze', question: 'La traduzione di Gallego può essere considerata una forma di adattamento culturale.', answer: true },
+{ category: 'Differenze', question: 'Le differenze tra i due testi mostrano che la traduzione è un atto neutro e puramente linguistico.', answer: false },
 	
-    { category: 'Writers', question: 'Alessandro Manzoni wrote I promessi sposi as a symbol of the Italian Risorgimento and for its role in shaping modern Italian.', answer: true },
-    { category: 'Writers', question: 'The definitive edition of I promessi sposi adopted the Florentine dialect to unify the Italian language.', answer: true },
-    { category: 'Writers', question: 'Manzoni’s first version of the novel, Fermo e Lucia, was published after 1830.', answer: false },
-    { category: 'Writers', question: 'Manzoni never revised the language of I promessi sposi after the first publication in 1827.', answer: false },
+{ category: 'Autori', question: 'Alessandro Manzoni scrisse <em>I promessi sposi</em> come simbolo del Risorgimento italiano e per il suo ruolo nella formazione dell’italiano moderno.', answer: true },
+{ category: 'Autori', question: 'L’edizione definitiva di <em>I promessi sposi</em> adottò il dialetto fiorentino per unificare la lingua italiana.', answer: true },
+{ category: 'Autori', question: 'La prima versione del romanzo di Manzoni, <em>Fermo e Lucia</em>, fu pubblicata dopo il 1830.', answer: false },
+{ category: 'Autori', question: 'Manzoni non revisionò mai la lingua de <em>I promessi sposi</em> dopo la prima pubblicazione del 1827.', answer: false },
 
-    { category: 'Writers', question: 'MaJuan Nicasio Gallego was a Spanish liberal priest who translated I promessi sposi into Spanish.', answer: true },
-    { category: 'Writers', question: 'Gallego admired I promessi sposi for its religious and civic themes, aligning with his worldview.', answer: true },
-    { category: 'Writers', question: 'Gallego never held any official ecclesiastical or literary position in Spain.', answer: true },
-    { category: 'Writers', question: 'He was imprisoned and exiled due to his liberal ideas during the reign of Ferdinand VII.', answer: true },
-    
-    
+{ category: 'Autori', question: 'Juan Nicasio Gallego era un sacerdote liberale spagnolo che tradusse <em>I promessi sposi</em> in spagnolo.', answer: true },
+{ category: 'Autori', question: 'Gallego ammirava <em>I promessi sposi</em> per i suoi temi religiosi e civici, in linea con la sua visione del mondo.', answer: true },
+{ category: 'Autori', question: 'Gallego non ricoprì mai alcuna posizione ecclesiastica o letteraria ufficiale in Spagna.', answer: false },
+{ category: 'Autori', question: 'Fu imprigionato ed esiliato a causa delle sue idee liberali durante il regno di Ferdinando VII.', answer: true },
 
     
 
@@ -146,8 +143,8 @@ function catAndQuest() {
     start.style.display = 'none';
     showButtons();
 
-    document.getElementById('points').innerHTML= 'Points: ' + points;
-    document.getElementById('count').innerHTML= 'Question ' + (count + 1) + ' / 20';
+    document.getElementById('points').innerHTML= 'Punti: ' + points;
+    document.getElementById('count').innerHTML= 'Domanda ' + (count + 1) + ' / 20';
 
     // scegli una domanda casuale dall'array rimanente
     var index = Math.floor(Math.random() * Questions.length);

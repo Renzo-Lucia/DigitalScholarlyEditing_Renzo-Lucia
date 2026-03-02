@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Writers</title>
+  <title>Renzo & Lucia -  Autori</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -55,18 +55,14 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#" class="active"><i class="bi bi-pencil navicon"></i>Autori</a></li>
-        <li><a href="#am" class="active"><i class="bi bi-person navicon"></i>Alessandro Manzoni</a></li>
-        <li><a href="#jng" class="active"><i class="bi bi-person-fill navicon"></i>Juan Nicasio Gallego</a></li>
-        <li class="dropdown"><a href="references.html"><i class="bi bi-link navicon"></i> <span>Documentazione</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="references.html">Bibliografia primaria</a></li>
-            <li><a href="references.html">Bibliografia secondaria</a></li>
-            <li><a href="references.html">Strumenti utilizzati</a></li>
-          </ul>
-        </li>
-      </ul>
+        <li><a href="index.html" ><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="howitworks.html"><i class="bi bi-patch-question navicon"></i>Come funziona</a></li>
+        <li><a href="Texts.html"><i class="bi bi-journals navicon"></i> <span>Testi e contesti</span></a></li>
+        <li><a href="txtinitialcomparison.html"><i class="bi bi-search-heart navicon"></i>Confronto tra i testi</a></li>
+        <li><a href="#" class="active"><i class="bi bi-pencil navicon"></i> <span>Autori</span></i></a></li>
+        <li><a href="exercises.html"><i class="bi bi-toggles navicon"></i> <span>Esercizi</span></a></li>
+        
+        <li><a href="references.html"><i class="bi bi-link navicon"></i> <span>Documentazione</span></a><li></li>
     </nav>
 
   </header>
@@ -87,6 +83,25 @@
 
     <!-- Writers Section -->
     <section id="am" class="about section">
+      <div id="languagepicker" class="languagepicker">
+        <img id="popupIcon" src="assets/img/grigiopastello-removebg-preview.png" alt="world" height="25px" style="cursor:pointer;">
+      </div>
+
+					<!-- Popup -->
+					<div id="navpopup" class="navpopup">
+						<div class="navpopup-content">
+							<span id="closenavPopup" class="close">&times;</span>
+							<p>
+								<strong>Scegli la lingua</strong><br>
+								Questo sito web è disponibile in molte lingue oltre all’italiano.
+								Scegli qui la lingua che preferisci utilizzare per navigare i contenuti
+								e svolgere gli esercizi nel modo più comodo e semplice per te.
+							</p>
+							<div id="google_translate_element"></div>
+						</div>
+					</div>		
+
+				</div>
 
     <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -95,15 +110,15 @@
 
         <div class="card mb-3" style="max-width: 1080px;">
             <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="assets/img/manzoni.png" class="img-fluid rounded" alt="...">
+                <div class="col-md-4" style="background-color: var( --background-color);">
+                    <img src="assets/img/manzoni.png" class="img-fluid rounded" alt="Alessandro Manzoni image">
                 </div>
-                <div class="col-md-8"style="background-color: var( --background-color);">
+                <div class="col-md-8" style="background-color: var( --background-color);">
                     <div class="card-body" style="background-color: var( --background-color);">
-                        <h3 class="card-title">Who was Alessandro Manzoni?</h3><br>
-                            <p>Alessandro Manzoni was an Italian poet, novelist, and philosopher. He is best known for his novel <em>I promessi sposi</em> (<em>The Betrothed</em>), considered one of the masterpieces of world literature and a symbol of the Italian <em>Risorgimento</em>, both for its patriotic message and for its crucial role in shaping the modern, unified Italian language.</p>
-                            <p><em>I promessi sposi</em> is an Italian historical novel, first published in 1827 in three volumes, and later extensively revised until the definitive edition, published between 1840 and 1842. It remains one of the most famous and widely read novels in the Italian language.</p>
-                            <p>Actually, Manzoni wrote the first version, <em>Fermo e Lucia</em>, between 1821 and 1823. He then revised it deeply, completing his work in 1825, and after two years of corrections and proofreading, it was published in 1827. In the early 19th century, Manzoni once again revised the novel’s language for the 1842 edition, eliminating many Lombard regionalisms and adopting the Florentine dialect, which he considered the best model for a national literary Italian.</p>
+                        <h3 class="card-title">Chi era Alessandro Manzoni?</h3><br>
+                            <p>Alessandro Manzoni è stato un poeta, romanziere e filosofo italiano. È famoso soprattutto per il suo romanzo <em>I promessi sposi</em>, considerato uno dei capolavori della letteratura mondiale e un simbolo del <em>Risorgimento italiano</em>, sia per il suo messaggio patriottico, sia per il ruolo fondamentale che ha avuto nel definire la lingua italiana moderna e unitaria.</p>
+                            <p><em>I promessi sposi</em> è un romanzo storico italiano, pubblicato per la prima volta nel 1827 in tre volumi, e poi profondamente rivisto fino alla versione definitiva, uscita tra il 1840 e il 1842. Rimane uno dei romanzi più letti e conosciuti della letteratura italiana..</p>
+                            <p>In realtà, Manzoni scrisse una prima versione, intitolata <em>Fermo e Lucia</em>tra il 1821 e il 1823. Successivamente la revisionò a fondo, completando il lavoro nel 1825; dopo due anni di correzioni e riletture, il romanzo fu pubblicato nel 1827. Nei primi decenni dell’Ottocento, Manzoni modificò ancora la lingua per l’edizione del 1842, eliminando molti regionalismi lombardi e adottando il dialetto fiorentino, che considerava il modello migliore per un italiano letterario nazionale.</p>
         
                     </div>
                 </div>
@@ -119,16 +134,16 @@
 
         <div class="card mb-3" style="max-width: 1080px;">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-md-4" style="background-color: var( --background-color);">
                     <img src="assets/img/gallego.png" class="img-fluid rounded" alt="Juan Nicasio Gallego image">
                 </div>
                 <div class="col-md-8"style="background-color: var( --background-color);">
                     <div class="card-body" style="background-color: var( --background-color);">
-                        <h3 class="card-title">Who was Juan Nicasio Gallego?</h3><br>
-                            <p>Juan Nicasio Gallego was a prominent Spanish priest, intellectual, poet, and public figure with liberal Catholic ideals. He was well connected to Spain’s literary and religious circles and was widely recognized for his rhetorical style and moral seriousness.<br>
-                               He became a priest in 1804, then a royal chaplain in Madrid in 1805 and served as spiritual director of the Royal Palace pages. During the time he spent in Madrid, he came into contact with pre-Romantic intellectuals and began publishing poetry in the <em>Memorial Literario</em>. During the uprising of May 1808, he wrote <em>Influencia del entusiasmo público en las artes</em>.</p>
-                            <p>He later moved to Seville and then to Cádiz, where he became a constituent deputy for Zamora and worked at the Cortes of Cádiz, contributing to the press freedom law. Persecuted by Ferdinand VII for his liberal ideas, he was imprisoned and later exiled for four years. Once freed in 1820, he held various ecclesiastical and literary positions.</p>
-                            <p>Gallego deeply admired <i>I Promessi Sposi</i> and considered it as both a religious and civic model, aligning with his worldview. He translated Manzoni's <em>The Betrothed</em> into Spanish and was a member of the Royal Spanish Academy.</p>
+                        <h3 class="card-title">Chi era Juan Nicasio Gallego?</h3><br>
+                            <p>Juan Nicasio Gallego è stato un importante sacerdote, intellettuale, poeta e figura pubblica spagnola, con ideali liberali e cattolici. Era molto inserito nei circoli letterari e religiosi della Spagna ed era noto per il suo stile retorico e la sua serietà morale.<br>
+                               Diventò sacerdote nel 1804, poi cappellano reale a Madrid nel 1805, e fu anche direttore spirituale dei paggi del Palazzo Reale. Durante il suo periodo a Madrid, entrò in contatto con intellettuali pre-romantici e iniziò a pubblicare poesie sulla rivista<em>Memorial Literario</em>. Durante l’insurrezione di maggio del 1808 scrisse <em>Influencia del entusiasmo público en las artes</em>.</p>
+                            <p>Successivamente si trasferì a Siviglia e poi a Cadice, dove fu deputato costituente per Zamora e lavorò alle Corti di Cadice, contribuendo alla legge sulla libertà di stampa. Per le sue idee liberali fu perseguitato da Ferdinando VII, imprigionato e poi esiliato per quattro anni. Liberato nel 1820, ricoprì diversi incarichi ecclesiastici e letterari.</p>
+                            <p>Gallego ammirava profondamente <i>I Promessi Sposi</i> e lo considerava un modello sia religioso sia civico, in linea con la sua visione del mondo. Tradusse il romanzo di Manzoni in spagnolo con il titolo <em>Los novios</em> e fu membro della Reale Accademia Spagnola.</p>
                     </div>
                 </div>
             </div>
@@ -137,22 +152,33 @@
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
+  <div class="footercontainer container d-flex flex-wrap justify-content-between py-4">
+    
+    <!-- Colonna sinistra -->
+    <div class="footer-left col-12 col-lg-3">
+      <p><i>Renzo & Lucia</i> è un progetto con finalità didattica realizzato per il liceo linguistico N. Copernico di Bologna, con l’obiettivo di esplorare <strong><i>I promessi sposi</i></strong> di Manzoni e la sua traduzione spagnola <strong><i>Los Novios</i></strong>.</p>
+      <p>Creato da <strong>Alice Piazzi</strong> per uso didattico e studio in classe.</p>
+    </div>
 
-   <div class="footercontainer">
-      <div class="copyright text-center ">
-        <p><i>Renzo & Lucia</i> is the final project developed for the "Digital scholarly editing: theory, methods and practice" course (a.a. 2024/2025) within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna.</p> <br>
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Renzo & Lucia</strong> <span>All Rights Reserved</span></p>
-      </div>
+    <!-- Colonna destra -->
+    <div class="footer-right col-12 col-lg-9">
+      <p><i class="fa-brands fa-github fa-beat-fade"></i> Esplora il <a href="https://github.com/manzoni-storytelling/Manzoni_Storytelling" target="_blank">repository del progetto</a> per approfondire. Dai un’occhiata al <a href="https://github.com/alicepiazzi" target="_blank">mio profilo GitHub</a> per scoprire altri progetti che ho realizzato.</p>
+      <p><i class="fa-solid fa-envelope fa-shake"></i> Vuoi far parte di qualcosa di entusiasmante e aiutare a far crescere questo progetto? Mandami una e-mail qui: <a href="mailto:alicep2401@gmail.com">alicep2401@gmail.com</a></p>
+      <p><i class="fa-brands fa-linkedin fa-bounce"></i> Contattami su <a href="https://www.linkedin.com/in/alice-piazzi-4a6687259/" target="_blank">LinkedIn</a>!</p>
+      <p><i class="fa-brands fa-instagram fa-bounce"></i> Dai un’occhiata al <a href="https://www.instagram.com/alice.piazzii/">mio Instagram</a> per conoscermi meglio!</p>
+      <p><i class="fa-solid fa-graduation-cap fa-shake"></i> Scopri tutto ciò che <a href="https://www.unibo.it/it">Alma Mater Studiorum – Università di Bologna</a> ha da offrire. Attualmente sto frequentando il secondo anno del <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Corso di Laurea Magistrale in Digital Humanities e Conoscenza Digitale</a>.</p>
+    </div>
+
+    <!-- Copyright e credits sotto -->
+    <div class="w-100 mt-3 credits" style="justify-content:center;">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Renzo & Lucia</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
-  </footer>
+  </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -178,3 +204,41 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'it', // lingua originale
+    includedLanguages: 'en,fr,es,de,zh-CN,ja,ru,pt,ar', // lingue disponibili, con l'inglese per prima
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script>
+
+
+document.getElementById("languagepicker").addEventListener("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById("navpopup").classList.add("show");
+});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("navpopup");
+  const closeBtn = document.getElementById("closenavPopup");
+
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("show");
+  });
+
+  // opzionale: chiudere cliccando fuori dal popup
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.remove("show");
+    }
+  });
+});
+</script>

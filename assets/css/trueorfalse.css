@@ -83,7 +83,6 @@ header {
 	text-align: center;
 	font-size: 18px;
 	letter-spacing: 0px;
-	margin-top: 70px;
 	padding-bottom: 10px;
 }
 
@@ -238,4 +237,9 @@ header {
 	margin-left: 40%;
 	margin-top:5%;
     
+}
+
+
+.quizpres {
+    margin: 20px;
 }

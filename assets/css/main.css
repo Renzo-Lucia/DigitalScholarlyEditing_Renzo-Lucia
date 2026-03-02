@@ -60,6 +60,10 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -231,13 +235,13 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 43px;
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 60px;
+  right: 13px;
   z-index: 9999;
   transition: background-color 0.3s;
 }
@@ -311,12 +315,14 @@ h6 {
 .navmenu .active,
 .navmenu .active:focus {
   color: var(--nav-hover-color);
+  font-weight: bold;
 }
 
 .navmenu a:hover .navicon,
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
   color: var(--accent-color);
+  font-weight: bold;
 }
 
 .navmenu .active .toggle-dropdown,
@@ -324,6 +330,7 @@ h6 {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   transform: rotate(180deg);
+  font-weight: bold;
 }
 
 .navmenu .dropdown {
@@ -417,6 +424,25 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.footer-left{
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-right{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.w-100{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -679,6 +705,8 @@ section,
 .portfolio-img-container {
   position: relative;
   overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .portfolio-img-container img {
@@ -721,16 +749,30 @@ section,
 .portfolio-text p {
   font-size: 0.95rem;
   margin: 0;
+
 }
 
 .textsexample_container{
-  padding-left: 200px;
+  align-items: center;
+  height: auto;
 }
+
+@media (max-width: 1999px) {
+  .textsexample_container{
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 100%;
+  
+}
+}
+
+
+
 .textsexample_section{
-  height: 600px;
+  height: auto;
 }
 .portfolio-item{
-  max-height: 470px;
+  max-height: 100%;
 }
 #ps_title{
   color: #ffffff;
@@ -1739,6 +1781,74 @@ img:hover{
     font-size: 20px;
   }
 }
+
+
+.container{
+  max-width:1600px;
+  margin:auto;
+}
+
+/*timeline in testi e contesti*/
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .20rem dotted var(--nav-color);
+        width: 4rem;
+        position: absolute;
+        left: 15rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .20rem dotted var(--nav-color);
+        width: 4rem;
+        position: absolute;
+        right: 15rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 7rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: var(--nav-color);
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
 /*--------------------------------------------------------------
 # References Page
 --------------------------------------------------------------*/
@@ -1885,12 +1995,12 @@ img:hover{
   color: #2b2622;            /* testo scuro */
 }
 
-.fdimages{
-  width: 600px;
-  height: 300px;
+.fdimages {
+  width: 100%;
+  max-width: 700px !important;   /* 👈 limita grandezza desktop */
+  height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border: 3px solid white;
   border-radius: 10px;
 }
@@ -1901,7 +2011,7 @@ img:hover{
   border-radius: 10px;
   display: inline-block;
   margin: auto;
-  margin-left: 30px;
+
 }
 #fd{
   display: flex; 
@@ -1929,3 +2039,293 @@ img:hover{
   background-color: yellow;
   transition: background-color 0.3s ease;
 }
+
+
+
+
+
+
+
+/* txtinitialcomparison */
+/* Tutte le immagini future development */
+.fdimages,
+.fdcombimages {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenitore delle due immagini affiancate */
+#combofd {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Le due immagini sopra */
+#combofd img {
+  flex: 1 1 450px; /* responsive */
+  max-width: 100%;
+}
+
+/* Didascalie */
+.fd-caption {
+  text-align: center !important;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 8px;
+}
+
+/* Responsive forte per mobile */
+@media (max-width: 768px) {
+  #combofd {
+    flex-direction: column;
+    align-items: center;
+  }
+  #combofd img {
+    align-items: center !important;
+  }
+  
+}
+
+
+/* Contenitore combo immagini */
+#combofd {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Ogni blocco immagine + didascalia */
+#combofd > div {
+  flex: 1 1 48%;
+  max-width: 48%;
+}
+
+/* Immagini */
+#combofd img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #combofd {
+    flex-direction: column;
+  }
+
+  #combofd > div {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+
+
+/* popup google translate*/
+
+
+/* Sfondo popup */
+.navpopup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	max-width: auto;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 20000 !important; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto; /* scroll verticale se il contenuto è alto */
+    padding: 10px; /* spazio su mobile */
+}
+
+/* Contenitore popup */
+.navpopup-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    box-sizing: border-box; /* include padding nella larghezza */
+    position: relative;
+    text-align: center !important;
+    color: #1a1a1a;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-wrap: break-word; /* le parole lunghe vanno a capo */
+	text-wrap: wrap;
+    z-index: 20001 !important;
+}
+
+/* Paragrafo responsive */
+.navpopup-content p {
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+    width: 100%;              /* prende tutta la larghezza del contenitore */
+    max-width: 100%;          /* non esce mai dai bordi */
+    box-sizing: border-box;   /* include padding e bordi */
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    hyphens: auto;            /* divide parole lunghe se necessario */
+}
+
+
+/* Pulsante chiudi */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mostra popup */
+.navpopup.show {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s;
+}
+
+/* Animazione di apertura */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive per schermi piccoli */
+@media (max-width: 480px) {
+	.navpopup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	max-width: auto;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999 !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto; /* scroll verticale se il contenuto è alto */
+    padding: 10px; /* spazio su mobile */
+} 
+
+/* Contenitore popup */
+.navpopup-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    box-sizing: border-box; /* include padding nella larghezza */
+    position: relative;
+    text-align: center !important;
+    color: #1a1a1a;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-wrap: break-word; /* le parole lunghe vanno a capo */
+	text-wrap: wrap;
+}
+
+/* Paragrafo responsive */
+.navpopup-content p {
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+    width: 100%;              /* prende tutta la larghezza del contenitore */
+    max-width: 100%;          /* non esce mai dai bordi */
+    box-sizing: border-box;   /* include padding e bordi */
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    hyphens: auto;            /* divide parole lunghe se necessario */
+}
+
+
+/* Pulsante chiudi */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mostra popup */
+.navpopup.show {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s;
+}
+
+/* Animazione di apertura */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+}
+
+/* Default: link nascosto, icona visibile */
+.mobile-only {
+    display: none !important;
+}
+
+.desktop-only {
+    display: inline-block !important;
+}
+
+
+/* Solo quando lo schermo è piccolo (mobile / navbar tendina) */
+@media (max-width: 768px) {
+    .mobile-only {
+        display: inline-block !important;
+        cursor: pointer;
+        color: #000;
+        text-decoration: none;
+    }
+    .desktop-only {
+        display: none;
+    }
+}
+
+
+#google_translate_element_mobile {
+    margin-top: 10px;
+    padding: 5px 0;
+	z-index: 9999px !important;
+}
+
+
+/* Mostra popup al hover */
+.lang-btn:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+.languagepicker {
+    padding: 10px;
+    position: fixed;
+    right: 13px;
+    top: 10px;
+    z-index: 10;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+	background-color: var(--accent-color);
+	border-radius: 50%;
+}
+.languagepicker:hover {
+	color: var(--contrast-color);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+	border-radius: 50%;
+}
+

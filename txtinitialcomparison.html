@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Renzo & Lucia</title>
+  <title>Renzo & Lucia - Confronto tra i testi</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -54,19 +54,16 @@
     <br>
     <br>
 
-    <nav id="navmenu" class="navmenu">
+   <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#" class="active"><i class="bi bi-search-heart navicon"></i>Confronto tra i testi</a></li>
-        <li class="dropdown"><a href="references.html"><i class="bi bi-link navicon"></i> <span>Documentazione</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="references.html">Bibliografia primaria</a></li>
-            <li><a href="references.html">Bibliografia secondaria</a></li>
-            <li><a href="references.html">Strumenti utilizzati</a></li>
-          </ul>
-        </li>
-        <li><a href="#FD"><i class="bi bi-hourglass-split navicon"></i>Sviluppi futuri</a></li>
-      </ul>
+        <li><a href="howitworks.html"><i class="bi bi-patch-question navicon"></i>Come funziona</a></li>
+        <li><a href="Texts.html"><i class="bi bi-journals navicon"></i> <span>Testi e contesti</span></a></li>
+        <li><a href="#"class="active"><i class="bi bi-search-heart navicon"></i>Confronto tra i testi</a></li>
+        <li><a href="writers.html"><i class="bi bi-pencil navicon"></i> <span>Autori</span></i></a></li>
+        <li><a href="exercises.html"><i class="bi bi-toggles navicon"></i> <span>Esercizi</span></a></li>
+        
+        <li><a href="references.html"><i class="bi bi-link navicon"></i> <span>Documentazione</span></a><li></li>
     </nav>
 
   </header>
@@ -87,87 +84,95 @@
     </section><!-- /Text start Section -->
 
     <section id="about" class="about section">
+      <div id="languagepicker" class="languagepicker">
+        <img id="popupIcon" src="assets/img/grigiopastello-removebg-preview.png" alt="world" height="25px" style="cursor:pointer;">
+      </div>
+
+					<!-- Popup -->
+					<div id="navpopup" class="navpopup">
+						<div class="navpopup-content">
+							<span id="closenavPopup" class="close">&times;</span>
+							<p>
+								<strong>Scegli la lingua</strong><br>
+								Questo sito web è disponibile in molte lingue oltre all’italiano.
+								Scegli qui la lingua che preferisci utilizzare per navigare i contenuti
+								e svolgere gli esercizi nel modo più comodo e semplice per te.
+							</p>
+							<div id="google_translate_element"></div>
+						</div>
+					</div>		
+
+				</div>
     <div class="container section-title" data-aos="fade-up">
-      <p>This project provides a clear and straightforward visual and graphical comparison of two carefully selected texts.</p>
-
-      <p>As already mentioned in the previous sections , the focus is on <strong>the first chapter of <em>I Promessi Sposi</em> by Alessandro Manzoni and the first chapter of <em>Los Novios</em> by Gallego</strong>.</p>
-
-      <p>Explore the full text of the first chapter of <button class="btn-base btn-animato" id="buttonone"><a href="visuaipsoutput.html" target="_blank">the first chapter of I Promessi Sposi</a></button><br> 
-        as well as the full text of<button class="btn-base btn-animato" id="buttonone"><a href="visualnoutput.html" target="_blank">the first chapter of Los Novios</a></button></p><br>
+      <p>Questo progetto offre un confronto chiaro e immediato tra i due testi selezionati: il primo capitolo de <i>I Promessi Sposi</i> di Alessandro Manzoni e il primo capitolo de <i>Los Novios</i> di Juan Nicasio Gallego.</p>
+      <p>Leggi il testo del <button class="btn-base btn-animato" id="buttonone"><a href="visuaipsoutput.html" target="_blank"> primo capitolo de <i>I Promessi Sposi</i></a></button><br> 
+        Leggi anche il testo del <button class="btn-base btn-animato" id="buttonone"><a href="visualnoutput.html" target="_blank">primo capitolo de <i>of Los Novios</i></a></button></p><br>
         <br>
         <br>
         <br>
-      <p>A close examination of Chapter 1 reveals two immediate and notable differences: the length of the texts and the illustrations.<br>
-        The first chapter of <em>I Promessi Sposi</em> extends over 36 pages, whereas Los Novios contains only 20 pages. <br>
-      </p> 
+      <p>Usa i due bottoni per consultare entrambi i testi, confrontarli direttamente e per osservare le differenze tra originale e traduzione.</p>
+        <p>Due differenze saltano subito all’occhio: la lunghezza e le illustrazioni.  <br>
+          Il primo capitolo de <i>I Promessi Sposi</i> conta 36 pagine, mentre <i>Los Novios</i> solo 20. <br>
+          Inoltre, il testo italiano non ha immagini, mentre la versione spagnola include molte rappresentazioni grafiche.
+        </p> 
         <br>
-       <p>Another striking distinction lies in the use of imagery.<br>
-       The Italian text, <em>I Promessi Sposi</em>, which serves as the primary reference for this project, includes no graphic illustrations.<br>
-       In contrast, the Spanish translation by Gallego, composed later between 1836-37, features numerous graphic representations.<br></p>
-      <br>
-      <br>
-       <p>To faithfully present a digital edition that respects the original works as closely as possible, the <strong>page breaks and line breaks</strong> has been carefully preserved. <br>
-       Additionally, a simple colorful legend, placed at the top-left corner of the page, provides specific information about highlighted elements:</p>
+       <p>Sia gli <strong>“a capo” che le interruzioni di pagina</strong> presenti nei testi a stampa delle due opere, l’originale italiano e la sua traduzione spagnola, sono stati fedelmente <strong>riprodotti e mantenuti</strong> con cura anche in queste versioni digitali.
+        In alto a sinistra trovi una legenda colorata che ti aiuta ad identificare facilmente gli elementi principali:<br>
+      </p>
        <br>
        <div>
-          <span style="font-weight: bold; color: darkblue;">Names of the characters, their variation and abbreviation </span> appear in bold and in blue color, <br>
-          <span style="font-weight: bold; color: #0C9F43;">Sites and places </span> are shown in bold as well and in green color, <br>
-          <span style="font-weight: bold; color: #DC19A3;">dates </span> are ephasized in bold and in pink color.
+          <span style="font-weight: bold; color: darkblue;">I nomi dei personaggi, insieme alle loro varianti e abbreviazioni,</span> sono evidenziati in grassetto e colorati di blu,<br>
+          <span style="font-weight: bold; color: #0C9F43;">I luoghie  i siti </span> sono evidenziati in grassetto e colorati di verde, <br>
+          <span style="font-weight: bold; color: #DC19A3;">Le date </span> sono evidenziati in grassetto e colorati di rosa.
        </div>
        <br>
-      <p>This color-coding helps readers quickly identify these key components in both texts and better appreciate the differences between the original and its translation.<br></p>
-      <p>All the technical aspects are better explained in the <a href="workflowanddoc.html">workflow and documentation section</a></p>
-      <p>Observe these differences side by side through the provided <button class="btn-base btn-animato" id="buttonone"><a href="output.html" target="_blank">comparison of the two texts</a></button></p>
+      <p>Questi colori aiutano a capire rapidamente le differenze tra i due testi e a seguire meglio la lettura.<br></p>
+      <p>Confronta i testi e scopri come la traduzione modifica significato, stile e interpretazione rispetto all’opera originale. <button class="btn-base btn-animato" id="buttonone"><a href="output.html" target="_blank">Confronto tra i testi</a></button></p>
     </div>
   </section>
 
   <section id="about" class="about section">
     <div class="container section-title" data-aos="fade-up">
-      <p>To wrap up, the so-called <em>improved comparison</em> was designed. It presents itself as a richer, more interactive version of the simple comparison. <br>
-    Instead of just laying two texts side by side, it invites the user to explore, discover, and even play with the differences
-    and similarities between the texts. 
+      <p>Per concludere, è stata realizzata la cosiddetta <strong>comparazione migliorata</strong>, una versione più ricca e interattiva rispetto al semplice confronto dei testi.
+        Invece di limitarsi a mostrare i due testi affiancati, questa versione ti invita ad esplorare, scoprire e persino giocare con le differenze e le somiglianze tra le opere.
     <br>
     <br>
-    At the top left, a color-coded legend guides the reader through the experience: <br>
+    In alto a sinistra, una legenda colorata ti guiderà nella lettura: <br>
     <ul>
-      <li><span style="font-weight: bold; color: darkblue;">Bold Blue</span> highlights the names of characters, together with their many variations and their Spanish equivalents.
-        So when Don Abbondio appears in Italian as <i>D. Abbondio</i>, <i>curato</i>, or simply <i>Abbondio</i>, all are marked in blue, just as in Spanish, where he becomes <i>Don Abundo</i>, <i>D. Abundo</i>, or <i>cura</i>.</li>
-      <li><span style="font-weight: bold; color: #0C9F43;">Bold Green</span> marks the names of places, from rivers to cities, along with their Spanish renderings.
-       The Adda river, for instance, turns into <em>río Ada</em> but keeps the same green emphasis</li>
-      <li><span style="font-weight: bold; color: #DC19A3;">Bold Pink</span> is for dates, whether they specify a full day, month, and year, or just a single year.</li>
-      <li><span style="font-weight: bold; color: gray; text-decoration: underline wavy gray;">Bold Gray and underlined with a wavy line</span> flags those tricky words that are blurred or damaged in the source editions. They are underlined with a wavy line to warn the reader.</li>
-      <li><span style="font-weight: bold; color: #3399ff; background-color: #cce6ff;">Added images</span> are emphasised through a light blue rectangular box. Wherever the Spanish edition contains an illustration, a light blue placeholder reading <em>“Added image”</em> appears in the Italian texts,
-      reminding us of the missing visual representations. </li>
+      <li><span style="font-weight: bold; color: darkblue;">I nomi dei personaggi, le loro varianti e le equivalenze spagnole</span> sono evidenziati in grassetto e colorati di blu.
+        Ad esempio, Don Abbondio compare in italiano come <i>D. Abbondio</i>, <i>curato</i>,o semplicemente <i>Abbondio</i>, e in spagnolo come <i>Don Abundo</i>, <i>D. Abundo</i>, or <i>cura</i>: tutti i nomi sono segnalati in blu.</li>
+      <li><span style="font-weight: bold; color: #0C9F43;">I luoghi, dai fiumi alle città, con le corrispondenti versioni spagnole</span> sono evidenziati in grassetto e colorati di verde.
+       Ad esempio, il fiume Adda diventa <em>río Ada</em>, mantenendo il verde.</li>
+      <li><span style="font-weight: bold; color: #DC19A3;">Le date, sia complete (giorno, mese e anno) sia solo l’anno</span> sono evidenziate in grassetto e colorate di rosa.</li>
+      <li><span style="font-weight: bold; color: gray; text-decoration: underline wavy gray;">Le parole difficili, poco leggibili o danneggiate nelle edizioni originali.</span> sono evidenziate in grassetto, colorate di grigio chiaro e sottolineate con una riga ondulata.</li>
+      <li><span style="font-weight: bold; color: #3399ff; background-color: #cce6ff;">Le immagini aggiunte</span> sono evidenzate con il colore azzurro chiaro. Dove l’edizione spagnola contiene un’illustrazione, nel testo italiano appare un riquadro azzurro con scritto “Immagine aggiunta”, a ricordare la rappresentazione mancante.</li>
     </ul>
 
   <p>
-    Based on the first Italian chapter of <i>I promessi sposi</i>, it's clear that the comparison doesn’t stop at colors. It also tracks the translator’s choices:
+    La comparazione prende come riferimento il primo capitolo italiano de <i>I promessi sposi</i>. Qui puoi osservare non solo le differenze linguistiche e strutturali, evidenziate con colori diversi, ma anche le variazioni ideologiche e interpretative legate alle scelte del traduttore:
   </p>
     <ul> 
-  <li><span style="font-weight: bold; background-color: hsl(50, 85.50%, 48.60%);"><strong>(a"n")</strong> Spanish additions</span> are highlighted in yellow and tagged with a label (a"n"), where "a" stands for addition and "n" refers to the number of the addition. 
-    Moreover, with a click on the label in the Spanish text, the user sees the corresponding point in the Italian text where the addition occurs, always marked with a label (a"n"). 
-    The same works the other way around: by clicking the label in the Italian text, the user will see the corresponding addition in the Spanish text.</li>
-  <li><span style="font-weight: bold; background-color:  #c46f71;"><strong>(g"n")</strong>Spanish omissions</span> are highlighted in red and marked with a label (g"n"), where "g" stands for gap and "n" refers to the number of the omission. 
-    As for additions, with a click on the label in the Spanish text, the user sees the corresponding omitted passage in the Italian text always marked with the label (g"n") together with the omitted text. 
-    In the Italian text, the omission is always indicated with (g"n"), followed by the omitted text highlighted in red. Again, the same works the other way around.</li>
-  <li><span style="font-weight: bold; background-color:  #5ce1e6;"><strong>(ab"n")</strong>Spanish Abbreviation</span> are highlighted in cyan and tagged with the label (ab"n").
-    Certain names and titles used by Manzoni in Italian have been rendered differently in Gallego’s Spanish translation, often shortened. 
-    To clarify the text and help the reader navigate the bilingual comparison, the full names and titles in Italian are highlighted in cyan and preceded by the label (ab"n"), where "ab" stands for abbreviation and "n" refers to the abbreviation number. 
-    As with additions and omissions, with a click on the label in Italian, the user discovers the corresponding shortened Spanish appellative, also marked in cyan with the same label (ab"n"). The same works in reverse.</li>
-  <li><span style="font-weight: bold; background-color: #cb6ce6; "><strong>(m"n")</strong>Spanish modifications</span> are highlighted in purple and tagged with a label (m"n").
-    Some passages in the Italian text were not added or omitted in Spanish but modified under the influence of the Spanish context and ideology. 
-    These passages are highlighted in purple, with the modified text preceded by the label (m"n") in both texts. 
-    As before, with a click on the label in one of the texts, the user sees the corresponding modified passage in the other (and viceversa).  <br>
-    Some of these changes and modifications, influenced by Spanish context or ideology, have been studied in details. As a consequence, two variants of modifications are emphasized here:
+  <li><span style="font-weight: bold; background-color: hsl(50, 85.50%, 48.60%);"><strong>(a"n")</strong> Aggiunte spagnole:</span> evidenziate in giallo, con la sigla (a"n"), dove “a” sta per aggiunta e “n” per il numero.  <br>
+    Cliccando sull’etichetta nel testo spagnolo si vede il punto corrispondente nel testo in italiano e viceversa.
+  </li>
+    <li><span style="font-weight: bold; background-color:  #c46f71;"><strong>(g"n")</strong> Omissioni spagnole:</span> evidenziate in rosso, con la sigla (g"n"), dove “o” sta per omissione e “n” per il numero.  <br>
+    Cliccando sull’etichetta nel testo spagnolo si vede il passaggio mancante nel testo in italiano, sempre contrassegnato (g"n"), e viceversa.
+  </li>
+  <li><span style="font-weight: bold; background-color:  #5ce1e6;"><strong>(ab"n")</strong>Abbreviazioni spagnole:</span> evidenziate in ciano, con la sigla (ab"n").
+    Alcuni nomi e titoli usati da Manzoni in italiano sono resi in modo diverso nella traduzione spagnola di Gallego, spesso in forma abbreviata. Per rendere il testo più chiaro e aiutarti a seguire il confronto bilingue, i nomi e i titoli completi in italiano sono evidenziati in ciano e preceduti dall’etichetta (ab"n"), dove “ab” indica abbreviazione e “n” il numero progressivo dell’abbreviazione. Come per le aggiunte e le omissioni, cliccando sull’etichetta in italiano, puoi vedere l’appellativo abbreviato corrispondente in spagnolo, anch’esso evidenziato in ciano con la stessa etichetta (ab"n") e viceversa dal testo spagnolo a quello italiano.</li>
+  <li><span style="font-weight: bold; background-color: #cb6ce6; "><strong>(m"n")</strong>Modifiche spagnole:</span> sono evidenziate in viola e contrassegnate dall’etichetta (m"n").
+    Alcuni passaggi del testo italiano non sono stati aggiunti o omessi nella traduzione spagnola, ma modificati sotto l’influenza del contesto e dell’ideologia spagnola. Questi passaggi sono evidenziati in viola e preceduti dall’etichetta (m"n") in entrambi i testi. Come prima, cliccando sull’etichetta in uno dei testi, puoi vedere il passaggio corrispondente modificato nell’altro testo (e viceversa). <br>
+    Alcune di queste modifiche, influenzate dal contesto o dall’ideologia spagnola, sono state studiate in dettaglio. Di conseguenza, qui vengono messe in evidenza due varianti di modifiche:
     <ul>
-      <li><span style="font-weight: bold; background-color: #cb6ce6;"><strong>(Mm"n")</strong>Spanish interpretative modifications deeply studied by María de las Nieves Muñiz Muñiz</span> 
-        Some modifications involving translator's interpretation of the original work of Manzoni were studied in details by the well-known philologist, translator, and Spanish Italianist María de las Nieves Muñiz Muñiz in <em>La prima ricezione dei Promessi sposi in Spagna: traduzioni e critica</em>. These interpretative modifications are highlighted in purple as the normal modifications, but marked with a slightly different label (Mm"n"), where "Mm" stands for modification studied by Muñiz Muñiz and "n" stands for the number of modification. As before, clicking the label in the Spanish text reveals the corresponding Italian passage and vice versa. 
-        In addition, when hovering the cursor over the label, a small popup with an explanation of the modification and reference to Muñiz Muñiz’s work appears.
+      <li><span style="font-weight: bold; background-color: #cb6ce6;"><strong>(Mm"n")</strong>Modifiche interpretative spagnole studiate da María de las Nieves Muñiz Muñiz</span>
+        Alcune modifiche riguardano l’interpretazione del traduttore dell’opera originale di Manzoni e sono state analizzate in dettaglio dalla nota filologa, traduttrice e italianista spagnola María de las Nieves Muñiz Muñiz nel libro <i>La prima ricezione dei Promessi sposi in Spagna: traduzioni e critica</i>. 
+        Queste modifiche interpretative sono evidenziate in viola come le modifiche normali, ma contrassegnate con un’etichetta leggermente diversa (Mm"n"), dove “Mm” indica una modifica studiata da Muñiz Muñiz e “n” il numero della modifica. Come prima, cliccando sull’etichetta nel testo spagnolo, puoi vedere il passaggio corrispondente in italiano e viceversa. 
+        Inoltre, passando il cursore sull’etichetta puoi notare un piccolo popup con una spiegazione della modifica e il riferimento allo studio di Muñiz Muñiz.
       </li>
-      <li><span style="font-weight: bold; background-color:#c1ff72;"><strong>(Im"n")</strong>Spanish idiomatic modifications analysed by Beatrice Pecchiari</span> 
-        Other modifications, in particular those at the idiomatic level, were studied and analyzed by Beatrice Pecchiari in her master’s thesis <em>Los Novios. La ricezione dei Promessi sposi nella Spagna dell’Ottocento</em>. Certain Italian idioms used by Manzoni were translated into different Spanish idioms by Gallego, which didn't always have exactly the same meaning. 
-        These are highlighted in cucumber milk and marked with the label (Im"n"), where "Im" stands for idiomatic modifications and "n" stands for the number of modifications. 
-        As before, clicking the label shows the corresponding passage in the other text visible in the column next to the one the user is focusing on, and hovering the cursor over it reveals a small popup explaining the idiomatic modification with reference to Pecchiari’s study.
+      <li><span style="font-weight: bold; background-color:#c1ff72;"><strong>(Im"n")</strong>Espressioni idiomatiche spagnole studiate da Pecchiari</span> 
+       Altre modifiche, in particolare a livello idiomatico, sono state studiate da Beatrice Pecchiari nella sua tesi di laurea magistrale <i>Los Novios. La ricezione dei Promessi sposi nella Spagna dell’Ottocento</i>. 
+       Alcune espressioni idiomatiche italiane usate da Manzoni sono state tradotte da Gallego in idiomi spagnoli diversi, che non sempre hanno lo stesso significato. 
+       Queste modifiche sono evidenziate in verde chiaro e contrassegnate dall’etichetta (Im"n"), dove “Im” indica modifiche idiomatiche e “n” il numero progressivo. Come prima, cliccando sull’etichetta puoi visualizzare il passaggio corrispondente nell’altro testo, mentre passando il puoi notare un piccolo popup con la spiegazione della modifica idiomatica e il riferimento allo studio di Beatrice Pecchiari.
       </li>
     </ul>
   </li>
@@ -175,11 +180,9 @@
 </ul>
 
   <p>
-    The result is a dynamic reading experience. Instead of passively comparing two columns of text, the user actively navigates through the additions,
-    gaps, abbreviations, and subtle shifts in meaning. Each click, each highlight, reveals how a 19th-century Italian masterpiece was transformed for a Spanish-speaking audience. <br>
-    All the technical aspects are better explained in the <a href="workflowanddoc.html">workflow and documentation section</a>. <br>
-    Observe these side by side differences related both to the structure level and to the semantic and idiomatic level of the texts, <br>
-    through the provided <button class="btn-base btn-animato" id="buttonone"><a href="improvedoutput.html" target="_blank">comparison of the two texts</a></button>
+    Il risultato è una lettura dinamica: invece di confrontare passivamente due colonne di testo, l’utente naviga attivamente tra aggiunte, omissioni, abbreviazioni e sottili variazioni di significato. Ogni clic, ogni evidenziazione mostra come un capolavoro italiano del XIX secolo è stato trasformato per un pubblico di lingua spagnola.<br>
+    Osserva la comparazione fianco a fianco sia a livello strutturale sia a livello semantico e idiomatico, <br>
+    attrverso <button class="btn-base btn-animato" id="buttonone"><a href="improvedoutput.html" target="_blank">Confronto avanzato tra i testi</a></button>
   </p>
   <br>
   </div>
@@ -187,72 +190,97 @@
 
   <section id="FD" class="about section">
 <div class="container section-title" data-aos="fade-up">
-  <h5 class="fw-bold">Further developments</h5>
+  <h5 class="fw-bold">Sviluppi futuri</h5>
   <p>
-    Think about a future version of the project where, with just a single word typed into a <strong>search bar</strong>, the entire text opens up in new ways.  <br>
-    <strong>Additions, omissions, modifications, abbreviations, unclear words, characters, dates and places</strong>, all the carefully marked elements, could immediately reveal themselves, highlighted at fingertips.<br>
-    Whether the user is an expert researcher or a simply curious reader, he or she can dive straight into the material, <strong>filter</strong> what he or she is looking for and <strong>save precious time</strong>.  <br>
-    In just a moment, the user gains a clear, powerful overview of all the elements he or she cares about. <br>
-    This is an invitation to explore, discover, and interact with the text in a whole new way.
+    Immagina una futura versione del progetto in cui, digitando una singola parola nella <strong>barra di ricerca</strong>, l’intero testo si apre in modi completamente nuovi.  <br>
+    <strong>Aggiunte, omissioni, modifiche, abbreviazioni, parole poco chiare, personaggi, date e luoghi</strong>, tutti gli elementi accuratamente segnalati, potrebbero apparire immediatamente, evidenziati a colpo d’occhio.<br>
+    In questo modo puoi immergerti subito nel testo, <strong>filtrare</strong> ciò che cerchi e risparmiare tempo prezioso. <br>
+    In pochi istanti, puoi ottenere una visione chiara e completa di tutti gli elementi di suo interesse. È un invito a esplorare, scoprire e interagire con il testo in un modo del tutto nuovo.
   </p>
   <br>
-  <p>Once the user clicks the <strong>“search” button</strong> located at the top-right corner of the page, he or she can choose one of several filter options for the research. <br>
-  In this case, “unclear word” is <strong>selected among the available categories</strong>: additions, omissions, modifications, abbreviations, unclear words, characters, dates, and places.</p>
+  <p>Dopo che aver cliccato sul <strong>pulsante “cerca”</strong>, in alto a destra nella pagina, puoi scegliere tra diverse opzioni di filtro per la ricerca.<br>
+  In questo esempio, è stata selezionata la categoria <strong>“parole poco chiare”</strong> tra quelle disponibili: aggiunte, omissioni, modifiche, abbreviazioni, parole poco chiare, personaggi, date e luoghi.</p>
   <br>
   <div id="combofd">
-  <img src="assets/img/FDsolosearchbutton.png" alt="searchbutton" class="fdcombimages">
-  <img src="assets/img/FDsearchbutton.png" alt="searchbutton" class="fdcombimages">
+
   <div>
-    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:80px"><i>F.1. Future development - search button. </i><a href="assets/img/FDsolosearchbutton.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
-    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:200px " ><i>F.2. Future development - available categories of marked elements that can be searched. </i><a href="assets/img/FDsearchbutton.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
+    <img src="assets/img/FDsolosearchbutton.png" alt="search button" class="fdcombimages">
+    <span class="fd-caption">
+      <i>F.1. Sviluppi futuri - pulsante "ricerca".</i>
+      <a href="assets/img/FDsolosearchbutton.png" class="glightbox preview-link">
+        <i class="bi bi-zoom-in"></i>
+      </a>
+    </span>
   </div>
+
+  <div>
+    <img src="assets/img/FDsearchbutton.png" alt="search categories" class="fdcombimages">
+    <span class="fd-caption">
+      <i>F.2. Sviluppi futuri - categorie disponibili.</i>
+      <a href="assets/img/FDsearchbutton.png" class="glightbox preview-link">
+        <i class="bi bi-zoom-in"></i>
+      </a>
+    </span>
   </div>
+
+</div>
   <br>
   <br>
-  <p>A label then appears at the top-center of the page, indicating <strong>which filter option has been applied</strong> and <strong>how many occurrences of that option have been found</strong>.</p>
+  <p>Compare quindi un’etichetta nella parte superiore centrale della pagina, che indica <strong>quale filtro è stato applicato e quante occorrenze di quell’opzione sono state trovate.</strong>.</p>
   <br>
   <img src="assets/img/FD0:7unclearocc.png" alt="occurrences" class="fdimages">
   <div>
-    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:230px"><i>F.3. Future development - label showing the applied filter option and relative number of occurrences found. </i><a href="assets/img/FD0:7unclearocc.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
+    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:230px"><i>F.3. Sviluppi futuri - Etichetta che mostra il filtro applicato e il numero corrispondente di occorrenze trovate. </i><a href="assets/img/FD0:7unclearocc.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
   </div>
   <br>
   <br>
-  <p>The user can also <strong>keep track of these occurrences and navigate through them easily</strong> using the arrow buttons, positioned next to the label, which allow quick movement to the previous or next occurrence. </p>
+  <p>Puoi anche <strong>tenere traccia di queste occorrenze e navigare facilmente tra di esse usando le frecce</strong> posizionate accanto all’etichetta, che permettono di spostarsi rapidamente all’occorrenza precedente o successiva. </p>
   <br>
   <img src="assets/img/FD1:7unclearocc.png" alt="occurrences" class="fdimages">
   <div>
-    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:230px"><i>F.4. Future development - label showing the applied filter option and relative number of occurrences found. </i><a href="assets/img/FD1:7unclearocc.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
+    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:230px"><i>F.4. Sviluppi futuri - Etichetta che mostra il filtro applicato e il numero totale di occorrenze individuate. </i><a href="assets/img/FD1:7unclearocc.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
   </div>
   <br>
   <br>
   <p><br>
-  In fact, in this instance, the identified occurrences for “unclear word” are seven (0/7, 1/7...7/7), and the user has the chance to move through them from the first to the last.</p>
+  Infatti, in questo caso, le occorrenze identificate per “parole poco chiare” sono sette (0/7, 1/7…7/7), e tu hai la possibilità di scorrerle dalla prima all’ultima.</p>
   <br>
   <img src="assets/img/FD7:7unclearocc.png" alt="occurrences" class="fdimages">
   <div>
-    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:150px"><i>F.5. Future development - label showing the applied filter option and relative number of occurrences found, from the first to the last. </i><a href="assets/img/FD7:7unclearocc.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
+    <span style=" color: rgba(0, 0, 0, 0.5); font-size: 14px; margin-left:150px"><i>F.5. Sviluppi futuri - Etichetta che mostra il filtro applicato e il numero di occorrenze individuate, dalla prima all’ultima. </i><a href="assets/img/FD7:7unclearocc.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></span>
   </div>
 </div>
 </section>
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+   <footer id="footer" class="footer position-relative light-background">
+  <div class="footercontainer container d-flex flex-wrap justify-content-between py-4">
+    
+    <!-- Colonna sinistra -->
+    <div class="footer-left col-12 col-lg-3">
+      <p><i>Renzo & Lucia</i> è un progetto con finalità didattica realizzato per il liceo linguistico N. Copernico di Bologna, con l’obiettivo di esplorare <strong><i>I promessi sposi</i></strong> di Manzoni e la sua traduzione spagnola <strong><i>Los Novios</i></strong>.</p>
+      <p>Creato da <strong>Alice Piazzi</strong> per uso didattico e studio in classe.</p>
+    </div>
 
-    <div class="footercontainer">
-      <div class="copyright text-center ">
-        <p><i>Renzo & Lucia</i> is the final project developed for the "Digital scholarly editing: theory, methods and practice" course (a.a. 2024/2025) within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna.</p> <br>
-        <p>© <span>Copyright</span><strong class="px-1 sitename">Renzo & Lucia</strong><span>All Rights Reserved</span></p>
-      </div>
+    <!-- Colonna destra -->
+    <div class="footer-right col-12 col-lg-9">
+      <p><i class="fa-brands fa-github fa-beat-fade"></i> Esplora il <a href="https://github.com/manzoni-storytelling/Manzoni_Storytelling" target="_blank">repository del progetto</a> per approfondire. Dai un’occhiata al <a href="https://github.com/alicepiazzi" target="_blank">mio profilo GitHub</a> per scoprire altri progetti che ho realizzato.</p>
+      <p><i class="fa-solid fa-envelope fa-shake"></i> Vuoi far parte di qualcosa di entusiasmante e aiutare a far crescere questo progetto? Mandami una e-mail qui: <a href="mailto:alicep2401@gmail.com">alicep2401@gmail.com</a></p>
+      <p><i class="fa-brands fa-linkedin fa-bounce"></i> Contattami su <a href="https://www.linkedin.com/in/alice-piazzi-4a6687259/" target="_blank">LinkedIn</a>!</p>
+      <p><i class="fa-brands fa-instagram fa-bounce"></i> Dai un’occhiata al <a href="https://www.instagram.com/alice.piazzii/">mio Instagram</a> per conoscermi meglio!</p>
+      <p><i class="fa-solid fa-graduation-cap fa-shake"></i> Scopri tutto ciò che <a href="https://www.unibo.it/it">Alma Mater Studiorum – Università di Bologna</a> ha da offrire. Attualmente sto frequentando il secondo anno del <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Corso di Laurea Magistrale in Digital Humanities e Conoscenza Digitale</a>.</p>
+    </div>
+
+    <!-- Copyright e credits sotto -->
+    <div class="w-100 mt-3 credits" style="justify-content:center;">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Renzo & Lucia</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
-  </footer>
+  </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -278,3 +306,42 @@
 </body>
 
 </html>
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'it', // lingua originale
+    includedLanguages: 'en,fr,es,de,zh-CN,ja,ru,pt,ar', // lingue disponibili, con l'inglese per prima
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script>
+
+
+document.getElementById("languagepicker").addEventListener("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById("navpopup").classList.add("show");
+});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("navpopup");
+  const closeBtn = document.getElementById("closenavPopup");
+
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("show");
+  });
+
+  // opzionale: chiudere cliccando fuori dal popup
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.remove("show");
+    }
+  });
+});
+</script>
